@@ -1,16 +1,65 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Montserrat:wght@300;400&family=Poppins:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .btn-blue {
+    @apply text-xl lg:text-4xl text-[#167EE0] lg:text-white font-semibold pt-3 lg:leading-tight;
+  }
+}
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #f0f5ff;
+  -webkit-tap-highlight-color: transparent;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+h2 {
+  font-family: 'Changa', sans-serif;
 }
-
-* {
-  box-sizing: border-box;
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+@layer components {
+  .note {
+    @apply text-base md:text-xl tracking-wide text-gray-600;
+  }
+}
+@layer components {
+  .btn-orange {
+    @apply text-white  xl:inline-grid px-4 py-2  xl:py-4 bg-[#FEA366] text-xl   xl:w-60  rounded-full xl:text-2xl;
+  }
+}
+@layer components {
+  .heading-primary {
+    @apply text-xl lg:text-4xl  font-semibold pt-3 lg:leading-tight;
+  }
+}
+@layer components {
+  .btn-blue {
+    @apply bg-[#167EE0];
+  }
+}
+@layer components {
+  .heading-secondary {
+    @apply text-xl xl:text-[1.7rem] leading-none font-semibold pt-3 lg:leading-tight;
+  }
+}
+@layer components {
+  .heading-blue {
+    @apply text-[#167EE0];
+  }
+}
+@layer components {
+  .words-gray {
+    @apply text-gray-600;
+  }
+}
+@layer components {
+  .card-width {
+    @apply relative w-[90%] mx-auto;
+  }
+}
+@layer components {
+  .long-card {
+    @apply relative w-[100%] mx-auto;
+  }
 }
