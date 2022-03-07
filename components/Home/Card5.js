@@ -25,7 +25,7 @@ function Card5() {
 
         <div className='lg:py-2 flex-1 space-y-5 text-center xl:text-justify lg:pr-5'>
           <h2 className='text-white text-xl md:text-3xl '>
-            Esports Talents and{' '}
+            Esports Talents and
             <span className='text-black md:text-black'>
               Advertising Services
             </span>{' '}
@@ -34,7 +34,7 @@ function Card5() {
             Arabia E-Advertising began its career as one of the first talent
             agencies, representing both established and emerging esports-focused
             broadcasting talent. We assist these specialized talents in
-            maximizing the value they've created by connecting them with
+            maximizing the value they ve created by connecting them with
             hundreds of brand partners who trust us. We can assist you whether
             you are looking to hire an on-air host for an event or need
             representation as a talent

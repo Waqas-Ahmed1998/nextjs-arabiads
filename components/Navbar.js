@@ -196,7 +196,7 @@ function Navbar() {
                         Looking forward to speak.
                       </h2>
                       <p className='text-sm md:text-base '>
-                        Whether you're an Influencer, an Agency, or a Brand
+                        Whether you&apos;re an Influencer, an Agency, or a Brand
                         wishing to work with us, please get in touch
                       </p>
                       <form action='' className=' '>
