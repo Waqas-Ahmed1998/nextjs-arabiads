@@ -25,7 +25,6 @@ function Footer() {
             </p>
             <div className='flex space-x-3'>
               <a href=''>
-                {' '}
                 <FontAwesomeIcon
                   className='cursor-pointer w-5 h-7'
                   icon={faFacebook}
@@ -33,7 +32,6 @@ function Footer() {
               </a>
 
               <a href=''>
-                {' '}
                 <FontAwesomeIcon
                   className='cursor-pointer w-5 h-7'
                   icon={faInstagram}
@@ -41,7 +39,6 @@ function Footer() {
               </a>
 
               <a href=''>
-                {' '}
                 <FontAwesomeIcon
                   className='cursor-pointer w-5 h-7 '
                   icon={faTwitter}
@@ -49,14 +46,12 @@ function Footer() {
               </a>
 
               <a href=''>
-                {' '}
                 <FontAwesomeIcon
                   className='cursor-pointer w-5 h-7'
                   icon={faLinkedin}
                 />
               </a>
               <a href=''>
-                {' '}
                 <FontAwesomeIcon
                   className='cursor-pointer w-5 h-7'
                   icon={faYoutube}
