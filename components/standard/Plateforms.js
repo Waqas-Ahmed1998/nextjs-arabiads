@@ -1,9 +1,11 @@
 import React from 'react';
-
+import styles from '../../styles/Home.module.css';
 function Plateforms() {
   return (
-    <div className='px-5 my-20 mx-auto lg:w-[70%] text-center space-y-5'>
-      <h3 className='text-center text-xl md:text-4xl tracking-wide font-bold'>
+    <div className='px-5 my-20 mx-auto lg:w-[70%] text-center space-y-10'>
+      <h3
+        className={`${styles.montserrat} text-[#404040]  text-center text-lg md:text-[40px] tracking-wide [font-weight:700]`}
+      >
         OUR PLATFORMS
       </h3>
       <p className='text-base md:text-xl tracking-wide text-gray-600 '>

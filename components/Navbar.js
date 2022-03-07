@@ -27,7 +27,9 @@ function Navbar() {
           }
         </div>
 
-        <div className=' flex xl:space-x-7  text-2xl tracking-wide'>
+        <div
+          className={`  ${styles.popins} flex xl:space-x-7 font-normal text-2xl tracking-wide`}
+        >
           <Link href='/'>
             <a className='hover:text-[#FE8936] cursor-pointer'>Home</a>
           </Link>
@@ -56,7 +58,7 @@ function Navbar() {
         <div className=' text-center'>
           <button
             onClick={(e) => setContact(!onContact)}
-            className=' text-white hidden md:inline-grid btn-contact  py-4 bg-[#FEA366]   w-60 hover:shadow-2xl shadow-orange-700 rounded-full text-2xl'
+            className={` ${styles.btnContact} ${styles.popins} bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline-grid btn-contact  py-4 bg-[#FEA366]   w-60  rounded-full  text-2xl`}
           >
             Contact Us
           </button>

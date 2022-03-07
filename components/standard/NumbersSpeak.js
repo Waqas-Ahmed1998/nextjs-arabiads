@@ -1,10 +1,12 @@
 import React from 'react';
-
+import styles from '../../styles/Home.module.css';
 function NumbersSpeak() {
   return (
     <div className='mt-10 grid grid-cols-1 md:max-w-[95rem] mx-auto relative px-5 py-10'>
-      <div className='mx-auto lg:w-[70%] text-center space-y-5'>
-        <h3 className='text-center text-lg md:text-4xl tracking-wide font-bold'>
+      <div className='mx-auto lg:w-[70%] text-center space-y-10'>
+        <h3
+          className={`${styles.montserrat} text-[#404040]  text-center text-lg md:text-[40px] tracking-wide [font-weight:700]`}
+        >
           LET THE NUMBERS SPEAK
         </h3>
         <p className='text-base md:text-xl tracking-wide text-gray-600 '>
@@ -15,40 +17,92 @@ function NumbersSpeak() {
           continuously expanding.
         </p>
       </div>
-      <div className=' mt-10 flex flex-col lg:flex-row gap-2 md:gap-5 items-center justify-center text-center'>
-        <div className=' card-shadow relative bg-white p-5 md:p-8 rounded-2xl w-44 md:h-36 h-28'>
-          <h3 className='text-base md:text-2xl text-blue-400 font-bold'>
+      <div className=' mt-10 space-y-10 lg:space-y-0 flex flex-col lg:flex-row gap-2 md:gap-5 items-center justify-center text-center'>
+        <div
+          className={`flex  justify-evenly flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[20px] rounded-[30px] w-56 md:h-48 h-28`}
+        >
+          <h3
+            className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
+          >
             200+
           </h3>
+          <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 
-          <p className='text-base md:text-xl'>Campaigns</p>
-          <div className='absolute -bottom-2 [z-index:-1] border-b rounded-b-xl w-[75%] md:w-[65%]  justify-self-center bg-gray-200 h-5'></div>
+          <p
+            className={`${styles.popins} text-[#404040] text-xl md:text-[25px] `}
+          >
+            Campaigns
+          </p>
+          <div className='absolute left-[12%] -bottom-4 [z-index:-1]  rounded-[35px] w-[75%] md:w-[75%]  justify-self-center bg-[rgba(255,255,255,0.94)] h-12'></div>
         </div>
-        <div className='card-shadow relative bg-white p-5 md:p-8 rounded-2xl w-44 md:h-36 h-28'>
-          <h3 className='text-base md:text-2xl text-blue-400 font-bold'>40+</h3>
 
-          <p className='text-base md:text-xl'>Brands</p>
-          <div className='absolute -bottom-2 [z-index:-1] border-b rounded-b-xl w-[75%] md:w-[65%] justify-self-center bg-gray-200 h-5'></div>
+        <div
+          className={`flex justify-evenly flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[20px] rounded-[30px] w-56 md:h-48 h-28`}
+        >
+          <h3
+            className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
+          >
+            40+
+          </h3>
+          <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
+
+          <p
+            className={`${styles.popins} text-[#404040] text-xl md:text-[25px] `}
+          >
+            Brands
+          </p>
+          <div className='absolute left-[12%] -bottom-4 [z-index:-1]  rounded-[35px] w-[75%] md:w-[75%]  justify-self-center bg-[rgba(255,255,255,0.94)] h-12'></div>
         </div>
-        <div className='card-shadow relative bg-white p-5 md:p-8 rounded-2xl w-44 md:h-36 h-28'>
-          <h3 className='text-base md:text-2xl text-blue-400 font-bold'>70+</h3>
+        <div
+          className={`flex justify-evenly flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[20px] rounded-[30px] w-56 md:h-48 h-28`}
+        >
+          <h3
+            className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
+          >
+            70+
+          </h3>
+          <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 
-          <p className='text-base md:text-xl first-line:rounded-2xl'>
+          <p
+            className={`${styles.popins} text-[#404040] text-xl md:text-[25px] `}
+          >
             Exclusive Influencers
           </p>
-          <div className='absolute -bottom-2 [z-index:-1] border-b rounded-b-xl w-[75%] md:w-[65%]  justify-self-center bg-gray-200 h-5'></div>
+          <div className='absolute left-[12%] -bottom-4 [z-index:-1]  rounded-[35px] w-[75%] md:w-[75%]  justify-self-center bg-[rgba(255,255,255,0.94)] h-12'></div>
         </div>
-        <div className='relative card-shadow bg-white p-5 md:p-8 rounded-2xl w-44 md:h-36 h-28'>
-          <h3 className='text-base md:text-2xl text-blue-400 font-bold'>50M</h3>
+        <div
+          className={`flex justify-evenly flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[20px] rounded-[30px] w-56 md:h-48 h-28`}
+        >
+          <h3
+            className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
+          >
+            50M
+          </h3>
+          <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 
-          <p className='text-base md:text-xl'>Monthly Impressions </p>
-          <div className='absolute -bottom-2 [z-index:-1] border-b rounded-b-xl w-[75%] md:w-[65%] justify-self-center bg-gray-200 h-5'></div>
+          <p
+            className={`${styles.popins} text-[#404040] text-xl md:text-[25px] `}
+          >
+            Monthly Impressions
+          </p>
+          <div className='absolute left-[12%] -bottom-4 [z-index:-1]  rounded-[35px] w-[75%] md:w-[75%]  justify-self-center bg-[rgba(255,255,255,0.94)] h-12'></div>
         </div>
-        <div className='relative card-shadow bg-white p-5 md:p-8 rounded-2xl w-44 md:h-36 h-28'>
-          <h3 className='text-base md:text-2xl text-blue-400 font-bold'>27</h3>
+        <div
+          className={`flex justify-evenly flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[20px] rounded-[30px] w-56 md:h-48 h-28`}
+        >
+          <h3
+            className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
+          >
+            27
+          </h3>
+          <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 
-          <p className='text-base md:text-xl'>Employees </p>
-          <div className='absolute -bottom-2 [z-index:-1] border-b rounded-b-xl w-[75%] md:w-[65%]  justify-self-center bg-gray-200 h-5'></div>
+          <p
+            className={`${styles.popins} text-[#404040] text-xl md:text-[25px] `}
+          >
+            Employees
+          </p>
+          <div className='absolute left-[12%] -bottom-4 [z-index:-1]  rounded-[35px] w-[75%] md:w-[75%]  justify-self-center bg-[rgba(255,255,255,0.94)] h-12'></div>
         </div>
       </div>
     </div>

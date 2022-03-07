@@ -8,6 +8,13 @@ function Icard1() {
         alt=''
         className='hidden xl:inline-grid  w-full '
       />
+      <div className='hidden xl:inline-grid absolute  [z-index:-1]  -top-10 -left-20'>
+        <img
+          className=' animate-spin-slow '
+          src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/blue-square.png'
+          alt=''
+        />
+      </div>
       <div className=' h-[80%] xl:absolute flex top-[10%]  justify-center  xl:w-full '>
         <div className='xl:w-[100%] xl:ml-20 flex flex-col-reverse xl:flex-row space-y-5 items-center text-center xl:text-justify '>
           <div className=' flex-1 xl:py-5 space-y-5'>

@@ -9,6 +9,20 @@ function Scard2() {
         alt=''
         className='hidden xl:inline-grid  w-full '
       />
+      <div className='hidden xl:inline-grid absolute [z-index:-1] -top-5 -left-2'>
+        <img
+          className=' animate-spin-slow '
+          src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/orange-square.png'
+          alt=''
+        />
+      </div>
+      <div className='hidden xl:inline-grid absolute top-5 right-20'>
+        <img
+          className=' animate-spin-slow '
+          src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/gaming-plus-icon.png'
+          alt=''
+        />
+      </div>
       <div className=' h-[80%] xl:absolute flex top-[10%]  justify-center  xl:w-full '>
         <div className='xl:w-[100%] xl:ml-20 flex flex-col-reverse xl:flex-row space-y-5 text-center xl:text-justify '>
           <div className=' flex-1 xl:py-16 space-y-5'>

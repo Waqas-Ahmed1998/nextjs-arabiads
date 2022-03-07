@@ -11,6 +11,20 @@ function Scard3() {
         alt=''
         className='hidden xl:inline-grid  w-full '
       />
+      <div className='hidden xl:inline-grid absolute   bottom-0 -right-10'>
+        <img
+          className=' animate-spin-slow '
+          src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/blue-square.png'
+          alt=''
+        />
+      </div>
+      <div className='hidden xl:inline-grid absolute top-20 left-[45%] '>
+        <img
+          className=' animate-spin-slow '
+          src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/plus-blue.png'
+          alt=''
+        />
+      </div>
       <div className=' h-[80%] xl:absolute flex top-[10%]  justify-center  xl:w-full '>
         <div className='xl:w-[100%] w-[90%] xl:ml-5 flex flex-col xl:flex-row space-y-5 text-center items-center xl:text-justify '>
           <div className='flex-1  '>
