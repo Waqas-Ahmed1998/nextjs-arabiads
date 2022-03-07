@@ -24,10 +24,10 @@ function Scard4() {
             <p className='text-sm xl:text-base tracking-wide xl:pr-5'>
               Are you an influencer looking to broaden your reach and
               collaborate with others? We are here to assist you. Our staff will
-              introduce you to some of the world's most well-known entertainment
-              and technology firms, raising your profile and carefully coaching
-              you to become more than an influencer, but a brand ambassador with
-              a continuous source of income .
+              introduce you to some of the world&apos;s most well-known
+              entertainment and technology firms, raising your profile and
+              carefully coaching you to become more than an influencer, but a
+              brand ambassador with a continuous source of income .
             </p>
             <button className='btn-orange'>Learn More</button>
           </div>

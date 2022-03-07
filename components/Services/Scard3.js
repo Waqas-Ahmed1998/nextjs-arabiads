@@ -47,8 +47,8 @@ function Scard3() {
               tenfold by activating smaller talents.
             </p>
             <p className=' text-sm xl:text-base tracking-wide'>
-              Whether you're looking for opportunities or solutions for your
-              business, and regardless of your current status, our esports
+              Whether you&apos;re looking for opportunities or solutions for
+              your business, and regardless of your current status, our esports
               consultancy agency is ready to provide you with all the analytics
               you need, as well as a roster of talent for all of your upcoming
               esports events.
@@ -57,10 +57,11 @@ function Scard3() {
               Our experienced play by play caster will level up your events,
               while our MCs & hosts professionally pilot the show. A dream team
               of color commentators is guaranteed to fire up the audience,
-              ensuring all the engagement you need. Don't take our word for it,
-              our results speak for themselves. We're more than confident in our
-              ability to upgrade your business in everything related to esports,
-              which is why choosing us is the first step towards your goal.
+              ensuring all the engagement you need. Don&apos;t take our word for
+              it, our results speak for themselves. We&apos;re more than
+              confident in our ability to upgrade your business in everything
+              related to esports, which is why choosing us is the first step
+              towards your goal.
             </p>
             <button className='btn-orange btn-blue'>Learn More</button>
           </div>

@@ -23,13 +23,13 @@ function Card1() {
               gaming content creators.
             </p>
             <p className='words-gray tracking-wide'>
-              We're always looking for top-tier and up-and-coming influencers to
-              represent. Arabia E-Advertising allows you to concentrate on
-              growing your brand and community while we find commercial
-              possibilities for you and negotiate the finest terms to ensure
-              that you are treated properly. Our esports knowledge is unrivaled,
-              from finding you endorsements and sponsorships to offering
-              one-on-one advice.
+              We&apos;re always looking for top-tier and up-and-coming
+              influencers to represent. Arabia E-Advertising allows you to
+              concentrate on growing your brand and community while we find
+              commercial possibilities for you and negotiate the finest terms to
+              ensure that you are treated properly. Our esports knowledge is
+              unrivaled, from finding you endorsements and sponsorships to
+              offering one-on-one advice.
             </p>
             <a href='' className='mt-10 inline-block'>
               {' '}
