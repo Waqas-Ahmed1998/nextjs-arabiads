@@ -27,49 +27,39 @@ function Footer() {
               <a href=''>
                 {' '}
                 <FontAwesomeIcon
-                  className='cursor-pointer'
+                  className='cursor-pointer w-5 h-7'
                   icon={faFacebook}
-                  size={'lg'}
-                  className='w-5 h-7'
                 />
               </a>
 
               <a href=''>
                 {' '}
                 <FontAwesomeIcon
-                  className='cursor-pointer'
+                  className='cursor-pointer w-5 h-7'
                   icon={faInstagram}
-                  size={'lg'}
-                  className='w-5 h-7'
                 />
               </a>
 
               <a href=''>
                 {' '}
                 <FontAwesomeIcon
-                  className='cursor-pointer '
+                  className='cursor-pointer w-5 h-7 '
                   icon={faTwitter}
-                  size={'lg'}
-                  className='w-5 h-7'
                 />
               </a>
 
               <a href=''>
                 {' '}
                 <FontAwesomeIcon
-                  className='cursor-pointer'
+                  className='cursor-pointer w-5 h-7'
                   icon={faLinkedin}
-                  size={'lg'}
-                  className='w-5 h-7'
                 />
               </a>
               <a href=''>
                 {' '}
                 <FontAwesomeIcon
-                  className='cursor-pointer'
+                  className='cursor-pointer w-5 h-7'
                   icon={faYoutube}
-                  size={'lg'}
-                  className='w-5 h-7'
                 />
               </a>
             </div>
