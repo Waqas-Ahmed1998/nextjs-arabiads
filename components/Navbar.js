@@ -5,7 +5,7 @@ import { faStream, faTimes } from '@fortawesome/free-solid-svg-icons';
 import styles from '../styles/Home.module.css';
 
 function Navbar() {
-  const [onClick, setClick] = useState(true);
+  const [onClick, setClick] = useState(false);
   const [onContact, setContact] = useState(false);
   const submit = (e) => {
     e.preventDefault();
@@ -67,7 +67,7 @@ function Navbar() {
       {
         // mobile nav
       }
-      <div className=' pr-5 mb-10 relative xl:hidden bg-transparent  flex justify-between p-2 items-center'>
+      <div className=' pr-5 fixed  bg-[#f0f5ff] mb-10 z-50 w-full xl:hidden bg-transparent  flex justify-between p-2 items-center'>
         <Link href='/'>
           <img
             onClick={(e) => setClick(false)}
@@ -93,7 +93,7 @@ function Navbar() {
           )}
         </div>
         {onClick && (
-          <div className='left-0 absolute text-white items-center justify-evenly top-[100%] z-40 bg-black xl:hidden flex flex-col space-y-5 h-screen w-full'>
+          <div className='left-0  absolute text-white items-center justify-evenly top-[100%] z-40 bg-black xl:hidden flex flex-col space-y-5 h-[30rem] overflow-y-auto  w-full'>
             <Link href='/'>
               <a
                 onClick={(e) => setClick(!onClick)}
@@ -177,7 +177,7 @@ function Navbar() {
             ></div>
 
             <div className='  flex justify-center  '>
-              <div className='xl:w-[80%] fixed bg-white z-50 max-w-4xl xl:max-w-[90rem] top-0  xl:top-10 2xl:w-[70%] 2xl:top-auto h-screen lg:h-fit mx-auto'>
+              <div className='xl:w-[80%] fixed bg-white z-50 max-w-4xl xl:max-w-[90rem] top-0  xl:top-10 2xl:w-[70%] 2xl:top-auto h-fit lg:h-fit mx-auto'>
                 <div className='flex h-full  '>
                   <div
                     className={`hidden  xl:flex items-center justify-center ${styles.contactImage} w-[40%]`}
@@ -238,7 +238,7 @@ function Navbar() {
                     </div>
                     <button
                       onClick={() => setContact(!onContact)}
-                      className='absolute top-0 right-4 md:right-0 px-4 py-2  bg-blue-400'
+                      className='absolute px-2 top-0 right-2 py-1 md:right-0 md:px-4 md:py-2  bg-blue-400'
                     >
                       Close
                     </button>
