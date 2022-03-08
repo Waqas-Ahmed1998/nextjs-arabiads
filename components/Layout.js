@@ -5,11 +5,11 @@ import Navbar from './Navbar';
 
 function Layout({ children }) {
   return (
-    <>
+    <div className='mt-20 xl:mt-0'>
       <Navbar />
       {children}
       <Footer />
-    </>
+    </div>
   );
 }
 
