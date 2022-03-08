@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 function Users({ user }) {
   return (
@@ -24,17 +25,28 @@ function Users({ user }) {
         {user.map((singleUser, index) =>
           index % 2 == 0 ? (
             <div key={singleUser.id} className='relative  '>
-              <img
-                src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/sm-left-bg-1.png'
+              {
+                // <img
+                //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/sm-left-bg-1.png'
+                //   alt=''
+                //   className='w-full'
+                // />
+              }
+
+              <Image
+                className=''
+                src='/talents/leftcard.png'
                 alt=''
-                className='w-full'
+                title=''
+                width='100%'
+                height='50%'
+                layout='responsive'
+                priority
+                objectFit='contain'
               />
+
               <div className='w-full flex absolute top-0'>
-                <img
-                  src='https://influencers.ar-ad.com/wp-content/uploads/2022/02/ghazi.png'
-                  alt=''
-                  className='w-[35%] '
-                />
+                <img src={singleUser.img} alt='' className='w-[35%] ' />
                 <div className='ml-5  mt-5 md:space-y-3 relative'>
                   <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem]  md:text-base font-bold inline-block px-2 bg-[#FAA361] -top-[0.9rem] md:-top-[0.6rem]'>
                     {singleUser.role[0]} {singleUser.role[1]}

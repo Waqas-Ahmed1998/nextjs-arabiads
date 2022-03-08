@@ -177,7 +177,7 @@ function Navbar() {
             ></div>
 
             <div className='  flex justify-center  '>
-              <div className='xl:w-[80%] fixed bg-white z-50 max-w-4xl xl:max-w-[90rem] top-0  xl:top-10 2xl:top-auto h-screen lg:h-fit mx-auto'>
+              <div className='xl:w-[80%] fixed bg-white z-50 max-w-4xl xl:max-w-[90rem] top-0  xl:top-10 2xl:w-[70%] 2xl:top-auto h-screen lg:h-fit mx-auto'>
                 <div className='flex h-full  '>
                   <div
                     className={`hidden  xl:flex items-center justify-center ${styles.contactImage} w-[40%]`}

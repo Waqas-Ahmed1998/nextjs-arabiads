@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../../styles/Home.module.css';
+import Image from 'next/image';
 
 function Acard1() {
   return (
@@ -22,10 +23,23 @@ function Acard1() {
         </p>
       </div>
       <div className='flex-1'>
-        <img
-          src='https://influencers.ar-ad.com/wp-content/uploads/2021/08/dubai-agency-image.png'
+        {
+          // <img
+          //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/08/dubai-agency-image.png'
+          //   alt=''
+          //   className=''
+          // />
+        }
+
+        <Image
+          src='/about/about1.png'
           alt=''
-          className=''
+          title=''
+          width='600'
+          height='600'
+          // layout='responsive'
+          priority
+          objectFit='contain'
         />
       </div>
     </div>

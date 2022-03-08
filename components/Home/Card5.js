@@ -1,15 +1,29 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 function Card5() {
   return (
     <div className=' grid grid-cols-1 md:max-w-[95rem] mx-auto relative  '>
-      <img
-        src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/content-box-4.png'
-        alt=''
-        className=' hidden  xl:inline-grid mx-auto  lg:w-[65rem]'
-      />
-
+      {
+        // <img
+        //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/content-box-4.png'
+        //   alt=''
+        //   className=' hidden  xl:inline-grid mx-auto  lg:w-[65rem]'
+        // />
+      }
+      <div className='hidden mx-auto  xl:inline-grid  lg:w-[70rem] h-[35rem]'>
+        <Image
+          src='/home/card5.png'
+          alt=''
+          title=''
+          width='100%'
+          height='100%'
+          layout='responsive'
+          priority
+          // objectFit='cover'
+        />
+      </div>
       <img
         src='https://influencers.ar-ad.com/wp-content/uploads/2021/08/em-mobile.jpg'
         alt=''
@@ -23,11 +37,26 @@ function Card5() {
         />
       </div>
       <div className='px-5 lg:px-0 items-center lg:w-[70%]  justify-self-center absolute  flex flex-col xl:flex-row  '>
-        <div className='w-[60%] md:w-auto'>
-          <img
-            src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/escort-img.png'
-            alt=''
-          />
+        <div className='w-[60%] md:w-[40%] '>
+          {
+            // <img
+            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/escort-img.png'
+            //   alt=''
+            // />
+          }
+
+          <div className='  '>
+            <Image
+              src='/home/card5person.png'
+              alt=''
+              title=''
+              width='100%'
+              height='100%'
+              layout='responsive'
+              priority
+              // objectFit='cover'
+            />
+          </div>
         </div>
 
         <div className='lg:py-2 flex-1 space-y-5 text-center xl:text-justify lg:pr-5'>

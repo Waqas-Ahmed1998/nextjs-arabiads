@@ -1,13 +1,39 @@
+import Image from 'next/image';
 import React from 'react';
 
 function Card1() {
   return (
     <div className=' relative  xl:inline-grid lg:w-[75%]  '>
-      <img
-        className='hidden xl:inline-grid absolute top-0 md:w-[100%]'
-        src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/header-bg.png'
-        alt=''
-      />
+      {
+        //   <img
+        //   className='hidden xl:inline-grid absolute top-0 md:w-[100%]'
+        //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/header-bg.png'
+        //   alt=''
+        // />
+      }
+      <div className='hidden xl:inline-grid absolute -top-5 md:w-[100%] h-[100%]'>
+        {
+          //  <Image
+          //      className='hidden bg-contain  xl:inline-grid absolute top-0 '
+          //      src={'/home/card1.png'}
+          //      alt=''
+          //      width={600}
+          //      height={600}
+          //      quality={100}
+          //      priority
+          //    />
+        }
+        <Image
+          className='hidden bg-contain  xl:inline-grid absolute top-0 '
+          src={'/home/card1.png'}
+          alt=''
+          width='100%'
+          height='100%'
+          quality={100}
+          layout='responsive'
+          priority
+        />
+      </div>
       <img
         className='xl:hidden w-full h-[90%]'
         src='https://influencers.ar-ad.com/wp-content/uploads/2021/08/header-bg-mobile.jpg'
@@ -83,12 +109,25 @@ function Card1() {
           </a>
         </div>
       </div>
-
-      <img
-        className='hidden xl:inline-grid md:w-[98%] absolute '
-        src='https://influencers.ar-ad.com/wp-content/uploads/2022/02/arabic-gamers.png'
-        alt=''
-      />
+      {
+        //   <img
+        //   className='hidden xl:inline-grid md:w-[98%] absolute '
+        //   src='https://influencers.ar-ad.com/wp-content/uploads/2022/02/arabic-gamers.png'
+        //   alt=''
+        // />
+      }
+      <div className='hidden h-[100%] xl:inline-grid md:w-[98%] absolute '>
+        <Image
+          className='hidden xl:inline-grid md:w-[98%] absolute '
+          src='/home/home1.png'
+          alt=''
+          priority
+          width='100%'
+          height='100%'
+          layout='responsive'
+          quality={100}
+        />
+      </div>
     </div>
   );
 }

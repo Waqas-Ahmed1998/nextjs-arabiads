@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React, { Fragment } from 'react';
+import Image from 'next/image';
 
 function Scard3() {
   return (
@@ -7,11 +8,25 @@ function Scard3() {
       {
         <div className='hidden absolute  -left-[25%] w-[2650px] h-[200vh]  service-mid bg-no-repeat   xl:inline-grid '></div>
       }
-      <img
-        src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/commentary-bg.png'
-        alt=''
-        className='hidden xl:inline-grid  w-full '
-      />
+      {
+        // <img
+        //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/commentary-bg.png'
+        //   alt=''
+        //   className='hidden xl:inline-grid  w-full '
+        // />
+      }
+      <div className='hidden   xl:inline-grid w-full h-[50rem]'>
+        <Image
+          src='/service/Scard3.png'
+          alt=''
+          title=''
+          width='100%'
+          height='100%'
+          layout='responsive'
+          priority
+          // objectFit='cover'
+        />
+      </div>
       <div className='hidden xl:inline-grid absolute   bottom-0 -right-10'>
         <img
           className=' animate-spin-slow '
@@ -29,9 +44,21 @@ function Scard3() {
       <div className=' h-[80%] xl:absolute flex top-[10%]  justify-center  xl:w-full '>
         <div className='xl:w-[100%] w-[90%] xl:ml-5 flex flex-col xl:flex-row space-y-5 text-center items-center xl:text-justify '>
           <div className='flex-1  '>
-            <img
-              src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/commentary-people.png'
+            {
+              // <img
+              //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/commentary-people.png'
+              //   alt=''
+              // />
+            }
+            <Image
+              src='/service/Scard3person.png'
               alt=''
+              title=''
+              width='600'
+              height='600'
+              // layout='responsive'
+              priority
+              objectFit='cover'
             />
           </div>
           <div className=' flex-1 xl:py-5 space-y-5 xl:pr-3'>

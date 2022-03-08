@@ -1,14 +1,29 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 function Card3() {
   return (
     <div className=' bg-white md:h-[80vh] md:w-full xl:h-fit  mt-10  lg:mt-20 xl:mt-0 relative mx-auto bg-contain bg-no-repeat  xl:inline-grid lg:w-[75%]   '>
-      <img
-        src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/content-box-3.png'
-        alt=''
-        className='hidden xl:inline-grid absolute top-0 md:w-[100%] '
-      />
+      {
+        // <img
+        //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/content-box-3.png'
+        //   alt=''
+        //   className='hidden xl:inline-grid absolute top-0 md:w-[100%] '
+        // />
+      }
+      <div className='hidden   xl:inline-grid absolute top-0  md:w-[100%] h-[40rem]'>
+        <Image
+          src='/home/card3.png'
+          alt=''
+          title=''
+          width='100%'
+          height='100%'
+          layout='responsive'
+          priority
+          // objectFit='cover'
+        />
+      </div>
       <img
         src='https://influencers.ar-ad.com/wp-content/uploads/2021/08/new-dm-m.jpg'
         alt=''

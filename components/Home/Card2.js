@@ -1,14 +1,29 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 function Card2() {
   return (
     <div className='md:my-0 xl:my-40 relative bg-contain bg-no-repeat xl:inline-grid lg:w-[75%]  '>
-      <img
-        src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/gaming-bg.png'
-        alt=''
-        className='hidden xl:inline-grid absolute top-0 md:w-[100%]'
-      />
+      {
+        // <img
+        //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/gaming-bg.png'
+        //   alt=''
+        //   className='hidden xl:inline-grid absolute top-0 md:w-[100%]'
+        // />
+      }
+      <div className='hidden   xl:inline-grid absolute top-0  md:w-[100%] h-[48rem]'>
+        <Image
+          src='/home/card2.png'
+          alt=''
+          title=''
+          width='100%'
+          height='100%'
+          layout='responsive'
+          priority
+          // objectFit='cover'
+        />
+      </div>
       <div className='hidden xl:inline-grid absolute [z-index:-1] -top-5 -left-2'>
         <img
           className=' animate-spin-slow '

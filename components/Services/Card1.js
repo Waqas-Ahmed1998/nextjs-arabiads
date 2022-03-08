@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import Image from 'next/image';
 
 function Card1() {
   return (
@@ -8,11 +9,25 @@ function Card1() {
       }
 
       <div className='relative w-[90%] mx-auto '>
-        <img
-          src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/service-page-header-bg.png'
-          alt=''
-          className='hidden xl:inline-grid  w-full '
-        />
+        {
+          // <img
+          //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/service-page-header-bg.png'
+          //   alt=''
+          //   className='hidden xl:inline-grid  w-full '
+          // />
+        }
+        <div className='hidden  h-[35rem] xl:inline-grid w-full'>
+          <Image
+            src='/service/Scard1.png'
+            alt=''
+            title=''
+            width='100%'
+            height='100%'
+            layout='responsive'
+            priority
+            // objectFit='cover'
+          />
+        </div>
         <div className='xl:absolute flex  xl:top-[20%]  justify-center  lg:w-full '>
           <div className='xl:w-[80%] space-y-5 text-center'>
             <h2 className=' heading-primary heading-blue  '>WHAT WE DO...?</h2>

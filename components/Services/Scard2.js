@@ -1,15 +1,29 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 function Scard2() {
   return (
     <>
-      {' '}
-      <img
-        src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/gaming-bg.png'
-        alt=''
-        className='hidden xl:inline-grid  w-full '
-      />
+      {
+        // <img
+        //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/gaming-bg.png'
+        //   alt=''
+        //   className='hidden xl:inline-grid  w-full '
+        // />
+      }
+      <div className='hidden   xl:inline-grid w-full h-[50rem]'>
+        <Image
+          src='/home/card2.png'
+          alt=''
+          title=''
+          width='100%'
+          height='100%'
+          layout='responsive'
+          priority
+          // objectFit='cover'
+        />
+      </div>
       <div className='hidden xl:inline-grid absolute [z-index:-1] -top-5 -left-2'>
         <img
           className=' animate-spin-slow '
@@ -46,10 +60,24 @@ function Scard2() {
             </Link>
           </div>
           <div className='flex-1  '>
-            <img
-              src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/arabic-influencers.png'
-              alt=''
-            />
+            {
+              // <img
+              //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/arabic-influencers.png'
+              //   alt=''
+              // />
+            }
+            <div className=' w-full  '>
+              <Image
+                src='/service/Scard2person.png'
+                alt=''
+                title=''
+                width='100%'
+                height='100%'
+                layout='responsive'
+                priority
+                objectFit='contain'
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -1,21 +1,48 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 function Scard4() {
   return (
     <>
-      <img
-        src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/management-2-bg-1.png'
-        alt=''
-        className='hidden xl:inline-grid  w-full '
-      />
+      {
+        // <img
+        //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/management-2-bg-1.png'
+        //   alt=''
+        //   className='hidden xl:inline-grid  w-full '
+        // />
+      }
+      <div className='hidden   xl:inline-grid w-full h-[40rem]'>
+        <Image
+          src='/service/Scard4.png'
+          alt=''
+          title=''
+          width='100%'
+          height='100%'
+          layout='responsive'
+          priority
+          // objectFit='cover'
+        />
+      </div>
       <div className=' h-[80%] xl:absolute flex top-[10%]  justify-center  xl:w-full '>
         <div className='xl:w-[100%] xl:ml-0 flex flex-col xl:flex-row space-y-5 text-center xl:text-justify '>
           <div className='flex-1  '>
-            <img
-              src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/m-s-2-img.png'
+            {
+              // <img
+              //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/m-s-2-img.png'
+              //   alt=''
+              //   className='w-[90%]'
+              // />
+            }
+            <Image
+              src='/service/Scard4person.png'
               alt=''
-              className='w-[90%]'
+              title=''
+              width='500'
+              height='500'
+              // layout='responsive'
+              priority
+              objectFit='contain'
             />
           </div>
           <div className=' flex-1 xl:py-0 space-y-5 '>
