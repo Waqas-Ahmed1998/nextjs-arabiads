@@ -12,6 +12,7 @@
 body {
   background-color: #f0f5ff;
   -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
 }
 h2 {
   font-family: 'Changa', sans-serif;

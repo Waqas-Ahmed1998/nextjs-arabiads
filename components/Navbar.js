@@ -12,7 +12,7 @@ function Navbar() {
   };
   return (
     <>
-      <div className='hidden  xl:flex justify-between items-center py-4 md:font-semibold md:max-w-7xl lg:max-w-screen-2xl mx-auto  '>
+      <div className=' hidden px-4 xl:flex justify-between items-center py-4 md:font-semibold md:max-w-7xl lg:max-w-screen-2xl mx-auto  '>
         <div className=''>
           {
             <Link href='/'>
@@ -58,7 +58,7 @@ function Navbar() {
         <div className=' text-center'>
           <button
             onClick={(e) => setContact(!onContact)}
-            className={` ${styles.btnContact} ${styles.popins} bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline-grid btn-contact  py-4 bg-[#FEA366]   w-60  rounded-full  text-2xl`}
+            className={` ${styles.btnContact} ${styles.popins}  bg-[linear-gradient(#fdc66e,#ff805e)]  text-white hidden md:inline-grid btn-contact  py-4 bg-[#FEA366]   w-60  rounded-full  text-2xl`}
           >
             Contact Us
           </button>
@@ -70,7 +70,7 @@ function Navbar() {
       <div className=' pr-5 mb-10 relative xl:hidden bg-transparent  flex justify-between p-2 items-center'>
         <Link href='/'>
           <img
-            onClick={(e) => setClick(!onClick)}
+            onClick={(e) => setClick(false)}
             className='cursor-pointer w-20 h-20 object-contain'
             src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/main-logo-236x300.png'
             alt=''
@@ -176,16 +176,20 @@ function Navbar() {
               className={`flex items-center ${styles.contactBackground} z-10 h-[100vh] top-0 w-[100vw]  fixed`}
             ></div>
 
-            <div className='  flex justify-center '>
-              <div className=' fixed  z-50 max-w-4xl  top-0 xl:top-auto bg-white h-screen lg:h-fit mx-auto'>
+            <div className='  flex justify-center  '>
+              <div className='xl:w-[80%] fixed bg-white z-50 max-w-4xl xl:max-w-[90rem] top-0  xl:top-10 2xl:top-auto h-screen lg:h-fit mx-auto'>
                 <div className='flex h-full  '>
-                  <div className='hidden  xl:flex items-center justify-center contact-image w-[40%]'>
-                    <div className='contact-color object-contain flex items-center justify-center w-full h-full'>
+                  <div
+                    className={`hidden  xl:flex items-center justify-center ${styles.contactImage} w-[40%]`}
+                  >
+                    <div
+                      className={`${styles.contactBackgroundImage} bg-gradient-to-r object-contain flex items-center justify-center w-full h-full`}
+                    >
                       <Link href='/'>
                         <img
                           src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/main-logo-236x300.png'
                           alt=''
-                          className='w-28 h-28 object-contain'
+                          className='w-28 h-36 object-contain cursor-pointer'
                         />
                       </Link>
                     </div>

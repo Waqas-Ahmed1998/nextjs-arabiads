@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 function Card4() {
@@ -16,9 +17,11 @@ function Card4() {
             more than an influencer, but a brand ambassador with a continuous
             source of income.
           </p>
-          <button className=' text-white  lg:inline-grid px-4 py-2   md:py-4 bg-[#FEA366]    md:w-60  rounded-full md:text-2xl text-base'>
-            REACH OUT
-          </button>
+          <Link href='/'>
+            <button className=' text-white text-base md:py-4  md:px-6 px-4 py-2 md:inline-grid bg-[linear-gradient(#fdc66e,#ff805e)]   font-semibold  xl:w-60  rounded-full md:text-[20px]'>
+              REACH OUT
+            </button>
+          </Link>
         </div>
         <div className='flex-1  mx-auto '>
           {' '}

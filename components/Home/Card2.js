@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 function Card2() {
@@ -39,12 +40,12 @@ function Card2() {
             influencers to implement, track and report results in an honest and
             transparent way that answer all of your burning inquiries.
           </p>
-          <button className=' text-white hidden xl:inline-grid btn-contact  py-4 bg-[#FEA366]   w-60  rounded-full text-2xl'>
-            What WE DO
-          </button>
-          <button className=' text-white xl:hidden  px-10 py-3 bg-[#FEA366]    rounded-full text-xl'>
-            What WE DO
-          </button>
+
+          <Link href='/'>
+            <button className=' text-white text-base  md:inline-grid bg-[linear-gradient(#fdc66e,#ff805e)]  md:py-4  md:px-6 px-4 py-2 font-semibold  xl:w-60  rounded-full md:text-[20px]'>
+              WHAT WE DO
+            </button>
+          </Link>
         </div>
         <div className='flex-1 px-6 justify-center mx-auto '>
           <img

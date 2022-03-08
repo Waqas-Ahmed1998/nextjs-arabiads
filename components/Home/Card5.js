@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 function Card5() {
@@ -14,7 +15,13 @@ function Card5() {
         alt=''
         className='mx-auto w-fit  xl:hidden'
       />
-
+      <div className='hidden xl:inline-grid absolute [z-index:-1] -top-14 left-[10%]'>
+        <img
+          className=' animate-spin-slow '
+          src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/blue-square.png'
+          alt=''
+        />
+      </div>
       <div className='px-5 lg:px-0 items-center lg:w-[70%]  justify-self-center absolute  flex flex-col xl:flex-row  '>
         <div className='w-[60%] md:w-auto'>
           <img
@@ -39,9 +46,11 @@ function Card5() {
             you are looking to hire an on-air host for an event or need
             representation as a talent
           </p>
-          <button className=' text-white  lg:inline-grid px-4 py-2   md:py-4 bg-blue-600    md:px-10  rounded-full md:text-2xl text-base'>
-            FIND OUT MORE
-          </button>
+          <Link href='/'>
+            <button className=' text-white text-base px-4 py-2 md:px-6 md:py-4  md:inline-grid bg-[linear-gradient(#3786ed,#1eb5e4)]   font-semibold  xl:w-60  rounded-full md:text-[20px]'>
+              FIND OUT MORE
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 function Scard2() {
@@ -38,7 +39,11 @@ function Scard2() {
               prescribing driven by proximity to their audience is multiplied
               tenfold by activating smaller talents.
             </p>
-            <button className='btn-orange'>Learn More</button>
+            <Link href='/'>
+              <button className=' text-white text-base  md:inline-grid bg-[linear-gradient(#fdc66e,#ff805e)] md:py-4  md:px-6 px-4 py-2  font-semibold  xl:w-60  rounded-full md:text-[20px]'>
+                LEARN MORE
+              </button>
+            </Link>
           </div>
           <div className='flex-1  '>
             <img

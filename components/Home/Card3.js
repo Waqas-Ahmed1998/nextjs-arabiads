@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 function Card3() {
@@ -43,9 +44,11 @@ function Card3() {
             objectives, your target and the creative concept that we have
             devised to impact a much larger audience.
           </p>
-          <button className=' text-white text-base px-6 md:inline-grid   py-4 bg-[#FEA366]   xl:w-60  rounded-full xl:text-2xl'>
-            LEARN MORE
-          </button>
+          <Link href='/'>
+            <button className=' text-white text-base md:py-4  md:px-6 px-4 py-2 md:inline-grid bg-[linear-gradient(#fdc66e,#ff805e)]   font-semibold  xl:w-60  rounded-full md:text-[20px]'>
+              LEARN MORE
+            </button>
+          </Link>
         </div>
       </div>
     </div>
