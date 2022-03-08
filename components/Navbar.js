@@ -67,7 +67,7 @@ function Navbar() {
       {
         // mobile nav
       }
-      <div className=' pr-5 fixed bg-black z-50 top-0 mb-10  w-full xl:hidden bg-transparent  flex justify-between p-2 items-center'>
+      <div className=' pr-5 fixed bg-[#f0f5ff] z-50 top-0 mb-10  w-full xl:hidden xl:bg-transparent  flex justify-between p-2 items-center'>
         <Link href='/'>
           <img
             onClick={(e) => setClick(false)}

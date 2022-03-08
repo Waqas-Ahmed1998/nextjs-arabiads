@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 
 function Layout({ children }) {
   return (
-    <div className='mt-20 xl:mt-0'>
+    <div className='mt-24 xl:mt-0'>
       <Navbar />
       {children}
       <Footer />
