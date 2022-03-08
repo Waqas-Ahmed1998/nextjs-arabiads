@@ -67,7 +67,7 @@ function Navbar() {
       {
         // mobile nav
       }
-      <div className=' pr-5 fixed  bg-[#f0f5ff] mb-10 z-50 w-full xl:hidden bg-transparent  flex justify-between p-2 items-center'>
+      <div className=' pr-5  relative  mb-10  w-full xl:hidden bg-transparent  flex justify-between p-2 items-center'>
         <Link href='/'>
           <img
             onClick={(e) => setClick(false)}
@@ -93,7 +93,7 @@ function Navbar() {
           )}
         </div>
         {onClick && (
-          <div className='left-0  absolute text-white items-center justify-evenly top-[100%] z-40 bg-black xl:hidden flex flex-col space-y-5 h-[30rem] overflow-y-auto  w-full'>
+          <div className='left-0  absolute text-white items-center justify-evenly top-[100%] z-40 bg-black xl:hidden flex flex-col space-y-5 h-[35rem]  w-full'>
             <Link href='/'>
               <a
                 onClick={(e) => setClick(!onClick)}
@@ -225,7 +225,7 @@ function Navbar() {
                           ></textarea>
                           <button
                             onClick={submit}
-                            className='px-2 py-4 bg-[#FEA366] '
+                            className='py-2  md:px-2 md:py-4 bg-[#FEA366] '
                           >
                             Submit Now
                           </button>
