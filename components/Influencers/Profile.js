@@ -28,7 +28,7 @@ function Profile({ user }) {
       </div>
       <div className='h-[20%] rounded-b-[36px] bg-white flex items-center justify-evenly space-x-5 '>
         {user.twitter && (
-          <div className=''>
+          <div className='w-5'>
             <a className='rounded-full' href=''>
               <FontAwesomeIcon icon={faTwitter} size={'lg'} />
             </a>
@@ -36,7 +36,7 @@ function Profile({ user }) {
           </div>
         )}
         {user.instagram && (
-          <div className=''>
+          <div className='w-5'>
             <a className='rounded-full' href=''>
               <FontAwesomeIcon icon={faInstagram} size={'lg'} />
             </a>
@@ -44,15 +44,17 @@ function Profile({ user }) {
           </div>
         )}
         {user.youtube && (
-          <div className=''>
-            <a className='rounded-full' href=''>
-              <FontAwesomeIcon icon={faYoutube} size={'lg'} />
+          <div className=' w-5'>
+            <a className='rounded-full ' href=''>
+              <FontAwesomeIcon icon={faYoutube} size={'sm'} />
             </a>
-            <span className='block pt-2 text-xs'>{user.youtube}</span>
+            <span className='block pt-2 text-xs text-center'>
+              {user.youtube}
+            </span>
           </div>
         )}
         {user.facebook && (
-          <div className=''>
+          <div className='w-5'>
             <a className='rounded-full' href=''>
               <FontAwesomeIcon icon={faFacebook} size={'lg'} />
             </a>
