@@ -26,7 +26,7 @@
   background-color: rgba(253, 198, 110, 0.8);
 }
 .headerImage {
-  background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/07/header-bg.png);
+  background-image: url('/standardimages/contactimage.jpg');
 }
 .headerBackground {
   background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/06/Vector-12.png);
@@ -38,7 +38,7 @@
   background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/07/content-box-3.png);
 }
 .advertisingImage {
-  background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/07/escort-pattern.png);
+  background-image: url(../public//standardimages/card5image.png);
 }
 .bgArrow {
   background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/07/rounded-pattern.png);
@@ -49,8 +49,11 @@
 .servicesTop {
   background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/07/header-line-pattern.png);
 }
-.serviceMid {
+/* .serviceMid {
   background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/07/m-s-2-line.png);
+} */
+.serviceMid {
+  background-image: url(../public/standardimages/serviceline.png);
 }
 .casterCard {
   background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/07/sm-left-bg-1.png);

@@ -27,14 +27,14 @@ function Card2() {
       <div className='hidden xl:inline-grid absolute [z-index:-1] -top-5 -left-2'>
         <img
           className=' animate-spin-slow '
-          src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/orange-square.png'
+          src='/spinners/redspinner.png'
           alt=''
         />
       </div>
       <div className='hidden xl:inline-grid absolute top-5 right-20'>
         <img
           className=' animate-spin-slow '
-          src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/gaming-plus-icon.png'
+          src='/spinners/smallspinner.png'
           alt=''
         />
       </div>
@@ -62,12 +62,27 @@ function Card2() {
             </button>
           </Link>
         </div>
-        <div className='flex-1 px-6 justify-center mx-auto '>
-          <img
-            src='https://influencers.ar-ad.com/wp-content/uploads/2021/11/MENA-INFLUENCERS.png'
-            alt=''
-            className='w-[300px] xl:w-auto'
-          />
+        <div className='flex-1 px-6 justify-center '>
+          {
+            // <img
+            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/11/MENA-INFLUENCERS.png'
+            //   alt=''
+            //   className='w-[300px] xl:w-auto'
+            // />
+          }
+
+          <div className=' w-auto  '>
+            <Image
+              src='/service/Scard2person.png'
+              alt=''
+              title=''
+              width='100%'
+              height='100%'
+              layout='responsive'
+              priority
+              objectFit='contain'
+            />
+          </div>
         </div>
       </div>
     </div>

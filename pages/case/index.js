@@ -59,45 +59,20 @@ function Case() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className='right-0 hidden xl:inline-grid absolute top-0 [z-index:-1]'>
-        <img
-          src='https://influencers.ar-ad.com/wp-content/uploads/2021/08/cs-line-1.png'
-          alt=''
-          className='h-screen w-[100vw] '
-        />
+        <img src='/case/caseline.png' alt='' className='h-screen w-[100vw] ' />
       </div>
-      <div className='max-w-screen-xl mx-auto  xl:space-y-10'>
+      <div className='max-w-screen-xl mx-auto '>
         <div className='flex flex-col space-y-10 lg:space-y-0 lg:flex-row md:justify-around justify-center items-center'>
-          <img
-            src='https://influencers.ar-ad.com/wp-content/uploads/2021/10/SONY-PICTURES.png'
-            alt=''
-          />
-          <img
-            src='https://influencers.ar-ad.com/wp-content/uploads/2021/10/RocketLeagueChampionship.png'
-            alt=''
-          />
-          <img
-            src='https://influencers.ar-ad.com/wp-content/uploads/2021/10/spotify-logo.png'
-            alt=''
-          />
-          <img
-            src='https://influencers.ar-ad.com/wp-content/uploads/2021/10/RedBull.png'
-            alt=''
-          />
-          <img
-            src='https://influencers.ar-ad.com/wp-content/uploads/2021/10/KFC.png'
-            alt=''
-          />
-          <img
-            src='https://influencers.ar-ad.com/wp-content/uploads/2021/10/blast-esports.png'
-            alt=''
-          />
+          <img src='/case/sony.png' alt='' />
+          <img src='/case/rocket.png' alt='' />
+          <img src='/case/spotify.png' alt='' />
+          <img src='/case/redbull.png' alt='' />
+          <img src='/case/kfc.png' alt='' />
+          <img src='/case/blast.png' alt='' />
 
-          <img
-            src='https://influencers.ar-ad.com/wp-content/uploads/2021/10/anghami.png'
-            alt=''
-          />
+          <img src='/case/anghami.png' alt='' />
         </div>
-        <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-3'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-3 mt-10'>
           {eventcard.map((data, index) => (
             <EventCard key={data.id} event={data} index={index} />
           ))}

@@ -6,15 +6,11 @@ function Campaign2() {
   return (
     <div className='overflow-hidden'>
       <div className='-left-10 hidden xl:inline-grid absolute  [z-index:-1]'>
-        <img
-          src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/rounded-pattern.png'
-          alt=''
-          className='h-80 w-[8vw] '
-        />
+        <img src='/standardimages/arrow.png' alt='' className='h-80 w-[8vw] ' />
       </div>
       <div className='right-0 hidden xl:inline-grid absolute -bottom-44 [z-index:-1]'>
         <img
-          src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/pattern-bg-3.png'
+          src='/standardimages/campaignline.png'
           alt=''
           className=' h-[40rem] w-[60vw] '
         />

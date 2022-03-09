@@ -25,24 +25,38 @@ function Card3() {
         />
       </div>
       <img
-        src='https://influencers.ar-ad.com/wp-content/uploads/2021/08/new-dm-m.jpg'
+        src='/home/card3mobilebg.jpg'
         alt=''
         className='xl:hidden  w-full h-[100%]  '
       />
       <div className=' hidden xl:inline-grid absolute -top-20 -right-20'>
         <img
           className='hidden lg:inline-grid animate-spin-slow '
-          src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/orange-square.png'
+          src='/spinners/redspinner.png'
           alt=''
         />
       </div>
       <div className='flex justify-center h-full  flex-col text-center xl:flex-row gap-3 absolute top-0 '>
         <div className='xl:flex-1 mx-auto '>
-          <img
-            src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/digital-img.png'
-            alt=''
-            className='hidden  xl:inline-grid md:w-auto lg:w-auto'
-          />
+          {
+            // <img
+            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/digital-img.png'
+            //   alt=''
+            //   className='hidden  xl:inline-grid md:w-auto lg:w-auto'
+            // />
+          }
+          <div className=' w-auto  '>
+            <Image
+              src='/home/cardperson.png'
+              alt=''
+              title=''
+              width='100%'
+              height='100%'
+              layout='responsive'
+              priority
+              objectFit='contain'
+            />
+          </div>
         </div>
         <div className='xl:flex-1 lg:pt-16 space-y-2 lg:space-y-10 px-5'>
           <h2 className='text-xl md:text-2xl lg:text-4xl lg:text-[#167EE0] font-semibold'>

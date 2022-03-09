@@ -30,14 +30,14 @@ function Scard3() {
       <div className='hidden xl:inline-grid absolute   bottom-0 -right-10'>
         <img
           className=' animate-spin-slow '
-          src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/blue-square.png'
+          src='/spinners/bluespinner.png'
           alt=''
         />
       </div>
       <div className='hidden xl:inline-grid absolute top-20 left-[45%] '>
         <img
           className=' animate-spin-slow '
-          src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/plus-blue.png'
+          src='/spinners/smallblue.png'
           alt=''
         />
       </div>

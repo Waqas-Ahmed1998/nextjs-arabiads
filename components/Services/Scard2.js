@@ -27,14 +27,14 @@ function Scard2() {
       <div className='hidden xl:inline-grid absolute [z-index:-1] -top-5 -left-2'>
         <img
           className=' animate-spin-slow '
-          src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/orange-square.png'
+          src='/spinners/redspinner.png'
           alt=''
         />
       </div>
       <div className='hidden xl:inline-grid absolute top-5 right-20'>
         <img
           className=' animate-spin-slow '
-          src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/gaming-plus-icon.png'
+          src='/spinners/smallspinner.png'
           alt=''
         />
       </div>

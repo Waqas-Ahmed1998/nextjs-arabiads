@@ -24,15 +24,11 @@ function Card5() {
           // objectFit='cover'
         />
       </div>
-      <img
-        src='https://influencers.ar-ad.com/wp-content/uploads/2021/08/em-mobile.jpg'
-        alt=''
-        className='mx-auto w-fit  xl:hidden'
-      />
+      <img src='/home/mobilebg2.jpg' className='mx-auto w-fit  xl:hidden' />
       <div className='hidden xl:inline-grid absolute [z-index:-1] -top-14 left-[10%]'>
         <img
           className=' animate-spin-slow '
-          src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/blue-square.png'
+          src='/spinners/bluespinner.png'
           alt=''
         />
       </div>

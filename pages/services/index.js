@@ -19,12 +19,12 @@ function Services() {
       </Head>
       <div className='right-0 hidden xl:inline-grid absolute top-0 [z-index:-1]'>
         <img
-          src='https://influencers.ar-ad.com/wp-content/uploads/2021/08/cs-line-1.png'
+          src='/standardimages/servicelinetop.png'
           alt=''
           className='h-screen w-[100vw] '
         />
       </div>
-      <div className='max-w-screen-xl mx-auto  xl:space-y-10'>
+      <div className='max-w-screen-xl mx-auto  '>
         <Card1 />
         <div className='card-width'>
           <Scard2 />

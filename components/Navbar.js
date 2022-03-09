@@ -19,7 +19,7 @@ function Navbar() {
               <div>
                 <img
                   className='cursor-pointer w-40 h-40 object-contain'
-                  src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/main-logo-236x300.png'
+                  src='/standardimages/logo.png'
                   alt=''
                 />
               </div>
@@ -187,7 +187,7 @@ function Navbar() {
                     >
                       <Link href='/'>
                         <img
-                          src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/main-logo-236x300.png'
+                          src='/standardimages/logo.png'
                           alt=''
                           className='w-28 h-36 object-contain cursor-pointer'
                         />

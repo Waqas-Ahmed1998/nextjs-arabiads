@@ -27,7 +27,7 @@ function Icard1() {
       <div className='hidden xl:inline-grid absolute  [z-index:-1]  -top-10 -left-20'>
         <img
           className=' animate-spin-slow '
-          src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/blue-square.png'
+          src='/spinners/bluespinner.png'
           alt=''
         />
       </div>

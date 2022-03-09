@@ -83,12 +83,12 @@ function Influencers() {
       </Head>
       <div className='right-0 hidden xl:inline-grid absolute top-0 [z-index:-1]'>
         <img
-          src='https://influencers.ar-ad.com/wp-content/uploads/2021/08/cs-line-1.png'
+          src='/standardimages/servicelinetop.png'
           alt=''
           className='h-screen w-[100vw] '
         />
       </div>
-      <div className='max-w-screen-xl mx-auto  xl:space-y-10'>
+      <div className='max-w-screen-xl mx-auto  '>
         <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 '>
           {users.map((singleUser) => (
             <div key={singleUser.id} className='flex mx-auto'>

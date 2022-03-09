@@ -19,7 +19,7 @@ function EventCard({ event, index }) {
         <div className=' font-bold absolute bottom-10 w-[80%] flex justify-around items-center  '>
           <div>
             <img
-              src='https://influencers.ar-ad.com/wp-content/uploads/2021/08/total-views.png'
+              src='/case/views.png'
               alt=''
               className='w-10 h-10 object-contain mx-auto'
             />
@@ -30,7 +30,7 @@ function EventCard({ event, index }) {
           </div>
           <div className='text-center'>
             <img
-              src='https://influencers.ar-ad.com/wp-content/uploads/2021/08/influencers-icon.png'
+              src='/case/eye.png'
               alt=''
               className='w-10 h-10 object-contain mx-auto'
             />
