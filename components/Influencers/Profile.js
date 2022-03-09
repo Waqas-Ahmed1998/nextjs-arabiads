@@ -6,6 +6,7 @@ import {
   faLinkedin,
   faTwitter,
   faYoutube,
+  faTiktok,
 } from '@fortawesome/free-brands-svg-icons';
 function Profile({ user }) {
   return (
@@ -64,11 +65,7 @@ function Profile({ user }) {
         {user.tiktok && (
           <div className=''>
             <a className='rounded-full' href=''>
-              <img
-                src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/tik-tok.svg'
-                alt=''
-                className='w-[20px] '
-              />
+              <FontAwesomeIcon icon={faTiktok} size={'lg'} />
             </a>
             <span className='block pt-2 text-xs'>{user.tiktok}</span>
           </div>

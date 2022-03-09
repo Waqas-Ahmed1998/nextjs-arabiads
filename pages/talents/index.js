@@ -26,6 +26,7 @@ function Talents() {
       twitchLink: 'https://www.facebook.com/gaming/KayyaliGaming',
       youtubeLink: 'https://www.facebook.com/gaming/KayyaliGaming',
       twitter: 'https://twitter.com/gggazyyy',
+      liquipediaLink: 'https://www.facebook.com/gaming/KayyaliGaming',
 
       img: 'https://influencers.ar-ad.com/wp-content/uploads/2022/02/ghazi.png',
     },
@@ -38,6 +39,7 @@ function Talents() {
       twitterLink: 'https://www.facebook.com/gaming/KayyaliGaming',
       twitchLink: 'https://www.facebook.com/gaming/KayyaliGaming',
       youtubeLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+      liquipediaLink: 'https://www.facebook.com/gaming/KayyaliGaming',
       tournaments: [
         'PMGC Grand Finals 20202021',
         'BLAST PRO GLOBAL FINAL BAHRAIN',
@@ -56,6 +58,7 @@ function Talents() {
       twitterLink: 'https://www.facebook.com/gaming/KayyaliGaming',
       twitchLink: 'https://www.facebook.com/gaming/KayyaliGaming',
       youtubeLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+      liquipediaLink: 'https://www.facebook.com/gaming/KayyaliGaming',
       tournaments: [
         'PMGC Grand Finals 20202021',
         'BLAST PRO GLOBAL FINAL BAHRAIN',

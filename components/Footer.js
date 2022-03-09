@@ -16,7 +16,7 @@ function Footer() {
           <div className='flex flex-col space-y-6 flex-1 items-center px-2  lg:items-start '>
             <img
               className=' w-20 h-20  object-contain'
-              src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/main-logo-236x300.png'
+              src='/standardimages/logo.png'
               alt=''
             />
             <p className='text-xs xl:text-sm text-white'>
@@ -26,34 +26,34 @@ function Footer() {
             <div className='flex space-x-3'>
               <a href=''>
                 <FontAwesomeIcon
-                  className='cursor-pointer w-5 h-7'
+                  className='cursor-pointer w-5 h-7 text-blue-400'
                   icon={faFacebook}
                 />
               </a>
 
               <a href=''>
                 <FontAwesomeIcon
-                  className='cursor-pointer w-5 h-7'
+                  className='cursor-pointer w-5 h-7 text-blue-400'
                   icon={faInstagram}
                 />
               </a>
 
               <a href=''>
                 <FontAwesomeIcon
-                  className='cursor-pointer w-5 h-7 '
+                  className='cursor-pointer w-5 h-7 text-blue-400 '
                   icon={faTwitter}
                 />
               </a>
 
               <a href=''>
                 <FontAwesomeIcon
-                  className='cursor-pointer w-5 h-7'
+                  className='cursor-pointer w-5 h-7 text-blue-400'
                   icon={faLinkedin}
                 />
               </a>
               <a href=''>
                 <FontAwesomeIcon
-                  className='cursor-pointer w-5 h-7'
+                  className='cursor-pointer w-5 h-7 text-blue-400'
                   icon={faYoutube}
                 />
               </a>

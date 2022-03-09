@@ -161,16 +161,41 @@ function Users({ user }) {
                         />
                       </a>
                     )}
+                    {singleUser.liquipediaLink && (
+                      <a
+                        href={singleUser.liquipediaLink}
+                        className=' flex items-center '
+                      >
+                        <img
+                          src='/talents/liquipedia.png'
+                          alt=''
+                          className='  w-6 h-6 object-contain   p-[0.3rem] bg-white rounded-full '
+                        />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
             </div>
           ) : (
             <div key={singleUser.id} className='relative '>
-              <img
-                src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/sm-right-bg.png'
+              {
+                // <img
+                //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/sm-right-bg.png'
+                //   alt=''
+                //   className='w-full'
+                // />
+              }
+              <Image
+                className=''
+                src='/talents/rightcard.png'
                 alt=''
-                className='w-full'
+                title=''
+                width='100%'
+                height='50%'
+                layout='responsive'
+                priority
+                objectFit='contain'
               />
               <div className='w-full flex flex-row-reverse absolute top-0'>
                 <img src={singleUser.img} alt='' className='w-[35%] ' />
@@ -277,6 +302,18 @@ function Users({ user }) {
                         <FontAwesomeIcon
                           icon={faYoutube}
                           className='w-6 p-[0.3rem] bg-white rounded-full'
+                        />
+                      </a>
+                    )}
+                    {singleUser.liquipediaLink && (
+                      <a
+                        href={singleUser.liquipediaLink}
+                        className=' flex items-center '
+                      >
+                        <img
+                          src='/talents/liquipedia.png'
+                          alt=''
+                          className='  w-6 h-6 object-contain   p-[0.3rem] bg-white rounded-full '
                         />
                       </a>
                     )}
