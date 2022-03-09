@@ -1,6 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+  faYoutube,
+  faTwitch,
+} from '@fortawesome/free-brands-svg-icons';
 function Users({ user }) {
   return (
     <div className='w-[100%]  mx-auto p-5'>
@@ -45,9 +53,9 @@ function Users({ user }) {
                 objectFit='contain'
               />
 
-              <div className='w-full flex absolute top-0'>
+              <div className='w-full  flex absolute top-0'>
                 <img src={singleUser.img} alt='' className='w-[35%] ' />
-                <div className='ml-5  mt-5 md:space-y-3 relative'>
+                <div className='ml-5   w-full mt-5 md:space-y-3 relative'>
                   <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem]  md:text-base font-bold inline-block px-2 bg-[#FAA361] -top-[0.9rem] md:-top-[0.6rem]'>
                     {singleUser.role[0]} {singleUser.role[1]}
                   </h3>
@@ -77,35 +85,82 @@ function Users({ user }) {
                     </div>
                   </div>
                   <div className=' md:flex w-full justify-evenly justify-self-end absolute bottom-10 hidden '>
-                    <a href=''>
-                      {' '}
-                      <img
-                        src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
-                        alt=''
-                      />
-                    </a>
+                    {singleUser.facebookLink && (
+                      <a href={singleUser.facebookLink}>
+                        {' '}
+                        {
+                          // <img
+                          //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
+                          //   alt=''
+                          // />
+                        }
+                        <FontAwesomeIcon
+                          icon={faFacebook}
+                          className='w-6 p-[0.3rem] bg-white rounded-full'
+                        />
+                      </a>
+                    )}
 
-                    <a href=''>
-                      {' '}
-                      <img
-                        src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/2.svg'
-                        alt=''
-                      />
-                    </a>
-                    <a href=''>
-                      {' '}
-                      <img
-                        src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/3.svg'
-                        alt=''
-                      />
-                    </a>
-                    <a href=''>
-                      {' '}
-                      <img
-                        src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/7.svg'
-                        alt=''
-                      />
-                    </a>
+                    {singleUser.twitterLink && (
+                      <a href={singleUser.twitterLink}>
+                        {' '}
+                        {
+                          // <img
+                          //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
+                          //   alt=''
+                          // />
+                        }
+                        <FontAwesomeIcon
+                          icon={faTwitter}
+                          className='w-6 p-[0.3rem] bg-white rounded-full'
+                        />
+                      </a>
+                    )}
+                    {singleUser.instagramLink && (
+                      <a href={singleUser.instagramLink}>
+                        {' '}
+                        {
+                          // <img
+                          //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
+                          //   alt=''
+                          // />
+                        }
+                        <FontAwesomeIcon
+                          icon={faInstagram}
+                          className='w-6 p-[0.3rem] bg-white rounded-full'
+                        />
+                      </a>
+                    )}
+                    {singleUser.twitchLink && (
+                      <a href={singleUser.twitchLink}>
+                        {' '}
+                        {
+                          // <img
+                          //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
+                          //   alt=''
+                          // />
+                        }
+                        <FontAwesomeIcon
+                          icon={faTwitch}
+                          className='w-6 p-[0.3rem] bg-white rounded-full'
+                        />
+                      </a>
+                    )}
+                    {singleUser.youtubeLink && (
+                      <a href={singleUser.youtubeLink}>
+                        {' '}
+                        {
+                          // <img
+                          //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
+                          //   alt=''
+                          // />
+                        }
+                        <FontAwesomeIcon
+                          icon={faYoutube}
+                          className='w-6 p-[0.3rem] bg-white rounded-full'
+                        />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -119,7 +174,7 @@ function Users({ user }) {
               />
               <div className='w-full flex flex-row-reverse absolute top-0'>
                 <img src={singleUser.img} alt='' className='w-[35%] ' />
-                <div className='ml-5  mt-5 md:space-y-3 relative'>
+                <div className='ml-5 w-full mt-5 md:space-y-3 relative'>
                   <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem] xl:text-base font-bold inline-block px-2 bg-[#FAA361] -top-[0.9rem] md:-top-[0.6rem]'>
                     {singleUser.role[0]} {singleUser.role[1]}
                   </h3>
@@ -149,34 +204,82 @@ function Users({ user }) {
                     </div>
                   </div>
                   <div className=' md:flex w-full justify-evenly justify-self-end absolute bottom-10 hidden '>
-                    <a href=''>
-                      {' '}
-                      <img
-                        src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
-                        alt=''
-                      />
-                    </a>
-                    <a href=''>
-                      {' '}
-                      <img
-                        src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/2.svg'
-                        alt=''
-                      />
-                    </a>
-                    <a href=''>
-                      {' '}
-                      <img
-                        src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/3.svg'
-                        alt=''
-                      />
-                    </a>
-                    <a href=''>
-                      {' '}
-                      <img
-                        src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/7.svg'
-                        alt=''
-                      />
-                    </a>
+                    {singleUser.facebookLink && (
+                      <a href={singleUser.facebookLink}>
+                        {' '}
+                        {
+                          // <img
+                          //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
+                          //   alt=''
+                          // />
+                        }
+                        <FontAwesomeIcon
+                          icon={faFacebook}
+                          className='w-6 p-[0.3rem] bg-white rounded-full'
+                        />
+                      </a>
+                    )}
+
+                    {singleUser.twitterLink && (
+                      <a href={singleUser.twitterLink}>
+                        {' '}
+                        {
+                          // <img
+                          //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
+                          //   alt=''
+                          // />
+                        }
+                        <FontAwesomeIcon
+                          icon={faTwitter}
+                          className='w-6 p-[0.3rem] bg-white rounded-full'
+                        />
+                      </a>
+                    )}
+                    {singleUser.instagramLink && (
+                      <a href={singleUser.instagramLink}>
+                        {' '}
+                        {
+                          // <img
+                          //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
+                          //   alt=''
+                          // />
+                        }
+                        <FontAwesomeIcon
+                          icon={faInstagram}
+                          className='w-6 p-[0.3rem] bg-white rounded-full'
+                        />
+                      </a>
+                    )}
+                    {singleUser.twitchLink && (
+                      <a href={singleUser.twitchLink}>
+                        {' '}
+                        {
+                          // <img
+                          //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
+                          //   alt=''
+                          // />
+                        }
+                        <FontAwesomeIcon
+                          icon={faTwitch}
+                          className='w-6 p-[0.3rem] bg-white rounded-full'
+                        />
+                      </a>
+                    )}
+                    {singleUser.youtubeLink && (
+                      <a href={singleUser.youtubeLink}>
+                        {' '}
+                        {
+                          // <img
+                          //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
+                          //   alt=''
+                          // />
+                        }
+                        <FontAwesomeIcon
+                          icon={faYoutube}
+                          className='w-6 p-[0.3rem] bg-white rounded-full'
+                        />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
