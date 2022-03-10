@@ -28,7 +28,8 @@ function Talents() {
       twitter: 'https://twitter.com/gggazyyy',
       liquipediaLink: 'https://www.facebook.com/gaming/KayyaliGaming',
 
-      img: 'https://influencers.ar-ad.com/wp-content/uploads/2022/02/ghazi.png',
+      // img: 'https://influencers.ar-ad.com/wp-content/uploads/2022/02/ghazi.png',
+      img: '/talents/users/ghazi.png',
     },
     {
       id: 2,
@@ -46,7 +47,7 @@ function Talents() {
         'PMWL West 2020',
         'GET PUBGM 2021',
       ],
-      img: 'https://influencers.ar-ad.com/wp-content/uploads/2021/07/cm-image-2.png',
+      img: '/talents/users/kode.png',
     },
     {
       id: 3,
@@ -65,7 +66,7 @@ function Talents() {
         'PMWL West 2020',
         'GET PUBGM 2021',
       ],
-      img: 'https://influencers.ar-ad.com/wp-content/uploads/2021/07/cm-image-2.png',
+      img: '/talents/users/ghazi.png',
     },
   ];
   useEffect(() => {

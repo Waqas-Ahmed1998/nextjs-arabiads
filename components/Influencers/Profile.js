@@ -81,7 +81,7 @@ function Profile({ user }) {
         {user.tiktok && (
           <div className=''>
             <a className='rounded-full' href=''>
-              <FontAwesomeIcon icon={faTiktok} size='' className='w-4' />
+              <FontAwesomeIcon icon={faTiktok} size={'lg'} className='w-4' />
             </a>
             <span className='block pt-2 text-xs'>{user.tiktok}</span>
           </div>

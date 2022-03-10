@@ -72,7 +72,7 @@ function Navbar() {
           <img
             onClick={(e) => setClick(false)}
             className='cursor-pointer w-20 h-20 object-contain'
-            src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/main-logo-236x300.png'
+            src='/standardimages/logo.png'
             alt=''
           />
         </Link>

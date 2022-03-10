@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -23,12 +24,25 @@ function Card4() {
             </button>
           </Link>
         </div>
-        <div className='flex-1  mx-auto '>
-          {' '}
-          <img
-            src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/management-img.png'
-            alt=''
-          />
+        <div className='flex-1   '>
+          {
+            // <img
+            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/management-img.png'
+            //   alt=''
+            // />
+          }
+          <div className=' w-auto  '>
+            <Image
+              src='/home/card3person.png'
+              alt=''
+              title=''
+              width='100%'
+              height='100%'
+              layout='responsive'
+              priority
+              objectFit='contain'
+            />
+          </div>
         </div>
       </div>
     </div>
