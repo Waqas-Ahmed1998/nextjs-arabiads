@@ -63,14 +63,14 @@ function Case() {
       </div>
       <div className='max-w-screen-xl mx-auto '>
         <div className='flex flex-col space-y-10 lg:space-y-0 lg:flex-row md:justify-around justify-center items-center'>
-          <img src='/case/sony.png' alt='' />
-          <img src='/case/rocket.png' alt='' />
-          <img src='/case/spotify.png' alt='' />
-          <img src='/case/redbull.png' alt='' />
-          <img src='/case/kfc.png' alt='' />
-          <img src='/case/blast.png' alt='' />
+          <img src='/case/sony.png' alt='' className='object-contain' />
+          <img src='/case/rocket.png' alt='' className='object-contain' />
+          <img src='/case/spotify.png' alt='' className='object-contain' />
+          <img src='/case/redbull.png' alt='' className='object-contain' />
+          <img src='/case/kfc.png' alt='' className='object-contain' />
+          <img src='/case/blast.png' alt='' className='object-contain' />
 
-          <img src='/case/anghami.png' alt='' />
+          <img src='/case/anghami.png' alt='' className='object-contain' />
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-3 mt-10'>
           {eventcard.map((data, index) => (

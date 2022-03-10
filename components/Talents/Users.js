@@ -199,6 +199,7 @@ function Users({ user }) {
               />
               <div className='w-full flex flex-row-reverse absolute top-0'>
                 <img src={singleUser.img} alt='' className='w-[35%] ' />
+
                 <div className='ml-5 w-full mt-5 md:space-y-3 relative'>
                   <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem] xl:text-base font-bold inline-block px-2 bg-[#FAA361] -top-[0.9rem] md:-top-[0.7rem]'>
                     {singleUser.role[0]} {singleUser.role[1]}
