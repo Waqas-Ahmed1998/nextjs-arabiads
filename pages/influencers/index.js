@@ -25,7 +25,7 @@ export async function getServerSideProps() {
 
 function Influencers({ userdata }) {
   let influencersData = JSON.parse(userdata);
-  console.log(influencersData);
+
   // let [users, setUsers] = useState([]);
 
   // let user = [
