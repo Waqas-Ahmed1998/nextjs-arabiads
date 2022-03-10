@@ -10,7 +10,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 function Profile({ user }) {
   return (
-    <div className='relative w-[17rem] h-[24rem] rounded-[36px]  my-10'>
+    <div className=' z-20 relative w-[17rem] h-[24rem] rounded-[36px]  my-10'>
       <div className='w-full bg-[#00A7E5] h-[17%] rounded-t-[36px] flex space-x-3 p-5 text-white'>
         <h3 className='flex-1'>{user.name}</h3>
         <svg
@@ -37,8 +37,8 @@ function Profile({ user }) {
         <p className='text-lg'>{user.followers}</p>
       </div>
       <div className='w-full h-[63%]'>
-        {user.img ? (
-          <img src={user.img} alt='' className='h-full ' />
+        {user.image ? (
+          <img src={user.image} alt='' className='h-full ' />
         ) : (
           <p>no image</p>
         )}
@@ -46,7 +46,7 @@ function Profile({ user }) {
       <div className='h-[20%] rounded-b-[36px] bg-white flex items-center justify-evenly space-x-5 '>
         {user.twitter && (
           <div className='w-5'>
-            <a className='rounded-full' href=''>
+            <a className='rounded-full' href={user.twitterLink}>
               <FontAwesomeIcon icon={faTwitter} size={'lg'} />
             </a>
             <span className='block pt-2 text-xs'>{user.twitter}</span>
@@ -54,7 +54,7 @@ function Profile({ user }) {
         )}
         {user.instagram && (
           <div className='w-5'>
-            <a className='rounded-full' href=''>
+            <a className='rounded-full' href={user.instagramLink}>
               <FontAwesomeIcon icon={faInstagram} size={'lg'} />
             </a>
             <span className='block pt-2 text-xs'>{user.instagram}</span>
@@ -62,9 +62,10 @@ function Profile({ user }) {
         )}
         {user.youtube && (
           <div className=' w-5'>
-            <a className='rounded-full ' href=''>
+            <a className='rounded-full ' href={user.youtubeLink}>
               <FontAwesomeIcon icon={faYoutube} size={'sm'} />
             </a>
+
             <span className='block pt-2 text-xs text-center'>
               {user.youtube}
             </span>
@@ -72,7 +73,7 @@ function Profile({ user }) {
         )}
         {user.facebook && (
           <div className='w-5'>
-            <a className='rounded-full' href=''>
+            <a className='rounded-full' href={user.facebookLink}>
               <FontAwesomeIcon icon={faFacebook} size={'lg'} />
             </a>
             <span className='block pt-2 text-xs'>{user.facebook}</span>
@@ -80,7 +81,7 @@ function Profile({ user }) {
         )}
         {user.tiktok && (
           <div className=''>
-            <a className='rounded-full' href=''>
+            <a className='rounded-full' href={user.tiktokLink}>
               <FontAwesomeIcon icon={faTiktok} size={'lg'} className='w-4' />
             </a>
             <span className='block pt-2 text-xs'>{user.tiktok}</span>

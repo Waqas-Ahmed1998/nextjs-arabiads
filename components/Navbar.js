@@ -53,6 +53,20 @@ function Navbar() {
           <Link href='/to'>
             <a className='hover:text-[#FE8936] cursor-pointer'>中国人</a>
           </Link>
+
+          <div className=' cursor-default hidden xl:inline-grid relative group items-center text-sm'>
+            Form
+            <div className=' space-y-2 w-full top-[100%] left-0 absolute  hidden group-hover:inline-grid'>
+              <Link href='/form'>
+                <p className=' hover:text-[#FE8936] cursor-pointer'>Talent</p>
+              </Link>
+              <Link href='/form/influencers'>
+                <p className=' hover:text-[#FE8936] cursor-pointer'>
+                  Influencers
+                </p>
+              </Link>
+            </div>
+          </div>
         </div>
 
         <div className=' text-center'>

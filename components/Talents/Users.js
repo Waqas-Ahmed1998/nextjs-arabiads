@@ -54,10 +54,10 @@ function Users({ user }) {
               />
 
               <div className='w-full  flex absolute top-0'>
-                <img src={singleUser.img} alt='' className='w-[35%] ' />
+                <img src={singleUser.image} alt='' className='w-[35%] ' />
                 <div className='ml-5   w-full mt-5 md:space-y-3 relative'>
                   <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem]  md:text-base font-bold inline-block px-2 bg-[#FAA361] -top-[0.9rem] md:-top-[0.5rem]'>
-                    {singleUser.role[0]} {singleUser.role[1]}
+                    {singleUser.role}
                   </h3>
                   <h3 className='text-xs xl:text-base font-bold'>
                     - {singleUser.name}
@@ -66,24 +66,27 @@ function Users({ user }) {
                     {' '}
                     Tournaments:
                   </p>
-                  <div className='flex  gap-2 md:gap-0 '>
-                    <div className='text-center md:px-2 md:space-y-3 border-r border-gray-400'>
-                      <p className='text-[0.5rem] md:text-xs'>
-                        {singleUser.tournaments[0]}
-                      </p>
-                      <p className=' text-[0.5rem] md:text-xs'>
-                        {singleUser.tournaments[1]}
-                      </p>
+                  {singleUser.tournaments && (
+                    <div className='flex  gap-2 md:gap-0 '>
+                      <div className='text-center md:px-2 md:space-y-3 border-r border-gray-400'>
+                        <p className='text-[0.5rem] md:text-xs'>
+                          {singleUser.tournaments.split(',')[0]}
+                        </p>
+                        <p className=' text-[0.5rem] md:text-xs'>
+                          {singleUser.tournaments.split(',')[1]}
+                        </p>
+                      </div>
+                      <div className='text-center md:space-y-3 md:px-2'>
+                        <p className='text-[0.5rem] md:text-xs'>
+                          {singleUser.tournaments.split(',')[2]}
+                        </p>
+                        <p className=' text-[0.5rem] md:text-xs'>
+                          {singleUser.tournaments.split(',')[3]}
+                        </p>
+                      </div>
                     </div>
-                    <div className='text-center md:space-y-3 md:px-2'>
-                      <p className='text-[0.5rem] md:text-xs'>
-                        {singleUser.tournaments[2]}
-                      </p>
-                      <p className=' text-[0.5rem] md:text-xs'>
-                        {singleUser.tournaments[3]}
-                      </p>
-                    </div>
-                  </div>
+                  )}
+
                   <div className=' md:flex w-full justify-evenly justify-self-end absolute bottom-10 hidden '>
                     {singleUser.facebookLink && (
                       <a href={singleUser.facebookLink}>
@@ -198,11 +201,11 @@ function Users({ user }) {
                 objectFit='contain'
               />
               <div className='w-full flex flex-row-reverse absolute top-0'>
-                <img src={singleUser.img} alt='' className='w-[35%] ' />
+                <img src={singleUser.image} alt='' className='w-[35%] ' />
 
                 <div className='ml-5 w-full mt-5 md:space-y-3 relative'>
                   <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem] xl:text-base font-bold inline-block px-2 bg-[#FAA361] -top-[0.9rem] md:-top-[0.7rem]'>
-                    {singleUser.role[0]} {singleUser.role[1]}
+                    {singleUser.role}
                   </h3>
                   <h3 className='text-xs xl:text-base font-bold'>
                     - {singleUser.name}
@@ -211,24 +214,27 @@ function Users({ user }) {
                     {' '}
                     Tournaments:
                   </p>
-                  <div className='flex  gap-2 md:gap-0 '>
-                    <div className='text-center md:px-2 md:space-y-3 border-r border-gray-400'>
-                      <p className='text-[0.5rem] md:text-xs'>
-                        {singleUser.tournaments[0]}
-                      </p>
-                      <p className=' text-[0.5rem] md:text-xs'>
-                        {singleUser.tournaments[1]}
-                      </p>
+                  {singleUser.tournaments && (
+                    <div className='flex  gap-2 md:gap-0 '>
+                      <div className='text-center md:px-2 md:space-y-3 border-r border-gray-400'>
+                        <p className='text-[0.5rem] md:text-xs'>
+                          {singleUser.tournaments.split(',')[0]}
+                        </p>
+                        <p className=' text-[0.5rem] md:text-xs'>
+                          {singleUser.tournaments.split(',')[1]}
+                        </p>
+                      </div>
+                      <div className='text-center md:space-y-3 md:px-2'>
+                        <p className='text-[0.5rem] md:text-xs'>
+                          {singleUser.tournaments.split(',')[2]}
+                        </p>
+                        <p className=' text-[0.5rem] md:text-xs'>
+                          {singleUser.tournaments.split(',')[3]}
+                        </p>
+                      </div>
                     </div>
-                    <div className='text-center md:space-y-3 md:px-2'>
-                      <p className='text-[0.5rem] md:text-xs'>
-                        {singleUser.tournaments[2]}
-                      </p>
-                      <p className=' text-[0.5rem] md:text-xs'>
-                        {singleUser.tournaments[3]}
-                      </p>
-                    </div>
-                  </div>
+                  )}
+
                   <div className=' md:flex w-full justify-evenly justify-self-end absolute bottom-10 hidden '>
                     {singleUser.facebookLink && (
                       <a href={singleUser.facebookLink}>

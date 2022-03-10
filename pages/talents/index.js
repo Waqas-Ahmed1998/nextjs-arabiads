@@ -5,73 +5,94 @@ import NumbersSpeak from '../../components/standard/NumbersSpeak';
 import Plateforms from '../../components/standard/Plateforms';
 import Users from '../../components/Talents/Users';
 import Head from 'next/head';
+import { db } from '../../firebase';
+import axios from 'axios';
+// firebase import
+import { collection, onSnapshot, getDocs } from 'firebase/firestore';
 
-function Talents() {
+export async function getServerSideProps() {
+  let userData = [];
+
+  const querySnapshot = await getDocs(collection(db, 'talents'));
+  querySnapshot.forEach((doc) => {
+    userData.push({ ...doc.data(), id: doc.id });
+  });
+
+  return {
+    props: {
+      userdata: JSON.stringify(userData) || [],
+    },
+  };
+}
+
+function Talents({ userdata }) {
+  let talentsData = JSON.parse(userdata);
+
   let [users, setUsers] = useState([]);
 
-  let user = [
-    {
-      id: 1,
-      name: ' Ghazi',
-      role: ['Caster'],
-      tournaments: [
-        'Dota 2 International',
-        'Battle of the Gamers by BMW',
-        'Insomnia',
-        'Ooredoo Nation',
-      ],
-      instagramLink: 'https://www.facebook.com/gaming/KayyaliGaming',
-      facebookLink: 'https://www.facebook.com/gaming/KayyaliGaming',
-      twitterLink: 'https://www.facebook.com/gaming/KayyaliGaming',
-      twitchLink: 'https://www.facebook.com/gaming/KayyaliGaming',
-      youtubeLink: 'https://www.facebook.com/gaming/KayyaliGaming',
-      twitter: 'https://twitter.com/gggazyyy',
-      liquipediaLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+  // let user = [
+  //   {
+  //     id: 1,
+  //     name: ' Ghazi',
+  //     role: ['Caster'],
+  //     tournaments: [
+  //       'Dota 2 International',
+  //       'Battle of the Gamers by BMW',
+  //       'Insomnia',
+  //       'Ooredoo Nation',
+  //     ],
+  //     instagramLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+  //     facebookLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+  //     twitterLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+  //     twitchLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+  //     youtubeLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+  //     twitter: 'https://twitter.com/gggazyyy',
+  //     liquipediaLink: 'https://www.facebook.com/gaming/KayyaliGaming',
 
-      // img: 'https://influencers.ar-ad.com/wp-content/uploads/2022/02/ghazi.png',
-      img: '/talents/users/ghazi.png',
-    },
-    {
-      id: 2,
-      name: 'k0de2 ',
-      role: ['CASTER', 'ANALYST'],
-      instagramLink: 'https://www.facebook.com/gaming/KayyaliGaming',
-      facebookLink: 'https://www.facebook.com/gaming/KayyaliGaming',
-      twitterLink: 'https://www.facebook.com/gaming/KayyaliGaming',
-      twitchLink: 'https://www.facebook.com/gaming/KayyaliGaming',
-      youtubeLink: 'https://www.facebook.com/gaming/KayyaliGaming',
-      liquipediaLink: 'https://www.facebook.com/gaming/KayyaliGaming',
-      tournaments: [
-        'PMGC Grand Finals 20202021',
-        'BLAST PRO GLOBAL FINAL BAHRAIN',
-        'PMWL West 2020',
-        'GET PUBGM 2021',
-      ],
-      img: '/talents/users/kode.png',
-    },
-    {
-      id: 3,
-      name: 'k0de ',
-      role: ['CASTER', 'ANALYST'],
+  //     // img: 'https://influencers.ar-ad.com/wp-content/uploads/2022/02/ghazi.png',
+  //     img: '/talents/users/ghazi.png',
+  //   },
+  //   {
+  //     id: 2,
+  //     name: 'k0de2 ',
+  //     role: ['CASTER', 'ANALYST'],
+  //     instagramLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+  //     facebookLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+  //     twitterLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+  //     twitchLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+  //     youtubeLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+  //     liquipediaLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+  //     tournaments: [
+  //       'PMGC Grand Finals 20202021',
+  //       'BLAST PRO GLOBAL FINAL BAHRAIN',
+  //       'PMWL West 2020',
+  //       'GET PUBGM 2021',
+  //     ],
+  //     img: '/talents/users/kode.png',
+  //   },
+  //   {
+  //     id: 3,
+  //     name: 'k0de ',
+  //     role: ['CASTER', 'ANALYST'],
 
-      instagramLink: 'https://www.facebook.com/gaming/KayyaliGaming',
-      facebookLink: 'https://www.facebook.com/gaming/KayyaliGaming',
-      twitterLink: 'https://www.facebook.com/gaming/KayyaliGaming',
-      twitchLink: 'https://www.facebook.com/gaming/KayyaliGaming',
-      youtubeLink: 'https://www.facebook.com/gaming/KayyaliGaming',
-      liquipediaLink: 'https://www.facebook.com/gaming/KayyaliGaming',
-      tournaments: [
-        'PMGC Grand Finals 20202021',
-        'BLAST PRO GLOBAL FINAL BAHRAIN',
-        'PMWL West 2020',
-        'GET PUBGM 2021',
-      ],
-      img: '/talents/users/ghazi.png',
-    },
-  ];
-  useEffect(() => {
-    setUsers(user);
-  }, []);
+  //     instagramLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+  //     facebookLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+  //     twitterLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+  //     twitchLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+  //     youtubeLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+  //     liquipediaLink: 'https://www.facebook.com/gaming/KayyaliGaming',
+  //     tournaments: [
+  //       'PMGC Grand Finals 20202021',
+  //       'BLAST PRO GLOBAL FINAL BAHRAIN',
+  //       'PMWL West 2020',
+  //       'GET PUBGM 2021',
+  //     ],
+  //     img: '/talents/users/ghazi.png',
+  //   },
+  // ];
+  // useEffect(() => {
+  //   setUsers(user);
+  // }, []);
   return (
     <div className='relative overflow-hidden xl:mt-20'>
       <Head>
@@ -87,7 +108,7 @@ function Talents() {
         />
       </div>
       <div className='max-w-screen-xl mx-auto  '>
-        <Users user={users} />
+        <Users user={talentsData} />
         <div className='card-width'>
           <Scard2 />
         </div>
