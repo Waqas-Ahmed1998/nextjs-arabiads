@@ -6,28 +6,28 @@ import Plateforms from '../../components/standard/Plateforms';
 import Users from '../../components/Talents/Users';
 import Head from 'next/head';
 import { db } from '../../firebase';
-import axios from 'axios';
+
 // firebase import
 import { collection, onSnapshot, getDocs } from 'firebase/firestore';
 
-export async function getServerSideProps() {
-  let userData = [];
+// export async function getStaticProps() {
+//   let userData = [];
 
-  const querySnapshot = await getDocs(collection(db, 'talents'));
-  querySnapshot.forEach((doc) => {
-    userData.push({ ...doc.data(), id: doc.id });
-  });
+//   const querySnapshot = await getDocs(collection(db, 'talents'));
+//   querySnapshot.forEach((doc) => {
+//     userData.push({ ...doc.data(), id: doc.id });
+//   });
 
-  return {
-    props: {
-      userdata: JSON.stringify(userData) || [],
-    },
-  };
-}
+//   return {
+//     props: {
+//       userdata: JSON.stringify(userData) || [],
+//     },
+//     revalidate: 10, // In seconds
+//   };
+// }
 
-function Talents({ userdata }) {
-  let talentsData = JSON.parse(userdata);
-
+function Talents() {
+  // let talentsData = JSON.parse(userdata);
   let [users, setUsers] = useState([]);
 
   // let user = [
@@ -90,9 +90,18 @@ function Talents({ userdata }) {
   //     img: '/talents/users/ghazi.png',
   //   },
   // ];
-  // useEffect(() => {
-  //   setUsers(user);
-  // }, []);
+  useEffect(() => {
+    // setUsers(user);
+    try {
+      onSnapshot(collection(db, 'talents'), (snapshot) => {
+        let users = [];
+        snapshot.docs.forEach((doc) => {
+          users.push({ ...doc.data(), id: doc.id });
+        });
+        setUsers(users);
+      });
+    } catch (error) {}
+  }, []);
   return (
     <div className='relative overflow-hidden xl:mt-20'>
       <Head>
@@ -108,7 +117,7 @@ function Talents({ userdata }) {
         />
       </div>
       <div className='max-w-screen-xl mx-auto  '>
-        <Users user={talentsData} />
+        <Users user={users} />
         <div className='card-width'>
           <Scard2 />
         </div>

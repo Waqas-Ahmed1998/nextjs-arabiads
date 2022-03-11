@@ -9,8 +9,39 @@ import NumbersSpeak from '../components/standard/NumbersSpeak';
 import Plateforms from '../components/standard/Plateforms';
 import Campaign from '../components/standard/Campaign';
 import styles from '../styles/Home.module.css';
+import { collection, onSnapshot, getDocs } from 'firebase/firestore';
+import { db } from '../firebase';
+import { useSetRecoilState } from 'recoil';
+import { adminUsers } from '../recoil/adminUsers';
+import { useEffect } from 'react';
+
+// export async function getServerSideProps() {
+//   const adminData = [];
+//   const querySnapshot = await getDocs(collection(db, 'admins'));
+//   querySnapshot.forEach((doc) => {
+//     adminData.push({ ...doc.data(), id: doc.id });
+//   });
+
+//   return {
+//     props: {
+//       authenticatedUsers: JSON.stringify(adminData) || [],
+//     },
+//   };
+// }
 
 export default function Home() {
+  // const setAuthenticatedUsers = useSetRecoilState(adminUsers);
+
+  // const [{ users }] = JSON.parse(authenticatedUsers);
+  // setAuthenticatedUsers(users);
+  // console.log(users);
+  // useEffect(() => {
+  //   setAuthenticatedUsers(users);
+
+  //   // return () => {
+  //   //   setAuthenticatedUsers(null);
+  //   // };
+  // }, []);
   return (
     <div className=''>
       <Head>

@@ -1,13 +1,16 @@
+import '../styles/globals.css';
 import Footer from '../components/Footer';
 import Layout from '../components/Layout';
 import Navbar from '../components/Navbar';
-import '../styles/globals.css';
+import { RecoilRoot } from 'recoil';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <RecoilRoot>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </RecoilRoot>
   );
 }
 

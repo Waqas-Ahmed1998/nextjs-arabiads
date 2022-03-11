@@ -1,18 +1,30 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStream, faTimes } from '@fortawesome/free-solid-svg-icons';
 import styles from '../styles/Home.module.css';
+import { useRouter } from 'next/router';
+import { useRecoilValue } from 'recoil';
+import { adminUsers } from '../recoil/adminUsers';
+import { loggedInUser } from '../recoil/loggedInUser';
 
 function Navbar() {
+  const router = useRouter();
   const [onClick, setClick] = useState(false);
   const [onContact, setContact] = useState(false);
-  const submit = (e) => {
-    e.preventDefault();
-  };
+  const admins = useRecoilValue(adminUsers);
+  const logged = useRecoilValue(loggedInUser);
+
+  if (admins) {
+    console.log(admins.includes(logged));
+  }
+
+  useEffect(() => {
+    return () => {};
+  }, []);
   return (
     <>
-      <div className=' hidden px-4 xl:flex justify-between items-center py-4 md:font-semibold md:max-w-7xl lg:max-w-screen-2xl mx-auto  '>
+      <div className=' hidden px-4 relative xl:flex justify-between items-center py-4 md:font-semibold md:max-w-7xl lg:max-w-screen-2xl mx-auto  '>
         <div className=''>
           {
             <Link href='/'>
@@ -53,20 +65,21 @@ function Navbar() {
           <Link href='/to'>
             <a className='hover:text-[#FE8936] cursor-pointer'>中国人</a>
           </Link>
-
-          <div className=' cursor-default hidden xl:inline-grid relative group items-center text-sm'>
-            Form
-            <div className=' space-y-2 w-full top-[100%] left-0 absolute  hidden group-hover:inline-grid'>
-              <Link href='/form'>
-                <p className=' hover:text-[#FE8936] cursor-pointer'>Talent</p>
-              </Link>
-              <Link href='/form/influencers'>
-                <p className=' hover:text-[#FE8936] cursor-pointer'>
-                  Influencers
-                </p>
-              </Link>
+          {admins && admins.includes(logged) && (
+            <div className=' cursor-default hidden xl:inline-grid relative group items-center text-sm'>
+              Form
+              <div className=' space-y-2 w-full top-[100%] left-0 absolute  hidden group-hover:inline-grid'>
+                <Link href='/form'>
+                  <p className=' hover:text-[#FE8936] cursor-pointer'>Talent</p>
+                </Link>
+                <Link href='/form/influencers'>
+                  <p className=' hover:text-[#FE8936] cursor-pointer'>
+                    Influencers
+                  </p>
+                </Link>
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
         <div className=' text-center'>
@@ -77,6 +90,16 @@ function Navbar() {
             Contact Us
           </button>
         </div>
+        {
+          // <div className='absolute right-10 tracking-wider top-5 text-blue-400 text-base'>
+          //   <p
+          //     onClick={(e) => router.push('/login/admin/form')}
+          //     className='cursor-pointer'
+          //   >
+          //     Login
+          //   </p>
+          // </div>
+        }
       </div>
       {
         // mobile nav

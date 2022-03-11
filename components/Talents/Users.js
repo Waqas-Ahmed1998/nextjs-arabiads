@@ -9,7 +9,27 @@ import {
   faYoutube,
   faTwitch,
 } from '@fortawesome/free-brands-svg-icons';
+import { MoonLoader } from 'react-spinners';
+import { loggedInUser } from '../../recoil/loggedInUser';
+import { adminUsers } from '../../recoil/adminUsers';
+import { useRecoilValue } from 'recoil';
+import { deleteDoc, doc } from 'firebase/firestore';
+import { db } from '../../firebase';
+
 function Users({ user }) {
+  const loggedUser = useRecoilValue(loggedInUser);
+  const admin = useRecoilValue(adminUsers);
+
+  const deleteDocument = (id) => {
+    const docRef = doc(db, 'talents', id);
+    if (confirm('Press ok to remove the item')) {
+      deleteDoc(docRef);
+      alert('item removed');
+    } else {
+      return;
+    }
+  };
+
   return (
     <div className='w-[100%]  mx-auto p-5'>
       <div className='mx-auto flex justify-center items-center space-x-2'>
@@ -30,6 +50,12 @@ function Users({ user }) {
         // left card
       }
       <div className='grid grid-cols-1 xl:grid-cols-2 flex-col xl:flex-row gap-5 mt-10 items-center'>
+        {!user.length && (
+          <div className='mb-24 h-10 p-24 col-span-2 flex justify-center  '>
+            {' '}
+            <MoonLoader color={'black'} size='30px' />{' '}
+          </div>
+        )}
         {user.map((singleUser, index) =>
           index % 2 == 0 ? (
             <div key={singleUser.id} className='relative  '>
@@ -52,7 +78,29 @@ function Users({ user }) {
                 priority
                 objectFit='contain'
               />
-
+              {
+                // trash icon
+              }
+              {admin?.includes(loggedUser) && (
+                <>
+                  {' '}
+                  <svg
+                    onClick={(e) => deleteDocument(singleUser.id)}
+                    xmlns='http://www.w3.org/2000/svg'
+                    className='z-10 h-6 w-4 absolute bottom-8  right-5 text-black cursor-pointer'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    stroke='currentColor'
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16'
+                    />
+                  </svg>
+                </>
+              )}
               <div className='w-full  flex absolute top-0'>
                 <img src={singleUser.image} alt='' className='w-[35%] ' />
                 <div className='ml-5   w-full mt-5 md:space-y-3 relative'>
@@ -208,6 +256,26 @@ function Users({ user }) {
                 priority
                 objectFit='contain'
               />
+              {admin?.includes(loggedUser) && (
+                <>
+                  {' '}
+                  <svg
+                    onClick={(e) => deleteDocument(singleUser.id)}
+                    xmlns='http://www.w3.org/2000/svg'
+                    className='z-10 h-6 w-4 absolute bottom-8  left-5 text-black cursor-pointer'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    stroke='currentColor'
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16'
+                    />
+                  </svg>
+                </>
+              )}
               <div className='w-full flex flex-row-reverse absolute top-0'>
                 <img src={singleUser.image} alt='' className='w-[35%] ' />
 
