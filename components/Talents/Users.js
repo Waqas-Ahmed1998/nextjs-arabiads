@@ -56,7 +56,7 @@ function Users({ user }) {
               <div className='w-full  flex absolute top-0'>
                 <img src={singleUser.image} alt='' className='w-[35%] ' />
                 <div className='ml-5   w-full mt-5 md:space-y-3 relative'>
-                  <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem]  md:text-base font-bold inline-block px-2 bg-[#FAA361] -top-[0.9rem] md:-top-[0.5rem]'>
+                  <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem]  md:text-base font-bold inline-block px-2 bg-[#FAA361] -top-[0.7rem] md:-top-[0.5rem]'>
                     {singleUser.role}
                   </h3>
                   <h3 className='text-xs xl:text-base font-bold'>
@@ -212,7 +212,7 @@ function Users({ user }) {
                 <img src={singleUser.image} alt='' className='w-[35%] ' />
 
                 <div className='ml-5 w-full mt-5 md:space-y-3 relative'>
-                  <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem] xl:text-base font-bold inline-block px-2 bg-[#FAA361] -top-[0.9rem] md:-top-[0.7rem]'>
+                  <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem] xl:text-base font-bold inline-block px-2 bg-[#FAA361] -top-[0.8rem] md:-top-[0.6rem]'>
                     {singleUser.role}
                   </h3>
                   <h3 className='text-xs xl:text-base font-bold'>
