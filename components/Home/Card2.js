@@ -39,13 +39,13 @@ function Card2() {
         />
       </div>
 
-      <div className='lg:absolute  top-0 xl:top-4 flex flex-col-reverse xl:flex-row xl:pt-10 xl:ml-20 text-center xl:text-left'>
-        <div className='lg:flex-1 lg:space-y-5 px-5 space-y-5'>
-          <h2 className='text-xl xl:text-4xl text-[#167EE0] xl:text-white font-semibold pt-3 xl:leading-tight'>
+      <div className='lg:absolute  top-0 xl:top-4 flex flex-col-reverse xl:flex-row xl:pt-[5rem] xl:ml-20 text-center xl:text-left'>
+        <div className='lg:flex-1 lg:space-y-5 pl-5 space-y-5'>
+          <h2 className='text-xl xl:text-[35px]  text-[#167EE0] xl:text-white font-semibold pt-3 xl:[line-height:56px]'>
             One of MENA’s Leading Agency for{' '}
             <span className='text-black'>Influencer Marketing</span>
           </h2>
-          <p className='text-base md:text-lg text-gray-600 xl:text-gray-200 tracking-wide'>
+          <p className='text-base md:text-lg text-gray-600 xl:text-gray-50 tracking-wide'>
             We are a KOL Agency MENA that assures you that our group of experts
             - which includes digital marketing specialists, campaign managers,
             and media buying specialists - will walk your firm step by step to
@@ -62,7 +62,7 @@ function Card2() {
             </button>
           </Link>
         </div>
-        <div className='flex-1 px-6 justify-center '>
+        <div className=' basis-[44%]  justify-center '>
           {
             // <img
             //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/11/MENA-INFLUENCERS.png'
@@ -71,16 +71,16 @@ function Card2() {
             // />
           }
 
-          <div className=' w-auto  '>
+          <div className='w-full ml-10  '>
             <Image
               src='/service/Scard2person.png'
               alt=''
               title=''
-              width='100%'
-              height='100%'
-              layout='responsive'
+              width='500'
+              height='645'
+              // layout='responsive'
               priority
-              objectFit='contain'
+              objectFit='cover'
             />
           </div>
         </div>

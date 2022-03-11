@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
+import styles from '../../styles/Home.module.css';
 
 function Card5() {
   return (
@@ -25,15 +26,15 @@ function Card5() {
         />
       </div>
       <img src='/home/mobilebg2.jpg' className='mx-auto w-fit  xl:hidden' />
-      <div className='hidden xl:inline-grid absolute [z-index:-1] -top-14 left-[10%]'>
+      <div className='hidden xl:inline-grid absolute [z-index:-1] -top-14 left-[8%]'>
         <img
           className=' animate-spin-slow '
           src='/spinners/bluespinner.png'
           alt=''
         />
       </div>
-      <div className='px-5 lg:px-0 items-center lg:w-[70%]  justify-self-center absolute  flex flex-col xl:flex-row  '>
-        <div className='w-[60%] md:w-[40%] '>
+      <div className='xl:mt-20 px-5 lg:px-0 items-center lg:w-[70%]  justify-self-center absolute  flex flex-col xl:flex-row  '>
+        <div className=' w-[60%] md:w-[35%] '>
           {
             // <img
             //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/escort-img.png'
@@ -55,14 +56,16 @@ function Card5() {
           </div>
         </div>
 
-        <div className='lg:py-2 flex-1 space-y-5 text-center xl:text-justify lg:pr-5'>
-          <h2 className='text-white text-xl md:text-3xl '>
-            Esports Talents and
-            <span className='text-black md:text-black'>
-              Advertising Services
+        <div className='lg:py-2 flex-1 space-y-5 text-center xl:text-left lg:pr-5 '>
+          <h2 className='text-white text-xl md:text-3xl font-bold xl:leading-[48px]'>
+            Esports Talents{' '}
+            <span className='text-[#020c27] md:text-[#020c27]'>
+              and Advertising Services
             </span>{' '}
           </h2>
-          <p className='text-sm text-white md:text-lg tracking-wide md:tracking-normal'>
+          <p
+            className={`${styles.popins} text-sm text-white md:text-lg tracking-wide md:tracking-normal`}
+          >
             Arabia E-Advertising began its career as one of the first talent
             agencies, representing both established and emerging esports-focused
             broadcasting talent. We assist these specialized talents in

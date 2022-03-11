@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
-
+import styles from '../../styles/Home.module.css';
 function Card3() {
   return (
     <div className=' bg-white md:h-[80vh] md:w-full xl:h-fit  mt-10  lg:mt-20 xl:mt-0 relative mx-auto bg-contain bg-no-repeat  xl:inline-grid lg:w-[75%]   '>
@@ -12,7 +12,7 @@ function Card3() {
         //   className='hidden xl:inline-grid absolute top-0 md:w-[100%] '
         // />
       }
-      <div className='hidden   xl:inline-grid absolute top-0  md:w-[100%] h-[40rem]'>
+      <div className='hidden   xl:inline-grid absolute top-0  md:w-[100%] h-[38rem]'>
         <Image
           src='/home/card3.png'
           alt=''
@@ -36,7 +36,7 @@ function Card3() {
           alt=''
         />
       </div>
-      <div className='flex justify-center h-full  flex-col text-center xl:flex-row gap-3 absolute top-0 '>
+      <div className='flex justify-center h-full  flex-col text-center xl:text-left xl:flex-row gap-3 absolute top-0 '>
         <div className='xl:flex-1 mx-auto '>
           {
             // <img
@@ -59,13 +59,13 @@ function Card3() {
           </div>
         </div>
         <div className='xl:flex-1 lg:pt-16 space-y-2 lg:space-y-10 px-5'>
-          <h2 className='text-xl md:text-2xl lg:text-4xl lg:text-[#167EE0] font-semibold'>
+          <h2 className='text-xl md:text-2xl lg:text-[30px] xl:leading-[42px] lg:text-[#167EE0] font-semibold'>
             Digital Influence{' '}
-            <span className='lg:text-black text-[#167EE0]'>
+            <span className='lg:text-black text-[#008fcf]'>
               Campaign Strategies and Management
             </span>
           </h2>
-          <p className='text-base md:text-lg'>
+          <p className={`${styles.popins} text-[#404b68] text-base md:text-lg`}>
             We use top influencers to help brands engage and activate audiences
             all around the world, with a specialization on the Arabic speaking
             nations of the Middle East and North Africa. We select and
