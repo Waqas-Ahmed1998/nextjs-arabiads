@@ -3,13 +3,13 @@ import styles from '../../styles/Home.module.css';
 function NumbersSpeak() {
   return (
     <div className='mt-10 grid grid-cols-1 md:max-w-[95rem] mx-auto relative px-5 py-10'>
-      <div className='mx-auto lg:w-[70%] text-center space-y-10'>
+      <div className='mx-auto lg:w-[70%] text-center space-y-5 xl:space-y-10'>
         <h3
-          className={`${styles.montserrat} text-[#404040]  text-center text-lg md:text-[40px] tracking-wide [font-weight:700]`}
+          className={`${styles.montserrat} text-[#404040]  text-center text-lg  md:text-2xl xl:text-[40px]  [font-weight:700]`}
         >
           LET THE NUMBERS SPEAK
         </h3>
-        <p className='text-base md:text-xl tracking-wide text-gray-600 '>
+        <p className='text-base xl:text-[22px] xl:leading-[35px]  text-[#040e29] '>
           We have worked with over 40 international known brands, delivering an
           influencer pool of over 70 influencers, and have created a stunning 1
           billion Impressions to this day, with over 30 campaigns signed. Our

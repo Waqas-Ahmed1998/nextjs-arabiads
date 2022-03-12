@@ -32,7 +32,7 @@ function Icard1() {
         />
       </div>
       <div className=' h-[80%] xl:absolute flex top-[10%]  justify-center  xl:w-full '>
-        <div className='xl:w-[100%] xl:ml-20 flex flex-col-reverse xl:flex-row space-y-5 items-center text-center xl:text-justify '>
+        <div className='xl:w-[100%] xl:ml-20 flex flex-col-reverse xl:flex-row space-y-5 items-center text-center xl:text-left '>
           <div className=' flex-1 xl:py-5 space-y-5'>
             <h2 className=' heading-primary xl:text-white '>
               Esports Talents and{' '}

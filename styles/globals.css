@@ -32,7 +32,7 @@ p {
 }
 @layer components {
   .heading-primary {
-    @apply text-xl lg:text-4xl  font-semibold pt-3 lg:leading-tight;
+    @apply text-xl lg:text-[33px]  font-semibold pt-3 lg:leading-tight;
   }
 }
 @layer components {
@@ -42,7 +42,7 @@ p {
 }
 @layer components {
   .heading-secondary {
-    @apply text-xl xl:text-[1.7rem] leading-none font-semibold pt-3 lg:leading-tight;
+    @apply text-xl xl:text-[25px] leading-none font-semibold pt-3 lg:leading-tight;
   }
 }
 @layer components {

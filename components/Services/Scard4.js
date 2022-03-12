@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
+import styles from '../../styles/Home.module.css';
 
 function Scard4() {
   return (
@@ -12,7 +13,7 @@ function Scard4() {
         //   className='hidden xl:inline-grid  w-full '
         // />
       }
-      <div className='hidden   xl:inline-grid w-full h-[40rem]'>
+      <div className='hidden xl:left-9 relative  xl:mt-10   xl:inline-grid w-[90%] h-[38rem]'>
         <Image
           src='/service/Scard4.png'
           alt=''
@@ -24,9 +25,9 @@ function Scard4() {
           // objectFit='cover'
         />
       </div>
-      <div className=' h-[80%] xl:absolute flex top-[10%]  justify-center  xl:w-full '>
-        <div className='xl:w-[100%] xl:ml-0 flex flex-col xl:flex-row space-y-5 text-center xl:text-justify '>
-          <div className='flex-1  '>
+      <div className=' h-[80%] xl:absolute flex top-[10%]  justify-center  xl:w-[90%] '>
+        <div className='xl:w-[100%] xl:ml-0 flex flex-col xl:flex-row space-y-5 text-center xl:text-left '>
+          <div className=' basis-[46%] relative '>
             {
               // <img
               //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/m-s-2-img.png'
@@ -39,17 +40,21 @@ function Scard4() {
               alt=''
               title=''
               width='500'
-              height='500'
+              height='480'
               // layout='responsive'
               priority
-              objectFit='contain'
+              objectFit='cover'
             />
           </div>
-          <div className=' flex-1 xl:py-0 space-y-5 '>
-            <h2 className=' heading-primary '>
-              Talent <span className='heading-blue'>Management</span>
+          <div className=' flex-1 xl:py-12 xl:px-10 space-y-5 '>
+            <h2
+              className={` ${styles.montserrat} heading-primary text-[#404b68] xl:text-[30px]`}
+            >
+              Talent <span className='text-[#008fcf]'>Management</span>
             </h2>
-            <p className='text-sm xl:text-base tracking-wide xl:pr-5'>
+            <p
+              className={` ${styles.popins} text-[#404b68] text-sm xl:text-[18px] xl:leading-[29px] xl:pr-5`}
+            >
               Are you an influencer looking to broaden your reach and
               collaborate with others? We are here to assist you. Our staff will
               introduce you to some of the world&apos;s most well-known

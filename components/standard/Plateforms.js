@@ -6,14 +6,14 @@ function Plateforms() {
     <>
       <div className='px-5 my-20  mx-auto lg:w-[70%] text-center '>
         <h3
-          className={`${styles.montserrat} mb-10 text-[#404040]  text-center text-lg md:text-[40px] tracking-wide [font-weight:700]`}
+          className={`${styles.montserrat} mb-2 xl:mb-10 text-[#404040] md:text-2xl text-center text-lg xl:text-[40px] [font-weight:700]`}
         >
           OUR PLATFORMS
         </h3>
-        <p className='text-base md:text-xl tracking-wide text-gray-600 '>
+        <p className='text-base xl:text-[22px] xl:leading-[35px]  text-[#040e29] '>
           With a complementarity between micro and macro-influencers and a
           strategic target on each platform to hit the right target population
-          you wish; we can fulfill your social media goals and establish a
+          you wish we can fulfill your social media goals and establish a
           community instead of just take a typical UA approach.
         </p>
       </div>

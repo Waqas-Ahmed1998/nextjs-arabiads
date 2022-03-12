@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
+import styles from '../../styles/Home.module.css';
 
 function Campaign() {
   return (
@@ -21,12 +22,14 @@ function Campaign() {
         // <div className='hidden lg:inline-grid  absolute h-80 w-80 -left-36 z-10  bg-arrow bg-no-repeat bg-center '></div>
       }
       <div className='mt-10 grid grid-cols-1 md:max-w-[95rem] mx-auto relative px-5 py-10'>
-        <div className=' mx-auto w-[90%] flex flex-col-reverse xl:flex-row lg:p-14 text-center xl:text-justify'>
-          <div className='p-5 pr-5  items-center xl:pt-0 flex-1 space-y-5'>
-            <h3 className='text-xl py-8 md:text-[35px] font-semibold'>
+        <div className=' mx-auto w-[90%] flex flex-col-reverse xl:flex-row lg:p-14 text-center xl:text-left'>
+          <div className='p-5 pr-5  items-center xl:pt-16 xl:pr-9 flex-1 space-y-5'>
+            <h3
+              className={`${styles.montserrat} xl:leading-[49px] xl:w-[70%] text-[#020c27] text-xl  md:text-[35px] font-semibold`}
+            >
               Start a campaign with us!
             </h3>
-            <p className='note'>
+            <p className={` ${styles.popins} note text-[#404b68] text-[18px]`}>
               Simply write us a message to tell us about your upcoming project!
               Our salesperson will contact you as soon as possible and link you
               to one of our committed specialists in order to experience what

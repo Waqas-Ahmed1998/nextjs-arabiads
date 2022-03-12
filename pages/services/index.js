@@ -24,7 +24,7 @@ function Services() {
           className='h-screen w-[100vw] '
         />
       </div>
-      <div className='max-w-screen-xl mx-auto  '>
+      <div className='max-w-[1400px] mx-auto   '>
         <Card1 />
         <div className='card-width'>
           <Scard2 />
@@ -32,7 +32,7 @@ function Services() {
         <div className='long-card'>
           <Scard3 />
         </div>
-        <div className='card-width'>
+        <div className='card-width mt-10'>
           <Scard4 />
         </div>
         <NumbersSpeak />

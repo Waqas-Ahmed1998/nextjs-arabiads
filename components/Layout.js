@@ -15,18 +15,24 @@ function Layout({ children }) {
   try {
     if (router.reload) {
       const getData = async () => {
-        const adminData = [];
-        const querySnapshot = await getDocs(collection(db, 'admins'));
-        querySnapshot.forEach((doc) => {
-          adminData.push({ ...doc.data(), id: doc.id });
-        });
-        let [{ users }] = adminData;
+        try {
+          const adminData = [];
+          const querySnapshot = await getDocs(collection(db, 'admins'));
+          querySnapshot.forEach((doc) => {
+            adminData.push({ ...doc.data(), id: doc.id });
+          });
+          let [{ users }] = adminData;
 
-        setAuthenticatedUsers(users);
+          setAuthenticatedUsers(users);
+        } catch (error) {
+          console.log(error);
+        }
       };
       getData();
     }
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
   return (
     <div className='mt-24 xl:mt-0'>
       <Navbar />

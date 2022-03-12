@@ -74,7 +74,7 @@ function Influencers() {
             </div>
           )}
         </div>
-        <div className='card-width'>
+        <div className='card-width mt-10'>
           <Icard1 />
         </div>
         <NumbersSpeak />

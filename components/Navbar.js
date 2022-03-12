@@ -18,7 +18,7 @@ function Navbar() {
   if (admins) {
     console.log(admins.includes(logged));
   }
-
+  const submit = (e) => {};
   useEffect(() => {
     return () => {};
   }, []);

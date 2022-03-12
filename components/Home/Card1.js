@@ -3,7 +3,7 @@ import React from 'react';
 
 function Card1() {
   return (
-    <div className=' relative  xl:inline-grid lg:w-[75%]  '>
+    <div className=' relative  xl:inline-grid lg:w-[73%]  '>
       {
         //   <img
         //   className='hidden xl:inline-grid absolute top-0 md:w-[100%]'
@@ -11,7 +11,7 @@ function Card1() {
         //   alt=''
         // />
       }
-      <div className='hidden xl:inline-grid absolute -top-5 md:w-[100%] h-[100%]'>
+      <div className='hidden  xl:inline-grid absolute -top-5 md:w-[99%] h-[49rem]'>
         {
           //  <Image
           //      className='hidden bg-contain  xl:inline-grid absolute top-0 '
@@ -32,6 +32,7 @@ function Card1() {
           quality={100}
           layout='responsive'
           priority
+          objectFit='cover'
         />
       </div>
       <img
@@ -39,7 +40,7 @@ function Card1() {
         src='/home/mobilebg.jpg'
         alt=''
       />
-      <div className='absolute [z-index:1] h-full xl:h-auto top-0  w-full flex flex-col justify-center text-center space-y-2 md:space-y-10 '>
+      <div className='absolute [z-index:1] h-full xl:h-auto top-0  w-full flex flex-col justify-center text-center space-y-2 md:space-y-6 '>
         <h2 className='text-xl md:text-[44px] text-white font-semibold pt-3 md:leading-snug'>
           Gaming & Esports Talent Agency
         </h2>
@@ -91,9 +92,9 @@ function Card1() {
         //   alt=''
         // />
       }
-      <div className='hidden h-[100%] xl:inline-grid md:w-[98%] absolute '>
+      <div className='-top-4 xl:left-[20px]  xl:h-[49rem] 2xl:left-[20px] hidden 2xl:-top-4 2xl:h-[49rem] 2xl:w-[95%] h-[100%] xl:inline-grid md:w-[95%] absolute '>
         <Image
-          className='hidden xl:inline-grid md:w-[98%] absolute '
+          className='hidden  xl:inline-grid md:w-[98%] absolute '
           src='/home/home1.png'
           alt=''
           priority
@@ -101,6 +102,7 @@ function Card1() {
           height='100%'
           layout='responsive'
           quality={100}
+          objectFit='contain'
         />
       </div>
     </div>

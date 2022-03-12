@@ -17,7 +17,7 @@
   background-color: rgba(6, 6, 6, 45%);
 }
 .contactImage {
-  background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2022/01/photo-1615840287214-7ff58936c4cf.jpg);
+  background-image: url('/contact/contactimage.jpg');
 }
 .contactColor {
   background-color: rgba(224, 126, 15, 0.6);

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
+import styles from '../../styles/Home.module.css';
 
 function Scard2() {
   return (
@@ -38,13 +39,15 @@ function Scard2() {
           alt=''
         />
       </div>
-      <div className=' h-[80%] xl:absolute flex top-[10%]  justify-center  xl:w-full '>
-        <div className='xl:w-[100%] xl:ml-20 flex flex-col-reverse xl:flex-row space-y-5 text-center xl:text-justify '>
-          <div className=' flex-1 xl:py-16 space-y-5'>
-            <h2 className=' heading-primary xl:text-white '>
+      <div className=' h-[80%] xl:absolute flex top-[5%]  justify-center  xl:w-full '>
+        <div className='  xl:w-[100%] xl:ml-20 flex flex-col-reverse xl:flex-row space-y-5 text-center xl:text-left '>
+          <div className='  xl:mt-10 flex-1 xl:py-16 space-y-5  xl:ml-12 xl:p-5'>
+            <h2
+              className={` ${styles.montserrat} heading-primary xl:text-white `}
+            >
               Reach Millions Through Gaming Influencers
             </h2>
-            <p className='xl:text-white text-sm xl:text-xl tracking-wide'>
+            <p className='xl:text-white text-sm xl:text-[19px] xl:leading-[30px] '>
               Gaming Influencers can help you reach new audiences. To maximize
               your outcomes, we work across the full pyramid of influence, from
               the most powerful profiles to micro influencers, including key
@@ -59,23 +62,35 @@ function Scard2() {
               </button>
             </Link>
           </div>
-          <div className='flex-1  '>
+          <div className='basis-[44%] justify-center  '>
             {
               // <img
               //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/arabic-influencers.png'
               //   alt=''
               // />
             }
-            <div className=' w-full  '>
+            <div className=' w-full ml-5 '>
+              {
+                // <Image
+                //   src='/service/Scard2person.png'
+                //   alt=''
+                //   title=''
+                //   width='100%'
+                //   height='100%'
+                //   layout='responsive'
+                //   priority
+                //   objectFit='contain'
+                // />
+              }
               <Image
                 src='/service/Scard2person.png'
                 alt=''
                 title=''
-                width='100%'
-                height='100%'
-                layout='responsive'
+                width='550'
+                height='707'
+                // layout='responsive'
                 priority
-                objectFit='contain'
+                objectFit='cover'
               />
             </div>
           </div>
