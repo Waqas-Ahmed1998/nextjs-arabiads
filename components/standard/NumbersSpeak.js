@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from '../../styles/Home.module.css';
+import { motion } from 'framer-motion';
+
 function NumbersSpeak() {
   return (
     <div className='mt-10 grid grid-cols-1 md:max-w-[95rem] mx-auto relative px-5 py-10'>
@@ -17,7 +19,7 @@ function NumbersSpeak() {
           continuously expanding.
         </p>
       </div>
-      <div className=' mt-10 space-y-10 lg:space-y-0 flex flex-col lg:flex-row gap-2 md:gap-5 items-center justify-center text-center'>
+      <div className=' relative mt-10 space-y-10 lg:space-y-0 flex flex-col lg:flex-row gap-2 md:gap-5 items-center justify-center text-center'>
         <div
           className={`flex  justify-evenly flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[20px] rounded-[30px] w-56 md:h-48 h-28`}
         >
@@ -103,6 +105,19 @@ function NumbersSpeak() {
             Employees
           </p>
           <div className='absolute left-[12%] -bottom-4 [z-index:-1]  rounded-[35px] w-[75%] md:w-[75%]  justify-self-center bg-[rgba(255,255,255,0.94)] h-12'></div>
+        </div>
+        <div className='-left-[10%]  hidden xl:inline-grid absolute -bottom-[100%] [z-index:-1]'>
+          <motion.img
+            animate={{
+              scale: [0.7, 1.2],
+              opacity: [0, 0.8, 0],
+              // rotate: [0, 0, 270, 270, 0],
+            }}
+            transition={{ duration: 10, repeat: Infinity }}
+            src='/standardimages/pulseorange.png'
+            alt=''
+            // className='  animate-animate-pulse  '
+          />
         </div>
       </div>
     </div>

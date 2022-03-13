@@ -98,6 +98,9 @@ function TalentForm() {
     //   console.log(error);
     // }
   };
+  useEffect(() => {
+    return () => {};
+  }, []);
   return (
     <div>
       {' '}

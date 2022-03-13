@@ -13,7 +13,7 @@ function Card5() {
         //   className=' hidden  xl:inline-grid mx-auto  lg:w-[65rem]'
         // />
       }
-      <div className='hidden mx-auto  xl:inline-grid  lg:w-[70rem] h-[35rem]'>
+      <div className='hidden mx-auto  xl:inline-grid  lg:w-[65rem] h-[34rem]'>
         <Image
           src='/home/card5.png'
           alt=''
@@ -26,14 +26,14 @@ function Card5() {
         />
       </div>
       <img src='/home/mobilebg2.jpg' className='mx-auto w-fit  xl:hidden' />
-      <div className='hidden xl:inline-grid absolute [z-index:-1] -top-14 left-[8%]'>
+      <div className='hidden xl:inline-grid absolute [z-index:-1] -top-14 left-[10%]'>
         <img
           className=' animate-spin-slow '
           src='/spinners/bluespinner.png'
           alt=''
         />
       </div>
-      <div className='xl:mt-20 px-5 lg:px-0 items-center lg:w-[70%]  justify-self-center absolute  flex flex-col xl:flex-row  '>
+      <div className='xl:mt-24 px-5 lg:px-0 items-center lg:w-[70%]  justify-self-center absolute  flex flex-col xl:flex-row  '>
         <div className=' w-[60%] md:w-[35%] '>
           {
             // <img
@@ -42,7 +42,7 @@ function Card5() {
             // />
           }
 
-          <div className='  '>
+          <div className=' pl-10'>
             <Image
               src='/home/card5person.png'
               alt=''
@@ -56,8 +56,8 @@ function Card5() {
           </div>
         </div>
 
-        <div className='lg:py-2 flex-1 space-y-5 text-center xl:text-left lg:pr-5 '>
-          <h2 className='text-white text-xl md:text-3xl font-bold xl:leading-[48px]'>
+        <div className='lg:py-2 flex-1  text-center xl:text-left lg:pr-10 '>
+          <h2 className='text-white text-xl md:text-3xl font-bold xl:leading-[48px] mb-5'>
             Esports Talents{' '}
             <span className='text-[#020c27] md:text-[#020c27]'>
               and Advertising Services
@@ -75,7 +75,7 @@ function Card5() {
             representation as a talent
           </p>
           <Link href='/'>
-            <button className=' text-white text-base px-4 py-2 md:px-6 md:py-4  md:inline-grid bg-[linear-gradient(#3786ed,#1eb5e4)]   font-semibold  xl:w-60  rounded-full md:text-[20px]'>
+            <button className=' text-white text-base px-4 py-2 md:px-6 md:py-4  md:inline-grid bg-[linear-gradient(#3786ed,#1eb5e4)]   font-semibold  xl:w-60  rounded-full md:text-[20px] mt-10 '>
               FIND OUT MORE
             </button>
           </Link>

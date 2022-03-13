@@ -11,6 +11,7 @@
 }
 body {
   background-color: #f0f5ff;
+  /* background-color: #fdfdfd; */
   -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
 }

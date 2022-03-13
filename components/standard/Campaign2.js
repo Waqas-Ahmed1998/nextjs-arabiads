@@ -2,10 +2,11 @@ import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
 import styles from '../../styles/Home.module.css';
+import { motion } from 'framer-motion';
 
 function Campaign2() {
   return (
-    <div className='overflow-hidden'>
+    <div className=''>
       <div className='-left-10 hidden xl:inline-grid absolute  [z-index:-1]'>
         <img src='/standardimages/arrow.png' alt='' className='h-80 w-[8vw] ' />
       </div>
@@ -21,7 +22,7 @@ function Campaign2() {
         // <div className='hidden xl:inline-grid  absolute h-80 w-80 -left-36 z-10  bg-arrow bg-no-repeat bg-center '></div>
       }
       <div className='mt-10 grid grid-cols-1 mx-auto relative px-5 py-10'>
-        <div className=' mx-auto w-[100%] flex flex-col-reverse xl:flex-row lg:p-14 text-center xl:text-left'>
+        <div className='mx-auto w-[100%] flex flex-col-reverse xl:flex-row lg:p-14 text-center xl:text-left'>
           <div className='p-5 pr-5 xl:pt-16  flex-1 space-y-5'>
             <h3
               className={`${styles.montserrat} xl:leading-[49px] xl:w-[65%] text-[#020c27]  md:text-[35px] text-xl   font-semibold`}
@@ -59,6 +60,19 @@ function Campaign2() {
               objectFit='contain'
             />
           </div>
+        </div>
+        <div className='-right-[5%] hidden xl:inline-grid absolute top-0 [z-index:-1]'>
+          <motion.img
+            animate={{
+              scale: [0.7, 1.2],
+              opacity: [0, 0.8, 0],
+              // rotate: [0, 0, 270, 270, 0],
+            }}
+            transition={{ duration: 10, repeat: Infinity }}
+            src='/standardimages/pulseblue.png'
+            alt=''
+            // className='  animate-animate-pulse  '
+          />
         </div>
       </div>
     </div>

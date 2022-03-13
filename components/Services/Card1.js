@@ -32,14 +32,16 @@ function Card1() {
         </div>
         <div className='xl:absolute flex  xl:top-[20%]  justify-center  lg:w-full '>
           <div className='xl:w-[80%] space-y-5 text-center'>
-            <h2 className=' heading-primary heading-blue  '>WHAT WE DO...?</h2>
-            <p className='words-gray tracking-wide'>
+            <h2 className=' heading-primary heading-blue xl:text-[#006AFF] xl:text-[40px]  '>
+              WHAT WE DO...?
+            </h2>
+            <p className='words-gray xl:text-[17px] xl:leading-[32px] text-[#404b68]'>
               Arabia E-Advertising is a MENA gaming influencer agency that
               manages influencer marketing campaigns for a variety of clients
               and represents some of the most popular Twitch, YouTube, and
               gaming content creators.
             </p>
-            <p className='words-gray tracking-wide'>
+            <p className='words-gray xl:text-[17px] xl:leading-[32px]  text-[#404b68]'>
               We&apos;re always looking for top-tier and up-and-coming
               influencers to represent. Arabia E-Advertising allows you to
               concentrate on growing your brand and community while we find
@@ -48,10 +50,11 @@ function Card1() {
               unrivaled, from finding you endorsements and sponsorships to
               offering one-on-one advice.
             </p>
+
             <a href='' className='mt-10 inline-block'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                className='h-6 w-6 animate-bounce text-blue-600 '
+                className='h-12 w-[5rem]  animate-bounce text-blue-500 '
                 fill='none'
                 viewBox='0 0 24 24'
                 stroke='currentColor'

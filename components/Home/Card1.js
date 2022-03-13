@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import styles from '../../styles/Home.module.css';
 
 function Card1() {
   return (
@@ -40,24 +41,32 @@ function Card1() {
         src='/home/mobilebg.jpg'
         alt=''
       />
-      <div className='absolute [z-index:1] h-full xl:h-auto top-0  w-full flex flex-col justify-center text-center space-y-2 md:space-y-6 '>
+      <div className='absolute [z-index:1] h-full xl:h-auto top-0  w-full flex flex-col justify-center text-center space-y-2 md:space-y-6  xl:space-y-6'>
         <h2 className='text-xl md:text-[44px] text-white font-semibold pt-3 md:leading-snug'>
           Gaming & Esports Talent Agency
         </h2>
         <h3 className='text-base md:text-[30px] text-white'>
           #Connect Your Brand With Arabic Millennials.
         </h3>
-        <div className='text-sm gap-2 md:text-lg font-bold tracking-wide text-[#FFCE51] px-2 flex justify-center md:gap-5'>
-          <div className='space-x-1 md:space-x-3 flex items-center'>
+        <div className='text-sm gap-2 md:text-lg font-bold tracking-wide text-[#FFCE51] px-2 flex justify-center md:gap-10'>
+          <div className='space-x-1 md:space-x-2 flex items-center'>
             <img src='/home/card1images/user.png' alt='' className='w-8 ' />
-            <h3 className='text-base md:text-lg'>70 + Talents</h3>
+            <h3
+              className={` ${styles.popins} font-semibold text-base md:text-[22px]`}
+            >
+              70 + Talents
+            </h3>
           </div>
-          <div className='space-x-3 flex items-center'>
+          <div className='space-x-2 flex items-center'>
             <img src='/home/card1images/earth.png' alt='' className='w-8' />
-            <h3 className=''>100M Total Reach</h3>
+            <h3
+              className={` ${styles.popins} font-semibold text-base md:text-[22px]`}
+            >
+              100M Total Reach
+            </h3>
           </div>
         </div>
-        <div className=' md:space-x-5 px-2 md:px-10 md:mr-5 flex '>
+        <div className=' md:space-x-0 px-2 md:px-10 md:mr-10 flex '>
           <a href='https://www.pubgmobile.com/ar/home.shtml'>
             <img className='w-30' src='/home/card1images/pubg.png' alt='' />
           </a>

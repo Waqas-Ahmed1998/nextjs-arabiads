@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import React from 'react';
 import styles from '../../styles/Home.module.css';
+
 function Plateforms() {
   return (
     <>
-      <div className='px-5 my-20  mx-auto lg:w-[70%] text-center '>
+      <div className='px-5 my-20   mx-auto lg:w-[70%] text-center relative'>
         <h3
           className={`${styles.montserrat} mb-2 xl:mb-10 text-[#404040] md:text-2xl text-center text-lg xl:text-[40px] [font-weight:700]`}
         >

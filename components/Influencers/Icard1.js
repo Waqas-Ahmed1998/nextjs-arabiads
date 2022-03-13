@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
+import styles from '../../styles/Home.module.css';
 
 function Icard1() {
   return (
@@ -12,7 +13,7 @@ function Icard1() {
         //   className='hidden xl:inline-grid  w-full '
         // />
       }
-      <div className='hidden   xl:inline-grid  w-full h-[40rem]'>
+      <div className='hidden   xl:inline-grid  w-[95%] h-[35rem]'>
         <Image
           src='/home/card5.png'
           alt=''
@@ -31,21 +32,23 @@ function Icard1() {
           alt=''
         />
       </div>
-      <div className=' h-[80%] xl:absolute flex top-[10%]  justify-center  xl:w-full '>
-        <div className='xl:w-[100%] xl:ml-20 flex flex-col-reverse xl:flex-row space-y-5 items-center text-center xl:text-left '>
-          <div className=' flex-1 xl:py-5 space-y-5'>
-            <h2 className=' heading-primary xl:text-white '>
-              Esports Talents and{' '}
-              <span className='text-black'> Advertising Services</span>
+      <div className=' h-[80%]  xl:absolute flex top-[5%]  justify-center  xl:w-full '>
+        <div className='xl:w-[100%] xl:ml-3 flex flex-col-reverse xl:flex-row space-y-5 items-center text-center xl:text-left '>
+          <div className=' flex-1 xl:py-5 xl:px-5 '>
+            <h2 className=' heading-primary xl:text-white xl:text-[28px] mb-5 font-bold'>
+              Esports Talents{' '}
+              <span className='text-black'>and Advertising Services</span>
             </h2>
-            <p className='xl:text-white text-sm xl:text-xl tracking-wide'>
-              Gaming Influencers can help you reach new audiences. To maximize
-              your outcomes, we work across the full pyramid of influence, from
-              the most powerful profiles to micro influencers, including key
-              opinion leaders, each with a specific goal in mind. The
-              multiplicity of content provided by influencers with a power of
-              prescribing driven by proximity to their audience is multiplied
-              tenfold by activating smaller talents.
+            <p
+              className={`${styles.popins} xl:text-white text-sm xl:text-[18px] xl:leading-[29px] mb-20`}
+            >
+              Arabia E-Advertising began its career as one of the first talent
+              agencies, representing both established and emerging
+              esports-focused broadcasting talent. We assist these specialized
+              talents in maximizing the value they've created by connecting them
+              with hundreds of brand partners who trust us. We can assist you
+              whether you are looking to hire an on-air host for an event or
+              need representation as a talent.
             </p>
             <Link href='/'>
               <button className=' text-white text-base  md:inline-grid bg-[linear-gradient(#3786ed,#1eb5e4)]  md:py-4  md:px-6 px-4 py-2 font-semibold  xl:w-60  rounded-full md:text-[20px]'>
@@ -53,7 +56,7 @@ function Icard1() {
               </button>
             </Link>
           </div>
-          <div className='flex-1  '>
+          <div className='flex-1  px-10 '>
             {
               // <img
               //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/escort-img.png'
@@ -64,11 +67,11 @@ function Icard1() {
               src='/home/card5person.png'
               alt=''
               title=''
-              width='500'
-              height='500'
+              width='400'
+              height='450'
               // layout='responsive'
               priority
-              objectFit='contain'
+              objectFit='cover'
             />
           </div>
         </div>

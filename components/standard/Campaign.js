@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
 import styles from '../../styles/Home.module.css';
+import { motion } from 'framer-motion';
 
 function Campaign() {
   return (
@@ -21,7 +22,7 @@ function Campaign() {
         // <div className='hidden absolute bottom-0 -right-[30%] lg:inline-grid h-[70%]  campaign-line  bg-cover w-full  bg-no-repeat bg-center '></div>
         // <div className='hidden lg:inline-grid  absolute h-80 w-80 -left-36 z-10  bg-arrow bg-no-repeat bg-center '></div>
       }
-      <div className='mt-10 grid grid-cols-1 md:max-w-[95rem] mx-auto relative px-5 py-10'>
+      <div className='mt-10  grid grid-cols-1 md:max-w-[95rem] mx-auto relative px-5 py-10'>
         <div className=' mx-auto w-[90%] flex flex-col-reverse xl:flex-row lg:p-14 text-center xl:text-left'>
           <div className='p-5 pr-5  items-center xl:pt-16 xl:pr-9 flex-1 space-y-5'>
             <h3
@@ -60,6 +61,19 @@ function Campaign() {
               objectFit='contain'
             />
           </div>
+        </div>
+        <div className='-right-[5%] hidden xl:inline-grid absolute top-0 [z-index:-1]'>
+          <motion.img
+            animate={{
+              scale: [0.7, 1.2],
+              opacity: [0, 0.8, 0],
+              // rotate: [0, 0, 270, 270, 0],
+            }}
+            transition={{ duration: 10, repeat: Infinity }}
+            src='/standardimages/pulseblue.png'
+            alt=''
+            // className='  animate-animate-pulse  '
+          />
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import Campaign2 from '../../components/standard/Campaign2';
 import NumbersSpeak from '../../components/standard/NumbersSpeak';
 import Plateforms from '../../components/standard/Plateforms';
 import Head from 'next/head';
+import { motion } from 'framer-motion';
 
 function Case() {
   let [eventcard, setEventCard] = useState([]);
@@ -47,6 +48,45 @@ function Case() {
 
       img: 'https://influencers.ar-ad.com/wp-content/uploads/2021/08/valorant.png',
     },
+    {
+      id: 3,
+      name: 'Valorant',
+      engagement: '550K',
+      genre: 'FPS Game',
+      content:
+        "We selected a few content creators and worked on films to promote Riot Games' fresh new FPS title, Valorant.  ",
+      role: 'Content Creators',
+      audience: 8,
+      engagementRole: 'Engagement',
+
+      img: 'https://influencers.ar-ad.com/wp-content/uploads/2021/08/valorant.png',
+    },
+    {
+      id: 3,
+      name: 'Valorant',
+      engagement: '550K',
+      genre: 'FPS Game',
+      content:
+        "We selected a few content creators and worked on films to promote Riot Games' fresh new FPS title, Valorant.  ",
+      role: 'Content Creators',
+      audience: 8,
+      engagementRole: 'Engagement',
+
+      img: 'https://influencers.ar-ad.com/wp-content/uploads/2021/08/valorant.png',
+    },
+    {
+      id: 3,
+      name: 'Valorant',
+      engagement: '550K',
+      genre: 'FPS Game',
+      content:
+        "We selected a few content creators and worked on films to promote Riot Games' fresh new FPS title, Valorant.  ",
+      role: 'Content Creators',
+      audience: 8,
+      engagementRole: 'Engagement',
+
+      img: 'https://influencers.ar-ad.com/wp-content/uploads/2021/08/valorant.png',
+    },
   ];
   useEffect(() => {
     setEventCard(user);
@@ -61,6 +101,13 @@ function Case() {
       <div className='right-0 hidden xl:inline-grid absolute top-0 [z-index:-1]'>
         <img src='/case/caseline.png' alt='' className='h-screen w-[100vw] ' />
       </div>
+      <div className='right-0 hidden xl:inline-grid absolute top-[15%] [z-index:-1]'>
+        <img
+          src='/standardimages/casemiddle.png'
+          alt=''
+          className='h-screen w-[100vw] '
+        />
+      </div>
       <div className='max-w-screen-xl mx-auto '>
         <div className='flex flex-col space-y-10 lg:space-y-0 lg:flex-row md:justify-around justify-center items-center'>
           <img src='/case/sony.png' alt='' className='object-contain' />
@@ -71,6 +118,32 @@ function Case() {
           <img src='/case/blast.png' alt='' className='object-contain' />
 
           <img src='/case/anghami.png' alt='' className='object-contain' />
+        </div>
+        <div className='2xl:left-[5%] xl:left-[0] hidden xl:inline-grid absolute top-[20%] [z-index:-1]'>
+          <motion.img
+            animate={{
+              scale: [0.7, 1.2],
+              opacity: [0, 0.8, 0],
+              // rotate: [0, 0, 270, 270, 0],
+            }}
+            transition={{ duration: 10, repeat: Infinity }}
+            src='/standardimages/pulseorange.png'
+            alt=''
+            // className='  animate-animate-pulse  '
+          />
+        </div>
+        <div className='right-[5%]  hidden xl:inline-grid absolute top-[40%] [z-index:-1]'>
+          <motion.img
+            animate={{
+              scale: [0.7, 1.2],
+              opacity: [0, 0.8, 0],
+              // rotate: [0, 0, 270, 270, 0],
+            }}
+            transition={{ duration: 10, repeat: Infinity }}
+            src='/standardimages/pulseblue.png'
+            alt=''
+            // className='  animate-animate-pulse  '
+          />
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-3 mt-10'>
           {eventcard.map((data, index) => (

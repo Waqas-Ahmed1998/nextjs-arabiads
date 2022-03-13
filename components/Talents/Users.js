@@ -101,8 +101,12 @@ function Users({ user }) {
                   </svg>
                 </>
               )}
-              <div className='w-full  flex absolute top-0'>
-                <img src={singleUser.image} alt='' className='w-[35%] ' />
+              <div className='w-full h-full  flex absolute top-0'>
+                <img
+                  src={singleUser.image}
+                  alt=''
+                  className='w-[35%] h-[92%] object-cover rounded-l-[40px]  '
+                />
                 <div className='ml-5   w-full mt-5 md:space-y-3 relative'>
                   <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem]  md:text-base font-bold inline-block px-2 bg-[#FAA361] -top-[0.7rem] md:-top-[0.5rem]'>
                     {singleUser.role}
@@ -276,8 +280,12 @@ function Users({ user }) {
                   </svg>
                 </>
               )}
-              <div className='w-full flex flex-row-reverse absolute top-0'>
-                <img src={singleUser.image} alt='' className='w-[35%] ' />
+              <div className='w-full h-full flex flex-row-reverse absolute top-0'>
+                <img
+                  src={singleUser.image}
+                  alt=''
+                  className='w-[35%] h-[92%] object-cover rounded-r-[40px]  '
+                />
 
                 <div className='ml-5 w-full mt-5 md:space-y-3 relative'>
                   <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem] xl:text-base font-bold inline-block px-2 bg-[#FAA361] -top-[0.8rem] md:-top-[0.6rem]'>

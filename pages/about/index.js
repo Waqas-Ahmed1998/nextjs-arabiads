@@ -15,6 +15,13 @@ function About() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className=' hidden absolute  -left-[0%] w-[2650px] h-[200vh]  service-mid bg-no-repeat   xl:inline-grid '></div>
+      <div className='right-0 hidden xl:inline-grid absolute top-[15%] [z-index:-1]'>
+        <img
+          src='/standardimages/aboutline.png'
+          alt=''
+          className='h-[70rem] w-[100vw] object-cover'
+        />
+      </div>
       <div className={`relative overflow-hidden xl:mt-20`}>
         <div className={`max-w-screen-xl mx-auto  `}>
           <Acard1 />
