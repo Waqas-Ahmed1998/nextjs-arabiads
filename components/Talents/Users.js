@@ -19,7 +19,7 @@ import styles from '../../styles/Home.module.css';
 
 function Users({ user }) {
   const [filter, setFilter] = useState('');
-  console.log(filter);
+
   const loggedUser = useRecoilValue(loggedInUser);
   const admin = useRecoilValue(adminUsers);
 
@@ -88,7 +88,7 @@ function Users({ user }) {
             if (!filter) {
               return value;
             }
-            if (value.role.toLowerCase().includes(filter.toLowerCase())) {
+            if (value.role?.toLowerCase().includes(filter.toLowerCase())) {
               return value;
             }
           })
