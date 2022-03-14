@@ -40,7 +40,7 @@ function Icard1() {
               <span className='text-black'>and Advertising Services</span>
             </h2>
             <p
-              className={`${styles.popins} xl:text-white text-sm xl:text-[18px] xl:leading-[29px] mb-20`}
+              className={`${styles.popins} xl:text-white text-sm xl:text-[18px] xl:leading-[29px] mb-16`}
             >
               Arabia E-Advertising began its career as one of the first talent
               agencies, representing both established and emerging

@@ -16,7 +16,7 @@ function Navbar() {
   const [width, setWidth] = useState('');
 
   const { vertical } = scrollDirection;
-  console.log(vertical);
+
   const router = useRouter();
   const [onClick, setClick] = useState(false);
   const [onContact, setContact] = useState(false);

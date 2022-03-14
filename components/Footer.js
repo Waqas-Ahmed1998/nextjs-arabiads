@@ -12,7 +12,7 @@ function Footer() {
   return (
     <div className='relative z-30 bg-[#17214F] py-10'>
       <div className='max-w-6xl mx-auto'>
-        <div className='flex flex-col   lg:flex-row gap-5 lg:gap-12 text-center lg:text-justify'>
+        <div className='flex flex-col   lg:flex-row gap-5 lg:gap-12 text-center lg:text-left'>
           <div className='flex flex-col space-y-6 flex-1 items-center px-2  lg:items-start '>
             <img
               className=' w-20 h-20  object-contain'
