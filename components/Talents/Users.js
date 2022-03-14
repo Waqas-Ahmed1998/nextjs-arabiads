@@ -88,7 +88,7 @@ function Users({ user }) {
             if (!filter) {
               return value;
             }
-            if (value.role?.toLowerCase().includes(filter.toLowerCase())) {
+            if (value?.role.toLowerCase().includes(filter.toLowerCase())) {
               return value;
             }
           })
