@@ -22,9 +22,9 @@ function Campaign() {
         // <div className='hidden absolute bottom-0 -right-[30%] lg:inline-grid h-[70%]  campaign-line  bg-cover w-full  bg-no-repeat bg-center '></div>
         // <div className='hidden lg:inline-grid  absolute h-80 w-80 -left-36 z-10  bg-arrow bg-no-repeat bg-center '></div>
       }
-      <div className='mt-10  grid grid-cols-1 md:max-w-[95rem] mx-auto relative px-5 py-10'>
+      <div className='mt-10  grid grid-cols-1 md:max-w-[95rem] mx-auto relative md:px-5 py-10'>
         <div className=' mx-auto w-[90%] flex flex-col-reverse xl:flex-row lg:p-14 text-center xl:text-left'>
-          <div className='p-5 pr-5  items-center xl:pt-16 xl:pr-9 flex-1 space-y-5'>
+          <div className='lg:p-5 lg:pr-5  items-center xl:pt-16 xl:pr-9 flex-1 space-y-5'>
             <h3
               className={`${styles.montserrat} xl:leading-[49px] xl:w-[70%] text-[#020c27] text-xl  md:text-[35px] font-semibold`}
             >

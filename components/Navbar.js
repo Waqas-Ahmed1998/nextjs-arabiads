@@ -32,7 +32,7 @@ function Navbar() {
   }, []);
   return (
     <>
-      <div ref={observe}>
+      <div ref={observe} className=''>
         <div
           id='navbar'
           className=' hidden px-4 relative xl:flex justify-between items-center py-4 md:font-semibold md:max-w-7xl lg:max-w-screen-2xl mx-auto  '
@@ -164,9 +164,7 @@ function Navbar() {
               <a href='#mobilenav'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
-                  className={`h-12 w-12 transition-all duration-1000 ease-out ${
-                    vertical === 'down ' ? 'opacity-0' : 'opacity-100'
-                  } fixed bottom-[1rem] right-[1rem] cursor-pointer rounded-full border p-3 bg-white z-50 text-black`}
+                  className={`h-12 w-12   fixed bottom-[1rem] right-[1rem] cursor-pointer rounded-full border p-3 bg-white z-50 text-black`}
                   fill='none'
                   viewBox='0 0 24 24'
                   stroke='currentColor'

@@ -16,6 +16,7 @@ function InfluencersForm() {
   const [formData, setFormData] = useState({
     name: '',
     youtube: '',
+    youtubeSecond: '',
     image: '',
     facebook: '',
     instagram: '',

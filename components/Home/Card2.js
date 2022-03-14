@@ -62,7 +62,7 @@ function Card2() {
             </button>
           </Link>
         </div>
-        <div className=' basis-[44%]  justify-center '>
+        <div className='  xl:basis-[44%]  '>
           {
             // <img
             //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/11/MENA-INFLUENCERS.png'
@@ -71,7 +71,7 @@ function Card2() {
             // />
           }
 
-          <div className='w-full ml-10  '>
+          <div className='w-full xl:ml-10  '>
             <Image
               src='/service/Scard2person.png'
               alt=''

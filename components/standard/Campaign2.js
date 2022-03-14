@@ -21,9 +21,9 @@ function Campaign2() {
         // <div className='  hidden absolute bottom-0 -right-[30%] xl:inline-grid h-[35rem]  campaign-line  bg-cover w-full  bg-no-repeat bg-center '></div>
         // <div className='hidden xl:inline-grid  absolute h-80 w-80 -left-36 z-10  bg-arrow bg-no-repeat bg-center '></div>
       }
-      <div className='mt-10 grid grid-cols-1 mx-auto relative px-5 py-10'>
+      <div className='mt-10 grid grid-cols-1 mx-auto relative px-2 md:px-5 py-10'>
         <div className='mx-auto w-[100%] flex flex-col-reverse xl:flex-row lg:p-14 text-center xl:text-left'>
-          <div className='p-5 pr-5 xl:pt-16  flex-1 space-y-5'>
+          <div className='md:p-5 md:pr-5 xl:pt-16  flex-1 space-y-5'>
             <h3
               className={`${styles.montserrat} xl:leading-[49px] xl:w-[65%] text-[#020c27]  md:text-[35px] text-xl   font-semibold`}
             >

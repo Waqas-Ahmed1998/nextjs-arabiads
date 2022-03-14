@@ -14,7 +14,6 @@ function Influencers() {
   // let influencersData = JSON.parse(userdata);
 
   const [users, setUsers] = useState([]);
-  console.log(users);
 
   useEffect(() => {
     // setUsers(user);
@@ -27,6 +26,9 @@ function Influencers() {
         setUsers(users);
       });
     } catch (error) {}
+    return () => {
+      setUsers([]);
+    };
   }, []);
   return (
     <div className='relative  xl:mt-20 mt-10'>

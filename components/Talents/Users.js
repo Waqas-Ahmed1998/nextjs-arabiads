@@ -36,36 +36,38 @@ function Users({ user }) {
   return (
     <div className='w-[100%]  mx-auto p-5'>
       <div
-        className={`${styles.popins} xl:tracking-widest mx-auto flex justify-center items-center space-x-2`}
+        className={`${styles.popins}  xl:tracking-widest mx-auto flex justify-around xl:justify-center items-center space-x-2`}
       >
-        <div className='   cursor-pointer hover:text-white  text-base  xl:text-2xl'>
+        <div className='   cursor-pointer hover:text-white  text-sm  xl:text-2xl'>
           <button
             onClick={() => setFilter('')}
-            className='p-5  hover:bg-[#01A3E6] rounded-md active:bg-[#1f84ac] focus:outline-none focus:ring-violet-300 focus:bg-[#01A3E6] focus:text-white'
+            className={`${
+              !filter && 'bg-[#01A3E6] text-white'
+            } p-3 xl:p-5  hover:bg-[#01A3E6] rounded-md active:bg-[#1f84ac] focus:outline-none focus:ring-violet-300 focus:bg-[#01A3E6] focus:text-white`}
           >
             All
           </button>
         </div>
-        <div className='  cursor-pointer hover:text-white  text-base  xl:text-2xl'>
+        <div className='  cursor-pointer hover:text-white  text-sm xl:text-2xl'>
           <button
             onClick={() => setFilter('caster')}
-            className='p-5  hover:bg-[#01A3E6] rounded-md active:bg-[#1f84ac] focus:outline-none focus:ring-violet-300 focus:bg-[#01A3E6] focus:text-white'
+            className='p-3 xl:p-5  hover:bg-[#01A3E6] rounded-md active:bg-[#1f84ac] focus:outline-none focus:ring-violet-300 focus:bg-[#01A3E6] focus:text-white'
           >
             Caster
           </button>
         </div>
-        <div className='  cursor-pointer hover:text-white  text-base  xl:text-2xl'>
+        <div className='  cursor-pointer hover:text-white  text-sm  xl:text-2xl'>
           <button
             onClick={() => setFilter('host')}
-            className='p-5  hover:bg-[#01A3E6] rounded-md active:bg-[#1f84ac] focus:outline-none focus:ring-violet-300 focus:bg-[#01A3E6] focus:text-white'
+            className='p-3 xl:p-5  hover:bg-[#01A3E6] rounded-md active:bg-[#1f84ac] focus:outline-none focus:ring-violet-300 focus:bg-[#01A3E6] focus:text-white'
           >
             Host
           </button>
         </div>
-        <div className='  cursor-pointer hover:text-white  text-base  xl:text-2xl'>
+        <div className='  cursor-pointer hover:text-white  text-sm xl:text-2xl'>
           <button
             onClick={() => setFilter('analyst')}
-            className='p-5  hover:bg-[#01A3E6] rounded-md active:bg-[#1f84ac] focus:outline-none focus:ring-violet-300 focus:bg-[#01A3E6] focus:text-white'
+            className='p-3 xl:p-5  hover:bg-[#01A3E6] rounded-md active:bg-[#1f84ac] focus:outline-none focus:ring-violet-300 focus:bg-[#01A3E6] focus:text-white'
           >
             Analyst
           </button>
