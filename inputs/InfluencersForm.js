@@ -23,6 +23,7 @@ function InfluencersForm() {
     followers: '',
     tiktok: '',
     youtubeLink: '',
+    youtubeLink2: '',
     instagramLink: '',
     twitterLink: '',
     tiktokLink: '',
@@ -63,6 +64,7 @@ function InfluencersForm() {
         setFormData({
           name: '',
           youtube: '',
+          youtubeSecond: '',
           image: '',
           facebook: '',
           instagram: '',
@@ -70,6 +72,7 @@ function InfluencersForm() {
           followers: '',
           tiktok: '',
           youtubeLink: '',
+          youtubeLink2: '',
           instagramLink: '',
           twitterLink: '',
           tiktokLink: '',
@@ -93,6 +96,8 @@ function InfluencersForm() {
               instagramLink: formData.instagramLink,
               facebookLink: formData.facebookLink,
               youtubeLink: formData.youtubeLink,
+              youtubeLink2: formData.youtubeLink2,
+              youtubeSecond: formData.youtubeSecond,
 
               date: Timestamp.now().toDate(),
             });
@@ -100,6 +105,7 @@ function InfluencersForm() {
           .then(() => {
             alert('data uploaded successfuly');
             setProgress(0);
+            router.push('/influencers');
           })
           .catch((err) => console.log(err));
       }
@@ -192,6 +198,7 @@ function InfluencersForm() {
                   setFormData({ ...formData, youtubeLink: e.target.value })
                 }
               ></input>
+
               <label>Youtube Followers:</label>
               <input
                 className='p-4  focus:outline-none shadow-sm shadow-slate-800 rounded-md'
@@ -200,6 +207,26 @@ function InfluencersForm() {
                 value={formData.youtube}
                 onChange={(e) =>
                   setFormData({ ...formData, youtube: e.target.value })
+                }
+              ></input>
+              <label>Youtube Second Link:</label>
+              <input
+                className='p-4  focus:outline-none shadow-sm shadow-slate-800 rounded-md'
+                type='text'
+                name='city'
+                value={formData.youtubeLink2}
+                onChange={(e) =>
+                  setFormData({ ...formData, youtubeLink2: e.target.value })
+                }
+              ></input>
+              <label>Youtube Second Followers:</label>
+              <input
+                className='p-4  focus:outline-none shadow-sm shadow-slate-800 rounded-md'
+                type='text'
+                name='city'
+                value={formData.youtubeSecond}
+                onChange={(e) =>
+                  setFormData({ ...formData, youtubeSecond: e.target.value })
                 }
               ></input>
               <label>Twitter Link:</label>

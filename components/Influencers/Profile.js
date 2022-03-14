@@ -68,22 +68,15 @@ function Profile({ user }) {
           </>
         )}
 
-        {
-          // trash icon
-        }
-
-        {
-          // <img
-          //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/group.png'
-          //   alt=''
-          //   className='w-7 h-7'
-          // />
-        }
         <p className='text-lg'>{user.followers}</p>
       </div>
       <div className='w-full h-[63%]'>
         {user.image ? (
-          <img src={user.image} alt='' className='h-full ' />
+          <img
+            src={user.image}
+            alt=''
+            className='h-full w-full object-cover '
+          />
         ) : (
           <p>no image</p>
         )}
@@ -113,6 +106,17 @@ function Profile({ user }) {
 
             <span className='block pt-2 text-xs text-center'>
               {user.youtube}
+            </span>
+          </div>
+        )}
+        {user.youtubeSecond && (
+          <div className=' w-5'>
+            <a className='rounded-full ' href={user.youtubeLink2}>
+              <FontAwesomeIcon icon={faYoutube} size={'sm'} />
+            </a>
+
+            <span className='block pt-2 text-xs text-center'>
+              {user.youtubeSecond}
             </span>
           </div>
         )}

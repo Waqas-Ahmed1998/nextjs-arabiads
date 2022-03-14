@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { useState, useEffect } from 'react';
 import { addDoc, collection, doc, Timestamp } from 'firebase/firestore';
 import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
@@ -7,22 +6,20 @@ import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
 import { db, storage } from '../firebase';
 import { useRouter } from 'next/router';
 
-function TalentForm() {
+function CaseStudies() {
   const router = useRouter();
   // ***********   Hooks     ****
 
   const [progress, setProgress] = useState(0);
   const [formData, setFormData] = useState({
     name: '',
-    tournaments: [''],
-    liquipediaLink: '',
-    youtubeLink: '',
+    engagement: '',
+    genre: '',
+    content: '',
     image: '',
-    facebookLink: '',
-    instagramLink: '',
-    twitchLink: '',
-    twitterLink: '',
     role: '',
+    audience: '',
+    engagementRole: '',
     date: Timestamp.now().toDate(),
   });
   const handleImageChange = (e) => {
@@ -33,7 +30,7 @@ function TalentForm() {
   const submitData = async (e) => {
     e.preventDefault();
     // try {
-    if (!formData.name || !formData.role || !formData.image) {
+    if (!formData.name || !formData.content || !formData.image) {
       console.log(formData);
       alert('Please fill the required fields');
       return;
@@ -41,7 +38,7 @@ function TalentForm() {
 
     const storageRef = ref(
       storage,
-      `/arabiads/${Date.now()}${formData.image.name}`
+      `/studies/${Date.now()}${formData.image.name}`
     );
     const uploadImage = uploadBytesResumable(storageRef, formData.image);
     uploadImage.on(
@@ -58,38 +55,35 @@ function TalentForm() {
       () => {
         setFormData({
           name: '',
-          tournaments: [''],
-          liquipediaLink: '',
-          youtubeLink: '',
+          engagement: '',
+          genre: '',
+          content: '',
           image: '',
-          facebookLink: '',
-          instagramLink: '',
-          twitchLink: '',
-          twitterLink: '',
           role: '',
+          audience: '',
+          engagementRole: '',
         });
         getDownloadURL(uploadImage.snapshot.ref)
           .then((url) => {
-            const articleRef = collection(db, 'talents');
+            const articleRef = collection(db, 'studies');
 
             addDoc(articleRef, {
               name: formData.name,
-              tournaments: formData.tournaments,
-              liquipediaLink: formData.liquipediaLink,
-              youtubeLink: formData.youtubeLink,
+              engagement: formData.engagement,
+              genre: formData.genre,
+              content: formData.content,
               image: url,
-              facebookLink: formData.facebookLink,
-              instagramLink: formData.instagramLink,
-              twitchLink: formData.twitchLink,
-              twitterLink: formData.twitterLink,
               role: formData.role,
+              audience: formData.audience,
+              engagementRole: formData.engagementRole,
+
               date: Timestamp.now().toDate(),
             });
           })
           .then(() => {
             alert('data uploaded successfuly');
             setProgress(0);
-            router.push('/talents');
+            router.push('/case');
           })
           .catch((err) => console.log(err));
       }
@@ -102,6 +96,7 @@ function TalentForm() {
   useEffect(() => {
     return () => {};
   }, []);
+
   return (
     <div>
       {' '}
@@ -134,75 +129,69 @@ function TalentForm() {
                 setFormData({ ...formData, role: e.target.value })
               }
             ></input>
-            <label>Facebook Link:</label>
+            <label>Engagement:</label>
             <input
               className='p-4  focus:outline-none shadow-sm shadow-slate-800 rounded-md'
               type='text'
               name='facebook Link'
-              value={formData.facebookLink}
+              value={formData.engagement}
               onChange={(e) =>
-                setFormData({ ...formData, facebookLink: e.target.value })
+                setFormData({ ...formData, engagement: e.target.value })
               }
             ></input>
-            <label>Instagram Link:</label>
+            <label>genre:</label>
             <input
               className='p-4  focus:outline-none shadow-sm shadow-slate-800 rounded-md'
               type='text'
               name='city'
-              value={formData.instagramLink}
+              value={formData.genre}
               onChange={(e) =>
-                setFormData({ ...formData, instagramLink: e.target.value })
+                setFormData({ ...formData, genre: e.target.value })
               }
             ></input>
-            <label>liquipedia Link:</label>
+            {
+              // <input
+              //   className='p-4  focus:outline-none shadow-sm shadow-slate-800 rounded-md'
+              //   type='text'
+              //   name='city'
+              //   value={formData.content}
+              //   onChange={(e) =>
+              //     setFormData({ ...formData, content: e.target.value })
+              //   }
+              // ></input>
+            }
+            <label>Content:</label>
+
+            <textarea
+              className='p-4  focus:outline-none shadow-sm shadow-slate-800 rounded-md'
+              onChange={(e) =>
+                setFormData({ ...formData, content: e.target.value })
+              }
+              value={formData.content}
+              name=''
+              id=''
+              cols='30'
+              rows='2'
+              required
+            ></textarea>
+            <label>Audience:</label>
             <input
               className='p-4  focus:outline-none shadow-sm shadow-slate-800 rounded-md'
               type='text'
               name='city'
-              value={formData.liquipediaLink}
+              value={formData.audience}
               onChange={(e) =>
-                setFormData({ ...formData, liquipediaLink: e.target.value })
+                setFormData({ ...formData, audience: e.target.value })
               }
             ></input>
-            <label>Youtube Link:</label>
-            <input
-              className='p-4  focus:outline-none shadow-sm shadow-slate-800 rounded-md'
-              type='text'
-              name='city'
-              value={formData.youtubeLink}
-              onChange={(e) =>
-                setFormData({ ...formData, youtubeLink: e.target.value })
-              }
-            ></input>
-            <label>Twitter Link:</label>
+            <label>Engagement Role:</label>
             <input
               className='p-4 focus:outline-none shadow-sm shadow-slate-800 rounded-md'
               type='text'
               name='city'
-              value={formData.twitterLink}
+              value={formData.engagementRole}
               onChange={(e) =>
-                setFormData({ ...formData, twitterLink: e.target.value })
-              }
-            ></input>
-            <label>Twitch Link:</label>
-            <input
-              className='p-4 focus:outline-none shadow-sm shadow-slate-800 rounded-md'
-              type='text'
-              name='city'
-              value={formData.twitchLink}
-              onChange={(e) =>
-                setFormData({ ...formData, twitchLink: e.target.value })
-              }
-            ></input>
-            <label>Tournaments :</label>
-            <p>Note kindly put coma " , " after each string</p>
-            <input
-              className='p-4 focus:outline-none shadow-sm shadow-slate-800 rounded-md'
-              type='text'
-              name='city'
-              value={formData.tournaments}
-              onChange={(e) =>
-                setFormData({ ...formData, tournaments: e.target.value })
+                setFormData({ ...formData, engagementRole: e.target.value })
               }
             ></input>
 
@@ -234,4 +223,5 @@ function TalentForm() {
     </div>
   );
 }
-export default TalentForm;
+
+export default CaseStudies;

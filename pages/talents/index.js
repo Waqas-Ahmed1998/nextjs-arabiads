@@ -45,10 +45,10 @@ function Talents() {
         <img
           src='/standardimages/servicemiddle.png'
           alt=''
-          className='h-screen scale-[1.5] 2xl:scale-[1.8] 3xl:scale-[2] object-cover'
+          className='h-screen scale-[1.3] 2xl:scale-[1.3] 3xl:scale-[2] object-cover'
         />
       </div>
-      <div className='-right-[5%]  hidden xl:inline-grid absolute top-[10%] [z-index:-1]'>
+      <div className='-right-[5%] 2xl:right-5 2xl:top-[5%] hidden xl:inline-grid absolute top-[10%] [z-index:-1]'>
         <motion.img
           animate={{
             scale: [0.7, 1.2],

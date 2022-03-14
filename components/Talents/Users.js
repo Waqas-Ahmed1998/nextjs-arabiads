@@ -298,7 +298,7 @@ function Users({ user }) {
                     {' '}
                     Tournaments:
                   </p>
-                  {singleUser.tournaments.includes(',') ? (
+                  {singleUser.tournaments?.includes(',') ? (
                     <div className='flex  gap-2 md:gap-0 '>
                       <div className='text-center md:px-2 md:space-y-3 border-r border-gray-400'>
                         <p className='text-[0.5rem] md:text-xs'>

@@ -7,202 +7,280 @@ import { useRouter } from 'next/router';
 import { useRecoilValue } from 'recoil';
 import { adminUsers } from '../recoil/adminUsers';
 import { loggedInUser } from '../recoil/loggedInUser';
+import useInView from 'react-cool-inview';
 
 function Navbar() {
+  const { observe, inView, scrollDirection, unobserve } = useInView({
+    threshold: 0.25,
+  });
+  const [width, setWidth] = useState('');
+
+  const { vertical } = scrollDirection;
+  console.log(vertical);
   const router = useRouter();
   const [onClick, setClick] = useState(false);
   const [onContact, setContact] = useState(false);
   const admins = useRecoilValue(adminUsers);
   const logged = useRecoilValue(loggedInUser);
 
-  if (admins) {
-    console.log(admins.includes(logged));
-  }
   const submit = (e) => {};
+  let offset;
   useEffect(() => {
+    setWidth(window.document.body.offsetWidth);
+
     return () => {};
   }, []);
   return (
     <>
-      <div className=' hidden px-4 relative xl:flex justify-between items-center py-4 md:font-semibold md:max-w-7xl lg:max-w-screen-2xl mx-auto  '>
-        <div className=''>
-          {
-            <Link href='/'>
-              <div>
-                <img
-                  className='cursor-pointer w-40 h-40 object-contain'
-                  src='/standardimages/logo.png'
-                  alt=''
-                />
-              </div>
-            </Link>
-          }
-        </div>
-
+      <div ref={observe}>
         <div
-          className={`  ${styles.popins} flex xl:space-x-7 font-normal text-2xl tracking-wide`}
+          id='navbar'
+          className=' hidden px-4 relative xl:flex justify-between items-center py-4 md:font-semibold md:max-w-7xl lg:max-w-screen-2xl mx-auto  '
         >
-          <Link href='/'>
-            <a className='hover:text-[#FE8936] cursor-pointer'>Home</a>
-          </Link>
-          <Link href='/services'>
-            <a className='hover:text-[#FE8936] cursor-pointer'>Services</a>
-          </Link>
-          <Link href='/influencers'>
-            <a className='hover:text-[#FE8936] cursor-pointer'>Influencers</a>
-          </Link>
-          <Link href='/talents'>
-            <a className='hover:text-[#FE8936] cursor-pointer'>
-              On-Air Talents
-            </a>
-          </Link>
-          <Link href='/case'>
-            <a className='hover:text-[#FE8936] cursor-pointer'>Case Studies</a>
-          </Link>
-          <Link href='/about'>
-            <a className='hover:text-[#FE8936] cursor-pointer'>About Us</a>
-          </Link>
-          <Link href='/to'>
-            <a className='hover:text-[#FE8936] cursor-pointer'>中国人</a>
-          </Link>
-          {admins && admins.includes(logged) && (
-            <div className=' cursor-default hidden xl:inline-grid relative group items-center text-sm'>
-              Form
-              <div className=' space-y-2 w-full top-[100%] left-0 absolute  hidden group-hover:inline-grid'>
-                <Link href='/form'>
-                  <p className=' hover:text-[#FE8936] cursor-pointer'>Talent</p>
-                </Link>
-                <Link href='/form/influencers'>
-                  <p className=' hover:text-[#FE8936] cursor-pointer'>
-                    Influencers
-                  </p>
-                </Link>
-              </div>
-            </div>
-          )}
-        </div>
-
-        <div className=' text-center'>
-          <button
-            onClick={(e) => setContact(!onContact)}
-            className={` ${styles.btnContact} ${styles.popins}  bg-[linear-gradient(#fdc66e,#ff805e)]  text-white hidden md:inline-grid btn-contact  py-4 bg-[#FEA366]   w-60  rounded-full  text-2xl`}
-          >
-            Contact Us
-          </button>
-        </div>
-        {
-          // <div className='absolute right-10 tracking-wider top-5 text-blue-400 text-base'>
-          //   <p
-          //     onClick={(e) => router.push('/login/admin/form')}
-          //     className='cursor-pointer'
-          //   >
-          //     Login
-          //   </p>
-          // </div>
-        }
-      </div>
-      {
-        // mobile nav
-      }
-      <div className=' pr-5 fixed bg-[#f0f5ff] z-50 top-0 mb-10  w-full xl:hidden xl:bg-transparent  flex justify-between p-2 items-center'>
-        <Link href='/'>
-          <img
-            onClick={(e) => setClick(false)}
-            className='cursor-pointer w-20 h-20 object-contain'
-            src='/standardimages/logo.png'
-            alt=''
-          />
-        </Link>
-        <div className=' flex items-center h-10 w-5 cursor-pointer z-50 text-black font-bold'>
-          {!onClick && (
-            <FontAwesomeIcon
-              icon={faStream}
-              size={'lg'}
-              onClick={(e) => setClick(!onClick)}
-            />
-          )}
-          {onClick && (
-            <FontAwesomeIcon
-              icon={faTimes}
-              size={'lg'}
-              onClick={(e) => setClick(!onClick)}
-            />
-          )}
-        </div>
-        {onClick && (
-          <div className='left-0  absolute text-white items-center justify-evenly top-[100%] z-40 bg-black py-10 xl:hidden flex flex-col space-y-5 overflow-y-auto h-[32rem]  w-full'>
-            <Link href='/'>
-              <a
-                onClick={(e) => setClick(!onClick)}
-                className='hover:text-[#FE8936] cursor-pointer'
-              >
-                Home
+          {vertical === 'up' && (
+            <Link
+              // className='btnNavigator'
+              href='#navbar'
+              // animate={!inView ? { opacity: 1 } : { opacity: 0 }}
+            >
+              <a href='#navbar'>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  className={`h-12 w-12  ease-out
+                   fixed bottom-[1rem] right-[1rem] cursor-pointer rounded-full border p-3 bg-white z-50 text-black`}
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    d='M8 7l4-4m0 0l4 4m-4-4v18'
+                  />
+                </svg>
               </a>
+            </Link>
+          )}
+          <div className=''>
+            {
+              <Link href='/'>
+                <div>
+                  <img
+                    className='cursor-pointer w-40 h-40 object-contain'
+                    src='/standardimages/logo.png'
+                    alt=''
+                  />
+                </div>
+              </Link>
+            }
+          </div>
+
+          <div
+            className={`  ${styles.popins} flex xl:space-x-7 font-normal text-2xl tracking-wide`}
+          >
+            <Link href='/'>
+              <a className='hover:text-[#FE8936] cursor-pointer'>Home</a>
             </Link>
             <Link href='/services'>
-              <a
-                onClick={(e) => setClick(!onClick)}
-                className='hover:text-[#FE8936] cursor-pointer'
-              >
-                {' '}
-                Services
-              </a>
+              <a className='hover:text-[#FE8936] cursor-pointer'>Services</a>
             </Link>
             <Link href='/influencers'>
-              <a
-                onClick={(e) => setClick(!onClick)}
-                className='hover:text-[#FE8936] cursor-pointer'
-              >
-                Influencers
-              </a>
+              <a className='hover:text-[#FE8936] cursor-pointer'>Influencers</a>
             </Link>
-
             <Link href='/talents'>
-              <a
-                onClick={(e) => setClick(!onClick)}
-                className='hover:text-[#FE8936] cursor-pointer'
-              >
-                {' '}
+              <a className='hover:text-[#FE8936] cursor-pointer'>
                 On-Air Talents
               </a>
             </Link>
             <Link href='/case'>
-              <a
-                onClick={(e) => setClick(!onClick)}
-                className='hover:text-[#FE8936] cursor-pointer'
-              >
-                {' '}
+              <a className='hover:text-[#FE8936] cursor-pointer'>
                 Case Studies
               </a>
             </Link>
             <Link href='/about'>
-              <a
-                onClick={(e) => setClick(!onClick)}
-                className='hover:text-[#FE8936] cursor-pointer'
-              >
-                About Us
-              </a>
+              <a className='hover:text-[#FE8936] cursor-pointer'>About Us</a>
             </Link>
-            <Link href='/'>
-              <a
-                onClick={(e) => setClick(!onClick)}
-                className='hover:text-[#FE8936] cursor-pointer'
-              >
-                中国人
-              </a>
+            <Link href='/to'>
+              <a className='hover:text-[#FE8936] cursor-pointer'>中国人</a>
             </Link>
+            {admins && admins.includes(logged) && (
+              <div className=' cursor-default hidden xl:inline-grid relative group items-center text-sm'>
+                Form
+                <div className=' space-y-2 w-full top-[100%] left-0 absolute  hidden group-hover:inline-grid'>
+                  <Link href='/form'>
+                    <p className=' hover:text-[#FE8936] cursor-pointer'>
+                      Talent
+                    </p>
+                  </Link>
+                  <Link href='/form/influencers'>
+                    <p className=' hover:text-[#FE8936] cursor-pointer'>
+                      Influencers
+                    </p>
+                  </Link>
+                  <Link href='/form/studies'>
+                    <p className=' hover:text-[#FE8936] cursor-pointer'>
+                      Studies
+                    </p>
+                  </Link>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <div className=' text-center'>
             <button
-              onClick={(e) => {
-                setContact(!onContact);
-                setClick(!onClick);
-              }}
-              className=' text-white px-4 py-1 text-xs   bg-[#FEA366]   hover:shadow-2xl shadow-orange-700 rounded-full '
+              onClick={(e) => setContact(!onContact)}
+              className={` ${styles.btnContact} ${styles.popins}  bg-[linear-gradient(#fdc66e,#ff805e)]  text-white hidden md:inline-grid btn-contact  py-4 bg-[#FEA366]   w-60  rounded-full  text-2xl`}
             >
               Contact Us
             </button>
           </div>
-        )}
+          {
+            // <div className='absolute right-10 tracking-wider top-5 text-blue-400 text-base'>
+            //   <p
+            //     onClick={(e) => router.push('/login/admin/form')}
+            //     className='cursor-pointer'
+            //   >
+            //     Login
+            //   </p>
+            // </div>
+          }
+        </div>
+        {
+          // mobile nav
+        }
+
+        <div
+          id='mobilenav'
+          className=' pr-5 absolute bg-[#f0f5ff] z-50 top-0 mb-10  w-full xl:hidden xl:bg-transparent  flex justify-between p-2 items-center'
+        >
+          {vertical === 'up' && (
+            <Link
+              // className='btnNavigator'
+              href='#mobilenav'
+              // animate={!inView ? { opacity: 1 } : { opacity: 0 }}
+            >
+              <a href='#mobilenav'>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  className={`h-12 w-12 transition-all duration-1000 ease-out ${
+                    vertical === 'down ' ? 'opacity-0' : 'opacity-100'
+                  } fixed bottom-[1rem] right-[1rem] cursor-pointer rounded-full border p-3 bg-white z-50 text-black`}
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    d='M8 7l4-4m0 0l4 4m-4-4v18'
+                  />
+                </svg>
+              </a>
+            </Link>
+          )}
+          <Link href='/'>
+            <img
+              onClick={(e) => setClick(false)}
+              className='cursor-pointer w-20 h-20 object-contain'
+              src='/standardimages/logo.png'
+              alt=''
+            />
+          </Link>
+          <div className=' flex items-center h-10 w-5 cursor-pointer z-50 text-black font-bold'>
+            {!onClick && (
+              <FontAwesomeIcon
+                icon={faStream}
+                size={'lg'}
+                onClick={(e) => setClick(!onClick)}
+              />
+            )}
+            {onClick && (
+              <FontAwesomeIcon
+                icon={faTimes}
+                size={'lg'}
+                onClick={(e) => setClick(!onClick)}
+              />
+            )}
+          </div>
+          {onClick && (
+            <div className='left-0  absolute text-white items-center justify-evenly top-[100%] z-40 bg-black py-10 xl:hidden flex flex-col space-y-5 overflow-y-auto h-[32rem]  w-full'>
+              <Link href='/'>
+                <a
+                  onClick={(e) => setClick(!onClick)}
+                  className='hover:text-[#FE8936] cursor-pointer'
+                >
+                  Home
+                </a>
+              </Link>
+              <Link href='/services'>
+                <a
+                  onClick={(e) => setClick(!onClick)}
+                  className='hover:text-[#FE8936] cursor-pointer'
+                >
+                  {' '}
+                  Services
+                </a>
+              </Link>
+              <Link href='/influencers'>
+                <a
+                  onClick={(e) => setClick(!onClick)}
+                  className='hover:text-[#FE8936] cursor-pointer'
+                >
+                  Influencers
+                </a>
+              </Link>
+
+              <Link href='/talents'>
+                <a
+                  onClick={(e) => setClick(!onClick)}
+                  className='hover:text-[#FE8936] cursor-pointer'
+                >
+                  {' '}
+                  On-Air Talents
+                </a>
+              </Link>
+              <Link href='/case'>
+                <a
+                  onClick={(e) => setClick(!onClick)}
+                  className='hover:text-[#FE8936] cursor-pointer'
+                >
+                  {' '}
+                  Case Studies
+                </a>
+              </Link>
+              <Link href='/about'>
+                <a
+                  onClick={(e) => setClick(!onClick)}
+                  className='hover:text-[#FE8936] cursor-pointer'
+                >
+                  About Us
+                </a>
+              </Link>
+              <Link href='/'>
+                <a
+                  onClick={(e) => setClick(!onClick)}
+                  className='hover:text-[#FE8936] cursor-pointer'
+                >
+                  中国人
+                </a>
+              </Link>
+              <button
+                onClick={(e) => {
+                  setContact(!onContact);
+                  setClick(!onClick);
+                }}
+                className=' text-white px-4 py-1 text-xs   bg-[#FEA366]   hover:shadow-2xl shadow-orange-700 rounded-full '
+              >
+                Contact Us
+              </button>
+            </div>
+          )}
+        </div>
       </div>
+
       {
         // Contact form
 

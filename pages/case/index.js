@@ -5,10 +5,12 @@ import NumbersSpeak from '../../components/standard/NumbersSpeak';
 import Plateforms from '../../components/standard/Plateforms';
 import Head from 'next/head';
 import { motion } from 'framer-motion';
+import { collection, onSnapshot } from 'firebase/firestore';
+import { db } from '../../firebase';
 
 function Case() {
   let [eventcard, setEventCard] = useState([]);
-
+  console.log(eventcard);
   let user = [
     {
       id: 1,
@@ -88,8 +90,22 @@ function Case() {
       img: 'https://influencers.ar-ad.com/wp-content/uploads/2021/08/valorant.png',
     },
   ];
+
   useEffect(() => {
-    setEventCard(user);
+    // setEventCard(user);
+
+    onSnapshot(collection(db, 'studies'), (snapshot) => {
+      let users = [];
+      snapshot.docs.forEach((doc) => {
+        users.push({ ...doc.data(), id: doc.id });
+      });
+      console.log(users);
+      setEventCard(users);
+    });
+
+    return () => {
+      // setEventCard([]);
+    };
   }, []);
   return (
     <div className='relative overflow-hidden xl:mt-20'>

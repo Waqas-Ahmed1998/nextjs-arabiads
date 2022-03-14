@@ -15,11 +15,17 @@ body {
   -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
 h2 {
   font-family: 'Changa', sans-serif;
 }
 p {
   font-family: 'Montserrat', sans-serif;
+}
+textarea {
+  resize: none;
 }
 @layer components {
   .note {
