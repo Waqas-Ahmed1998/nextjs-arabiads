@@ -63,7 +63,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={`md:my-40 relative  bg-no-repeat bg-center mx-auto`}>
+      <div
+        className={`md:my-40 2xl:my-24 relative  bg-no-repeat bg-center mx-auto`}
+      >
         <div className='right-0 hidden xl:inline-grid absolute -top-20  [z-index:-1]'>
           <img
             src='/standardimages/card5line.png'
