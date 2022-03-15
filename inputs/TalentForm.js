@@ -6,11 +6,16 @@ import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
 
 import { db, storage } from '../firebase';
 import { useRouter } from 'next/router';
+import { useRecoilValue } from 'recoil';
+import { adminUsers } from '../recoil/adminUsers';
+import { loggedInUser } from '../recoil/loggedInUser';
 
 function TalentForm() {
   const router = useRouter();
   // ***********   Hooks     ****
 
+  const admins = useRecoilValue(adminUsers);
+  const logged = useRecoilValue(loggedInUser);
   const [progress, setProgress] = useState(0);
   const [formData, setFormData] = useState({
     name: '',
@@ -100,6 +105,11 @@ function TalentForm() {
     // }
   };
   useEffect(() => {
+    if (admins && admins.includes(logged)) {
+      return;
+    } else {
+      router.push('/');
+    }
     return () => {};
   }, []);
   return (

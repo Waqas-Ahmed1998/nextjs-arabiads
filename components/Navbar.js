@@ -24,10 +24,8 @@ function Navbar() {
   const logged = useRecoilValue(loggedInUser);
 
   const submit = (e) => {};
-  let offset;
-  useEffect(() => {
-    setWidth(window.document.body.offsetWidth);
 
+  useEffect(() => {
     return () => {};
   }, []);
   return (

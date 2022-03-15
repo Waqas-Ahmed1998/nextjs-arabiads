@@ -1,34 +1,38 @@
-import React from 'react';
+import React from "react";
 
-import { useState, useEffect } from 'react';
-import { addDoc, collection, doc, Timestamp } from 'firebase/firestore';
-import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
+import { useState, useEffect } from "react";
+import { addDoc, collection, doc, Timestamp } from "firebase/firestore";
+import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 // import { db, storage } from '../../firebase';
-import { db, storage } from '../firebase';
-import { useRouter } from 'next/router';
+import { db, storage } from "../firebase";
+import { useRouter } from "next/router";
+import { useRecoilValue } from "recoil";
+import { adminUsers } from "../recoil/adminUsers";
+import { loggedInUser } from "../recoil/loggedInUser";
 
 function InfluencersForm() {
   const router = useRouter();
-
+  const admins = useRecoilValue(adminUsers);
+  const logged = useRecoilValue(loggedInUser);
   // ***********   Hooks     ****
 
   const [progress, setProgress] = useState(0);
   const [formData, setFormData] = useState({
-    name: '',
-    youtube: '',
-    youtubeSecond: '',
-    image: '',
-    facebook: '',
-    instagram: '',
-    twitter: '',
-    followers: '',
-    tiktok: '',
-    youtubeLink: '',
-    youtubeLink2: '',
-    instagramLink: '',
-    twitterLink: '',
-    tiktokLink: '',
-    facebookLink: '',
+    name: "",
+    youtube: "",
+    youtubeSecond: "",
+    image: "",
+    facebook: "",
+    instagram: "",
+    twitter: "",
+    followers: "",
+    tiktok: "",
+    youtubeLink: "",
+    youtubeLink2: "",
+    instagramLink: "",
+    twitterLink: "",
+    tiktokLink: "",
+    facebookLink: "",
     date: Timestamp.now().toDate(),
   });
   const handleImageChange = (e) => {
@@ -41,7 +45,7 @@ function InfluencersForm() {
     // try {
     if (!formData.name || !formData.image) {
       console.log(formData);
-      alert('Please fill the required fields');
+      alert("Please fill the required fields");
       return;
     }
 
@@ -51,7 +55,7 @@ function InfluencersForm() {
     );
     const uploadImage = uploadBytesResumable(storageRef, formData.image);
     uploadImage.on(
-      'state_changed',
+      "state_changed",
       (snapshot) => {
         const progressPercent = Math.round(
           (snapshot.bytesTransferred / snapshot.totalBytes) * 100
@@ -63,25 +67,25 @@ function InfluencersForm() {
       },
       () => {
         setFormData({
-          name: '',
-          youtube: '',
-          youtubeSecond: '',
-          image: '',
-          facebook: '',
-          instagram: '',
-          twitter: '',
-          followers: '',
-          tiktok: '',
-          youtubeLink: '',
-          youtubeLink2: '',
-          instagramLink: '',
-          twitterLink: '',
-          tiktokLink: '',
-          facebookLink: '',
+          name: "",
+          youtube: "",
+          youtubeSecond: "",
+          image: "",
+          facebook: "",
+          instagram: "",
+          twitter: "",
+          followers: "",
+          tiktok: "",
+          youtubeLink: "",
+          youtubeLink2: "",
+          instagramLink: "",
+          twitterLink: "",
+          tiktokLink: "",
+          facebookLink: "",
         });
         getDownloadURL(uploadImage.snapshot.ref)
           .then((url) => {
-            const articleRef = collection(db, 'influencers');
+            const articleRef = collection(db, "influencers");
 
             addDoc(articleRef, {
               name: formData.name,
@@ -93,6 +97,7 @@ function InfluencersForm() {
               followers: formData.followers,
               twitter: formData.twitter,
               tiktok: formData.tiktok,
+              tiktokLink: formData.tiktokLink,
               twitterLink: formData.twitterLink,
               instagramLink: formData.instagramLink,
               facebookLink: formData.facebookLink,
@@ -104,9 +109,9 @@ function InfluencersForm() {
             });
           })
           .then(() => {
-            alert('data uploaded successfuly');
+            alert("data uploaded successfuly");
             setProgress(0);
-            router.push('/influencers');
+            router.push("/influencers");
           })
           .catch((err) => console.log(err));
       }
@@ -116,11 +121,19 @@ function InfluencersForm() {
     //   console.log(error);
     // }
   };
+  useEffect(() => {
+    if (admins && admins.includes(logged)) {
+      return;
+    } else {
+      router.push("/");
+    }
+    return () => {};
+  }, [progress]);
   return (
     <div>
-      {' '}
+      {" "}
       <div>
-        {' '}
+        {" "}
         <div className='p-10 items-center '>
           <div className='p-4'>
             <form

@@ -1,36 +1,36 @@
 import React, { useEffect, useState } from "react";
 import { useSetRecoilState, useRecoilValue } from "recoil";
 import { loggedInUser } from "../../../../recoil/loggedInUser";
-// import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import {
   getAuth,
   createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
   signOut,
 } from "firebase/auth";
+import { signInUser } from "../../../../recoil/loggedInUser copy";
 
 // import { auth } from '../../../../firebase';
 
-function LoginIn() {
+function SignIn() {
   const auth = getAuth();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [loggedIn, setLoggedIn] = useState(false);
+  const newUser = useSetRecoilState(signInUser);
   const setLoginEmail = useSetRecoilState(loggedInUser);
-  const signIn = (e) => {
+
+  const createUser = (e) => {
     e.preventDefault();
     const auth = getAuth();
-    signInWithEmailAndPassword(auth, email, password)
+    createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
-
-        alert("logged in");
+        console.log(user);
+        alert("User Created");
         setLoginEmail(user.email);
+        newUser(user.email);
         setEmail("");
         setPassword("");
-        setLoggedIn(true);
         // ...
       })
       .catch((error) => {
@@ -40,17 +40,6 @@ function LoginIn() {
       });
   };
 
-  const signOutUser = () => {
-    signOut(auth)
-      .then(() => {
-        alert("user sign out");
-        setLoggedIn(false);
-        setLoginEmail(null);
-      })
-      .catch((error) => {
-        alert(error);
-      });
-  };
   // sign in with email and password
 
   useEffect(() => {
@@ -60,7 +49,7 @@ function LoginIn() {
     <div className='max-w-6xl flex py-10  items-center justify-center mx-auto'>
       <form
         action=''
-        onSubmit={signIn}
+        onSubmit={createUser}
         className=' p-10 flex flex-col space-y-7 border basis-[60%]'
       >
         <label htmlFor=''>Enter Email</label>
@@ -85,16 +74,8 @@ function LoginIn() {
           sign in
         </button>
       </form>
-      {loggedIn && (
-        <button
-          onClick={signOutUser}
-          className='px-5 py-2 bg-blue-400 text-white w-fit hover:bg-gray-400 hover:text-black mx-auto'
-        >
-          sign out
-        </button>
-      )}
     </div>
   );
 }
 
-export default LoginIn;
+export default SignIn;

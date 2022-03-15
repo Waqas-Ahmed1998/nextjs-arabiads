@@ -1,19 +1,20 @@
-import React from 'react';
-import { deleteDoc, doc } from 'firebase/firestore';
-import { useRecoilValue } from 'recoil';
-import { loggedInUser } from '../../recoil/loggedInUser';
-import { adminUsers } from '../../recoil/adminUsers';
-import { db } from '../../firebase';
+import React from "react";
+import { deleteDoc, doc } from "firebase/firestore";
+import { useRecoilValue } from "recoil";
+import { loggedInUser } from "../../recoil/loggedInUser";
+import { adminUsers } from "../../recoil/adminUsers";
+import { db } from "../../firebase";
+import styles from "../../styles/Home.module.css";
 
 function EventCard({ event, index }) {
   const loggedUser = useRecoilValue(loggedInUser);
   const admin = useRecoilValue(adminUsers);
 
   const deleteDocument = (id) => {
-    const docRef = doc(db, 'studies', id);
-    if (confirm('Press ok to remove the item')) {
+    const docRef = doc(db, "studies", id);
+    if (confirm("Press ok to remove the item")) {
       deleteDoc(docRef);
-      alert('item removed');
+      alert("item removed");
     } else {
       return;
     }
@@ -22,7 +23,7 @@ function EventCard({ event, index }) {
     <div className='flex relative lg:w-[90%] p-10 bg-white h-[35rem] rounded-2xl mt-10'>
       {admin?.includes(loggedUser) && (
         <>
-          {' '}
+          {" "}
           <svg
             onClick={(e) => deleteDocument(event.id)}
             xmlns='http://www.w3.org/2000/svg'
@@ -44,7 +45,7 @@ function EventCard({ event, index }) {
         <span className='text-white text-lg'>{index + 1}</span>
       </div>
       <div className='absolute left-0 -top-3 [z-index:-1] bg-blue-600 w-full rounded-t-full h-5'></div>
-      <div className=''>
+      <div className={`${styles.popins}`}>
         <div className='flex space-x-10 items-center'>
           <img
             src={event.image}
@@ -57,7 +58,7 @@ function EventCard({ event, index }) {
           </div>
         </div>
         <p className='md:text-lg text-sm pt-10'>{event.content}</p>
-        <div className=' font-bold absolute bottom-10 w-[80%] flex justify-around items-center  '>
+        <div className=' text-[18px] absolute bottom-10 w-[80%] flex justify-around items-center  '>
           <div>
             <img
               src='/case/views.png'
@@ -67,7 +68,7 @@ function EventCard({ event, index }) {
             <p className='text-center text-blue-400 font-bold'>
               {event.audience}
             </p>
-            <p>{event.role}</p>
+            <p className={`${styles.popins}`}>{event.role}</p>
           </div>
           <div className='text-center'>
             <img
@@ -75,8 +76,10 @@ function EventCard({ event, index }) {
               alt=''
               className='w-10 h-10 object-contain mx-auto'
             />
-            <p className='text-center text-blue-400'>{event.engagement}</p>
-            <p>{event.engagementRole}</p>
+            <p className='text-center text-blue-400 font-bold'>
+              {event.engagement}
+            </p>
+            <p className={`${styles.popins}`}>{event.engagementRole}</p>
           </div>
         </div>
       </div>
