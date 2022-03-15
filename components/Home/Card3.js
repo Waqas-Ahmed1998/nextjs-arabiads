@@ -4,7 +4,7 @@ import Image from 'next/image';
 import styles from '../../styles/Home.module.css';
 function Card3() {
   return (
-    <div className=' bg-white md:h-[80vh] md:w-full xl:h-fit  mt-10  lg:mt-20 xl:mt-0 relative mx-auto bg-contain bg-no-repeat  xl:inline-grid lg:w-[75%]   '>
+    <div className=' bg-white  md:h-[80vh] md:w-full xl:h-fit  mt-10  lg:mt-20 xl:mt-0 relative mx-auto bg-contain bg-no-repeat  xl:inline-grid lg:w-[75%]   '>
       {
         // <img
         //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/content-box-3.png'

@@ -35,7 +35,7 @@ function Navbar() {
       <div ref={observe} className=''>
         <div
           id='navbar'
-          className=' hidden px-4 relative xl:flex justify-between items-center py-4 md:font-semibold md:max-w-7xl lg:max-w-screen-2xl mx-auto  '
+          className=' hidden  relative xl:flex    xl:justify-center items-center py-0 md:font-semibold md:max-w-7xl lg:max-w-[95rem] mx-auto  '
         >
           {vertical === 'up' && (
             <Link
@@ -67,7 +67,7 @@ function Navbar() {
               <Link href='/'>
                 <div>
                   <img
-                    className='cursor-pointer w-40 h-40 object-contain'
+                    className='cursor-pointer w-32 h-40 object-contain'
                     src='/standardimages/logo.png'
                     alt=''
                   />
@@ -77,32 +77,42 @@ function Navbar() {
           </div>
 
           <div
-            className={`  ${styles.popins} flex xl:space-x-7 font-normal text-2xl tracking-wide`}
+            className={`  ${styles.popins} flex xl:space-x-0 px-8  font-medium text-[22px] `}
           >
             <Link href='/'>
-              <a className='hover:text-[#FE8936] cursor-pointer'>Home</a>
+              <a className='hover:text-[#FE8936] self-center py-[15px] px-[18px]  cursor-pointer'>
+                Home
+              </a>
             </Link>
             <Link href='/services'>
-              <a className='hover:text-[#FE8936] cursor-pointer'>Services</a>
+              <a className='hover:text-[#FE8936] self-center py-[15px]  px-[18px] cursor-pointer'>
+                Services
+              </a>
             </Link>
             <Link href='/influencers'>
-              <a className='hover:text-[#FE8936] cursor-pointer'>Influencers</a>
+              <a className='hover:text-[#FE8936] self-center py-[15px]  px-[18px] cursor-pointer'>
+                Influencers
+              </a>
             </Link>
             <Link href='/talents'>
-              <a className='hover:text-[#FE8936] cursor-pointer'>
+              <a className='hover:text-[#FE8936] self-center py-[15px]  px-[18px] cursor-pointer'>
                 On-Air Talents
               </a>
             </Link>
             <Link href='/case'>
-              <a className='hover:text-[#FE8936] cursor-pointer'>
+              <a className='hover:text-[#FE8936] self-center py-[15px]  px-[18px] cursor-pointer'>
                 Case Studies
               </a>
             </Link>
             <Link href='/about'>
-              <a className='hover:text-[#FE8936] cursor-pointer'>About Us</a>
+              <a className='hover:text-[#FE8936] self-center py-[15px] px-[18px]  cursor-pointer'>
+                About Us
+              </a>
             </Link>
             <Link href='/to'>
-              <a className='hover:text-[#FE8936] cursor-pointer'>中国人</a>
+              <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
+                中国人
+              </a>
             </Link>
             {admins && admins.includes(logged) && (
               <div className=' cursor-default hidden xl:inline-grid relative group items-center text-sm'>

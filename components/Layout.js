@@ -1,11 +1,10 @@
 import React from 'react';
-
 import Footer from './Footer';
 import Navbar from './Navbar';
 import { useRouter } from 'next/router';
 import { useSetRecoilState } from 'recoil';
 import { adminUsers } from '../recoil/adminUsers';
-import { collection, onSnapshot, getDocs } from 'firebase/firestore';
+import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
 
 function Layout({ children }) {
