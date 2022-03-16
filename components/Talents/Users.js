@@ -179,15 +179,6 @@ function Users({ user }) {
                       {singleUser.facebookLink && (
                         <a href={singleUser.facebookLink}>
                           {" "}
-<<<<<<< HEAD
-                          {
-                            // <img
-                            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
-                            //   alt=''
-                            // />
-                          }
-=======
->>>>>>> revision-text-image
                           <FontAwesomeIcon
                             icon={faFacebook}
                             className='w-6 p-[0.3rem] bg-white rounded-full'
@@ -198,15 +189,6 @@ function Users({ user }) {
                       {singleUser.twitterLink && (
                         <a href={singleUser.twitterLink}>
                           {" "}
-<<<<<<< HEAD
-                          {
-                            // <img
-                            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
-                            //   alt=''
-                            // />
-                          }
-=======
->>>>>>> revision-text-image
                           <FontAwesomeIcon
                             icon={faTwitter}
                             className='w-6 p-[0.3rem] bg-white rounded-full'
@@ -216,15 +198,6 @@ function Users({ user }) {
                       {singleUser.instagramLink && (
                         <a href={singleUser.instagramLink}>
                           {" "}
-<<<<<<< HEAD
-                          {
-                            // <img
-                            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
-                            //   alt=''
-                            // />
-                          }
-=======
->>>>>>> revision-text-image
                           <FontAwesomeIcon
                             icon={faInstagram}
                             className='w-6 p-[0.3rem] bg-white rounded-full'
@@ -234,15 +207,6 @@ function Users({ user }) {
                       {singleUser.twitchLink && (
                         <a href={singleUser.twitchLink}>
                           {" "}
-<<<<<<< HEAD
-                          {
-                            // <img
-                            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
-                            //   alt=''
-                            // />
-                          }
-=======
->>>>>>> revision-text-image
                           <FontAwesomeIcon
                             icon={faTwitch}
                             className='w-6 p-[0.3rem] bg-white rounded-full'
@@ -252,15 +216,6 @@ function Users({ user }) {
                       {singleUser.youtubeLink && (
                         <a href={singleUser.youtubeLink}>
                           {" "}
-<<<<<<< HEAD
-                          {
-                            // <img
-                            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
-                            //   alt=''
-                            // />
-                          }
-=======
->>>>>>> revision-text-image
                           <FontAwesomeIcon
                             icon={faYoutube}
                             className='w-6 p-[0.3rem] bg-white rounded-full'
