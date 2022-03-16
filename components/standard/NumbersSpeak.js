@@ -1,6 +1,6 @@
-import React from 'react';
-import styles from '../../styles/Home.module.css';
-import { motion } from 'framer-motion';
+import React from "react";
+import styles from "../../styles/Home.module.css";
+import { motion } from "framer-motion";
 
 function NumbersSpeak() {
   return (
@@ -111,12 +111,10 @@ function NumbersSpeak() {
             animate={{
               scale: [0.7, 1.2],
               opacity: [0, 0.8, 0],
-              // rotate: [0, 0, 270, 270, 0],
             }}
             transition={{ duration: 10, repeat: Infinity }}
             src='/standardimages/pulseorange.png'
             alt=''
-            // className='  animate-animate-pulse  '
           />
         </div>
       </div>

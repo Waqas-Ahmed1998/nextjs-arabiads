@@ -1,32 +1,14 @@
-import Image from 'next/image';
-import React from 'react';
-import styles from '../../styles/Home.module.css';
+import Image from "next/image";
+import React from "react";
+import styles from "../../styles/Home.module.css";
 
 function Card1() {
   return (
     <div className=' relative  xl:inline-grid lg:w-[78%]  '>
-      {
-        //   <img
-        //   className='hidden xl:inline-grid absolute top-0 md:w-[100%]'
-        //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/header-bg.png'
-        //   alt=''
-        // />
-      }
       <div className='hidden   xl:inline-grid absolute -top-0 md:w-[99%] h-[49rem]'>
-        {
-          //  <Image
-          //      className='hidden bg-contain  xl:inline-grid absolute top-0 '
-          //      src={'/home/card1.png'}
-          //      alt=''
-          //      width={600}
-          //      height={600}
-          //      quality={100}
-          //      priority
-          //    />
-        }
         <Image
           className='hidden bg-contain  xl:inline-grid absolute top-0 '
-          src={'/home/card1.png'}
+          src={"/home/card1.png"}
           alt=''
           width='100%'
           height='100%'
@@ -94,13 +76,7 @@ function Card1() {
           </a>
         </div>
       </div>
-      {
-        //   <img
-        //   className='hidden xl:inline-grid md:w-[98%] absolute '
-        //   src='https://influencers.ar-ad.com/wp-content/uploads/2022/02/arabic-gamers.png'
-        //   alt=''
-        // />
-      }
+
       <div className='top-1 xl:left-[20px]  xl:h-[49rem] 2xl:left-[20px] hidden  2xl:h-[49rem] 2xl:w-[95%] h-[100%] xl:inline-grid md:w-[95%] absolute '>
         <Image
           className='hidden  xl:inline-grid md:w-[98%] absolute '

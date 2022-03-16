@@ -1,33 +1,32 @@
-import React, { useState } from 'react';
-import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useState } from "react";
+import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faInstagram,
-  faLinkedin,
   faTwitter,
   faYoutube,
   faTwitch,
-} from '@fortawesome/free-brands-svg-icons';
-import { MoonLoader } from 'react-spinners';
-import { loggedInUser } from '../../recoil/loggedInUser';
-import { adminUsers } from '../../recoil/adminUsers';
-import { useRecoilValue } from 'recoil';
-import { deleteDoc, doc } from 'firebase/firestore';
-import { db } from '../../firebase';
-import styles from '../../styles/Home.module.css';
+} from "@fortawesome/free-brands-svg-icons";
+import { MoonLoader } from "react-spinners";
+import { loggedInUser } from "../../recoil/loggedInUser";
+import { adminUsers } from "../../recoil/adminUsers";
+import { useRecoilValue } from "recoil";
+import { deleteDoc, doc } from "firebase/firestore";
+import { db } from "../../firebase";
+import styles from "../../styles/Home.module.css";
 
 function Users({ user }) {
-  const [filter, setFilter] = useState('');
+  const [filter, setFilter] = useState("");
 
   const loggedUser = useRecoilValue(loggedInUser);
   const admin = useRecoilValue(adminUsers);
 
   const deleteDocument = (id) => {
-    const docRef = doc(db, 'talents', id);
-    if (confirm('Press ok to remove the item')) {
+    const docRef = doc(db, "talents", id);
+    if (confirm("Press ok to remove the item")) {
       deleteDoc(docRef);
-      alert('item removed');
+      alert("item removed");
     } else {
       return;
     }
@@ -40,9 +39,9 @@ function Users({ user }) {
       >
         <div className='   cursor-pointer hover:text-white  text-sm  xl:text-2xl'>
           <button
-            onClick={() => setFilter('')}
+            onClick={() => setFilter("")}
             className={`${
-              !filter && 'bg-[#01A3E6] text-white'
+              !filter && "bg-[#01A3E6] text-white"
             } p-3 xl:p-5  hover:bg-[#01A3E6] rounded-md active:bg-[#1f84ac] focus:outline-none focus:ring-violet-300 focus:bg-[#01A3E6] focus:text-white`}
           >
             All
@@ -50,7 +49,7 @@ function Users({ user }) {
         </div>
         <div className='  cursor-pointer hover:text-white  text-sm xl:text-2xl'>
           <button
-            onClick={() => setFilter('caster')}
+            onClick={() => setFilter("caster")}
             className='p-3 xl:p-5  hover:bg-[#01A3E6] rounded-md active:bg-[#1f84ac] focus:outline-none focus:ring-violet-300 focus:bg-[#01A3E6] focus:text-white'
           >
             Caster
@@ -58,7 +57,7 @@ function Users({ user }) {
         </div>
         <div className='  cursor-pointer hover:text-white  text-sm  xl:text-2xl'>
           <button
-            onClick={() => setFilter('host')}
+            onClick={() => setFilter("host")}
             className='p-3 xl:p-5  hover:bg-[#01A3E6] rounded-md active:bg-[#1f84ac] focus:outline-none focus:ring-violet-300 focus:bg-[#01A3E6] focus:text-white'
           >
             Host
@@ -66,7 +65,7 @@ function Users({ user }) {
         </div>
         <div className='  cursor-pointer hover:text-white  text-sm xl:text-2xl'>
           <button
-            onClick={() => setFilter('analyst')}
+            onClick={() => setFilter("analyst")}
             className='p-3 xl:p-5  hover:bg-[#01A3E6] rounded-md active:bg-[#1f84ac] focus:outline-none focus:ring-violet-300 focus:bg-[#01A3E6] focus:text-white'
           >
             Analyst
@@ -79,8 +78,8 @@ function Users({ user }) {
       <div className='grid grid-cols-1 xl:grid-cols-2 flex-col xl:flex-row gap-5 mt-10 items-center'>
         {!user.length && (
           <div className='mb-24 h-10 p-24 col-span-2 flex justify-center  '>
-            {' '}
-            <MoonLoader color={'black'} size='30px' />{' '}
+            {" "}
+            <MoonLoader color={"black"} size='30px' />{" "}
           </div>
         )}
         {user
@@ -96,14 +95,6 @@ function Users({ user }) {
           .map((singleUser, index) =>
             index % 2 == 0 ? (
               <div key={singleUser.id} className='relative  '>
-                {
-                  // <img
-                  //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/sm-left-bg-1.png'
-                  //   alt=''
-                  //   className='w-full'
-                  // />
-                }
-
                 <Image
                   className=''
                   src='/talents/leftcard.png'
@@ -120,7 +111,7 @@ function Users({ user }) {
                 }
                 {admin?.includes(loggedUser) && (
                   <>
-                    {' '}
+                    {" "}
                     <svg
                       onClick={(e) => deleteDocument(singleUser.id)}
                       xmlns='http://www.w3.org/2000/svg'
@@ -152,25 +143,25 @@ function Users({ user }) {
                       - {singleUser.name}
                     </h3>
                     <p className='text-blue-500 text-xs xl:text-base font-bold'>
-                      {' '}
+                      {" "}
                       Tournaments:
                     </p>
-                    {singleUser.tournaments?.includes(',') ? (
+                    {singleUser.tournaments?.includes(",") ? (
                       <div className='flex  gap-2 md:gap-0 '>
                         <div className='text-center md:px-2 md:space-y-3 border-r border-gray-400'>
                           <p className='text-[0.5rem] md:text-xs'>
-                            {singleUser.tournaments.split(',')[0]}
+                            {singleUser.tournaments.split(",")[0]}
                           </p>
                           <p className=' text-[0.5rem] md:text-xs'>
-                            {singleUser.tournaments.split(',')[1]}
+                            {singleUser.tournaments.split(",")[1]}
                           </p>
                         </div>
                         <div className='text-center md:space-y-3 md:px-2'>
                           <p className='text-[0.5rem] md:text-xs'>
-                            {singleUser.tournaments.split(',')[2]}
+                            {singleUser.tournaments.split(",")[2]}
                           </p>
                           <p className=' text-[0.5rem] md:text-xs'>
-                            {singleUser.tournaments.split(',')[3]}
+                            {singleUser.tournaments.split(",")[3]}
                           </p>
                         </div>
                       </div>
@@ -187,13 +178,7 @@ function Users({ user }) {
                     <div className=' md:flex w-full justify-evenly justify-self-end absolute bottom-10 hidden '>
                       {singleUser.facebookLink && (
                         <a href={singleUser.facebookLink}>
-                          {' '}
-                          {
-                            // <img
-                            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
-                            //   alt=''
-                            // />
-                          }
+                          {" "}
                           <FontAwesomeIcon
                             icon={faFacebook}
                             className='w-6 p-[0.3rem] bg-white rounded-full'
@@ -203,13 +188,7 @@ function Users({ user }) {
 
                       {singleUser.twitterLink && (
                         <a href={singleUser.twitterLink}>
-                          {' '}
-                          {
-                            // <img
-                            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
-                            //   alt=''
-                            // />
-                          }
+                          {" "}
                           <FontAwesomeIcon
                             icon={faTwitter}
                             className='w-6 p-[0.3rem] bg-white rounded-full'
@@ -218,13 +197,7 @@ function Users({ user }) {
                       )}
                       {singleUser.instagramLink && (
                         <a href={singleUser.instagramLink}>
-                          {' '}
-                          {
-                            // <img
-                            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
-                            //   alt=''
-                            // />
-                          }
+                          {" "}
                           <FontAwesomeIcon
                             icon={faInstagram}
                             className='w-6 p-[0.3rem] bg-white rounded-full'
@@ -233,13 +206,7 @@ function Users({ user }) {
                       )}
                       {singleUser.twitchLink && (
                         <a href={singleUser.twitchLink}>
-                          {' '}
-                          {
-                            // <img
-                            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
-                            //   alt=''
-                            // />
-                          }
+                          {" "}
                           <FontAwesomeIcon
                             icon={faTwitch}
                             className='w-6 p-[0.3rem] bg-white rounded-full'
@@ -248,13 +215,7 @@ function Users({ user }) {
                       )}
                       {singleUser.youtubeLink && (
                         <a href={singleUser.youtubeLink}>
-                          {' '}
-                          {
-                            // <img
-                            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
-                            //   alt=''
-                            // />
-                          }
+                          {" "}
                           <FontAwesomeIcon
                             icon={faYoutube}
                             className='w-6 p-[0.3rem] bg-white rounded-full'
@@ -299,7 +260,7 @@ function Users({ user }) {
                 />
                 {admin?.includes(loggedUser) && (
                   <>
-                    {' '}
+                    {" "}
                     <svg
                       onClick={(e) => deleteDocument(singleUser.id)}
                       xmlns='http://www.w3.org/2000/svg'
@@ -332,25 +293,25 @@ function Users({ user }) {
                       - {singleUser.name}
                     </h3>
                     <p className='text-blue-500 text-xs xl:text-base font-bold'>
-                      {' '}
+                      {" "}
                       Tournaments:
                     </p>
-                    {singleUser.tournaments?.includes(',') ? (
+                    {singleUser.tournaments?.includes(",") ? (
                       <div className='flex  gap-2 md:gap-0 '>
                         <div className='text-center md:px-2 md:space-y-3 border-r border-gray-400'>
                           <p className='text-[0.5rem] md:text-xs'>
-                            {singleUser.tournaments.split(',')[0]}
+                            {singleUser.tournaments.split(",")[0]}
                           </p>
                           <p className=' text-[0.5rem] md:text-xs'>
-                            {singleUser.tournaments.split(',')[1]}
+                            {singleUser.tournaments.split(",")[1]}
                           </p>
                         </div>
                         <div className='text-center md:space-y-3 md:px-2'>
                           <p className='text-[0.5rem] md:text-xs'>
-                            {singleUser.tournaments.split(',')[2]}
+                            {singleUser.tournaments.split(",")[2]}
                           </p>
                           <p className=' text-[0.5rem] md:text-xs'>
-                            {singleUser.tournaments.split(',')[3]}
+                            {singleUser.tournaments.split(",")[3]}
                           </p>
                         </div>
                       </div>
@@ -367,7 +328,7 @@ function Users({ user }) {
                     <div className=' md:flex w-full justify-evenly justify-self-end absolute bottom-10 hidden '>
                       {singleUser.facebookLink && (
                         <a href={singleUser.facebookLink}>
-                          {' '}
+                          {" "}
                           {
                             // <img
                             //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
@@ -383,7 +344,7 @@ function Users({ user }) {
 
                       {singleUser.twitterLink && (
                         <a href={singleUser.twitterLink}>
-                          {' '}
+                          {" "}
                           {
                             // <img
                             //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
@@ -398,7 +359,7 @@ function Users({ user }) {
                       )}
                       {singleUser.instagramLink && (
                         <a href={singleUser.instagramLink}>
-                          {' '}
+                          {" "}
                           {
                             // <img
                             //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
@@ -413,7 +374,7 @@ function Users({ user }) {
                       )}
                       {singleUser.twitchLink && (
                         <a href={singleUser.twitchLink}>
-                          {' '}
+                          {" "}
                           {
                             // <img
                             //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
@@ -428,7 +389,7 @@ function Users({ user }) {
                       )}
                       {singleUser.youtubeLink && (
                         <a href={singleUser.youtubeLink}>
-                          {' '}
+                          {" "}
                           {
                             // <img
                             //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'

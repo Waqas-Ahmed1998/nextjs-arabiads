@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import React from 'react';
-import styles from '../../styles/Home.module.css';
+import Image from "next/image";
+import React from "react";
+import styles from "../../styles/Home.module.css";
 
 function Plateforms() {
   return (
@@ -24,12 +24,11 @@ function Plateforms() {
         >
           <div className='absolute  -top-8 w-[35%] md:-top-10 md:w-[50%]'>
             <Image
-              src={'/plateforms/instagram.png'}
+              src={"/plateforms/instagram.png"}
               width='500'
               height='500'
               priority
               quality={100}
-              // layout='responsive'
               objectFit='contain'
             />
           </div>
@@ -46,12 +45,11 @@ function Plateforms() {
         >
           <div className='absolute -top-8 w-[35%] md:-top-10 md:w-[50%]'>
             <Image
-              src={'/plateforms/youtube.png'}
+              src={"/plateforms/youtube.png"}
               width='500'
               height='500'
               priority
               quality={100}
-              // layout='responsive'
               objectFit='contain'
             />
           </div>
@@ -68,12 +66,11 @@ function Plateforms() {
         >
           <div className='absolute -top-8 w-[35%] md:-top-10 md:w-[50%]'>
             <Image
-              src={'/plateforms/tiktok.png'}
+              src={"/plateforms/tiktok.png"}
               width='500'
               height='500'
               priority
               quality={100}
-              // layout='responsive'
               objectFit='contain'
             />
           </div>
@@ -90,12 +87,11 @@ function Plateforms() {
         >
           <div className='absolute -top-8 w-[35%] md:-top-10 md:w-[50%]'>
             <Image
-              src={'/plateforms/twitter.png'}
+              src={"/plateforms/twitter.png"}
               width='500'
               height='500'
               priority
               quality={100}
-              // layout='responsive'
               objectFit='contain'
             />
           </div>
@@ -112,12 +108,11 @@ function Plateforms() {
         >
           <div className='absolute -top-8 md:-top-10 w-[35%] md:w-[50%]'>
             <Image
-              src={'/plateforms/facebook.png'}
+              src={"/plateforms/facebook.png"}
               width='500'
               height='500'
               priority
               quality={100}
-              // layout='responsive'
               objectFit='contain'
             />
           </div>
@@ -134,12 +129,11 @@ function Plateforms() {
         >
           <div className='absolute -top-8 w-[35%] md:-top-10 md:w-[50%]'>
             <Image
-              src={'/plateforms/twitch.png'}
+              src={"/plateforms/twitch.png"}
               width='500'
               height='500'
               priority
               quality={100}
-              // layout='responsive'
               objectFit='contain'
             />
           </div>

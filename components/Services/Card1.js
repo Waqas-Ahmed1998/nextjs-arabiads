@@ -1,8 +1,6 @@
-import React, { Fragment } from 'react';
-import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons';
-// import { faArrowAltCircleDown } from '@fortawesome/free-regular-svg-icons';
+import React, { Fragment } from "react";
+import Image from "next/image";
+
 function Card1() {
   return (
     <Fragment>
@@ -11,13 +9,6 @@ function Card1() {
       }
 
       <div className='relative w-[90%] mx-auto '>
-        {
-          // <img
-          //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/service-page-header-bg.png'
-          //   alt=''
-          //   className='hidden xl:inline-grid  w-full '
-          // />
-        }
         <div className='hidden  h-[35rem] xl:inline-grid w-full'>
           <Image
             src='/service/Scard1.png'
@@ -66,13 +57,6 @@ function Card1() {
                   d='M19 13l-7 7-7-7m14-8l-7 7-7-7'
                 />
               </svg>
-              {
-                // <img
-                //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/scroll-arrow.svg'
-                //   alt=''
-                //   className='animate-bounce w-7 h-7 mx-auto '
-                // />
-              }
             </a>
           </div>
         </div>
