@@ -1,18 +1,11 @@
-import Link from 'next/link';
-import React from 'react';
-import Image from 'next/image';
-import styles from '../../styles/Home.module.css';
+import Link from "next/link";
+import React from "react";
+import Image from "next/image";
+import styles from "../../styles/Home.module.css";
 
 function Card5() {
   return (
     <div className=' grid grid-cols-1 md:max-w-[95rem] mx-auto relative  '>
-      {
-        // <img
-        //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/content-box-4.png'
-        //   alt=''
-        //   className=' hidden  xl:inline-grid mx-auto  lg:w-[65rem]'
-        // />
-      }
       <div className='hidden mx-auto  xl:inline-grid  lg:w-[65rem] h-[34rem]'>
         <Image
           src='/home/card5.png'
@@ -35,13 +28,6 @@ function Card5() {
       </div>
       <div className='xl:mt-24 px-5 lg:px-0 items-center lg:w-[70%]  justify-self-center absolute  flex flex-col xl:flex-row  '>
         <div className=' w-[60%] md:w-[35%] '>
-          {
-            // <img
-            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/escort-img.png'
-            //   alt=''
-            // />
-          }
-
           <div className=' pl-10'>
             <Image
               src='/home/card5person.png'
@@ -51,17 +37,16 @@ function Card5() {
               height='100%'
               layout='responsive'
               priority
-              // objectFit='cover'
             />
           </div>
         </div>
 
         <div className='lg:py-2 flex-1  text-center xl:text-left lg:pr-10 '>
           <h2 className='text-white text-xl md:text-3xl font-bold xl:leading-[48px] mb-5'>
-            Esports Talents{' '}
+            Esports Talents{" "}
             <span className='text-[#020c27] md:text-[#020c27]'>
               and Advertising Services
-            </span>{' '}
+            </span>{" "}
           </h2>
           <p
             className={`${styles.popins} text-sm text-white md:text-lg tracking-wide md:tracking-normal`}

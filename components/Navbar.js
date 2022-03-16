@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStream, faTimes } from '@fortawesome/free-solid-svg-icons';
-import styles from '../styles/Home.module.css';
-import { useRouter } from 'next/router';
-import { useRecoilValue } from 'recoil';
-import { adminUsers } from '../recoil/adminUsers';
-import { loggedInUser } from '../recoil/loggedInUser';
-import useInView from 'react-cool-inview';
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStream, faTimes } from "@fortawesome/free-solid-svg-icons";
+import styles from "../styles/Home.module.css";
+import { useRouter } from "next/router";
+import { useRecoilValue } from "recoil";
+import { adminUsers } from "../recoil/adminUsers";
+import { loggedInUser } from "../recoil/loggedInUser";
+import useInView from "react-cool-inview";
 
 function Navbar() {
   const { observe, inView, scrollDirection, unobserve } = useInView({
     threshold: 0.25,
   });
-  const [width, setWidth] = useState('');
+  const [width, setWidth] = useState("");
 
   const { vertical } = scrollDirection;
 
@@ -35,12 +35,8 @@ function Navbar() {
           id='navbar'
           className=' hidden  relative xl:flex    xl:justify-center items-center py-0 md:font-semibold md:max-w-7xl lg:max-w-[95rem] mx-auto  '
         >
-          {vertical === 'up' && (
-            <Link
-              // className='btnNavigator'
-              href='#navbar'
-              // animate={!inView ? { opacity: 1 } : { opacity: 0 }}
-            >
+          {vertical === "up" && (
+            <Link href='#navbar'>
               <a href='#navbar'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -144,16 +140,6 @@ function Navbar() {
               Contact Us
             </button>
           </div>
-          {
-            // <div className='absolute right-10 tracking-wider top-5 text-blue-400 text-base'>
-            //   <p
-            //     onClick={(e) => router.push('/login/admin/form')}
-            //     className='cursor-pointer'
-            //   >
-            //     Login
-            //   </p>
-            // </div>
-          }
         </div>
         {
           // mobile nav
@@ -163,12 +149,8 @@ function Navbar() {
           id='mobilenav'
           className=' pr-5 absolute bg-[#f0f5ff] z-50 top-0 mb-10  w-full xl:hidden xl:bg-transparent  flex justify-between p-2 items-center'
         >
-          {vertical === 'up' && (
-            <Link
-              // className='btnNavigator'
-              href='#mobilenav'
-              // animate={!inView ? { opacity: 1 } : { opacity: 0 }}
-            >
+          {vertical === "up" && (
+            <Link href='#mobilenav'>
               <a href='#mobilenav'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -199,14 +181,14 @@ function Navbar() {
             {!onClick && (
               <FontAwesomeIcon
                 icon={faStream}
-                size={'lg'}
+                size={"lg"}
                 onClick={(e) => setClick(!onClick)}
               />
             )}
             {onClick && (
               <FontAwesomeIcon
                 icon={faTimes}
-                size={'lg'}
+                size={"lg"}
                 onClick={(e) => setClick(!onClick)}
               />
             )}
@@ -226,7 +208,7 @@ function Navbar() {
                   onClick={(e) => setClick(!onClick)}
                   className='hover:text-[#FE8936] cursor-pointer'
                 >
-                  {' '}
+                  {" "}
                   Services
                 </a>
               </Link>
@@ -244,7 +226,7 @@ function Navbar() {
                   onClick={(e) => setClick(!onClick)}
                   className='hover:text-[#FE8936] cursor-pointer'
                 >
-                  {' '}
+                  {" "}
                   On-Air Talents
                 </a>
               </Link>
@@ -253,7 +235,7 @@ function Navbar() {
                   onClick={(e) => setClick(!onClick)}
                   className='hover:text-[#FE8936] cursor-pointer'
                 >
-                  {' '}
+                  {" "}
                   Case Studies
                 </a>
               </Link>
@@ -351,7 +333,7 @@ function Navbar() {
                             Submit Now
                           </button>
                           <p>
-                            {' '}
+                            {" "}
                             You’ll hear back from us within one business day.
                           </p>
                         </div>

@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import React from 'react';
-import Image from 'next/image';
-import styles from '../../styles/Home.module.css';
-import { motion } from 'framer-motion';
+import Link from "next/link";
+import React from "react";
+import Image from "next/image";
+import styles from "../../styles/Home.module.css";
+import { motion } from "framer-motion";
 
 function Campaign2() {
   return (
@@ -17,10 +17,7 @@ function Campaign2() {
           className=' h-[40rem] w-[60vw] '
         />
       </div>
-      {
-        // <div className='  hidden absolute bottom-0 -right-[30%] xl:inline-grid h-[35rem]  campaign-line  bg-cover w-full  bg-no-repeat bg-center '></div>
-        // <div className='hidden xl:inline-grid  absolute h-80 w-80 -left-36 z-10  bg-arrow bg-no-repeat bg-center '></div>
-      }
+
       <div className='mt-10 grid grid-cols-1 mx-auto relative px-2 md:px-5 py-10'>
         <div className='mx-auto w-[100%] flex flex-col-reverse xl:flex-row lg:p-14 text-center xl:text-left'>
           <div className='md:p-5 md:pr-5 xl:pt-16  flex-1 space-y-5'>
@@ -42,20 +39,12 @@ function Campaign2() {
             </Link>
           </div>
           <div className='flex-1 '>
-            {
-              // <img
-              //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/camgaign-img.png'
-              //   alt=''
-              //   className='lg:w-[80%] mx-auto'
-              // />
-            }
             <Image
               src='/campaign/pic.png'
               alt=''
               title=''
               width='500'
               height='500'
-              // layout='responsive'
               priority
               objectFit='contain'
             />
@@ -66,12 +55,10 @@ function Campaign2() {
             animate={{
               scale: [0.7, 1.2],
               opacity: [0, 0.8, 0],
-              // rotate: [0, 0, 270, 270, 0],
             }}
             transition={{ duration: 10, repeat: Infinity }}
             src='/standardimages/pulseblue.png'
             alt=''
-            // className='  animate-animate-pulse  '
           />
         </div>
       </div>

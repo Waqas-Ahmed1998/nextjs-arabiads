@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import { useState, useEffect } from 'react';
-import { addDoc, collection, doc, Timestamp } from 'firebase/firestore';
-import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
+import { useState, useEffect } from "react";
+import { addDoc, collection, doc, Timestamp } from "firebase/firestore";
+import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 
-import { db, storage } from '../firebase';
-import { useRouter } from 'next/router';
-import { useRecoilValue } from 'recoil';
-import { adminUsers } from '../recoil/adminUsers';
-import { loggedInUser } from '../recoil/loggedInUser';
+import { db, storage } from "../firebase";
+import { useRouter } from "next/router";
+import { useRecoilValue } from "recoil";
+import { adminUsers } from "../recoil/adminUsers";
+import { loggedInUser } from "../recoil/loggedInUser";
 
 function TalentForm() {
   const router = useRouter();
@@ -18,16 +18,16 @@ function TalentForm() {
   const logged = useRecoilValue(loggedInUser);
   const [progress, setProgress] = useState(0);
   const [formData, setFormData] = useState({
-    name: '',
-    tournaments: [''],
-    liquipediaLink: '',
-    youtubeLink: '',
-    image: '',
-    facebookLink: '',
-    instagramLink: '',
-    twitchLink: '',
-    twitterLink: '',
-    role: '',
+    name: "",
+    tournaments: [""],
+    liquipediaLink: "",
+    youtubeLink: "",
+    image: "",
+    facebookLink: "",
+    instagramLink: "",
+    twitchLink: "",
+    twitterLink: "",
+    role: "",
     date: Timestamp.now().toDate(),
   });
   const handleImageChange = (e) => {
@@ -40,7 +40,7 @@ function TalentForm() {
     // try {
     if (!formData.name || !formData.role || !formData.image) {
       console.log(formData);
-      alert('Please fill the required fields');
+      alert("Please fill the required fields");
       return;
     }
 
@@ -50,7 +50,7 @@ function TalentForm() {
     );
     const uploadImage = uploadBytesResumable(storageRef, formData.image);
     uploadImage.on(
-      'state_changed',
+      "state_changed",
       (snapshot) => {
         const progressPercent = Math.round(
           (snapshot.bytesTransferred / snapshot.totalBytes) * 100
@@ -62,20 +62,20 @@ function TalentForm() {
       },
       () => {
         setFormData({
-          name: '',
-          tournaments: [''],
-          liquipediaLink: '',
-          youtubeLink: '',
-          image: '',
-          facebookLink: '',
-          instagramLink: '',
-          twitchLink: '',
-          twitterLink: '',
-          role: '',
+          name: "",
+          tournaments: [""],
+          liquipediaLink: "",
+          youtubeLink: "",
+          image: "",
+          facebookLink: "",
+          instagramLink: "",
+          twitchLink: "",
+          twitterLink: "",
+          role: "",
         });
         getDownloadURL(uploadImage.snapshot.ref)
           .then((url) => {
-            const articleRef = collection(db, 'talents');
+            const articleRef = collection(db, "talents");
 
             addDoc(articleRef, {
               name: formData.name,
@@ -92,29 +92,25 @@ function TalentForm() {
             });
           })
           .then(() => {
-            alert('data uploaded successfuly');
+            alert("data uploaded successfuly");
             setProgress(0);
-            router.push('/talents');
+            router.push("/talents");
           })
           .catch((err) => console.log(err));
       }
     );
-
-    // } catch (error) {
-    //   console.log(error);
-    // }
   };
   useEffect(() => {
     if (admins && admins.includes(logged)) {
       return;
     } else {
-      router.push('/');
+      router.push("/");
     }
     return () => {};
   }, []);
   return (
     <div>
-      {' '}
+      {" "}
       <div className='p-10 items-center '>
         <div className='p-4'>
           <form

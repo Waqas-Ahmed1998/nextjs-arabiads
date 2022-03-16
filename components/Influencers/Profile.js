@@ -9,7 +9,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { deleteDoc, doc } from "firebase/firestore";
 
-// import { TrashIcon, PencilIcon } from '@heroicons/react/outline';
 import { useRecoilValue } from "recoil";
 import { loggedInUser } from "../../recoil/loggedInUser";
 import { adminUsers } from "../../recoil/adminUsers";

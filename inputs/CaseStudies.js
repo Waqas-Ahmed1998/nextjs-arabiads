@@ -1,13 +1,13 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import { addDoc, collection, doc, Timestamp } from 'firebase/firestore';
-import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
+import React from "react";
+import { useState, useEffect } from "react";
+import { addDoc, collection, doc, Timestamp } from "firebase/firestore";
+import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 
-import { db, storage } from '../firebase';
-import { useRouter } from 'next/router';
-import { useRecoilValue } from 'recoil';
-import { adminUsers } from '../recoil/adminUsers';
-import { loggedInUser } from '../recoil/loggedInUser';
+import { db, storage } from "../firebase";
+import { useRouter } from "next/router";
+import { useRecoilValue } from "recoil";
+import { adminUsers } from "../recoil/adminUsers";
+import { loggedInUser } from "../recoil/loggedInUser";
 
 function CaseStudies() {
   const router = useRouter();
@@ -16,14 +16,14 @@ function CaseStudies() {
   const logged = useRecoilValue(loggedInUser);
   const [progress, setProgress] = useState(0);
   const [formData, setFormData] = useState({
-    name: '',
-    engagement: '',
-    genre: '',
-    content: '',
-    image: '',
-    role: '',
-    audience: '',
-    engagementRole: '',
+    name: "",
+    engagement: "",
+    genre: "",
+    content: "",
+    image: "",
+    role: "",
+    audience: "",
+    engagementRole: "",
     date: Timestamp.now().toDate(),
   });
   const handleImageChange = (e) => {
@@ -36,7 +36,7 @@ function CaseStudies() {
     // try {
     if (!formData.name || !formData.content || !formData.image) {
       console.log(formData);
-      alert('Please fill the required fields');
+      alert("Please fill the required fields");
       return;
     }
 
@@ -46,7 +46,7 @@ function CaseStudies() {
     );
     const uploadImage = uploadBytesResumable(storageRef, formData.image);
     uploadImage.on(
-      'state_changed',
+      "state_changed",
       (snapshot) => {
         const progressPercent = Math.round(
           (snapshot.bytesTransferred / snapshot.totalBytes) * 100
@@ -58,18 +58,18 @@ function CaseStudies() {
       },
       () => {
         setFormData({
-          name: '',
-          engagement: '',
-          genre: '',
-          content: '',
-          image: '',
-          role: '',
-          audience: '',
-          engagementRole: '',
+          name: "",
+          engagement: "",
+          genre: "",
+          content: "",
+          image: "",
+          role: "",
+          audience: "",
+          engagementRole: "",
         });
         getDownloadURL(uploadImage.snapshot.ref)
           .then((url) => {
-            const articleRef = collection(db, 'studies');
+            const articleRef = collection(db, "studies");
 
             addDoc(articleRef, {
               name: formData.name,
@@ -85,30 +85,26 @@ function CaseStudies() {
             });
           })
           .then(() => {
-            alert('data uploaded successfuly');
+            alert("data uploaded successfuly");
             setProgress(0);
-            router.push('/case');
+            router.push("/case");
           })
           .catch((err) => console.log(err));
       }
     );
-
-    // } catch (error) {
-    //   console.log(error);
-    // }
   };
   useEffect(() => {
     if (admins && admins.includes(logged)) {
       return;
     } else {
-      router.push('/');
+      router.push("/");
     }
     return () => {};
   }, []);
 
   return (
     <div>
-      {' '}
+      {" "}
       <div className='p-10 items-center '>
         <div className='p-4'>
           <form
@@ -158,17 +154,7 @@ function CaseStudies() {
                 setFormData({ ...formData, genre: e.target.value })
               }
             ></input>
-            {
-              // <input
-              //   className='p-4  focus:outline-none shadow-sm shadow-slate-800 rounded-md'
-              //   type='text'
-              //   name='city'
-              //   value={formData.content}
-              //   onChange={(e) =>
-              //     setFormData({ ...formData, content: e.target.value })
-              //   }
-              // ></input>
-            }
+
             <label>Content:</label>
 
             <textarea

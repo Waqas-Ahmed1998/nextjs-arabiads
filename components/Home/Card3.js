@@ -5,13 +5,7 @@ import styles from '../../styles/Home.module.css';
 function Card3() {
   return (
     <div className=' bg-white  md:h-[80vh] md:w-full xl:h-fit  mt-10  lg:mt-20 xl:mt-0 relative mx-auto bg-contain bg-no-repeat  xl:inline-grid lg:w-[75%]   '>
-      {
-        // <img
-        //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/content-box-3.png'
-        //   alt=''
-        //   className='hidden xl:inline-grid absolute top-0 md:w-[100%] '
-        // />
-      }
+
       <div className='hidden   xl:inline-grid absolute top-0  md:w-[100%] h-[38rem]'>
         <Image
           src='/home/card3.png'
@@ -21,7 +15,7 @@ function Card3() {
           height='100%'
           layout='responsive'
           priority
-          // objectFit='cover'
+
         />
       </div>
       <img
@@ -38,13 +32,7 @@ function Card3() {
       </div>
       <div className='flex justify-center h-full  flex-col text-center xl:text-left xl:flex-row gap-3 absolute top-0 '>
         <div className='xl:flex-1 mx-auto '>
-          {
-            // <img
-            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/digital-img.png'
-            //   alt=''
-            //   className='hidden  xl:inline-grid md:w-auto lg:w-auto'
-            // />
-          }
+
           <div className=' w-auto  '>
             <Image
               src='/home/cardperson.png'

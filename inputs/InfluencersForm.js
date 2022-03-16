@@ -116,10 +116,6 @@ function InfluencersForm() {
           .catch((err) => console.log(err));
       }
     );
-
-    // } catch (error) {
-    //   console.log(error);
-    // }
   };
   useEffect(() => {
     if (admins && admins.includes(logged)) {
@@ -284,18 +280,6 @@ function InfluencersForm() {
                 }
               ></input>
 
-              {
-                // <label>Choose Category</label>
-                // <select
-                //   onChange={(e) =>
-                //     setFormData({ ...formData, category: e.target.value })
-                //   }
-                // >
-                //   <option defaultValue='male'>Male</option>
-                //   <option value='female'>Female</option>
-                //   <option value='children'>Children</option>
-                // </select>
-              }
               <label>Uplaod Image</label>
               <input
                 onChange={handleImageChange}

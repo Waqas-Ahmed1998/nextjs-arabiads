@@ -1,18 +1,11 @@
-import Link from 'next/link';
-import React from 'react';
-import Image from 'next/image';
-import styles from '../../styles/Home.module.css';
+import Link from "next/link";
+import React from "react";
+import Image from "next/image";
+import styles from "../../styles/Home.module.css";
 
 function Scard4() {
   return (
     <>
-      {
-        // <img
-        //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/management-2-bg-1.png'
-        //   alt=''
-        //   className='hidden xl:inline-grid  w-full '
-        // />
-      }
       <div className='hidden xl:left-9 relative  xl:mt-10   xl:inline-grid w-[90%] h-[38rem]'>
         <Image
           src='/service/Scard4.png'
@@ -28,20 +21,12 @@ function Scard4() {
       <div className=' h-[80%] xl:absolute flex top-[10%]  justify-center  xl:w-[90%] '>
         <div className='xl:w-[100%] xl:ml-0 flex flex-col xl:flex-row space-y-5 text-center xl:text-left '>
           <div className=' basis-[46%] relative '>
-            {
-              // <img
-              //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/m-s-2-img.png'
-              //   alt=''
-              //   className='w-[90%]'
-              // />
-            }
             <Image
               src='/service/Scard4person.png'
               alt=''
               title=''
               width='500'
               height='480'
-              // layout='responsive'
               priority
               objectFit='cover'
             />

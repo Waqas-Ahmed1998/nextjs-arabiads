@@ -1,17 +1,10 @@
-import Link from 'next/link';
-import React from 'react';
-import Image from 'next/image';
+import Link from "next/link";
+import React from "react";
+import Image from "next/image";
 
 function Card2() {
   return (
     <div className='md:my-0 xl:mt-0 2xl:my-0 relative bg-contain bg-no-repeat xl:inline-grid lg:w-[75%]  '>
-      {
-        // <img
-        //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/gaming-bg.png'
-        //   alt=''
-        //   className='hidden xl:inline-grid absolute top-0 md:w-[100%]'
-        // />
-      }
       <div className='hidden   xl:inline-grid absolute top-0  md:w-[100%] h-[48rem]'>
         <Image
           src='/home/card2.png'
@@ -21,7 +14,6 @@ function Card2() {
           height='100%'
           layout='responsive'
           priority
-          // objectFit='cover'
         />
       </div>
       <div className='hidden xl:inline-grid absolute [z-index:-1] -top-5 -left-2'>
@@ -42,7 +34,7 @@ function Card2() {
       <div className='lg:absolute  top-0 xl:top-4 flex flex-col-reverse xl:flex-row xl:pt-[5rem] xl:ml-20 text-center xl:text-left'>
         <div className='lg:flex-1 lg:space-y-5 px-2 xl:pl-5 space-y-5'>
           <h2 className='text-xl xl:text-[35px]  text-[#167EE0] xl:text-white font-semibold pt-3 xl:[line-height:56px]'>
-            One of MENA’s Leading Agency for{' '}
+            One of MENA’s Leading Agency for{" "}
             <span className='text-black'>Influencer Marketing</span>
           </h2>
           <p className='text-base md:text-lg text-gray-600 xl:text-gray-50 tracking-wide'>
@@ -63,14 +55,6 @@ function Card2() {
           </Link>
         </div>
         <div className='  xl:basis-[44%]  '>
-          {
-            // <img
-            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/11/MENA-INFLUENCERS.png'
-            //   alt=''
-            //   className='w-[300px] xl:w-auto'
-            // />
-          }
-
           <div className='w-full xl:ml-10  '>
             <Image
               src='/service/Scard2person.png'
@@ -78,7 +62,6 @@ function Card2() {
               title=''
               width='500'
               height='645'
-              // layout='responsive'
               priority
               objectFit='cover'
             />

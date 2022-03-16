@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import styles from '../../styles/Home.module.css';
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import styles from "../../styles/Home.module.css";
 
 function Card4() {
   return (
@@ -28,12 +28,6 @@ function Card4() {
           </Link>
         </div>
         <div className='flex-1   '>
-          {
-            // <img
-            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/management-img.png'
-            //   alt=''
-            // />
-          }
           <div className=' w-auto  '>
             <Image
               src='/home/card3person.png'
