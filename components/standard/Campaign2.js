@@ -3,8 +3,12 @@ import React from "react";
 import Image from "next/image";
 import styles from "../../styles/Home.module.css";
 import { motion } from "framer-motion";
-
+import { useRecoilState } from "recoil";
+import { contactForm } from "../../recoil/contactForm";
+import ContactUs from "./ContactUs";
 function Campaign2() {
+  const [isForm, setIsForm] = useRecoilState(contactForm);
+
   return (
     <div className=''>
       <div className='-left-10 hidden xl:inline-grid absolute  [z-index:-1]'>
@@ -32,11 +36,13 @@ function Campaign2() {
               to one of our committed specialists in order to experience what
               influencer marketing can be like when you work with the finest!
             </p>
-            <Link href='/'>
-              <button className=' text-white text-base md:py-4  md:px-6 px-4 py-2 md:inline-grid bg-[linear-gradient(#fdc66e,#ff805e)]   font-semibold  xl:w-60  rounded-full md:text-[20px]'>
-                REACH OUT
-              </button>
-            </Link>
+
+            <button
+              onClick={() => setIsForm(!isForm)}
+              className=' text-white text-base md:py-4  md:px-6 px-4 py-2 md:inline-grid bg-[linear-gradient(#fdc66e,#ff805e)]   font-semibold  xl:w-60  rounded-full md:text-[20px]'
+            >
+              REACH OUT
+            </button>
           </div>
           <div className='flex-1 '>
             <Image
@@ -62,6 +68,7 @@ function Campaign2() {
           />
         </div>
       </div>
+      {isForm && <ContactUs />}
     </div>
   );
 }

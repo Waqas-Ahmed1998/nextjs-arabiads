@@ -83,7 +83,7 @@ function Scard3() {
               related to esports, which is why choosing us is the first step
               towards your goal.
             </p>
-            <Link href='/'>
+            <Link href='/esports-services'>
               <button className=' text-white text-base  md:inline-grid bg-[linear-gradient(#3786ed,#1eb5e4)]  md:py-4  md:px-6 px-4 py-2  font-semibold  xl:w-60  rounded-full md:text-[20px]'>
                 DISCOVER TALENTS
               </button>

@@ -48,7 +48,7 @@ function Scard2() {
               prescribing driven by proximity to their audience is multiplied
               tenfold by activating smaller talents.
             </p>
-            <Link href='/'>
+            <Link href='/influencer-services'>
               <button className=' text-white text-base  md:inline-grid bg-[linear-gradient(#fdc66e,#ff805e)] md:py-4  md:px-6 px-4 py-2  font-semibold  xl:w-60  rounded-full md:text-[20px] '>
                 LEARN MORE
               </button>

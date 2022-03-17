@@ -59,7 +59,7 @@ function Card5() {
             you are looking to hire an on-air host for an event or need
             representation as a talent
           </p>
-          <Link href='/'>
+          <Link href='/esports-services'>
             <button className=' text-white text-base px-4 py-2 md:px-6 md:py-4  md:inline-grid bg-[linear-gradient(#3786ed,#1eb5e4)]   font-semibold  xl:w-60  rounded-full md:text-[20px] mt-10 '>
               FIND OUT MORE
             </button>

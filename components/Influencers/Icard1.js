@@ -42,7 +42,7 @@ function Icard1() {
               you whether you are looking to hire an on-air host for an event or
               need representation as a talent.
             </p>
-            <Link href='/'>
+            <Link href='/esports-services'>
               <button className=' text-white text-base  md:inline-grid bg-[linear-gradient(#3786ed,#1eb5e4)]  md:py-4  md:px-6 px-4 py-2 font-semibold  xl:w-60  rounded-full md:text-[20px]'>
                 LEARN MORE
               </button>

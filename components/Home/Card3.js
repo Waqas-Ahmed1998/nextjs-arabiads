@@ -64,7 +64,7 @@ function Card3() {
             objectives, your target and the creative concept that we have
             devised to impact a much larger audience.
           </p>
-          <Link href='/'>
+          <Link href='/influencer-services'>
             <button className=' text-white text-base md:py-4  md:px-6 px-4 py-2 md:inline-grid bg-[linear-gradient(#fdc66e,#ff805e)]   font-semibold  xl:w-60  rounded-full md:text-[20px]'>
               LEARN MORE
             </button>
