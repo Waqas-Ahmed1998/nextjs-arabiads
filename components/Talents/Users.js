@@ -15,6 +15,7 @@ import { useRecoilValue } from "recoil";
 import { deleteDoc, doc } from "firebase/firestore";
 import { db } from "../../firebase";
 import styles from "../../styles/Home.module.css";
+import { motion } from "framer-motion";
 
 function Users({ user }) {
   const [filter, setFilter] = useState("");
@@ -94,7 +95,7 @@ function Users({ user }) {
 
           .map((singleUser, index) =>
             index % 2 == 0 ? (
-              <div key={singleUser.id} className='relative  '>
+              <motion.div layout key={singleUser.id} className='relative  '>
                 <Image
                   className=''
                   src='/talents/leftcard.png'
@@ -237,9 +238,9 @@ function Users({ user }) {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ) : (
-              <div key={singleUser.id} className='relative '>
+              <motion.div layout key={singleUser.id} className='relative '>
                 {
                   // <img
                   //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/sm-right-bg.png'
@@ -417,7 +418,7 @@ function Users({ user }) {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             )
           )}
         {}
