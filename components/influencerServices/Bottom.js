@@ -16,9 +16,9 @@ function Bottom() {
           the influencer marketing process. We follow several predetermined
           procedures to define your KPIs and audience in order to design a
           successful campaign. We identify influencers that can help you reach
-          your goals after we've determined your target audience. A step-by-step
-          description of your next influencer campaign with us can be found
-          below:{" "}
+          your goals after we&apos;ve determined your target audience. A
+          step-by-step description of your next influencer campaign with us can
+          be found below:{" "}
         </p>
       </div>
       {
