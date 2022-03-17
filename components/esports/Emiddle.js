@@ -67,9 +67,9 @@ function Emiddle() {
               className={`${styles.popins} text-sm text-[#505673] lg:text-[18px] xl:leading-[29px] px-2 `}
             >
               {" "}
-              Take use of Arabia E-expertise Advertising&apose;s on how to build
+              Take use of Arabia E-expertise Advertising&apos;s on how to build
               tournaments (such as qualifiers, regional qualifiers, brackets,
-              ladders, and leagues) and much more if you&apose;re planning a
+              ladders, and leagues) and much more if you&apos;re planning a
               one-off or long-term esports event with the help of our sister
               brands such as ESME and more.
             </p>

@@ -36,7 +36,7 @@ function Icardtop() {
             Arabia E-Advertising began its career as one of the first talent
             agencies, representing both established and emerging esports-focused
             broadcasting talent. We assist these specialized talents in
-            maximizing the value they`ve created by connecting them with
+            maximizing the value they&apos;ve created by connecting them with
             hundreds of brand partners who trust us. We can assist you whether
             you are looking to hire an on-air host for an event or need
             representation as a talent.

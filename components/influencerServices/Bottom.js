@@ -64,9 +64,9 @@ function Bottom() {
               TARGET AUDIENCE
             </h1>
             <p className='font-medium text-sm lg:text-[17px] xl:leading-[27px] text-[#040e29]'>
-              We'll assist you in defining segments and personas so that you can
-              design influencer marketing campaigns that reach the correct
-              people.
+              We&apos;ll assist you in defining segments and personas so that
+              you can design influencer marketing campaigns that reach the
+              correct people.
             </p>
           </div>
           <div className='xl:w-[40%] space-y-4'>
