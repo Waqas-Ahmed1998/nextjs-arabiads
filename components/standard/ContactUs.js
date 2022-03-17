@@ -15,7 +15,6 @@ function ContactUs() {
         <div
           onClick={() => {
             setIsForm(!isForm);
-            console.log("cliked");
           }}
           className={`flex items-center ${styles.contactBackground} z-10  h-[100vh] left-0 top-0 w-[100vw]  fixed`}
         ></div>
