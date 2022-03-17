@@ -1,7 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Poppins:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Montserrat:wght@300;400&family=Poppins:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Montserrat:wght@300;400;700&family=Poppins:wght@400;500&display=swap'); */
-@import url("https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Montserrat:wght@300;400;700&family=Poppins:wght@400;500&family=Tajawal&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Montserrat:wght@300;400;500;700&family=Poppins:wght@400;500&family=Tajawal&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
