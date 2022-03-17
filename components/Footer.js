@@ -1,13 +1,13 @@
-import React from 'react';
-import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from "react";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faInstagram,
   faLinkedin,
   faTwitter,
   faYoutube,
-} from '@fortawesome/free-brands-svg-icons';
+} from "@fortawesome/free-brands-svg-icons";
 function Footer() {
   return (
     <div className='relative z-30 bg-[#17214F] py-10'>
@@ -88,7 +88,10 @@ function Footer() {
                 <Link href='/services' className='hover:text-orange-400 '>
                   Services
                 </Link>
-                <Link className='hover:text-orange-400 ' href='/services'>
+                <Link
+                  className='hover:text-orange-400 '
+                  href='/esports-services'
+                >
                   Esports Services
                 </Link>
                 <Link className='hover:text-orange-400 ' href='/talents'>
