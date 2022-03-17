@@ -4,10 +4,10 @@ import Image from "next/image";
 import styles from "../../styles/Home.module.css";
 import { motion } from "framer-motion";
 import { useRecoilState } from "recoil";
-import { contactForm } from "../../recoil/contactForm";
 import ContactUs from "./ContactUs";
+import { form } from "../../recoil/form";
 function Campaign2() {
-  const [isForm, setIsForm] = useRecoilState(contactForm);
+  const [isForm, setIsForm] = useRecoilState(form);
 
   return (
     <div className=''>

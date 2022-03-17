@@ -28,6 +28,7 @@ function Plateforms() {
               width='500'
               height='500'
               priority
+              alt=''
               quality={100}
               objectFit='contain'
             />
@@ -49,6 +50,7 @@ function Plateforms() {
               width='500'
               height='500'
               priority
+              alt=''
               quality={100}
               objectFit='contain'
             />
@@ -70,6 +72,7 @@ function Plateforms() {
               width='500'
               height='500'
               priority
+              alt=''
               quality={100}
               objectFit='contain'
             />
@@ -91,6 +94,7 @@ function Plateforms() {
               width='500'
               height='500'
               priority
+              alt=''
               quality={100}
               objectFit='contain'
             />
@@ -112,6 +116,7 @@ function Plateforms() {
               width='500'
               height='500'
               priority
+              alt=''
               quality={100}
               objectFit='contain'
             />
@@ -133,6 +138,7 @@ function Plateforms() {
               width='500'
               height='500'
               priority
+              alt=''
               quality={100}
               objectFit='contain'
             />

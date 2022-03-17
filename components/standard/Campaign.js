@@ -5,10 +5,10 @@ import styles from "../../styles/Home.module.css";
 import { motion } from "framer-motion";
 import ContactUs from "./ContactUs";
 import { useRecoilState } from "recoil";
-import { contactForm } from "../../recoil/contactForm";
+import { form } from "../../recoil/form";
 
 function Campaign() {
-  const [isForm, setIsForm] = useRecoilState(contactForm);
+  const [isForm, setIsForm] = useRecoilState(form);
 
   return (
     <div className='relative overflow-hidden'>

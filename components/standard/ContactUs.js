@@ -2,9 +2,10 @@ import Link from "next/link";
 import React, { useState } from "react";
 import styles from "../../styles/Home.module.css";
 import { useRecoilState } from "recoil";
-import { contactForm } from "../../recoil/contactForm";
+import { form } from "../../recoil/form";
+
 function ContactUs() {
-  const [isForm, setIsForm] = useRecoilState(contactForm);
+  const [isForm, setIsForm] = useRecoilState(form);
   const [onContact, setContact] = useState(true);
   const submit = (e) => {
     e.preventDefault();
