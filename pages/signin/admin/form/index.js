@@ -6,7 +6,7 @@ import {
   createUserWithEmailAndPassword,
   signOut,
 } from "firebase/auth";
-import { signInUser } from "../../../../recoil/loggedInUser copy";
+import { signInUser } from "../../../../recoil/signInUser";
 import Head from "next/head";
 
 // import { auth } from '../../../../firebase';
