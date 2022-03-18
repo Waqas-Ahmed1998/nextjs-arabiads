@@ -1,8 +1,8 @@
-import Link from "next/link";
-import React from "react";
-import Image from "next/image";
-import styles from "../../styles/Home.module.css";
-import { motion } from "framer-motion";
+import Link from 'next/link'
+import React from 'react'
+import Image from 'next/image'
+import styles from '../../styles/Home.module.css'
+import { motion } from 'framer-motion'
 
 function Campaign() {
   return (
@@ -20,7 +20,10 @@ function Campaign() {
 
       <div className='mt-10  grid grid-cols-1 md:max-w-[95rem] mx-auto relative md:px-5 py-10'>
         <div className=' mx-auto w-[90%] flex flex-col-reverse xl:flex-row lg:p-14 text-center xl:text-left'>
-          <div className='lg:p-5 lg:pr-5  items-center xl:pt-16 xl:pr-9 flex-1 space-y-5'>
+          <div
+            data-aos='fade-right'
+            className='lg:p-5 lg:pr-5  items-center xl:pt-16 xl:pr-9 flex-1 space-y-5'
+          >
             <h3
               className={`${styles.montserrat} xl:leading-[49px] xl:w-[70%] text-[#020c27] text-xl  md:text-[35px] font-semibold`}
             >
@@ -38,7 +41,7 @@ function Campaign() {
               </button>
             </Link>
           </div>
-          <div className='flex-1 '>
+          <div data-aos='fade-left' className='flex-1 '>
             <Image
               src='/campaign/pic.png'
               alt=''
@@ -63,7 +66,7 @@ function Campaign() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Campaign;
+export default Campaign

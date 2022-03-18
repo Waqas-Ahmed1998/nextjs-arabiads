@@ -1,6 +1,6 @@
-import Link from "next/link";
-import React from "react";
-import Image from "next/image";
+import Link from 'next/link'
+import React, { useEffect } from 'react'
+import Image from 'next/image'
 
 function Card2() {
   return (
@@ -34,7 +34,7 @@ function Card2() {
       <div className='lg:absolute  top-0 xl:top-4 flex flex-col-reverse xl:flex-row xl:pt-[5rem] xl:ml-20 text-center xl:text-left'>
         <div className='lg:flex-1 lg:space-y-5 px-2 xl:pl-5 space-y-5'>
           <h2 className='text-xl xl:text-[35px]  text-[#167EE0] xl:text-white font-semibold pt-3 xl:[line-height:56px]'>
-            One of MENA’s Leading Agency for{" "}
+            One of MENA’s Leading Agency for{' '}
             <span className='text-black'>Influencer Marketing</span>
           </h2>
           <p className='text-base md:text-lg text-gray-600 xl:text-gray-50 tracking-wide'>
@@ -69,7 +69,7 @@ function Card2() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Card2;
+export default Card2

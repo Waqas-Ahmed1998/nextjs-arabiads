@@ -1,11 +1,10 @@
-import Link from 'next/link';
-import React from 'react';
-import Image from 'next/image';
-import styles from '../../styles/Home.module.css';
+import Link from 'next/link'
+import React from 'react'
+import Image from 'next/image'
+import styles from '../../styles/Home.module.css'
 function Card3() {
   return (
     <div className=' bg-white  md:h-[80vh] md:w-full xl:h-fit  mt-10  lg:mt-20 xl:mt-0 relative mx-auto bg-contain bg-no-repeat  xl:inline-grid lg:w-[75%]   '>
-
       <div className='hidden   xl:inline-grid absolute top-0  md:w-[100%] h-[38rem]'>
         <Image
           src='/home/card3.png'
@@ -15,7 +14,6 @@ function Card3() {
           height='100%'
           layout='responsive'
           priority
-
         />
       </div>
       <img
@@ -31,8 +29,12 @@ function Card3() {
         />
       </div>
       <div className='flex justify-center h-full  flex-col text-center xl:text-left xl:flex-row gap-3 absolute top-0 '>
-        <div className='xl:flex-1 mx-auto '>
-
+        <div
+          data-aos='fade-right'
+          data-aos-delay='100'
+          data-aos-duration='1000'
+          className='xl:flex-1 mx-auto '
+        >
           <div className=' w-auto  '>
             <Image
               src='/home/cardperson.png'
@@ -46,7 +48,12 @@ function Card3() {
             />
           </div>
         </div>
-        <div className='xl:flex-1 lg:pt-16 space-y-2 lg:space-y-10 px-5'>
+        <div
+          data-aos='fade-left'
+          data-aos-delay='40'
+          data-aos-duration='500'
+          className='xl:flex-1 lg:pt-16 space-y-2 lg:space-y-10 px-5'
+        >
           <h2 className='text-xl md:text-2xl lg:text-[30px] xl:leading-[42px] lg:text-[#167EE0] font-semibold'>
             Digital Influence{' '}
             <span className='lg:text-black text-[#008fcf]'>
@@ -69,7 +76,7 @@ function Card3() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Card3;
+export default Card3

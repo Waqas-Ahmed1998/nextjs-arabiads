@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Card1 from '../../components/Services/Card1'
 import Scard2 from '../../components/Services/Scard2'
 import Scard3 from '../../components/Services/Scard3'
@@ -8,8 +8,12 @@ import NumbersSpeak from '../../components/standard/NumbersSpeak'
 import Plateforms from '../../components/standard/Plateforms'
 import Campaign2 from '../../components/standard/Campaign2'
 import Head from 'next/head'
-
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 function Services() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <div className='relative '>
       <Head>
@@ -42,11 +46,18 @@ function Services() {
           }
           <Scard3 />
         </div>
+
         <div className='card-width mt-10'>
           <Scard4 />
+
+          <div data-aos='zoom-out'>
+            <NumbersSpeak />
+          </div>
         </div>
-        <NumbersSpeak />
-        <Plateforms />
+
+        <div data-aos='zoom-in'>
+          <Plateforms />
+        </div>
         <Campaign2 />
       </div>
     </div>

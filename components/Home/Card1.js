@@ -1,6 +1,7 @@
-import Image from "next/image";
-import React from "react";
-import styles from "../../styles/Home.module.css";
+import Image from 'next/image'
+import React from 'react'
+import CountUp from 'react-countup'
+import styles from '../../styles/Home.module.css'
 
 function Card1() {
   return (
@@ -8,7 +9,7 @@ function Card1() {
       <div className='hidden   xl:inline-grid absolute -top-0 md:w-[99%] h-[49rem]'>
         <Image
           className='hidden bg-contain  xl:inline-grid absolute top-0 '
-          src={"/home/card1.png"}
+          src={'/home/card1.png'}
           alt=''
           width='100%'
           height='100%'
@@ -24,10 +25,18 @@ function Card1() {
         alt=''
       />
       <div className='absolute  [z-index:1] h-full xl:h-auto top-0    w-full flex flex-col justify-center text-center space-y-2 md:space-y-6  xl:space-y-5 '>
-        <h2 className='text-xl md:text-[44px]  text-white font-semibold pt-3 md:leading-snug'>
+        <h2
+          data-aos='fade-down'
+          className='text-xl md:text-[44px]  text-white font-semibold pt-3 md:leading-snug'
+        >
           Gaming & Esports Talent Agency
         </h2>
-        <h3 className='text-base md:text-[30px] text-white '>
+        <h3
+          data-aos='fade-right'
+          data-aos-delay='100'
+          data-aos-duration='1000'
+          className='text-base md:text-[30px] text-white '
+        >
           #Connect Your Brand With Arabic Millennials.
         </h3>
         <div className='text-sm gap-2  md:text-lg font-bold tracking-wide text-[#FFCE51] px-2 flex justify-center md:gap-10'>
@@ -44,11 +53,16 @@ function Card1() {
             <h3
               className={` ${styles.popins} font-semibold text-base md:text-[22px]`}
             >
-              100M Total Reach
+              <CountUp end={100} duration={1.2} />M Total Reach
             </h3>
           </div>
         </div>
-        <div className=' md:space-x-0 px-2 md:px-10 md:mr-10 flex '>
+        <div
+          data-aos='fade-right'
+          data-aos-delay='500'
+          data-aos-duration='1000'
+          className=' md:space-x-0 px-2 md:px-10 md:mr-10 flex '
+        >
           <a href='https://www.pubgmobile.com/ar/home.shtml'>
             <img className='w-30' src='/home/card1images/pubg.png' alt='' />
           </a>
@@ -91,7 +105,7 @@ function Card1() {
         />
       </div>
     </div>
-  );
+  )
 }
 
-export default Card1;
+export default Card1

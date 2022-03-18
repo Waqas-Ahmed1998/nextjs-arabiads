@@ -1,6 +1,7 @@
-import React from "react";
-import styles from "../../styles/Home.module.css";
-import { motion } from "framer-motion";
+import React from 'react'
+import styles from '../../styles/Home.module.css'
+import { motion } from 'framer-motion'
+import CountUp from 'react-countup'
 
 function NumbersSpeak() {
   return (
@@ -26,7 +27,7 @@ function NumbersSpeak() {
           <h3
             className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
           >
-            200+
+            <CountUp end={200} duration={1} />+
           </h3>
           <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 
@@ -44,7 +45,7 @@ function NumbersSpeak() {
           <h3
             className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
           >
-            40+
+            <CountUp end={40} duration={1} />+
           </h3>
           <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 
@@ -61,7 +62,7 @@ function NumbersSpeak() {
           <h3
             className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
           >
-            70+
+            <CountUp end={70} duration={1} />+
           </h3>
           <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 
@@ -78,7 +79,7 @@ function NumbersSpeak() {
           <h3
             className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
           >
-            50M
+            <CountUp end={50} duration={1} />M
           </h3>
           <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 
@@ -95,7 +96,7 @@ function NumbersSpeak() {
           <h3
             className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
           >
-            27
+            <CountUp end={27} duration={1} />
           </h3>
           <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 
@@ -119,7 +120,7 @@ function NumbersSpeak() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default NumbersSpeak;
+export default NumbersSpeak

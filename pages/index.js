@@ -1,22 +1,26 @@
-import Head from "next/head";
-import Image from "next/image";
-import Card1 from "../components/Home/Card1";
-import Card2 from "../components/Home/Card2";
-import Card3 from "../components/Home/Card3";
-import Card4 from "../components/Home/Card4";
-import Card5 from "../components/Home/Card5";
-import NumbersSpeak from "../components/standard/NumbersSpeak";
-import Plateforms from "../components/standard/Plateforms";
-import Campaign from "../components/standard/Campaign";
-import styles from "../styles/Home.module.css";
-import { motion } from "framer-motion";
+import Head from 'next/head'
+import Image from 'next/image'
+import Card1 from '../components/Home/Card1'
+import Card2 from '../components/Home/Card2'
+import Card3 from '../components/Home/Card3'
+import Card4 from '../components/Home/Card4'
+import Card5 from '../components/Home/Card5'
+import NumbersSpeak from '../components/standard/NumbersSpeak'
+import Plateforms from '../components/standard/Plateforms'
+import Campaign from '../components/standard/Campaign'
+import styles from '../styles/Home.module.css'
+import { motion } from 'framer-motion'
 // import { collection, onSnapshot, getDocs } from 'firebase/firestore';
 // import { db } from '../firebase';
 // import { useSetRecoilState } from 'recoil';
 // import { adminUsers } from '../recoil/adminUsers';
-// import { useEffect } from 'react';
-
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 export default function Home() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <div className=''>
       <Head>
@@ -80,5 +84,5 @@ export default function Home() {
       <Plateforms />
       <Campaign />
     </div>
-  );
+  )
 }
