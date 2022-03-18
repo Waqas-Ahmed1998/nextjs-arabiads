@@ -7,6 +7,7 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 import { collection, onSnapshot } from "firebase/firestore";
 import { db } from "../../firebase";
+import { MoonLoader } from "react-spinners";
 
 function Case() {
   let [eventcard, setEventCard] = useState([]);
@@ -85,7 +86,14 @@ function Case() {
           {eventcard.map((data, index) => (
             <EventCard key={data.id} event={data} index={index} />
           ))}
+          {!eventcard.length && (
+            <div className='mb-24  p-24 col-span-2 flex justify-center   '>
+              {" "}
+              <MoonLoader color={"black"} size='30px' />{" "}
+            </div>
+          )}
         </div>
+
         <NumbersSpeak />
         <Plateforms />
         <Campaign2 />

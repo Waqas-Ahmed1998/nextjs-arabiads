@@ -161,7 +161,7 @@ function Profile({ user }) {
             </div>
           )}
         </div>
-        <div className='absolute flex -left-1 justify-self-center [z-index:-1] -bottom-2 h-7  w-[90%] rounded-b-[36px]  bg-[#FD8E3A] '></div>
+        <div className='absolute flex -left-1 justify-self-center [z-index:-1] -bottom-3 h-14  w-[90%] rounded-b-[36px]  bg-[#FD8E3A] '></div>
       </div>
     </div>
   );

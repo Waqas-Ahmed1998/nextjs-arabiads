@@ -41,7 +41,7 @@ function Navbar() {
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   className={`h-12 w-12  ease-out
-                   fixed bottom-[1rem] right-[1rem] cursor-pointer rounded-full border p-3 bg-white z-50 text-black`}
+                   fixed bottom-[1rem] hover:bg-[#0074db] hover:text-white right-[1rem] cursor-pointer rounded-full border p-3 bg-white z-50 text-black`}
                   fill='none'
                   viewBox='0 0 24 24'
                   stroke='currentColor'

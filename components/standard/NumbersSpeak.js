@@ -1,10 +1,23 @@
 import React from "react";
 import styles from "../../styles/Home.module.css";
 import { motion } from "framer-motion";
+import CountUp from "react-countup";
+import useInView from "react-cool-inview";
 
 function NumbersSpeak() {
+  const { observe, inView, scrollDirection, unobserve } = useInView({
+    threshold: 0.25,
+    onEnter: ({ scrollDirection, entry, observe, unobserve }) => {
+      // Triggered when the target enters the viewport
+      unobserve();
+    },
+  });
+  console.log(inView);
   return (
-    <div className='mt-10 grid grid-cols-1 md:max-w-[95rem] mx-auto relative px-5 py-10'>
+    <div
+      data-aos='zoom-out'
+      className='mt-10 grid grid-cols-1 md:max-w-[95rem] mx-auto relative px-5 py-10'
+    >
       <div className='mx-auto lg:w-[70%] text-center space-y-5 xl:space-y-10'>
         <h3
           className={`${styles.montserrat} text-[#404040]  text-center text-lg  md:text-2xl xl:text-[40px]  [font-weight:700]`}
@@ -19,14 +32,17 @@ function NumbersSpeak() {
           continuously expanding.
         </p>
       </div>
-      <div className=' relative mt-10 space-y-10 lg:space-y-0 flex flex-col lg:flex-row gap-2 md:gap-5 items-center justify-center text-center'>
+      <div
+        ref={observe}
+        className=' relative mt-10 space-y-10 lg:space-y-0 flex flex-col lg:flex-row gap-2 md:gap-5 items-center justify-center text-center'
+      >
         <div
           className={`flex  justify-evenly flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[20px] rounded-[30px] w-56 md:h-48 h-28`}
         >
           <h3
             className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
           >
-            200+
+            {inView && <CountUp end={200} duration={1} />} +
           </h3>
           <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 
@@ -44,7 +60,7 @@ function NumbersSpeak() {
           <h3
             className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
           >
-            40+
+            {inView && <CountUp end={40} duration={1} />}+
           </h3>
           <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 
@@ -61,7 +77,7 @@ function NumbersSpeak() {
           <h3
             className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
           >
-            70+
+            {inView && <CountUp end={70} duration={1} />}+
           </h3>
           <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 
@@ -78,7 +94,7 @@ function NumbersSpeak() {
           <h3
             className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
           >
-            50M
+            {inView && <CountUp end={50} duration={1} />}M
           </h3>
           <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 
@@ -95,7 +111,7 @@ function NumbersSpeak() {
           <h3
             className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
           >
-            27
+            {inView && <CountUp end={27} duration={1} />}
           </h3>
           <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 

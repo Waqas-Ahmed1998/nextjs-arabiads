@@ -7,6 +7,7 @@ import Users from "../../components/Talents/Users";
 import Head from "next/head";
 import { db } from "../../firebase";
 import { motion } from "framer-motion";
+import { MoonLoader } from "react-spinners";
 
 // firebase import
 import { collection, onSnapshot, getDocs } from "firebase/firestore";

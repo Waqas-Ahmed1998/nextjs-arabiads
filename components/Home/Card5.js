@@ -8,6 +8,7 @@ function Card5() {
     <div className=' grid grid-cols-1 md:max-w-[95rem] mx-auto relative  '>
       <div className='hidden mx-auto  xl:inline-grid  lg:w-[65rem] h-[34rem]'>
         <Image
+          data-aos='zoom-in-up'
           src='/home/card5.png'
           alt=''
           title=''
@@ -30,6 +31,7 @@ function Card5() {
         <div className=' w-[60%] md:w-[35%] '>
           <div className=' pl-10'>
             <Image
+              data-aos='zoom-in-right'
               src='/home/card5person.png'
               alt=''
               title=''
@@ -42,13 +44,17 @@ function Card5() {
         </div>
 
         <div className='lg:py-2 flex-1  text-center xl:text-left lg:pr-10 '>
-          <h2 className='text-white text-xl md:text-3xl font-bold xl:leading-[48px] mb-5'>
+          <h2
+            data-aos='fade-down'
+            className='text-white text-xl md:text-3xl font-bold xl:leading-[48px] mb-5'
+          >
             Esports Talents{" "}
             <span className='text-[#020c27] md:text-[#020c27]'>
               and Advertising Services
             </span>{" "}
           </h2>
           <p
+            data-aos='zoom-out-left'
             className={`${styles.popins} text-sm text-white md:text-lg tracking-wide md:tracking-normal`}
           >
             Arabia E-Advertising began its career as one of the first talent

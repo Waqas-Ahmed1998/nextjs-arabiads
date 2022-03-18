@@ -1,17 +1,21 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import styles from "../../styles/Home.module.css";
 
 function Card4() {
   return (
-    <div className='lg:w-[70%] mx-auto '>
-      <div className='flex flex-col-reverse lg:flex-row text-center lg:text-left'>
+    <div className='lg:w-[70%] mx-auto  '>
+      <div className='flex flex-col-reverse lg:flex-row text-center lg:text-left '>
         <div className='p-5 flex-1 space-y-5 lg:space-y-7 xl:pt-20'>
-          <h2 className='text-xl md:text-4xl text-[#020c27] font-bold'>
+          <h2
+            data-aos='fade-right'
+            className='text-xl md:text-4xl text-[#020c27] font-bold'
+          >
             Influencer <span className='text-[#008fcf]'>Management</span>
           </h2>
           <p
+            data-aos='zoom-out-right'
             className={`${styles.popins} text-[#404b68] text-sm md:text-lg tracking-wide md:tracking-normal `}
           >
             Are you an influencer looking to broaden your reach and collaborate
@@ -27,8 +31,8 @@ function Card4() {
             </button>
           </Link>
         </div>
-        <div className='flex-1   '>
-          <div className=' w-auto  '>
+        <div data-aos='zoom-out-left' className='flex-1   '>
+          <div className=' w-auto xl:pl-5 '>
             <Image
               src='/home/card3person.png'
               alt=''

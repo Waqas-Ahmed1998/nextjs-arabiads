@@ -32,17 +32,13 @@ function Services() {
       />
       <div className='max-w-[1400px] mx-auto   '>
         <Card1 />
-        <div className='card-width mt-10'>
+        <div className='  card-width mt-10'>
           <Scard2 />
         </div>
-        <div className='long-card relative'>
-          {
-            // <div className='right-0 hidden xl:inline-grid absolute top-0 [z-index:-1]'>
-            // </div>
-          }
+        <div className='w-[95%] relative '>
           <Scard3 />
         </div>
-        <div className='card-width mt-10'>
+        <div className='card-width mt-10 '>
           <Scard4 />
         </div>
         <NumbersSpeak />

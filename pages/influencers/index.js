@@ -98,7 +98,7 @@ function Influencers() {
             // className='  animate-animate-pulse  '
           />
         </div>
-        <div className='relative card-width mt-10 '>
+        <div className='relative card-width mt-12 '>
           <img
             src='/standardimages/card5line.png'
             alt=''
@@ -107,6 +107,7 @@ function Influencers() {
 
           <Icard1 />
         </div>
+
         <NumbersSpeak />
         <Plateforms />
         <Campaign2 />

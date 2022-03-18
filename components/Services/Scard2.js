@@ -55,7 +55,7 @@ function Scard2() {
             </Link>
           </div>
           <div className='basis-[44%] justify-center  '>
-            <div className=' w-full ml-5 '>
+            <div className=' w-full ml-8 '>
               <Image
                 src='/service/Scard2person.png'
                 alt=''

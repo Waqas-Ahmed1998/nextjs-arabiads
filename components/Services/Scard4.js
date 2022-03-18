@@ -6,7 +6,7 @@ import styles from "../../styles/Home.module.css";
 function Scard4() {
   return (
     <>
-      <div className='hidden xl:left-9 relative  xl:mt-10   xl:inline-grid w-[90%] h-[38rem]'>
+      <div className='hidden  xl:inline-grid flex-col xl:left-[7%]  relative   xl:mt-10    w-[90%] h-[38rem]'>
         <Image
           src='/service/Scard4.png'
           alt=''
@@ -18,27 +18,28 @@ function Scard4() {
           // objectFit='cover'
         />
       </div>
-      <div className=' h-[80%] xl:absolute flex top-[10%]  justify-center  xl:w-[90%] '>
+      <div className=' h-[80%] xl:absolute  xl:left-[5%] flex top-[10%]  justify-center  xl:w-[90%] '>
         <div className='xl:w-[100%] xl:ml-0 flex flex-col xl:flex-row space-y-5 text-center xl:text-left '>
-          <div className=' basis-[46%] relative '>
+          <div className=' basis-[48%] relative  '>
             <Image
+              className='scale-[1.00] '
               src='/service/Scard4person.png'
               alt=''
               title=''
-              width='500'
-              height='480'
+              width='530'
+              height='500'
               priority
               objectFit='cover'
             />
           </div>
-          <div className=' flex-1 xl:py-12 xl:px-10 space-y-5 '>
+          <div className=' flex-1 xl:py-12 xl:px-10  '>
             <h2
-              className={` ${styles.montserrat} heading-primary text-[#404b68] xl:text-[30px]`}
+              className={` ${styles.montserrat} heading-primary text-[#404b68] xl:text-[30px] xl:mb-5`}
             >
               Talent <span className='text-[#008fcf]'>Management</span>
             </h2>
             <p
-              className={` ${styles.popins} text-[#404b68] text-sm xl:text-[18px] xl:leading-[29px] xl:pr-5`}
+              className={` ${styles.popins} text-[#404b68] text-sm xl:text-[18px] xl:leading-[29px] xl:pr-5 xl:mb-10`}
             >
               Are you an influencer looking to broaden your reach and
               collaborate with others? We are here to assist you. Our staff will

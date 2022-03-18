@@ -48,7 +48,7 @@ export default function Home() {
       </div>
       <div className=' xl:mt-20 2xl:mt-0 grid grid-cols-1 md:max-w-[95rem] mx-auto relative'>
         <Card4 />
-        <div className='right-20 hidden xl:inline-grid absolute top-0 [z-index:-1]'>
+        <div className=' xl:-right-[3%] 2xl:-right-[5%] hidden xl:inline-grid absolute top-0 [z-index:-1]'>
           <motion.img
             animate={{
               scale: [0.7, 1.2],

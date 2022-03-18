@@ -2,11 +2,14 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import styles from "../../styles/Home.module.css";
+import NumbersSpeak from "../standard/NumbersSpeak";
+import Plateforms from "../standard/Plateforms";
+import Campaign2 from "../standard/Campaign2";
 
 function Icard1() {
   return (
     <>
-      <div className='hidden   xl:inline-grid  w-[95%] h-[35rem]'>
+      <div className='hidden   relative top-5 xl:inline-grid  w-[95%] h-[35rem]'>
         <Image
           src='/home/card5.png'
           alt=''
@@ -24,7 +27,7 @@ function Icard1() {
           alt=''
         />
       </div>
-      <div className=' h-[80%]  xl:absolute flex top-[5%]  justify-center  xl:w-full '>
+      <div className=' h-[80%]  xl:absolute flex top-[10%]  justify-center  xl:w-full '>
         <div className='xl:w-[100%] xl:ml-3 flex flex-col-reverse xl:flex-row space-y-5 items-center text-center xl:text-left '>
           <div className=' flex-1 xl:py-5 xl:px-5 '>
             <h2 className=' heading-primary xl:text-white xl:text-[28px] mb-5 font-bold'>

@@ -16,14 +16,14 @@ function Card2() {
           priority
         />
       </div>
-      <div className='hidden xl:inline-grid absolute [z-index:-1] -top-5 -left-2'>
+      <div className='hidden xl:inline-grid absolute [z-index:-1] -top-9 -left-2'>
         <img
           className=' animate-spin-slow '
           src='/spinners/redspinner.png'
           alt=''
         />
       </div>
-      <div className='hidden xl:inline-grid absolute top-5 right-20'>
+      <div className='hidden xl:inline-grid absolute top-14 right-16'>
         <img
           className=' animate-spin-slow '
           src='/spinners/smallspinner.png'
@@ -57,7 +57,7 @@ function Card2() {
         <div className='  xl:basis-[44%]  '>
           <div className='w-full xl:ml-10  '>
             <Image
-              src='/service/Scard2person.png'
+              src='/home/card2image.png'
               alt=''
               title=''
               width='500'

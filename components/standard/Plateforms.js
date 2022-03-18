@@ -5,7 +5,10 @@ import styles from "../../styles/Home.module.css";
 function Plateforms() {
   return (
     <>
-      <div className='px-5 my-20   mx-auto lg:w-[70%] text-center relative'>
+      <div
+        data-aos='zoom-out'
+        className='px-5 my-20   mx-auto lg:w-[70%] text-center relative'
+      >
         <h3
           className={`${styles.montserrat} mb-2 xl:mb-10 text-[#404040] md:text-2xl text-center text-lg xl:text-[40px] [font-weight:700]`}
         >
@@ -18,7 +21,10 @@ function Plateforms() {
           community instead of just take a typical UA approach.
         </p>
       </div>
-      <div className='items-center mt-20 mx-auto justify-center max-w-7xl  space-y-10 lg:space-y-0 flex flex-col lg:flex-row gap-2 md:gap-5'>
+      <div
+        data-aos='zoom-out'
+        className='items-center mt-20 mx-auto justify-center max-w-7xl  space-y-10 lg:space-y-0 flex flex-col lg:flex-row gap-2 md:gap-5'
+      >
         <div
           className={`flex items-center   justify-evenly flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[20px] rounded-[30px] w-48 md:h-40 h-24`}
         >

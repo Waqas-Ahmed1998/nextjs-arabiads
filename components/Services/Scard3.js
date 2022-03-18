@@ -5,39 +5,41 @@ import styles from "../../styles/Home.module.css";
 
 function Scard3() {
   return (
-    <Fragment>
+    <>
       {
-        <div className='hidden absolute  -left-[25%] w-[2650px] h-[200vh]  service-mid bg-no-repeat   xl:inline-grid '></div>
+        // <div className='hidden absolute  -left-[25%] w-[2650px] h-[200vh]  service-mid bg-no-repeat   xl:inline-grid '></div>
       }
 
-      <div className='hidden   xl:inline-grid w-full h-[50rem]'>
+      <div className='hidden  xl:inline-grid w-full  '>
         <Image
+          className=''
           src='/service/Scard3.png'
           alt=''
           title=''
-          width='100%'
-          height='100%'
-          layout='responsive'
+          width='700'
+          height='1030'
+          // layout='responsive'
+          objectFit='contain'
           priority
         />
       </div>
-      <div className='hidden xl:inline-grid absolute   bottom-0 -right-10'>
+      <div className='hidden xl:inline-grid absolute   bottom-32 -right-20'>
         <img
           className=' animate-spin-slow '
           src='/spinners/bluespinner.png'
           alt=''
         />
       </div>
-      <div className='hidden xl:inline-grid absolute top-20 left-[44%] '>
+      <div className='hidden xl:inline-grid absolute top-44 left-[46%] '>
         <img
           className=' animate-spin-slow '
           src='/spinners/smallblue.png'
           alt=''
         />
       </div>
-      <div className=' h-[80%] xl:absolute flex top-[10%]  justify-center  xl:w-full '>
-        <div className='xl:w-[100%] w-[90%] xl:ml-5 flex flex-col xl:flex-row space-y-5 text-center items-center xl:text-left '>
-          <div className=' basis-[47%]  '>
+      <div className='  h-[90%] xl:absolute flex top-[3%] justify-center xl:px-0 xl:w-full '>
+        <div className='xl:w-[100%]  w-[90%] xl:ml-5 flex flex-col xl:flex-row space-y-5 text-center items-center xl:text-left '>
+          <div className=' basis-[46%]  '>
             <Image
               src='/service/Scard3person.png'
               alt=''
@@ -48,7 +50,7 @@ function Scard3() {
               objectFit='cover'
             />
           </div>
-          <div className='flex-1 xl:py-5 space-y-5 xl:pr-6'>
+          <div className='flex-1 xl:py-10 space-y-5 xl:pr-4 xl:pl-10  '>
             <h2
               className={` ${styles.montserrat} font-bold heading-secondary xl:w-[80%]  `}
             >
@@ -91,7 +93,7 @@ function Scard3() {
           </div>
         </div>
       </div>
-    </Fragment>
+    </>
   );
 }
 

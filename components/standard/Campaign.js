@@ -25,7 +25,11 @@ function Campaign() {
 
       <div className='mt-10  grid grid-cols-1 md:max-w-[95rem] mx-auto relative md:px-5 py-10'>
         <div className=' mx-auto w-[90%] flex flex-col-reverse xl:flex-row lg:p-14 text-center xl:text-left'>
-          <div className='lg:p-5 lg:pr-5  items-center xl:pt-16 xl:pr-9 flex-1 space-y-5'>
+          <div
+            data-aos='fade-right'
+            data-aos-easing='ease-in-out'
+            className='lg:p-5 lg:pr-5  items-center xl:pt-16 xl:pr-9 flex-1 space-y-5'
+          >
             <h3
               className={`${styles.montserrat} xl:leading-[49px] xl:w-[70%] text-[#020c27] text-xl  md:text-[35px] font-semibold`}
             >
@@ -45,7 +49,11 @@ function Campaign() {
               REACH OUT
             </button>
           </div>
-          <div className='flex-1 '>
+          <div
+            data-aos='fade-left'
+            data-aos-easing='ease-in-out'
+            className='flex-1 '
+          >
             <Image
               src='/campaign/pic.png'
               alt=''
