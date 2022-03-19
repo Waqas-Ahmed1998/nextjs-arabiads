@@ -1,9 +1,17 @@
 import Link from "next/link";
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import Image from "next/image";
 import styles from "../../styles/Home.module.css";
 
 function Scard3() {
+  // useEffect(() => {
+  //   AOS.init({
+
+  //   });
+  //   return () => {
+
+  //   }
+  // }, [])
   return (
     <>
       {

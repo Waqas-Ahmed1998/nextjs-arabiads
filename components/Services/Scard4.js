@@ -18,6 +18,13 @@ function Scard4() {
           quality={100}
           // objectFit='cover'
         />
+        <div className='hidden xl:inline-grid absolute xl:top-[14%] xl:left-[20%] 2xl:top-[14%] 2xl:left-[20%] '>
+          <img
+            className=' animate-spin-slow '
+            src='/spinners/smallblue.png'
+            alt=''
+          />
+        </div>
       </div>
       <div className=' h-[80%] xl:absolute  xl:left-[5%] flex top-[10%]  justify-center  xl:w-[90%] '>
         <div className='xl:w-[100%] xl:ml-0 flex flex-col xl:flex-row space-y-5 text-center xl:text-left '>

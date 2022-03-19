@@ -177,13 +177,13 @@ function Users({ user }) {
                       </div>
                     )}
 
-                    <div className=' md:flex w-full justify-evenly justify-self-end absolute bottom-10 hidden '>
+                    <div className=' md:flex w-full justify-center space-x-5 justify-self-end absolute xl:bottom-10 bottom-5 flex '>
                       {singleUser.facebookLink && (
                         <a href={singleUser.facebookLink}>
                           {" "}
                           <FontAwesomeIcon
                             icon={faFacebook}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
                           />
                         </a>
                       )}
@@ -193,7 +193,7 @@ function Users({ user }) {
                           {" "}
                           <FontAwesomeIcon
                             icon={faTwitter}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
                           />
                         </a>
                       )}
@@ -202,7 +202,7 @@ function Users({ user }) {
                           {" "}
                           <FontAwesomeIcon
                             icon={faInstagram}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-[1.69rem]  p-[0.3rem] bg-white rounded-full'
                           />
                         </a>
                       )}
@@ -211,7 +211,7 @@ function Users({ user }) {
                           {" "}
                           <FontAwesomeIcon
                             icon={faTwitch}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
                           />
                         </a>
                       )}
@@ -220,19 +220,16 @@ function Users({ user }) {
                           {" "}
                           <FontAwesomeIcon
                             icon={faYoutube}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-7 p-[0.3rem] md: bg-white rounded-full'
                           />
                         </a>
                       )}
                       {singleUser.liquipediaLink && (
-                        <a
-                          href={singleUser.liquipediaLink}
-                          className=' flex items-center '
-                        >
+                        <a href={singleUser.liquipediaLink} className=' flex  '>
                           <img
                             src='/talents/liquipedia.png'
                             alt=''
-                            className='  w-6 h-6 object-contain   p-[0.3rem] bg-white rounded-full '
+                            className=' border-none w-4 h-4 p-[1px]  md:w-7 md:h-[1.7rem] object-contain   md:p-[0.3rem] bg-white rounded-full '
                           />
                         </a>
                       )}
@@ -328,19 +325,13 @@ function Users({ user }) {
                       </div>
                     )}
 
-                    <div className=' md:flex w-full justify-evenly justify-self-end absolute bottom-10 hidden '>
+                    <div className=' md:flex w-full justify-center space-x-5  justify-self-end absolute md:bottom-10 bottom-5 flex '>
                       {singleUser.facebookLink && (
                         <a href={singleUser.facebookLink}>
                           {" "}
-                          {
-                            // <img
-                            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
-                            //   alt=''
-                            // />
-                          }
                           <FontAwesomeIcon
                             icon={faFacebook}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
                           />
                         </a>
                       )}
@@ -348,60 +339,36 @@ function Users({ user }) {
                       {singleUser.twitterLink && (
                         <a href={singleUser.twitterLink}>
                           {" "}
-                          {
-                            // <img
-                            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
-                            //   alt=''
-                            // />
-                          }
                           <FontAwesomeIcon
                             icon={faTwitter}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
                           />
                         </a>
                       )}
                       {singleUser.instagramLink && (
                         <a href={singleUser.instagramLink}>
                           {" "}
-                          {
-                            // <img
-                            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
-                            //   alt=''
-                            // />
-                          }
                           <FontAwesomeIcon
                             icon={faInstagram}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-[1.69rem] p-[0.3rem] bg-white rounded-full'
                           />
                         </a>
                       )}
                       {singleUser.twitchLink && (
                         <a href={singleUser.twitchLink}>
                           {" "}
-                          {
-                            // <img
-                            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
-                            //   alt=''
-                            // />
-                          }
                           <FontAwesomeIcon
                             icon={faTwitch}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
                           />
                         </a>
                       )}
                       {singleUser.youtubeLink && (
                         <a href={singleUser.youtubeLink}>
                           {" "}
-                          {
-                            // <img
-                            //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/07/1.svg'
-                            //   alt=''
-                            // />
-                          }
                           <FontAwesomeIcon
                             icon={faYoutube}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
                           />
                         </a>
                       )}
@@ -413,7 +380,7 @@ function Users({ user }) {
                           <img
                             src='/talents/liquipedia.png'
                             alt=''
-                            className='  w-6 h-6 object-contain   p-[0.3rem] bg-white rounded-full '
+                            className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
                           />
                         </a>
                       )}

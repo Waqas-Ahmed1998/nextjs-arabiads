@@ -36,7 +36,7 @@ function Layout({ children }) {
   }
   useEffect(() => {
     AOS.init({
-      once: true,
+      once: false,
       disable: "tablet",
     });
     return () => {};

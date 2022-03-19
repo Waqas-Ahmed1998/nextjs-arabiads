@@ -6,8 +6,10 @@ import {
   createUserWithEmailAndPassword,
   signOut,
 } from "firebase/auth";
+import { addDoc, collection } from "firebase/firestore";
 import { signInUser } from "../../../../recoil/signInUser";
 import Head from "next/head";
+import { db } from "../../../../firebase";
 
 // import { auth } from '../../../../firebase';
 
@@ -26,8 +28,15 @@ function SignIn() {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
+
         console.log(user);
         alert("User Created");
+        const articleRef = collection(db, "users");
+        // addDoc(articleRef, {
+        //   email,
+        // }).then(() => {
+        //   return;
+        // });
         setLoginEmail(user.email);
         newUser(user.email);
         setEmail("");

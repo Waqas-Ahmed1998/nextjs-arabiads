@@ -5,10 +5,14 @@ import styles from "../../styles/Home.module.css";
 
 function Card5() {
   return (
-    <div className=' grid grid-cols-1 md:max-w-[95rem] mx-auto relative  '>
+    <div
+      id='card5'
+      className=' grid grid-cols-1 md:max-w-[95rem] mx-auto relative  '
+    >
       <div className='hidden mx-auto  xl:inline-grid  lg:w-[65rem] h-[34rem]'>
         <Image
           data-aos='zoom-in-up'
+          data-aos-anchor='#card5'
           src='/home/card5.png'
           alt=''
           title=''
@@ -33,6 +37,7 @@ function Card5() {
           <div className=' pl-10'>
             <Image
               data-aos='zoom-in-right'
+              data-aos-anchor='#card5'
               src='/home/card5person.png'
               alt=''
               title=''
@@ -48,6 +53,7 @@ function Card5() {
         <div className='lg:py-2 flex-1  text-center xl:text-left lg:pr-10 '>
           <h2
             data-aos='fade-down'
+            data-aos-anchor='#card5'
             className='text-white text-xl md:text-3xl font-bold xl:leading-[48px] mb-5'
           >
             Esports Talents{" "}
@@ -57,6 +63,7 @@ function Card5() {
           </h2>
           <p
             data-aos='zoom-out-left'
+            data-aos-anchor='#card5'
             className={`${styles.popins} text-sm text-white md:text-lg tracking-wide md:tracking-normal`}
           >
             Arabia E-Advertising began its career as one of the first talent

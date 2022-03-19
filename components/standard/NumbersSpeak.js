@@ -12,7 +12,7 @@ function NumbersSpeak() {
       unobserve();
     },
   });
-  console.log(inView);
+
   return (
     <div
       data-aos='zoom-out'
