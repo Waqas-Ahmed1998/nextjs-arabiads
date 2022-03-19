@@ -131,11 +131,11 @@ function Users({ user }) {
                     </svg>
                   </>
                 )}
-                <div className='w-full h-full  flex absolute top-0'>
+                <div className='w-full h-full  flex absolute top-[1px]'>
                   <img
                     src={singleUser.image}
                     alt=''
-                    className='w-[35%] h-[93%] object-cover rounded-l-[15px] md:rounded-l-[35px]  '
+                    className='ml-[5px] w-[35%] h-[90%] object-cover rounded-l-[15px] md:rounded-l-[35px]  '
                   />
                   <div className='ml-5   w-full mt-5 md:space-y-3 relative'>
                     <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem]  md:text-base font-bold inline-block px-2 bg-[#FAA361] -top-[0.7rem] md:-top-[0.5rem]'>
@@ -281,11 +281,11 @@ function Users({ user }) {
                     </svg>
                   </>
                 )}
-                <div className='w-full h-full flex flex-row-reverse absolute top-0'>
+                <div className='w-full h-full flex flex-row-reverse absolute top-[1px]'>
                   <img
                     src={singleUser.image}
                     alt=''
-                    className='w-[35%]  h-[93%] object-cover rounded-r-[15px] md:rounded-r-[35px]  '
+                    className='mr-[5px] w-[35%]  h-[90%] object-cover rounded-r-[15px] md:rounded-r-[35px]  '
                   />
 
                   <div className='ml-5 w-full mt-5 md:space-y-3 relative'>
