@@ -138,7 +138,7 @@ function Users({ user }) {
                     className='ml-[5px] w-[35%] h-[90%] object-cover rounded-l-[15px] md:rounded-l-[35px]  '
                   />
                   <div className='ml-5   w-full mt-5 md:space-y-3 relative xl:px-2'>
-                    <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem]  md:text-base font-bold inline-block px-2 bg-[#FAA361] -top-[0.7rem] md:-top-[0.5rem]'>
+                    <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem]  md:text-base font-bold inline-block px-2 bg-[#FAA361] xl:-top-[9px] md:-top-[0.5rem]'>
                       {singleUser.role}
                     </h3>
                     <h3 className='text-xs xl:text-base font-bold'>
