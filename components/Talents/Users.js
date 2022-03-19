@@ -137,7 +137,7 @@ function Users({ user }) {
                     alt=''
                     className='ml-[5px] w-[35%] h-[90%] object-cover rounded-l-[15px] md:rounded-l-[35px]  '
                   />
-                  <div className='ml-5   w-full mt-5 md:space-y-3 relative'>
+                  <div className='ml-5   w-full mt-5 md:space-y-3 relative xl:px-2'>
                     <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem]  md:text-base font-bold inline-block px-2 bg-[#FAA361] -top-[0.7rem] md:-top-[0.5rem]'>
                       {singleUser.role}
                     </h3>
@@ -149,23 +149,26 @@ function Users({ user }) {
                       Tournaments:
                     </p>
                     {singleUser.tournaments?.includes(",") ? (
-                      <div className='flex  gap-2 md:gap-0 '>
-                        <div className='text-center md:px-2 md:space-y-3 border-r border-gray-400'>
-                          <p className='text-[0.5rem] md:text-xs'>
-                            {singleUser.tournaments.split(",")[0]}
-                          </p>
-                          <p className=' text-[0.5rem] md:text-xs'>
-                            {singleUser.tournaments.split(",")[1]}
-                          </p>
-                        </div>
-                        <div className='text-center md:space-y-3 md:px-2'>
-                          <p className='text-[0.5rem] md:text-xs'>
-                            {singleUser.tournaments.split(",")[2]}
-                          </p>
-                          <p className=' text-[0.5rem] md:text-xs'>
-                            {singleUser.tournaments.split(",")[3]}
-                          </p>
-                        </div>
+                      <div className='flex flex-col md:flex-row w-full flex-wrap justify-between gap-2 md:gap-0 xl:text-center font-medium'>
+                        <p className='text-[0.5rem] md:text-xs md:w-[46%] md:mt-[10px]'>
+                          {" "}
+                          {singleUser.tournaments.split(",")[0]}
+                        </p>
+                        <div className='w-[1px] bg-[#97aabd] xl:mt-[10px] h-auto hidden md:inline-grid '></div>
+                        <p className='text-[0.5rem] md:text-xs md:w-[46%] md:mt-[10px]'>
+                          {" "}
+                          {singleUser.tournaments.split(",")[1]}
+                        </p>
+                        <p className='text-[0.5rem] md:text-xs  md:w-[46%] md:mt-[10px]'>
+                          {" "}
+                          {singleUser.tournaments.split(",")[2]}
+                        </p>
+                        <div className='hidden md:inline-grid w-[1px] bg-[#97aabd] xl:mt-[10px] h-auto'></div>
+
+                        <p className='text-[0.5rem] md:text-xs md:w-[46%] md:mt-[10px]'>
+                          {" "}
+                          {singleUser.tournaments.split(",")[3]}
+                        </p>
                       </div>
                     ) : (
                       <div className='flex  gap-2 md:gap-0 '>
@@ -177,7 +180,7 @@ function Users({ user }) {
                       </div>
                     )}
 
-                    <div className=' md:flex w-full justify-center space-x-5 justify-self-end absolute xl:bottom-10 bottom-5 flex '>
+                    <div className='  flex w-full justify-center space-x-5 justify-self-end absolute md:bottom-10 bottom-4  '>
                       {singleUser.facebookLink && (
                         <a href={singleUser.facebookLink}>
                           {" "}
@@ -278,14 +281,14 @@ function Users({ user }) {
                     </svg>
                   </>
                 )}
-                <div className='w-full h-full flex flex-row-reverse absolute top-[1px]'>
+                <div className='w-full h-full flex flex-row-reverse absolute  top-[1px]'>
                   <img
                     src={singleUser.image}
                     alt=''
                     className='mr-[5px] w-[35%]  h-[90%] object-cover rounded-r-[15px] md:rounded-r-[35px]  '
                   />
 
-                  <div className='ml-5 w-full mt-5 md:space-y-3 relative'>
+                  <div className='ml-5 w-full mt-5 md:space-y-3 relative md:pr-2'>
                     <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem] xl:text-base font-bold inline-block px-2 bg-[#FAA361] -top-[0.8rem] md:-top-[0.6rem]'>
                       {singleUser.role}
                     </h3>
@@ -297,23 +300,26 @@ function Users({ user }) {
                       Tournaments:
                     </p>
                     {singleUser.tournaments?.includes(",") ? (
-                      <div className='flex  gap-2 md:gap-0 '>
-                        <div className='text-center md:px-2 md:space-y-3 border-r border-gray-400'>
-                          <p className='text-[0.5rem] md:text-xs'>
-                            {singleUser.tournaments.split(",")[0]}
-                          </p>
-                          <p className=' text-[0.5rem] md:text-xs'>
-                            {singleUser.tournaments.split(",")[1]}
-                          </p>
-                        </div>
-                        <div className='text-center md:space-y-3 md:px-2'>
-                          <p className='text-[0.5rem] md:text-xs'>
-                            {singleUser.tournaments.split(",")[2]}
-                          </p>
-                          <p className=' text-[0.5rem] md:text-xs'>
-                            {singleUser.tournaments.split(",")[3]}
-                          </p>
-                        </div>
+                      <div className='flex flex-col md:flex-row w-full flex-wrap justify-between gap-2 md:gap-0 xl:text-center font-medium'>
+                        <p className='text-[0.5rem] md:text-xs md:w-[46%] md:mt-[10px]'>
+                          {" "}
+                          {singleUser.tournaments.split(",")[0]}
+                        </p>
+                        <div className='w-[1px] bg-[#97aabd] xl:mt-[10px] h-auto hidden md:inline-grid '></div>
+                        <p className='text-[0.5rem] md:text-xs md:w-[46%] md:mt-[10px]'>
+                          {" "}
+                          {singleUser.tournaments.split(",")[1]}
+                        </p>
+                        <p className='text-[0.5rem] md:text-xs  md:w-[46%] md:mt-[10px]'>
+                          {" "}
+                          {singleUser.tournaments.split(",")[2]}
+                        </p>
+                        <div className='hidden md:inline-grid w-[1px] bg-[#97aabd] xl:mt-[10px] h-auto'></div>
+
+                        <p className='text-[0.5rem] md:text-xs md:w-[46%] md:mt-[10px]'>
+                          {" "}
+                          {singleUser.tournaments.split(",")[3]}
+                        </p>
                       </div>
                     ) : (
                       <div className='flex  gap-2 md:gap-0 '>
@@ -325,7 +331,7 @@ function Users({ user }) {
                       </div>
                     )}
 
-                    <div className=' md:flex w-full justify-center space-x-5  justify-self-end absolute md:bottom-10 bottom-5 flex '>
+                    <div className=' md:flex w-full justify-center space-x-5  justify-self-end absolute md:bottom-10 bottom-4 flex '>
                       {singleUser.facebookLink && (
                         <a href={singleUser.facebookLink}>
                           {" "}
