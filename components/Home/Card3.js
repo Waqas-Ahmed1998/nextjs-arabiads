@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "../../styles/Home.module.css";
 // import useInView from "react-cool-inview";
-import { motion } from "framer-motion";
+
 function Card3() {
   // let { observe, inView, scrollDirection } = useInView({
   //   threshold: 0.25,
