@@ -32,11 +32,11 @@ function SignIn() {
         console.log(user);
         alert("User Created");
         const articleRef = collection(db, "users");
-        addDoc(articleRef, {
-          email,
-        }).then(() => {
-          return;
-        });
+        // addDoc(articleRef, {
+        //   email,
+        // }).then(() => {
+        //   return;
+        // });
         setLoginEmail(user.email);
         newUser(user.email);
         setEmail("");
