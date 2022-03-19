@@ -103,7 +103,7 @@ function Influencers() {
             // className='  animate-animate-pulse  '
           />
         </div>
-        <div className='relative card-width mt-12 '>
+        <div className='relative card-width mt-20 xl:my-[8rem] '>
           <img
             src='/standardimages/card5line.png'
             alt=''

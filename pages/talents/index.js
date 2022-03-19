@@ -27,6 +27,9 @@ function Talents() {
         setUsers(users);
       });
     } catch (error) {}
+    return () => {
+      setUsers([]);
+    };
   }, []);
   return (
     <div className='relative  xl:mt-20 overflow-hidden xl:overflow-visible '>
@@ -65,7 +68,7 @@ function Talents() {
       <div className='max-w-screen-xl mx-auto  '>
         <Users user={users} />
 
-        <div className='card-width'>
+        <div className='card-width xl:mt-16'>
           <Scard2 />
         </div>
         <NumbersSpeak />

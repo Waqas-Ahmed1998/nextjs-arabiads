@@ -21,7 +21,7 @@ function Case() {
       snapshot.docs.forEach((doc) => {
         users.push({ ...doc.data(), id: doc.id });
       });
-      console.log(users);
+
       setEventCard(users);
     });
 
