@@ -30,6 +30,7 @@ function Emiddle() {
               width='300'
               height='200'
               objectFit='contain'
+              quality={100}
             />
             <h2
               className={` ${styles.montserrat} text-base md:text-[22px] font-bold text-[#2b4474]`}
@@ -56,6 +57,7 @@ function Emiddle() {
               width='300'
               height='200'
               objectFit='contain'
+              quality={100}
             />
             <h2
               className={` ${styles.montserrat} text-base md:text-[22px] font-bold text-[#2b4474]`}
@@ -83,6 +85,7 @@ function Emiddle() {
               width='300'
               height='200'
               objectFit='contain'
+              quality={100}
             />
             <h2
               className={` ${styles.montserrat} text-base md:text-[22px] font-bold text-[#2b4474]`}
@@ -110,6 +113,7 @@ function Emiddle() {
               width='300'
               height='200'
               objectFit='contain'
+              quality={100}
             />
             <h2
               className={` ${styles.montserrat} text-base md:text-[22px] font-bold text-[#2b4474]`}

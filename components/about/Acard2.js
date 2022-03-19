@@ -1,6 +1,6 @@
-import React from 'react';
-import styles from '../../styles/Home.module.css';
-import Image from 'next/image';
+import React from "react";
+import styles from "../../styles/Home.module.css";
+import Image from "next/image";
 
 function Acard2() {
   return (
@@ -40,6 +40,7 @@ function Acard2() {
           // layout='responsive'
           priority
           objectFit='contain'
+          quality={100}
         />
       </div>
     </div>

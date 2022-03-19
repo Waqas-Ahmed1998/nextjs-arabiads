@@ -15,6 +15,7 @@ function Scard2() {
           height='100%'
           layout='responsive'
           priority
+          quality={100}
         />
       </div>
       <div className='hidden xl:inline-grid absolute [z-index:-1] -top-5 -left-2'>
@@ -64,6 +65,7 @@ function Scard2() {
                 height='707'
                 priority
                 objectFit='cover'
+                quality={100}
               />
             </div>
           </div>

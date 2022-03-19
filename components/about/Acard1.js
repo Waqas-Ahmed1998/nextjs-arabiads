@@ -1,6 +1,6 @@
-import React from 'react';
-import styles from '../../styles/Home.module.css';
-import Image from 'next/image';
+import React from "react";
+import styles from "../../styles/Home.module.css";
+import Image from "next/image";
 
 function Acard1() {
   return (
@@ -11,7 +11,7 @@ function Acard1() {
         </h3>
         <p className='mt-5 text-sm md:text-xl font-semibold text-[#365E77]'>
           Arabia E-Advertising was formed in 2006 with the goal of changing the
-          game of marketing tactics and the way media channels are used.{' '}
+          game of marketing tactics and the way media channels are used.{" "}
         </p>
         <p
           className={` ${styles.popins} mt-10 text-sm md:text-lg text-gray-600 `}
@@ -40,6 +40,7 @@ function Acard1() {
           // layout='responsive'
           priority
           objectFit='contain'
+          quality={100}
         />
       </div>
     </div>

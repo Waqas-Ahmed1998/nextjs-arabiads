@@ -10,34 +10,35 @@ function Scard3() {
         // <div className='hidden absolute  -left-[25%] w-[2650px] h-[200vh]  service-mid bg-no-repeat   xl:inline-grid '></div>
       }
 
-      <div className='hidden  xl:inline-grid w-full  '>
+      <div className='xl:h-[57rem]  hidden relative xl:inline-grid w-full  '>
         <Image
-          className=''
+          className=' '
           src='/service/Scard3.png'
           alt=''
           title=''
-          width='700'
-          height='1030'
-          // layout='responsive'
+          width='100'
+          height='100'
+          layout='responsive'
           objectFit='contain'
+          quality={100}
           priority
         />
       </div>
-      <div className='hidden xl:inline-grid absolute   bottom-32 -right-20'>
+      <div className='hidden xl:inline-grid absolute xl:-right-[6%]  xl:bottom-[6%] 2xl:bottom-[7%] 2xl:-right-20'>
         <img
           className=' animate-spin-slow '
           src='/spinners/bluespinner.png'
           alt=''
         />
       </div>
-      <div className='hidden xl:inline-grid absolute top-44 left-[46%] '>
+      <div className='hidden xl:inline-grid absolute xl:top-[14%] xl:left-[45%] 2xl:top-[14%] 2xl:left-[45%] '>
         <img
           className=' animate-spin-slow '
           src='/spinners/smallblue.png'
           alt=''
         />
       </div>
-      <div className='  h-[90%] xl:absolute flex top-[3%] justify-center xl:px-0 xl:w-full '>
+      <div className='  h-[90%] xl:absolute flex top-[5%] justify-center xl:px-0 xl:w-full '>
         <div className='xl:w-[100%]  w-[90%] xl:ml-5 flex flex-col xl:flex-row space-y-5 text-center items-center xl:text-left '>
           <div className=' basis-[46%]  '>
             <Image
@@ -48,9 +49,10 @@ function Scard3() {
               height='600'
               priority
               objectFit='cover'
+              quality={100}
             />
           </div>
-          <div className='flex-1 xl:py-10 space-y-5 xl:pr-4 xl:pl-10  '>
+          <div className='flex-1 xl:py-5 space-y-5 xl:pr-5 xl:pl-10  '>
             <h2
               className={` ${styles.montserrat} font-bold heading-secondary xl:w-[80%]  `}
             >

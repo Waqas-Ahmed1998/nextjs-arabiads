@@ -36,6 +36,7 @@ function Card3() {
           height='100%'
           layout='responsive'
           priority
+          quality={100}
         />
       </div>
       <img
@@ -64,6 +65,7 @@ function Card3() {
               layout='responsive'
               priority
               objectFit='contain'
+              quality={100}
             />
           </div>
         </div>

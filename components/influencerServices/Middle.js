@@ -30,6 +30,7 @@ function Middle() {
               width='300'
               height='180'
               objectFit='contain'
+              quality={100}
             />
             <h2
               className={` ${styles.montserrat} text-base md:text-[22px] font-bold text-[#2b4474]`}
@@ -54,6 +55,7 @@ function Middle() {
               width='300'
               height='180'
               objectFit='contain'
+              quality={100}
             />
             <h2
               className={` ${styles.montserrat} text-base md:text-[22px] font-bold text-[#2b4474]`}
@@ -79,6 +81,7 @@ function Middle() {
               width='300'
               height='180'
               objectFit='contain'
+              quality={100}
             />
             <h2
               className={` ${styles.montserrat} text-base md:text-[22px] font-bold text-[#2b4474]`}
@@ -104,6 +107,7 @@ function Middle() {
               width='300'
               height='180'
               objectFit='contain'
+              quality={100}
             />
             <h2
               className={` ${styles.montserrat} text-base md:text-[22px] font-bold text-[#2b4474]`}
@@ -128,6 +132,7 @@ function Middle() {
               width='300'
               height='180'
               objectFit='contain'
+              quality={100}
             />
             <h2
               className={` ${styles.montserrat} text-base md:text-[22px] font-bold text-[#2b4474]`}
@@ -154,6 +159,7 @@ function Middle() {
               width='300'
               height='180'
               objectFit='contain'
+              quality={100}
             />
             <h2
               className={` ${styles.montserrat} text-base md:text-[22px] font-bold text-[#2b4474]`}
@@ -179,6 +185,7 @@ function Middle() {
               width='300'
               height='180'
               objectFit='contain'
+              quality={100}
             />
             <h2
               className={` ${styles.montserrat} text-base md:text-[22px] font-bold text-[#2b4474]`}
@@ -203,6 +210,7 @@ function Middle() {
               width='300'
               height='180'
               objectFit='contain'
+              quality={100}
             />
             <h2
               className={` ${styles.montserrat} text-base md:text-[22px] font-bold text-[#2b4474]`}
@@ -228,6 +236,7 @@ function Middle() {
               width='300'
               height='180'
               objectFit='contain'
+              quality={100}
             />
             <h2
               className={` ${styles.montserrat} text-base md:text-[22px] font-bold text-[#2b4474]`}

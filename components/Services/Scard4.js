@@ -15,6 +15,7 @@ function Scard4() {
           height='100%'
           layout='responsive'
           priority
+          quality={100}
           // objectFit='cover'
         />
       </div>
@@ -30,6 +31,7 @@ function Scard4() {
               height='500'
               priority
               objectFit='cover'
+              quality={100}
             />
           </div>
           <div className=' flex-1 xl:py-12 xl:px-10  '>

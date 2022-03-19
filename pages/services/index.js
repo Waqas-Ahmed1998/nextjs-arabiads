@@ -28,7 +28,7 @@ function Services() {
       <img
         src='/standardimages/servicemiddle.png'
         alt=''
-        className='hidden xl:inline-grid absolute object-cover xl:top-[40%] scale-[1.5] xl:-right-[20%]  2xl:scale-[1.5] 2xl:top-[33%] '
+        className='hidden xl:inline-grid absolute object-cover xl:top-[40%] scale-[1.5] xl:-right-[20%]  2xl:scale-[1.5] 2xl:top-[35%] '
       />
       <div className='max-w-[1400px] mx-auto   '>
         <Card1 />

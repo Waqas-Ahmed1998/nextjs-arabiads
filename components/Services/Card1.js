@@ -18,6 +18,7 @@ function Card1() {
             height='100%'
             layout='responsive'
             priority
+            quality={100}
             // objectFit='cover'
           />
         </div>

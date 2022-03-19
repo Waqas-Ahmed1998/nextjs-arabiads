@@ -62,6 +62,7 @@ function Campaign() {
               height='500'
               priority
               objectFit='contain'
+              quality={100}
             />
           </div>
         </div>

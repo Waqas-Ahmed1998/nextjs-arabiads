@@ -106,6 +106,7 @@ function Users({ user }) {
                   layout='responsive'
                   priority
                   objectFit='contain'
+                  quality={100}
                 />
                 {
                   // trash icon
@@ -258,6 +259,7 @@ function Users({ user }) {
                   layout='responsive'
                   priority
                   objectFit='contain'
+                  quality={100}
                 />
                 {admin?.includes(loggedUser) && (
                   <>

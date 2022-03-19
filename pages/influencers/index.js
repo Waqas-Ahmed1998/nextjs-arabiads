@@ -9,6 +9,7 @@ import { collection, onSnapshot, getDocs } from "firebase/firestore";
 import { db } from "../../firebase";
 import { MoonLoader } from "react-spinners";
 import { motion } from "framer-motion";
+import AOS from "aos";
 
 function Influencers() {
   // let influencersData = JSON.parse(userdata);
@@ -17,6 +18,10 @@ function Influencers() {
 
   useEffect(() => {
     // setUsers(user);
+    AOS.init({
+      // Global settings:
+      disable: "mobile", // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    });
     try {
       onSnapshot(collection(db, "influencers"), (snapshot) => {
         let users = [];

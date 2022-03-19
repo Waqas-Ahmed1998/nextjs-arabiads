@@ -42,6 +42,7 @@ function Card4() {
               layout='responsive'
               priority
               objectFit='contain'
+              quality={100}
             />
           </div>
         </div>
