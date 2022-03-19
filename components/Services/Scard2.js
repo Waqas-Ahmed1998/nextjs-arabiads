@@ -55,8 +55,8 @@ function Scard2() {
               </button>
             </Link>
           </div>
-          <div className='basis-[44%] justify-center  '>
-            <div className=' w-full ml-8 '>
+          <div className=' basis-[44%]  '>
+            <div className=' w-full xl:ml-8 '>
               <Image
                 src='/service/Scard2person.png'
                 alt=''
