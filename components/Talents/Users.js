@@ -177,13 +177,13 @@ function Users({ user }) {
                       </div>
                     )}
 
-                    <div className=' md:flex w-full justify-evenly justify-self-end absolute bottom-10 hidden '>
+                    <div className=' md:flex w-full justify-evenly justify-self-end absolute xl:bottom-10 bottom-3 flex '>
                       {singleUser.facebookLink && (
                         <a href={singleUser.facebookLink}>
                           {" "}
                           <FontAwesomeIcon
                             icon={faFacebook}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-6 p-[0.3rem] bg-white rounded-full'
                           />
                         </a>
                       )}
@@ -193,7 +193,7 @@ function Users({ user }) {
                           {" "}
                           <FontAwesomeIcon
                             icon={faTwitter}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-6 p-[0.3rem] bg-white rounded-full'
                           />
                         </a>
                       )}
@@ -202,7 +202,7 @@ function Users({ user }) {
                           {" "}
                           <FontAwesomeIcon
                             icon={faInstagram}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-6 p-[0.3rem] bg-white rounded-full'
                           />
                         </a>
                       )}
@@ -211,7 +211,7 @@ function Users({ user }) {
                           {" "}
                           <FontAwesomeIcon
                             icon={faTwitch}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-6 p-[0.3rem] bg-white rounded-full'
                           />
                         </a>
                       )}
@@ -220,7 +220,7 @@ function Users({ user }) {
                           {" "}
                           <FontAwesomeIcon
                             icon={faYoutube}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-6 p-[0.3rem] bg-white rounded-full'
                           />
                         </a>
                       )}
@@ -232,7 +232,7 @@ function Users({ user }) {
                           <img
                             src='/talents/liquipedia.png'
                             alt=''
-                            className='  w-6 h-6 object-contain   p-[0.3rem] bg-white rounded-full '
+                            className='w-4 h-4 p-[1px]  md:w-6 md:h-6 object-contain   md:p-[0.3rem] bg-white rounded-full '
                           />
                         </a>
                       )}
@@ -328,13 +328,13 @@ function Users({ user }) {
                       </div>
                     )}
 
-                    <div className=' md:flex w-full justify-evenly justify-self-end absolute bottom-10 hidden '>
+                    <div className=' md:flex w-full justify-evenly justify-self-end absolute md:bottom-10 bottom-3 flex '>
                       {singleUser.facebookLink && (
                         <a href={singleUser.facebookLink}>
                           {" "}
                           <FontAwesomeIcon
                             icon={faFacebook}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-6 p-[0.3rem] bg-white rounded-full'
                           />
                         </a>
                       )}
@@ -344,7 +344,7 @@ function Users({ user }) {
                           {" "}
                           <FontAwesomeIcon
                             icon={faTwitter}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-6 p-[0.3rem] bg-white rounded-full'
                           />
                         </a>
                       )}
@@ -353,7 +353,7 @@ function Users({ user }) {
                           {" "}
                           <FontAwesomeIcon
                             icon={faInstagram}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-6 p-[0.3rem] bg-white rounded-full'
                           />
                         </a>
                       )}
@@ -362,7 +362,7 @@ function Users({ user }) {
                           {" "}
                           <FontAwesomeIcon
                             icon={faTwitch}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-6 p-[0.3rem] bg-white rounded-full'
                           />
                         </a>
                       )}
@@ -371,7 +371,7 @@ function Users({ user }) {
                           {" "}
                           <FontAwesomeIcon
                             icon={faYoutube}
-                            className='w-6 p-[0.3rem] bg-white rounded-full'
+                            className='w-5 md:w-6 p-[0.3rem] bg-white rounded-full'
                           />
                         </a>
                       )}
@@ -383,7 +383,7 @@ function Users({ user }) {
                           <img
                             src='/talents/liquipedia.png'
                             alt=''
-                            className='  w-6 h-6 object-contain   p-[0.3rem] bg-white rounded-full '
+                            className='  w-4 h-4 p-[1px] md:w-6 md:h-6 object-contain   md:p-[0.3rem] bg-white rounded-full '
                           />
                         </a>
                       )}
