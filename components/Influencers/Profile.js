@@ -29,8 +29,8 @@ function Profile({ user }) {
   };
 
   return (
-    <div className=' z-20 relative w-[17rem] h-[24rem] rounded-[36px]  my-10'>
-      <div className='w-full  bg-[#00A7E5] h-[17%] rounded-t-[36px] flex space-x-3 p-5 text-white'>
+    <div className=' z-20 relative w-full md:w-[17rem] h-[40rem] md:h-[24rem] rounded-[36px]  my-10'>
+      <div className='w-full  bg-[#00A7E5] h-[10%] md:h-[17%] rounded-t-[36px] flex space-x-3 p-5 text-white'>
         <h3 className='flex-1'>{user.name}</h3>
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -80,7 +80,7 @@ function Profile({ user }) {
           <p>no image</p>
         )}
       </div>
-      <div className='h-[20%] rounded-b-[36px] bg-white flex items-center space-x-5 '>
+      <div className=' h-[15%] md:h-[20%] rounded-b-[36px] bg-white flex items-center space-x-5 '>
         <div className='flex w-full  justify-around items-baseline px-4'>
           {user.twitter && (
             <div className=' '>
@@ -161,7 +161,7 @@ function Profile({ user }) {
             </div>
           )}
         </div>
-        <div className='absolute flex -left-1 justify-self-center [z-index:-1] -bottom-3 h-14  w-[90%] rounded-b-[36px]  bg-[#FD8E3A] '></div>
+        <div className='absolute flex -left-1 justify-self-center [z-index:-1] bottom-14 md:-bottom-3 h-14  w-[90%] rounded-b-[36px]  bg-[#FD8E3A] '></div>
       </div>
     </div>
   );

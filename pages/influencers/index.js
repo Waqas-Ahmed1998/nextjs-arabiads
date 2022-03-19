@@ -64,7 +64,7 @@ function Influencers() {
         <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 '>
           {users.length >= 0 &&
             users.map((singleUser) => (
-              <div key={singleUser.id} className='flex mx-auto'>
+              <div key={singleUser.id} className='flex px-5 md:px-0 xl:mx-auto'>
                 {" "}
                 <Profile user={singleUser} />{" "}
               </div>

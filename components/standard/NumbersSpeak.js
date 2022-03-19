@@ -36,6 +36,9 @@ function NumbersSpeak() {
         ref={observe}
         className=' relative mt-10 space-y-10 lg:space-y-0 flex flex-col lg:flex-row gap-2 md:gap-5 items-center justify-center text-center'
       >
+        {
+          // className=' relative mt-10 space-y-10 lg:space-y-0 flex flex-col lg:flex-row gap-2 md:gap-5 items-center justify-center text-center'
+        }
         <div
           className={`flex  justify-evenly flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[20px] rounded-[30px] w-56 md:h-48 h-28`}
         >

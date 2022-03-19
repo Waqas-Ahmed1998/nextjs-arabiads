@@ -4,8 +4,8 @@ import Image from "next/image";
 
 function Card2() {
   return (
-    <div className='md:my-0 xl:mt-0 2xl:my-0 relative bg-contain bg-no-repeat xl:inline-grid lg:w-[75%]  '>
-      <div className='hidden   xl:inline-grid absolute top-0  md:w-[100%] h-[48rem]'>
+    <div className='md:my-0 -top-10 xl:top-auto xl:mt-0 2xl:my-0 relative bg-contain bg-no-repeat xl:inline-grid lg:w-[75%]  '>
+      <div className='hidden   xl:inline-grid absolute top-0  w-[100%] h-[48rem]'>
         <Image
           src='/home/card2.png'
           alt=''
@@ -58,6 +58,7 @@ function Card2() {
         <div className='  xl:basis-[44%]  '>
           <div className='w-full xl:ml-10  '>
             <Image
+              className='scale-[0.8] xl:scale-[1]'
               src='/home/card2image.png'
               alt=''
               title=''

@@ -46,7 +46,7 @@ export default function Home() {
       <div className='mt-10 lg:mt-28 xl:mt-20 2xl:mt-0 flex justify-center xl:h-[80vh] 2xl:h-[75vh]  lg:max-w-[95rem] mx-auto relative'>
         <Card3 />
       </div>
-      <div className=' xl:mt-20 2xl:mt-0 grid grid-cols-1 md:max-w-[95rem] mx-auto relative'>
+      <div className=' mt-10 xl:mt-20 2xl:mt-0 grid grid-cols-1 md:max-w-[95rem] mx-auto relative'>
         <Card4 />
         <div className=' xl:-right-[3%] 2xl:-right-[5%] hidden xl:inline-grid absolute top-0 [z-index:-1]'>
           <motion.img

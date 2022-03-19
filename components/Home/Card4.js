@@ -5,7 +5,7 @@ import styles from "../../styles/Home.module.css";
 
 function Card4() {
   return (
-    <div id='triger' className='lg:w-[70%] mx-auto  '>
+    <div id='triger' className='lg:w-[70%] mx-auto   '>
       <div className='flex flex-col-reverse lg:flex-row text-center lg:text-left '>
         <div className='p-5 flex-1 space-y-5 lg:space-y-7 xl:pt-20'>
           <h2
@@ -38,7 +38,7 @@ function Card4() {
           <div
             data-aos='zoom-out-left'
             data-aos-anchor='#triger'
-            className=' w-auto xl:pl-5 '
+            className='w-auto  mx-auto md:w-[80%] xl:w-auto xl:pl-5 '
           >
             <Image
               src='/home/card3person.png'

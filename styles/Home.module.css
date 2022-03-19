@@ -64,3 +64,15 @@
 .casterCardRight {
   background-image: url(https://influencers.ar-ad.com/wp-content/uploads/2021/07/sm-right-bg.png);
 }
+.gridCol {
+  align-items: stretch;
+  grid-template-columns: repeat(3, minmax(50px, 33%));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.mobileCard3 {
+  background-image: url("/home/card3mobilebg.jpg");
+}
+.mobileCard5 {
+  background-image: url("/home/mobilebg2.jpg");
+}
