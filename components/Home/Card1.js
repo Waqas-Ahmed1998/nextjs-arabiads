@@ -4,13 +4,13 @@ import styles from "../../styles/Home.module.css";
 import CountUp from "react-countup";
 import AOS from "aos";
 function Card1() {
-  useEffect(() => {
-    AOS.init({
-      // Global settings:
-      disable: "mobile", // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-    });
-    return () => {};
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     // Global settings:
+  //     disable: "mobile", // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  //   });
+  //   return () => {};
+  // }, []);
   return (
     <div className=' relative  xl:inline-grid lg:w-[78%] overflow-hidden xl:overflow-visible   '>
       <div className='hidden xl:h-[49rem]   xl:inline-grid absolute -top-0 md:w-[99%] 2xl:h-[49rem]'>

@@ -5,8 +5,16 @@ import NumbersSpeak from "../../components/standard/NumbersSpeak";
 import Plateforms from "../../components/standard/Plateforms";
 import styles from "../../styles/Home.module.css";
 import Head from "next/head";
+import AOS from "aos";
 
 function About() {
+  // useEffect(() => {
+  //   AOS.init({
+  //     // Global settings:
+  //     disable: "mobile", // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  //   });
+  //   return () => {};
+  // }, []);
   return (
     <>
       <Head>
@@ -15,7 +23,7 @@ function About() {
         <link rel='icon' href='/logo.ico' />
       </Head>
       <div className=' hidden absolute  -left-[0%] w-[2650px] h-[200vh]  service-mid bg-no-repeat   xl:inline-grid '></div>
-      <div className='right-0 hidden xl:inline-grid absolute top-[15%] [z-index:-1]'>
+      <div className='right-0 hidden xl:inline-grid absolute top-[15%] [z-index:-1] '>
         <img
           src='/standardimages/aboutline.png'
           alt=''
