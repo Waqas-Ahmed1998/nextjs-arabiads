@@ -81,7 +81,7 @@ function ContactUs() {
                     </form>
                   </div>
                   <button
-                    onClick={() => setContact(!onContact)}
+                    onClick={() => setIsForm(false)}
                     className='absolute px-2 top-0 right-2 py-1 md:right-0 md:px-4 md:py-2  bg-blue-400'
                   >
                     Close
