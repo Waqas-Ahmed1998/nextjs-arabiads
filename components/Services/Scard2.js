@@ -18,14 +18,14 @@ function Scard2() {
           quality={100}
         />
       </div>
-      <div className='hidden xl:inline-grid absolute [z-index:-1] -top-5 -left-2'>
+      <div className='hidden xl:inline-grid absolute [z-index:-1] -top-10 -left-2'>
         <img
           className=' animate-spin-slow '
           src='/spinners/redspinner.png'
           alt=''
         />
       </div>
-      <div className='hidden xl:inline-grid absolute top-5 right-20'>
+      <div className='hidden xl:inline-grid absolute top-14 right-16'>
         <img
           className=' animate-spin-slow '
           src='/spinners/smallspinner.png'
