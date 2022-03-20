@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Card2() {
   return (
-    <div className='md:my-0 -top-10 xl:top-auto xl:mt-0 2xl:my-0 relative bg-contain bg-no-repeat xl:inline-grid lg:w-[75%]  '>
+    <div className='md:my-0 lg:-top-0 xl:top-auto xl:mt-0 2xl:my-0 relative bg-contain bg-no-repeat xl:inline-grid xl:w-[75%]  '>
       <div className='hidden   xl:inline-grid absolute top-0  w-[100%] h-[48rem]'>
         <Image
           src='/home/card2.png'
@@ -32,7 +32,7 @@ function Card2() {
         />
       </div>
 
-      <div className='lg:absolute top-0 xl:top-4 flex flex-col-reverse xl:flex-row xl:pt-[5rem] xl:ml-20 text-center xl:text-left'>
+      <div className='xl:absolute top-0 xl:top-4 flex flex-col-reverse xl:flex-row xl:pt-[5rem] xl:ml-20 text-center xl:text-left'>
         <div className='lg:flex-1 relative -top-6 md:top-auto  lg:space-y-5 px-2 xl:pl-5 space-y-5'>
           <h2 className='text-xl xl:text-[35px]  text-[#167EE0] xl:text-white font-semibold pt-3 xl:[line-height:56px]'>
             One of MENA’s Leading Agency for{" "}

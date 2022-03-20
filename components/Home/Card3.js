@@ -2,10 +2,21 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import styles from "../../styles/Home.module.css";
+// import useInView from "react-cool-inview";
 
 function Card3() {
+  // let { observe, inView, scrollDirection } = useInView({
+  //   threshold: 0.25,
+  //   onEnter: ({ scrollDirection, entry, observe, unobserve }) => {
+  //     // Triggered when the target enters the viewport
+  //     console.log("hello");
+  //     unobserve();
+  //   },
+  // });
+  // console.log(inView);
+
   return (
-    <div className='   xl:h-fit  mt-10  lg:mt-0 xl:mt-0 relative mx-auto bg-contain bg-no-repeat  xl:inline-grid xl:w-[70%]   '>
+    <div className='   md:w-full xl:h-fit  mt-10   xl:mt-0 relative mx-auto bg-contain bg-no-repeat  xl:inline-grid xl:w-[70%]   '>
       <img
         className='absolute [z-index:-1] hidden xl:inline-grid object-contain  -left-[10%] top-0'
         src='/home/pettren.png'
@@ -28,8 +39,9 @@ function Card3() {
           quality={100}
         />
       </div>
+
       {
-        // mobile view data
+        // mobile view
         <div
           className={`${styles.mobileCard3} pb-10 px-2 w-full bg-no-repeat bg-cover xl:hidden flex text-center flex-col items-center`}
         >
@@ -43,6 +55,7 @@ function Card3() {
             objectFit='cover'
             quality={100}
           />
+
           <h2 className='text-xl md:text-2xl lg:text-[30px] xl:leading-[42px] mb-5 lg:text-[#167EE0] font-semibold'>
             Digital Influence{" "}
             <span className='lg:text-black text-[#008fcf]'>
@@ -84,7 +97,7 @@ function Card3() {
       </div>
       <div className='hidden xl:flex justify-center h-full  flex-col text-center xl:text-left xl:flex-row gap-3 absolute top-0 '>
         <div className='xl:flex-1 mx-auto py-10 pl-10 '>
-          <div data-aos='fade-right' className=' w-auto   '>
+          <div data-aos='fade-right' className=' w-auto  '>
             <Image
               src='/home/cardperson.png'
               alt=''

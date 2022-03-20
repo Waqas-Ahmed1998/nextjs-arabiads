@@ -37,13 +37,13 @@ export default function Home() {
         // ></div>
       }
 
-      <div className='flex justify-center md:h-screen 2xl:h-[93vh] md:max-w-[95rem] lg:md:max-w-[1440px] mx-auto '>
+      <div className='flex justify-center xl:h-screen 2xl:h-[93vh] md:max-w-[95rem] lg:md:max-w-[1440px] mx-auto '>
         <Card1 />
       </div>
-      <div className='flex justify-center  xl:mt-20 2xl:mt-0 lg:h-screen 2xl:h-[93vh]  lg:max-w-[95rem] mx-auto relative'>
+      <div className='flex justify-center   xl:mt-20 2xl:mt-0 xl:h-screen  2xl:h-[93vh]  xl:max-w-[95rem] mx-auto relative'>
         <Card2 />
       </div>
-      <div className='mt-0 lg:mt-28 xl:mt-20 2xl:mt-0 flex justify-center xl:h-[80vh] 2xl:h-[75vh]  lg:max-w-[95rem] mx-auto relative'>
+      <div className='mt-0   xl:mt-20 2xl:mt-0 flex justify-center xl:h-[80vh] 2xl:h-[75vh]  lg:max-w-[95rem] mx-auto relative'>
         <Card3 />
       </div>
       <div className=' mt-10 xl:mt-20 2xl:mt-0 grid grid-cols-1 md:max-w-[95rem] mx-auto relative'>
@@ -64,7 +64,7 @@ export default function Home() {
       </div>
 
       <div
-        className={`md:my-40 2xl:my-24 relative  bg-no-repeat bg-center mx-auto`}
+        className={`lg:py-5 xl:my-20 2xl:my-24 relative  bg-no-repeat bg-center mx-auto`}
       >
         <div className='right-0 hidden xl:inline-grid absolute -top-20  [z-index:-1]'>
           <img

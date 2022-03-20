@@ -41,14 +41,14 @@ function Scard4() {
               quality={100}
             />
           </div>
-          <div className=' flex-1 xl:py-12 xl:px-10  '>
+          <div className=' flex-1  xl:py-12 xl:px-10  '>
             <h2
-              className={` ${styles.montserrat} heading-primary text-[#404b68] xl:text-[30px] xl:mb-5`}
+              className={` ${styles.montserrat} heading-primary text-[#404b68] xl:text-[30px] mb-5`}
             >
               Talent <span className='text-[#008fcf]'>Management</span>
             </h2>
             <p
-              className={` ${styles.popins} text-[#404b68] text-sm xl:text-[18px] xl:leading-[29px] xl:pr-5 xl:mb-10`}
+              className={` ${styles.popins} text-[#404b68] text-sm xl:text-[18px] xl:leading-[29px] xl:pr-5 mb-10`}
             >
               Are you an influencer looking to broaden your reach and
               collaborate with others? We are here to assist you. Our staff will
