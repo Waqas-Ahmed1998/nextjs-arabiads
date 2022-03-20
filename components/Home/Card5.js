@@ -30,6 +30,8 @@ function Card5() {
           className={`${styles.mobileCard5} pb-10 px-2 w-full bg-no-repeat bg-cover xl:hidden flex text-center flex-col items-center`}
         >
           <Image
+            data-aos='zoom-in-right'
+            data-aos-anchor='#card5'
             src='/home/card5person.png'
             alt=''
             title=''
@@ -39,13 +41,19 @@ function Card5() {
             objectFit='cover'
             quality={100}
           />
-          <h2 className='text-white text-xl md:text-3xl font-bold xl:leading-[48px] mb-5'>
+          <h2
+            data-aos='fade-down'
+            data-aos-anchor='#card5'
+            className='text-white text-xl md:text-3xl font-bold xl:leading-[48px] mb-5'
+          >
             Esports Talents{" "}
             <span className='text-[#020c27] md:text-[#020c27]'>
               and Advertising Services
             </span>{" "}
           </h2>
           <p
+            data-aos='zoom-out-left'
+            data-aos-anchor='#card5'
             className={`${styles.popins} text-sm text-white md:text-lg tracking-wide md:tracking-normal`}
           >
             Arabia E-Advertising began its career as one of the first talent

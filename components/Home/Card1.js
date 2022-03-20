@@ -27,7 +27,7 @@ function Card1() {
         />
       </div>
       {
-        // mobile view
+        //*********** */ mobile view
         <div
           className={`${styles.mobileCard1} mb-10  px-2 py-14 w-full bg-no-repeat bg-cover xl:hidden flex text-center flex-col items-center space-y-20`}
         >
@@ -41,11 +41,6 @@ function Card1() {
           <h3
             data-aos='fade-right'
             data-aos-delay='500'
-            // animate={{
-            //   x: [-100, 0],
-            //   opacity: [0, 1],
-            // }}
-            // transition={{ duration: 0.4, delay: 0.7 }}
             className='text-base md:text-[30px] text-white '
           >
             #Connect Your Brand With Arabic Millennials.

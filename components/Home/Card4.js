@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../styles/Home.module.css";
+import AOS from "aos";
 
 function Card4() {
+  // useEffect(() => {
+  //   AOS.init({
+  //     disable: "tablet",
+  //   });
+  //   return () => {};
+  // }, []);
   return (
     <div id='triger' className='xl:w-[70%] mx-auto  '>
       <div className='flex flex-col-reverse xl:flex-row text-center xl:text-left '>

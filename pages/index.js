@@ -10,6 +10,7 @@ import Plateforms from "../components/standard/Plateforms";
 import Campaign from "../components/standard/Campaign";
 import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 // import { collection, onSnapshot, getDocs } from 'firebase/firestore';
 // import { db } from '../firebase';
 // import { useSetRecoilState } from 'recoil';
@@ -17,6 +18,10 @@ import { motion } from "framer-motion";
 // import { useEffect } from 'react';
 
 export default function Home() {
+  // useEffect(() => {
+  //   effect;
+  //   return () => {};
+  // }, []);
   return (
     <div className='overflow-hidden xl:overflow-visible'>
       <Head>

@@ -37,7 +37,6 @@ function Layout({ children }) {
   useEffect(() => {
     AOS.init({
       once: true,
-      disable: "mobile",
     });
     return () => {};
   }, []);

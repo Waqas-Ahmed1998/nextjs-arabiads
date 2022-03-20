@@ -5,16 +5,6 @@ import styles from "../../styles/Home.module.css";
 // import useInView from "react-cool-inview";
 
 function Card3() {
-  // let { observe, inView, scrollDirection } = useInView({
-  //   threshold: 0.25,
-  //   onEnter: ({ scrollDirection, entry, observe, unobserve }) => {
-  //     // Triggered when the target enters the viewport
-  //     console.log("hello");
-  //     unobserve();
-  //   },
-  // });
-  // console.log(inView);
-
   return (
     <div className='   md:w-full xl:h-fit  mt-10   xl:mt-0 relative mx-auto bg-contain bg-no-repeat  xl:inline-grid xl:w-[70%]   '>
       <img
@@ -46,6 +36,7 @@ function Card3() {
           className={`${styles.mobileCard3} pb-10 px-2 w-full bg-no-repeat bg-cover xl:hidden flex text-center flex-col items-center`}
         >
           <Image
+            data-aos='zoom-in-right'
             src='/home/mobileperson.png'
             alt=''
             title=''
@@ -56,13 +47,17 @@ function Card3() {
             quality={100}
           />
 
-          <h2 className='text-xl md:text-2xl lg:text-[30px] xl:leading-[42px] mb-5 lg:text-[#167EE0] font-semibold'>
+          <h2
+            data-aos='fade-down'
+            className='text-xl md:text-2xl lg:text-[30px] xl:leading-[42px] mb-5 lg:text-[#167EE0] font-semibold'
+          >
             Digital Influence{" "}
             <span className='lg:text-black text-[#008fcf]'>
               Campaign Strategies and Management
             </span>
           </h2>
           <p
+            data-aos='zoom-out-left'
             className={`${styles.popins} text-[#404b68] text-base md:text-lg mb-10 `}
           >
             We use top influencers to help brands engage and activate audiences
@@ -73,7 +68,7 @@ function Card3() {
             devised to impact a much larger audience.
           </p>
           <Link href='/influencer-services'>
-            <button className=' text-white text-base md:py-4  md:px-6 px-4 py-2 md:inline-grid bg-[linear-gradient(#fdc66e,#ff805e)]   font-semibold  xl:w-60  rounded-full md:text-[20px]'>
+            <button className=' text-white text-base md:py-4  md:px-6 px-4 py-2 md:inline-grid bg-[linear-gradient(#3786ed,#1eb5e4)]   font-semibold  xl:w-60  rounded-full md:text-[20px]'>
               LEARN MORE
             </button>
           </Link>
