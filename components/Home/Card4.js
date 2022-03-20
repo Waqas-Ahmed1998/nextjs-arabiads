@@ -6,7 +6,7 @@ import styles from "../../styles/Home.module.css";
 function Card4() {
   return (
     <div id='triger' className='lg:w-[70%] mx-auto   '>
-      <div className='flex flex-col-reverse lg:flex-row text-center lg:text-left '>
+      <div className='flex flex-col-reverse xl:flex-row text-center xl:text-left '>
         <div className='p-5 flex-1 space-y-5 lg:space-y-7 xl:pt-20'>
           <h2
             data-aos='fade-right'

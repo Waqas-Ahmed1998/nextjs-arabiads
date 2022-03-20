@@ -131,13 +131,13 @@ function Users({ user }) {
                     </svg>
                   </>
                 )}
-                <div className='w-full h-full  flex absolute top-[1px]'>
+                <div className='w-full h-full flex absolute top-[1px]'>
                   <img
                     src={singleUser.image}
                     alt=''
                     className='ml-[5px] w-[35%] h-[90%] object-cover rounded-l-[15px] md:rounded-l-[35px]  '
                   />
-                  <div className='ml-5   w-full mt-5 md:space-y-3 relative xl:px-2'>
+                  <div className='ml-2 mt-2 md:ml-5   w-full md:mt-5 md:space-y-3 relative xl:px-2'>
                     <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem]  md:text-base font-bold inline-block px-2 bg-[#FAA361] xl:-top-[9px] md:-top-[0.5rem]'>
                       {singleUser.role}
                     </h3>

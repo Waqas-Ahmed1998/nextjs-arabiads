@@ -5,7 +5,7 @@ import styles from "../../styles/Home.module.css";
 
 function Card3() {
   return (
-    <div className='   xl:h-fit  mt-10  lg:mt-20 xl:mt-0 relative mx-auto bg-contain bg-no-repeat  xl:inline-grid lg:w-[70%]   '>
+    <div className='   xl:h-fit  mt-10  lg:mt-0 xl:mt-0 relative mx-auto bg-contain bg-no-repeat  xl:inline-grid xl:w-[70%]   '>
       <img
         className='absolute [z-index:-1] hidden xl:inline-grid object-contain  -left-[10%] top-0'
         src='/home/pettren.png'
