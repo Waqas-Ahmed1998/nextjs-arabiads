@@ -27,7 +27,7 @@ function Card5() {
       {
         // mobile view data
         <div
-          className={`${styles.mobileCard5} pb-10 px-2 w-full bg-no-repeat bg-cover xl:hidden flex text-center flex-col items-center`}
+          className={`${styles.mobileCard5} py-10 px-2 w-full bg-no-repeat bg-cover xl:hidden flex text-center flex-col items-center`}
         >
           <Image
             data-aos='zoom-in-right'

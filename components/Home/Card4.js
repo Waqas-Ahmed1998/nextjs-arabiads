@@ -45,9 +45,10 @@ function Card4() {
           <div
             data-aos='zoom-out-left'
             data-aos-anchor='#triger'
-            className='w-auto md:w-[50%]  mx-auto xl:w-auto xl:pl-5 '
+            className='hidden xl:block w-auto md:w-[50%]  mx-auto xl:w-auto xl:pl-5 '
           >
             <Image
+              className=''
               src='/home/card3person.png'
               alt=''
               title=''
@@ -58,6 +59,26 @@ function Card4() {
               objectFit='contain'
               quality={100}
             />
+          </div>
+          <div
+            data-aos='zoom-out-left'
+            data-aos-anchor='#triger'
+            className='xl:hidden w-auto md:w-[50%]  mx-auto xl:w-auto xl:pl-5 '
+          >
+            {
+              <Image
+                className=''
+                src='/home/card4mobileperson.png'
+                alt=''
+                title=''
+                width='600'
+                height='400'
+                // layout='fill'
+                priority
+                objectFit='contain'
+                quality={100}
+              />
+            }
           </div>
         </div>
       </div>

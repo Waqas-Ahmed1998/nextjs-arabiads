@@ -33,7 +33,7 @@ function Card2() {
       </div>
 
       <div className='xl:absolute top-0 xl:top-4 flex flex-col-reverse xl:flex-row xl:pt-[5rem] xl:ml-20 text-center xl:text-left'>
-        <div className='lg:flex-1 relative -top-6 md:top-auto  lg:space-y-5 px-2 xl:pl-5 space-y-5'>
+        <div className='lg:flex-1 relative  md:top-auto  lg:space-y-5 px-2 xl:pl-5 space-y-5'>
           <h2 className='text-xl xl:text-[35px]  text-[#167EE0] xl:text-white font-semibold pt-3 xl:[line-height:56px]'>
             One of MENA’s Leading Agency for{" "}
             <span className='text-black'>Influencer Marketing</span>
@@ -56,7 +56,7 @@ function Card2() {
           </Link>
         </div>
         <div className='  xl:basis-[44%]  '>
-          <div className='w-full mx-auto md:w-[50%] xl:w-auto xl:ml-10  '>
+          <div className='hidden xl:block w-full mx-auto md:w-[50%] xl:w-auto xl:ml-10  '>
             <Image
               className='scale-[0.8] md:scale-[1]'
               src='/home/card2image.png'
@@ -66,6 +66,19 @@ function Card2() {
               height='645'
               priority
               objectFit='cover'
+              quality={100}
+            />
+          </div>
+          <div className=' xl:hidden w-full mx-auto md:w-[100%] xl:w-auto xl:ml-10  '>
+            <Image
+              className=''
+              src='/home/card2image.png'
+              alt=''
+              title=''
+              width='600'
+              height='400'
+              priority
+              objectFit='contain'
               quality={100}
             />
           </div>
