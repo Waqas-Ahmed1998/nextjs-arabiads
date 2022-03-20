@@ -4,7 +4,7 @@ import styles from "../../styles/Home.module.css";
 
 function Icardtop() {
   return (
-    <div className='relative  w-[97%] mx-auto '>
+    <div className='relative  w-[97%] mx-auto mt-16 '>
       <div className='hidden xl:inline-grid absolute [z-index:1] -top-10 left-0'>
         <img
           className=' animate-spin-slow '
