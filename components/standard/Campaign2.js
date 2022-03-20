@@ -33,7 +33,9 @@ function Campaign2() {
             >
               Start a campaign with us!
             </h3>
-            <p className={` ${styles.popins} note text-[#404b68] text-[18px]`}>
+            <p
+              className={` ${styles.popins} text-base note text-[#404b68] md:text-[18px]`}
+            >
               Simply write us a message to tell us about your upcoming project!
               Our salesperson will contact you as soon as possible and link you
               to one of our committed specialists in order to experience what

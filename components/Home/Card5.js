@@ -54,7 +54,7 @@ function Card5() {
           <p
             data-aos='zoom-out-left'
             data-aos-anchor='#card5'
-            className={`${styles.popins} text-sm text-white md:text-lg tracking-wide md:tracking-normal`}
+            className={`${styles.popins} text-base text-white md:text-lg tracking-wide md:tracking-normal`}
           >
             Arabia E-Advertising began its career as one of the first talent
             agencies, representing both established and emerging esports-focused
@@ -113,7 +113,7 @@ function Card5() {
           <p
             data-aos='zoom-out-left'
             data-aos-anchor='#card5'
-            className={`${styles.popins} text-sm text-white md:text-lg tracking-wide md:tracking-normal`}
+            className={`${styles.popins} text-base text-white md:text-lg tracking-wide md:tracking-normal`}
           >
             Arabia E-Advertising began its career as one of the first talent
             agencies, representing both established and emerging esports-focused

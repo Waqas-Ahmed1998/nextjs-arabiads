@@ -40,7 +40,7 @@ function Scard2() {
             >
               Reach Millions Through Gaming Influencers
             </h2>
-            <p className='xl:text-white text-sm xl:text-[19px] xl:leading-[30px] mb-10 '>
+            <p className='xl:text-white text-base xl:text-[19px] xl:leading-[30px] mb-10 '>
               Gaming Influencers can help you reach new audiences. To maximize
               your outcomes, we work across the full pyramid of influence, from
               the most powerful profiles to micro influencers, including key

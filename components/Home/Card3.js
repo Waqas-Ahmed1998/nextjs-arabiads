@@ -58,7 +58,7 @@ function Card3() {
           </h2>
           <p
             data-aos='zoom-out-left'
-            className={`${styles.popins} text-[#404b68] text-base md:text-lg mb-10 `}
+            className={`${styles.popins}  text-white text-base md:text-lg mb-10 `}
           >
             We use top influencers to help brands engage and activate audiences
             all around the world, with a specialization on the Arabic speaking

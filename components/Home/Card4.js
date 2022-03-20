@@ -25,7 +25,7 @@ function Card4() {
           <p
             data-aos='zoom-out-right'
             data-aos-anchor='#triger'
-            className={`${styles.popins} text-[#404b68] text-sm md:text-lg tracking-wide md:tracking-normal `}
+            className={`${styles.popins} text-[#404b68] text-base md:text-lg tracking-wide md:tracking-normal `}
           >
             Are you an influencer looking to broaden your reach and collaborate
             with others? We are here to assist you. Our staff will introduce you

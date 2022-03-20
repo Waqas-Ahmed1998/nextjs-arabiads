@@ -48,7 +48,7 @@ function Scard4() {
               Talent <span className='text-[#008fcf]'>Management</span>
             </h2>
             <p
-              className={` ${styles.popins} text-[#404b68] text-sm xl:text-[18px] xl:leading-[29px] xl:pr-5 mb-10`}
+              className={` ${styles.popins} text-[#404b68] text-base xl:text-[18px] xl:leading-[29px] xl:pr-5 mb-10`}
             >
               Are you an influencer looking to broaden your reach and
               collaborate with others? We are here to assist you. Our staff will

@@ -47,7 +47,7 @@ function Scard3() {
         />
       </div>
       <div className='  h-[90%] xl:absolute flex top-[5%] justify-center xl:px-0 xl:w-full '>
-        <div className='xl:w-[100%]  w-[90%] xl:ml-5 flex flex-col xl:flex-row space-y-5 text-center items-center xl:text-left '>
+        <div className='xl:w-[100%]  w-[90%] xl:ml-5 flex flex-col xl:flex-row xl:space-y-5 text-center items-center xl:text-left '>
           <div className=' basis-[46%]  '>
             <Image
               src='/service/Scard3person.png'
@@ -67,7 +67,7 @@ function Scard3() {
               Esports Specialized Consultancy, Talents, Events in MENA
             </h2>
             <p
-              className={` ${styles.popins} text-sm xl:text-[18px] xl:leading-[29px] text-[#040e29] `}
+              className={` ${styles.popins} text-base xl:text-[18px] xl:leading-[29px] text-[#040e29] `}
             >
               We will walk you through the right steps to establish your esports
               presence simply and quickly, through the efforts of our amazing
@@ -75,7 +75,7 @@ function Scard3() {
               this thriving industry.
             </p>
             <p
-              className={` ${styles.popins} text-sm xl:text-[18px] xl:leading-[29px] text-[#040e29] `}
+              className={` ${styles.popins} text-base xl:text-[18px] xl:leading-[29px] text-[#040e29] `}
             >
               Whether you&apos;re looking for opportunities or solutions for
               your business, and regardless of your current status, our esports
@@ -84,7 +84,7 @@ function Scard3() {
               esports events.
             </p>
             <p
-              className={` ${styles.popins} text-sm xl:text-[18px] xl:leading-[29px] text-[#040e29] `}
+              className={` ${styles.popins} text-base xl:text-[18px] xl:leading-[29px] text-[#040e29] `}
             >
               Our experienced play by play caster will level up your events,
               while our MCs & hosts professionally pilot the show. A dream team
