@@ -42,9 +42,9 @@ function Campaign2() {
 
             <button
               onClick={() => setIsForm(!isForm)}
-              className=' text-white text-base md:py-4  md:px-6 px-4 py-2 md:inline-grid bg-[linear-gradient(#fdc66e,#ff805e)]   font-semibold  xl:w-60  rounded-full md:text-[20px]'
+              className=' text-white text-base md:py-4  md:px-6 px-5 py-2 md:inline-grid bg-[linear-gradient(#fdc66e,#ff805e)]   font-semibold  xl:w-60  rounded-full md:text-[20px]'
             >
-              REACH OUT
+              CONTACT US
             </button>
           </div>
           <div data-aos='fade-left' className='flex-1 '>

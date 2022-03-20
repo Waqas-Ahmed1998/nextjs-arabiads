@@ -15,6 +15,7 @@ body {
   /* background-color: #fdfdfd; */
   -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
+  background-image: linear-gradient(to bottom right, #fbfcff, #eaf1ff);
 }
 html {
   scroll-behavior: smooth;
