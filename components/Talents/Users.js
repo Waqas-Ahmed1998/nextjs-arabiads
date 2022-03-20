@@ -137,8 +137,8 @@ function Users({ user }) {
                     alt=''
                     className='ml-[5px] w-[35%] h-[90%] object-cover rounded-l-[15px] md:rounded-l-[35px]  '
                   />
-                  <div className='ml-2 mt-2 xl:ml-5   w-full xl:mt-5 md:space-y-3 relative xl:px-2'>
-                    <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem]  md:text-base font-bold inline-block px-2 bg-[#FAA361] xl:-top-[9px] md:-top-[0.5rem] lg:-top-[0.2rem] '>
+                  <div className='ml-2 mt-2 md:ml-4 md:mt-5 lg:ml-2 lg:mt-2 xl:ml-5   w-full xl:mt-5 md:space-y-3 relative xl:px-2'>
+                    <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem]  md:text-base font-bold inline-block px-2 bg-[#FAA361] -top-[2px] xl:-top-[9px] md:-top-[0.5rem] lg:-top-[0.2rem] '>
                       {singleUser.role}
                     </h3>
                     <h3 className='text-xs xl:text-base font-bold'>
@@ -180,7 +180,7 @@ function Users({ user }) {
                       </div>
                     )}
 
-                    <div className='  flex w-full justify-center space-x-5 justify-self-end absolute lg:bottom-6  xl:bottom-10 bottom-4  '>
+                    <div className='  flex w-full justify-center space-x-5 justify-self-end absolute md:bottom-7 lg:bottom-6  xl:bottom-10 bottom-4  '>
                       {singleUser.facebookLink && (
                         <a href={singleUser.facebookLink}>
                           {" "}
@@ -288,8 +288,8 @@ function Users({ user }) {
                     className='mr-[5px] w-[35%]  h-[90%] object-cover rounded-r-[15px] md:rounded-r-[35px]  '
                   />
 
-                  <div className='ml-2 mt-2 xl:ml-5 w-full xl:mt-5  md:space-y-3 relative md:pr-2'>
-                    <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem]  md:text-base font-bold inline-block px-2 bg-[#FAA361] -top-[0.8rem] md:-top-[0.6rem] lg:-top-[0.2rem] xl:-top-[0.6rem]'>
+                  <div className='ml-2  mt-2 md:ml-4 md:mt-5 lg:ml-2 lg:mt-2 xl:ml-5 w-full xl:mt-5  md:space-y-3 relative md:pr-2'>
+                    <h3 className=' left-[40%] rounded-b-md absolute text-[0.5rem]  md:text-base font-bold inline-block px-2 bg-[#FAA361]  -top-[3px] md:-top-[0.6rem] lg:-top-[0.2rem] xl:-top-[0.6rem]'>
                       {singleUser.role}
                     </h3>
                     <h3 className='text-xs xl:text-base font-bold'>
@@ -331,7 +331,7 @@ function Users({ user }) {
                       </div>
                     )}
 
-                    <div className=' md:flex w-full justify-center space-x-5  justify-self-end absolute lg:bottom-6 xl:bottom-10 bottom-4 flex '>
+                    <div className=' md:flex w-full justify-center space-x-5  justify-self-end absolute lg:bottom-6 xl:bottom-10 md:bottom-10 bottom-4 flex '>
                       {singleUser.facebookLink && (
                         <a href={singleUser.facebookLink}>
                           {" "}
