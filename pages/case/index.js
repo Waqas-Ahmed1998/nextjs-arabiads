@@ -47,13 +47,13 @@ function Case() {
         />
       </div>
       <div className='max-w-screen-xl mx-auto '>
-        <div className='flex flex-col space-y-10 lg:space-y-0 lg:flex-row md:justify-around justify-center items-center'>
-          <img src='/case/sony.png' alt='' className='object-contain' />
-          <img src='/case/rocket.png' alt='' className='object-contain' />
-          <img src='/case/spotify.png' alt='' className='object-contain' />
-          <img src='/case/redbull.png' alt='' className='object-contain' />
-          <img src='/case/kfc.png' alt='' className='object-contain' />
-          <img src='/case/blast.png' alt='' className='object-contain' />
+        <div className='flex flex-wrap  lg:space-y-0 lg:flex-row md:justify-around justify-center items-center'>
+          <img src='/case/sony.png' alt='' className=' m-2 object-contain' />
+          <img src='/case/rocket.png' alt='' className=' m-2 object-contain' />
+          <img src='/case/spotify.png' alt='' className=' m-2 object-contain' />
+          <img src='/case/redbull.png' alt='' className=' m-2 object-contain' />
+          <img src='/case/kfc.png' alt='' className=' m-2 object-contain' />
+          <img src='/case/blast.png' alt='' className=' m-2 object-contain' />
 
           <img src='/case/anghami.png' alt='' className='object-contain' />
         </div>
@@ -83,7 +83,7 @@ function Case() {
             // className='  animate-animate-pulse  '
           />
         </div>
-        <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-3 mt-10'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:gap-3 mt-10'>
           {eventcard.map((data, index) => (
             <EventCard key={data.id} event={data} index={index} />
           ))}

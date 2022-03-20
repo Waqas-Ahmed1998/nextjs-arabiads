@@ -20,7 +20,7 @@ function EventCard({ event, index }) {
     }
   };
   return (
-    <div className='flex relative lg:w-[90%] p-10 bg-white h-[35rem] rounded-2xl mt-10'>
+    <div className='flex relative mx-auto w-[90%] p-5 lg:p-10 h-[30rem] bg-white md:h-[35rem] rounded-2xl mt-10'>
       {admin?.includes(loggedUser) && (
         <>
           {" "}
@@ -65,10 +65,12 @@ function EventCard({ event, index }) {
               alt=''
               className='w-10 h-10 object-contain mx-auto'
             />
-            <p className='text-center text-blue-400 font-bold'>
+            <p className='text-center text-sm md:text-base text-blue-400 font-bold'>
               {event.audience}
             </p>
-            <p className={`${styles.popins}`}>{event.role}</p>
+            <p className={`${styles.popins} text-sm md:text-base`}>
+              {event.role}
+            </p>
           </div>
           <div className='text-center'>
             <img
@@ -76,10 +78,12 @@ function EventCard({ event, index }) {
               alt=''
               className='w-10 h-10 object-contain mx-auto'
             />
-            <p className='text-center text-blue-400 font-bold'>
+            <p className='text-center  text-sm md:text-base text-blue-400 font-bold'>
               {event.engagement}
             </p>
-            <p className={`${styles.popins}`}>{event.engagementRole}</p>
+            <p className={`${styles.popins} text-sm md:text-base `}>
+              {event.engagementRole}
+            </p>
           </div>
         </div>
       </div>
