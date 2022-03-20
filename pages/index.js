@@ -42,7 +42,7 @@ export default function Home() {
         // ></div>
       }
 
-      <div className='flex justify-center xl:h-screen 2xl:h-[93vh] md:max-w-[95rem] lg:md:max-w-[1440px] mx-auto '>
+      <div className=' flex justify-center xl:h-screen 2xl:h-[93vh] md:max-w-[95rem] lg:md:max-w-[1440px] mx-auto '>
         <Card1 />
       </div>
       <div className='flex justify-center   xl:mt-20 2xl:mt-0 xl:h-screen  2xl:h-[93vh]  xl:max-w-[95rem] mx-auto relative'>

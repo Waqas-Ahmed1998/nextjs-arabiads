@@ -56,7 +56,7 @@ function Card2() {
           </Link>
         </div>
         <div className='  xl:basis-[44%]  '>
-          <div className='w-full xl:ml-10  '>
+          <div className='w-full mx-auto md:w-[50%] xl:w-auto xl:ml-10  '>
             <Image
               className='scale-[0.8] md:scale-[1]'
               src='/home/card2image.png'

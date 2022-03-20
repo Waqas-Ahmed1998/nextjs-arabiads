@@ -29,7 +29,7 @@ function Card1() {
       {
         //*********** */ mobile view
         <div
-          className={`${styles.mobileCard1} mb-10  px-2 py-14 w-full bg-no-repeat bg-cover xl:hidden flex text-center flex-col items-center space-y-20`}
+          className={`${styles.mobileCard1} mb-0 md:mb-10  px-2 py-14 w-full bg-no-repeat bg-cover xl:hidden flex text-center flex-col items-center space-y-20`}
         >
           <h2
             data-aos='fade-down'
@@ -114,13 +114,9 @@ function Card1() {
         </div>
       }
       {
-        // <img
-        //   className='xl:hidden w-full h-[90%]'
-        //   src='/home/mobilebg.jpg'
-        //   alt=''
-        // />
+        //  mobile view end
       }
-      <div className=' hidden absolute  [z-index:1] h-full xl:h-auto top-0    w-full xl:flex flex-col justify-center text-center space-y-2 md:space-y-6  xl:space-y-5 '>
+      <div className='  hidden absolute  [z-index:1] h-full xl:h-auto top-0    w-full xl:flex flex-col justify-center text-center space-y-2 md:space-y-6  xl:space-y-5 '>
         <h2
           data-aos='fade-down'
           data-aos-delay='300'

@@ -45,7 +45,7 @@ function Card4() {
           <div
             data-aos='zoom-out-left'
             data-aos-anchor='#triger'
-            className='w-auto  mx-auto md:w-[80%] xl:w-auto xl:pl-5 '
+            className='w-auto md:w-[50%]  mx-auto xl:w-auto xl:pl-5 '
           >
             <Image
               src='/home/card3person.png'
