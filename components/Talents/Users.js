@@ -135,7 +135,7 @@ function Users({ user }) {
                   <img
                     src={singleUser.image}
                     alt=''
-                    className='ml-[5px]  h-[90%] object-cover rounded-l-[15px] md:rounded-l-[35px] w-[34.5%] md:rounded-bl-[25px]'
+                    className='ml-[5px]  h-[90%] object-cover rounded-l-[15px] md:rounded-l-[35px] small:w-[33.5%] md:w-[34.5%] md:rounded-bl-[25px]'
                   />
                   <div className='ml-2 mt-2 md:ml-4 xl:pt-1 md:mt-5 lg:ml-2 lg:mt-2 xl:ml-5  mid:pt-2 mid:space-y-2 w-full xl:mt-5 md:space-y-3 relative xl:px-2 iphone6:pt-2 iphone6:space-y-2 small:pt-3'>
                     <h3
@@ -154,22 +154,22 @@ function Users({ user }) {
                     </p>
                     {singleUser.tournaments?.includes(",") ? (
                       <div className='flex  mid:w-[90%] md:w-full flex-col md:flex-row w-full flex-wrap justify-between gap-2 md:gap-0 xl:text-center font-medium'>
-                        <p className='small:text-[0.5rem] mid:text-[10px] md:text-sm md:w-[46%] md:mt-[10px]'>
+                        <p className='small:text-[0.5rem] mid:text-[10px] lg:text-[12px] xl:text-sm md:text-sm md:w-[46%] md:mt-[10px]'>
                           {" "}
                           {singleUser.tournaments.split(",")[0]}
                         </p>
                         <div className='w-[1px] bg-[#97aabd] xl:mt-[10px] h-auto hidden md:inline-grid '></div>
-                        <p className='small:text-[0.5rem] mid:text-[10px]   md:text-sm  md:w-[46%] md:mt-[10px]'>
+                        <p className='small:text-[0.5rem] mid:text-[10px]   md:text-sm  md:w-[46%] md:mt-[10px] lg:text-[12px] xl:text-sm'>
                           {" "}
                           {singleUser.tournaments.split(",")[1]}
                         </p>
-                        <p className=' small:text-[0.5rem] mid:text-[10px]  md:text-sm md:w-[46%] md:mt-[10px]'>
+                        <p className=' small:text-[0.5rem] mid:text-[10px]  md:text-sm md:w-[46%] md:mt-[10px] lg:text-[12px] xl:text-sm'>
                           {" "}
                           {singleUser.tournaments.split(",")[2]}
                         </p>
                         <div className='hidden md:inline-grid w-[1px] bg-[#97aabd] xl:mt-[10px] h-auto'></div>
 
-                        <p className='small:text-[0.5rem] mid:text-[10px]  md:text-sm md:w-[46%] md:mt-[10px]'>
+                        <p className='small:text-[0.5rem] mid:text-[10px]  md:text-sm md:w-[46%] md:mt-[10px] lg:text-[12px] xl:text-sm'>
                           {" "}
                           {singleUser.tournaments.split(",")[3]}
                         </p>
@@ -177,14 +177,14 @@ function Users({ user }) {
                     ) : (
                       <div className='flex  gap-2 md:gap-0 '>
                         <div className='text-center md:px-2 md:space-y-3 border-r border-gray-400'>
-                          <p className='text-[0.5rem] md:text-xs'>
+                          <p className='text-[0.5rem] md:text-xs lg:text-[12px] xl:text-sm'>
                             {singleUser.tournaments}
                           </p>
                         </div>
                       </div>
                     )}
 
-                    <div className=' hidden relative top-2 md:flex items-center justify-center space-x-5'>
+                    <div className=' hidden relative top-2 md:flex items-center justify-center space-x-5  md:top-2 lg:-top-0 xl:top-2'>
                       {singleUser.facebookLink && (
                         <a href={singleUser.facebookLink}>
                           {" "}
@@ -220,13 +220,6 @@ function Users({ user }) {
                               // className='w-5 md:w-[1.69rem]  p-[0.3rem] bg-white rounded-full'
                             />
                           }
-                          {
-                            // <img
-                            //   src='/talents/instagram.png'
-                            //   alt=''
-                            //   className=' '
-                            // />
-                          }
                         </a>
                       )}
                       {singleUser.twitchLink && (
@@ -237,13 +230,6 @@ function Users({ user }) {
                               className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
                               // className='w-5 md:w-7 object-contain p-[0.3rem] bg-white rounded-full'
                             />
-                          }
-                          {
-                            // <img
-                            //   src='/talents/logos/twitch2.png'
-                            //   alt=''
-                            //   className=' '
-                            // />
                           }
                         </a>
                       )}
@@ -256,13 +242,6 @@ function Users({ user }) {
                               className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
                               // className='w-5 md:w-7  p-[0.3rem]  bg-white rounded-full'
                             />
-                          }
-                          {
-                            // <img
-                            //   src='/talents/youtube.png'
-                            //   alt=''
-                            //   className='  '
-                            // />
                           }
                         </a>
                       )}
@@ -324,7 +303,7 @@ function Users({ user }) {
                   <img
                     src={singleUser.image}
                     alt=''
-                    className='mr-[5px]   h-[90%] object-cover rounded-r-[15px] md:rounded-r-[35px] w-[34.5%] md:rounded-br-[25px] '
+                    className='mr-[5px]   h-[90%] object-cover rounded-r-[15px] md:rounded-r-[35px] small:w-[33.5%] md:w-[34.5%] md:rounded-br-[25px] '
                   />
 
                   <div className='ml-2  mt-2 md:ml-4 md:mt-5 xl:pt-1 lg:ml-2 lg:mt-2 xl:ml-5 w-full xl:mt-5 mid:pt-2 mid:space-y-2  md:space-y-3 relative md:pr-2 iphone6:pt-2 iphone6:space-y-2 small:pt-2'>
@@ -344,22 +323,22 @@ function Users({ user }) {
                     </p>
                     {singleUser.tournaments?.includes(",") ? (
                       <div className='flex flex-col mid:w-[90%]  md:flex-row w-full flex-wrap justify-between gap-2 md:gap-0 xl:text-center font-medium'>
-                        <p className='small:text-[0.5rem] mid:text-[10px] md:text-sm   md:w-[46%] md:mt-[10px]'>
+                        <p className='small:text-[0.5rem] mid:text-[10px] md:text-sm   md:w-[46%] md:mt-[10px] lg:text-[12px] xl:text-sm'>
                           {" "}
                           {singleUser.tournaments.split(",")[0]}
                         </p>
                         <div className='w-[1px] bg-[#97aabd] xl:mt-[10px] h-auto hidden md:inline-grid '></div>
-                        <p className='small:text-[0.5rem] mid:text-[10px] md:text-sm  md:w-[46%] md:mt-[10px]'>
+                        <p className='small:text-[0.5rem] mid:text-[10px] md:text-sm  md:w-[46%] md:mt-[10px] lg:text-[12px] xl:text-sm'>
                           {" "}
                           {singleUser.tournaments.split(",")[1]}
                         </p>
-                        <p className='small:text-[0.5rem] mid:text-[10px] md:text-sm  md:w-[46%] md:mt-[10px]'>
+                        <p className='small:text-[0.5rem] mid:text-[10px] md:text-sm  md:w-[46%] md:mt-[10px] lg:text-[12px] xl:text-sm'>
                           {" "}
                           {singleUser.tournaments.split(",")[2]}
                         </p>
                         <div className='hidden md:inline-grid w-[1px] bg-[#97aabd] xl:mt-[10px] h-auto'></div>
 
-                        <p className='small:text-[0.5rem] mid:text-[10px] md:text-sm  md:w-[46%] md:mt-[10px]'>
+                        <p className='small:text-[0.5rem] mid:text-[10px] md:text-sm  md:w-[46%] md:mt-[10px] lg:text-[12px] xl:text-sm'>
                           {" "}
                           {singleUser.tournaments.split(",")[3]}
                         </p>
@@ -374,7 +353,7 @@ function Users({ user }) {
                       </div>
                     )}
 
-                    <div className=' hidden relative top-2 md:flex items-center justify-center space-x-5'>
+                    <div className=' hidden relative md:top-2 lg:-top-0 xl:top-2 md:flex items-center justify-center space-x-5'>
                       {singleUser.facebookLink && (
                         <a href={singleUser.facebookLink}>
                           {" "}
