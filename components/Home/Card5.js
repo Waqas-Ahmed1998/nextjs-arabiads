@@ -32,7 +32,7 @@ function Card5() {
           <Image
             data-aos='zoom-in-right'
             data-aos-anchor='#card5'
-            src='/home/card5person.png'
+            src='/home/mobileperson2.png'
             alt=''
             title=''
             width='300'

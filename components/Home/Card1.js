@@ -29,7 +29,7 @@ function Card1() {
       {
         //*********** */ mobile view
         <div
-          className={`${styles.mobileCard1}  mb-5 md:mb-10 md:h-[70vh] px-2 py-5  w-full bg-no-repeat bg-cover xl:hidden flex text-center flex-col lg:flex-row lg:flex-wrap items-center justify-evenly space-y-5 `}
+          className={`${styles.mobileCard1}  mb-5 md:mb-10  md:h-[70vh] px-2 py-5  w-full bg-no-repeat bg-cover xl:hidden flex text-center flex-col lg:flex-row lg:flex-wrap items-center justify-evenly space-y-5 `}
         >
           <h2
             data-aos='fade-down'
