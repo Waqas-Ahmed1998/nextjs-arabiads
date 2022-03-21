@@ -48,14 +48,42 @@ function Case() {
       </div>
       <div className='max-w-screen-xl mx-auto '>
         <div className='flex flex-wrap  lg:space-y-0 lg:flex-row md:justify-around justify-center items-center'>
-          <img src='/case/sony.png' alt='' className=' m-2 object-contain' />
-          <img src='/case/rocket.png' alt='' className=' m-2 object-contain' />
-          <img src='/case/spotify.png' alt='' className=' m-2 object-contain' />
-          <img src='/case/redbull.png' alt='' className=' m-2 object-contain' />
-          <img src='/case/kfc.png' alt='' className=' m-2 object-contain' />
-          <img src='/case/blast.png' alt='' className=' m-2 object-contain' />
+          <img
+            src='/case/sony.png'
+            alt=''
+            className=' m-2 small:w-16 md:w-auto object-contain'
+          />
+          <img
+            src='/case/rocket.png'
+            alt=''
+            className='m-2 small:w-16 md:w-auto object-contain'
+          />
+          <img
+            src='/case/spotify.png'
+            alt=''
+            className=' m-2 small:w-16 md:w-auto object-contain'
+          />
+          <img
+            src='/case/redbull.png'
+            alt=''
+            className=' m-2 small:w-16 md:w-auto object-contain'
+          />
+          <img
+            src='/case/kfc.png'
+            alt=''
+            className=' m-2 small:w-16 md:w-auto object-contain'
+          />
+          <img
+            src='/case/blast.png'
+            alt=''
+            className=' m-2 small:w-16 md:w-auto object-contain'
+          />
 
-          <img src='/case/anghami.png' alt='' className='object-contain' />
+          <img
+            src='/case/anghami.png'
+            alt=''
+            className=' m-2 small:w-16 md:w-auto object-contain'
+          />
         </div>
         <div className='2xl:left-[5%] xl:left-[0] hidden xl:inline-grid absolute top-[20%] [z-index:-1]'>
           <motion.img
