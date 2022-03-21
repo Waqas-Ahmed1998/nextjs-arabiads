@@ -33,7 +33,7 @@ function Card3() {
       {
         // mobile view
         <div
-          className={`${styles.mobileCard3} pb-10 px-2 w-full bg-no-repeat bg-cover xl:hidden flex text-center flex-col items-center`}
+          className={`${styles.mobileCard3} pb-10 px-2 w-full bg-no-repeat bg-cover xl:hidden flex text-center flex-col items-center `}
         >
           <Image
             data-aos='zoom-in-right'
