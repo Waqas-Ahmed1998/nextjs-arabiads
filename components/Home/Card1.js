@@ -29,7 +29,7 @@ function Card1() {
       {
         //*********** */ mobile view
         <div
-          className={`${styles.mobileCard1} mb-5 md:mb-10  px-2 py-14 w-full bg-no-repeat bg-cover xl:hidden flex text-center flex-col items-center space-y-20`}
+          className={`${styles.mobileCard1} mb-5 md:mb-10  px-2 py-5  w-full bg-no-repeat bg-cover xl:hidden flex text-center flex-col items-center justify-evenly space-y-5 `}
         >
           <h2
             data-aos='fade-down'
@@ -75,37 +75,37 @@ function Card1() {
           <div
             data-aos='fade-right'
             data-aos-duration='2000'
-            className=' md:space-x-0 px-2 md:px-10 md:mr-10 flex '
+            className=' md:space-x-0  md:px-10 md:mr-10 flex flex-wrap justify-center'
           >
             <a href='https://www.pubgmobile.com/ar/home.shtml'>
-              <img className='w-30' src='/home/card1images/pubg.png' alt='' />
-            </a>
-            <a href='https://www.ea.com/'>
-              <img className='w-30' src='/home/card1images/ea.png' alt='' />
-            </a>
-            <a href='https://www.riotgames.com/en'>
-              <img className='w-30' src='/home/card1images/riot.png' alt='' />
-            </a>
-            <a href=''>
               <img
-                className='https://www.moonton.com/'
-                src='/home/card1images/moon.png'
+                className='w-20 object-cover'
+                src='/home/card1images/pubg.png'
                 alt=''
               />
             </a>
+            <a href='https://www.ea.com/'>
+              <img className='w-20' src='/home/card1images/ea.png' alt='' />
+            </a>
+            <a href='https://www.riotgames.com/en'>
+              <img className='w-20' src='/home/card1images/riot.png' alt='' />
+            </a>
+            <a href='https://www.moonton.com/'>
+              <img className='w-20' src='/home/card1images/moon.png' alt='' />
+            </a>
             <a href='https://www.huawei.com/en/?ic_medium=direct&ic_source=surlent'>
-              <img className='w-30' src='/home/card1images/huawei.png' alt='' />
+              <img className='w-20' src='/home/card1images/huawei.png' alt='' />
             </a>
             <a href='https://global.redmagic.gg/'>
               <img
-                className='w-30'
+                className='w-20'
                 src='/home/card1images/redmagic.png'
                 alt=''
               />
             </a>
             <a href='https://global.redmagic.gg/'>
               <img
-                className='w-30'
+                className='w-20'
                 src='/home/card1images/muchmore.png'
                 alt=''
               />

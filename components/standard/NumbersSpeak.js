@@ -16,9 +16,9 @@ function NumbersSpeak() {
   return (
     <div
       data-aos='zoom-out'
-      className='mt-10 grid grid-cols-1 md:max-w-[95rem] mx-auto relative px-5 py-10'
+      className=' mt-0 xl:mt-10 grid grid-cols-1 md:max-w-[95rem] mx-auto relative px-5 py-10'
     >
-      <div className='mx-auto lg:w-[70%] text-center space-y-5 xl:space-y-10'>
+      <div className='mx-auto lg:w-[70%] text-center space-y-2 xl:space-y-10'>
         <h3
           className={`${styles.montserrat} text-[#404040]  text-center text-lg  md:text-2xl xl:text-[40px]  [font-weight:700]`}
         >

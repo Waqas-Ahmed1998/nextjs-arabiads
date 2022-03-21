@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 function Middle() {
   return (
-    <div className='grid my-12 relative mb-24 grid-cols-1  justify-center lg:grid-cols-2  gap-4 lg:gap-0 px-5 '>
+    <div className='grid mb-12 relative mb-24 grid-cols-1  justify-center lg:grid-cols-2  gap-4 lg:gap-0 px-5 '>
       <div className='lg:-left-[10%] 2xl:-left-[17%] hidden xl:inline-grid absolute top-[53%] [z-index:-1]'>
         <motion.img
           animate={{

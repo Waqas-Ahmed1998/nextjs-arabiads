@@ -33,12 +33,12 @@ function Card2() {
       </div>
 
       <div className='xl:absolute top-0 xl:top-4 flex flex-col-reverse xl:flex-row xl:pt-[5rem] xl:ml-20 text-center xl:text-left'>
-        <div className='lg:flex-1 relative  md:top-auto  lg:space-y-5 px-2 xl:pl-5 space-y-5'>
-          <h2 className='text-xl xl:text-[35px]  text-[#167EE0] xl:text-white font-semibold pt-3 xl:[line-height:56px]'>
+        <div className='lg:flex-1 relative  md:top-auto  lg:space-y-5 px-2 xl:pl-5 '>
+          <h2 className='text-xl xl:text-[35px]  text-[#167EE0] xl:text-white font-semibold pt-3 mb-2 xl:[line-height:56px]'>
             One of MENA’s Leading Agency for{" "}
             <span className='text-black'>Influencer Marketing</span>
           </h2>
-          <p className='text-base md:text-lg text-gray-600 xl:text-gray-50 tracking-wide'>
+          <p className='text-base md:text-lg text-gray-600 xl:text-gray-50 mb-5 tracking-wide'>
             We are a KOL Agency MENA that assures you that our group of experts
             - which includes digital marketing specialists, campaign managers,
             and media buying specialists - will walk your firm step by step to

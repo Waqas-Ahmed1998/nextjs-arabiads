@@ -14,18 +14,18 @@ function Card4() {
   return (
     <div id='triger' className='xl:w-[70%] mx-auto  '>
       <div className='flex flex-col-reverse xl:flex-row text-center xl:text-left '>
-        <div className='p-5 flex-1 space-y-5 lg:space-y-7 xl:pt-20'>
+        <div className='p-5 flex-1  lg:space-y-7 xl:pt-20'>
           <h2
             data-aos='fade-right'
             data-aos-anchor='#triger'
-            className='text-xl md:text-4xl text-[#020c27] font-bold'
+            className='text-xl md:text-4xl text-[#020c27] font-bold mb-2'
           >
             Influencer <span className='text-[#008fcf]'>Management</span>
           </h2>
           <p
             data-aos='zoom-out-right'
             data-aos-anchor='#triger'
-            className={`${styles.popins} text-[#404b68] text-base md:text-lg tracking-wide md:tracking-normal `}
+            className={`${styles.popins} text-[#404b68] text-base md:text-lg tracking-wide md:tracking-normal mb-5 `}
           >
             Are you an influencer looking to broaden your reach and collaborate
             with others? We are here to assist you. Our staff will introduce you

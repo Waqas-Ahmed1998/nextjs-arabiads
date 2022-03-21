@@ -7,7 +7,7 @@ function Card5() {
   return (
     <div
       id='card5'
-      className=' grid grid-cols-1 md:max-w-[95rem] mx-auto relative  '
+      className=' grid grid-cols-1 md:max-w-[95rem] mt-5 mx-auto relative  '
     >
       <div className='hidden mx-auto  xl:inline-grid  lg:w-[65rem] h-[34rem]'>
         <Image
@@ -27,7 +27,7 @@ function Card5() {
       {
         // mobile view data
         <div
-          className={`${styles.mobileCard5} py-10 px-2 w-full bg-no-repeat bg-cover xl:hidden flex text-center flex-col items-center`}
+          className={`${styles.mobileCard5} py-5 pb-10 px-2 w-full bg-no-repeat bg-cover xl:hidden flex text-center flex-col items-center`}
         >
           <Image
             data-aos='zoom-in-right'

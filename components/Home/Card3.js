@@ -49,7 +49,7 @@ function Card3() {
 
           <h2
             data-aos='fade-down'
-            className='text-xl md:text-2xl lg:text-[30px] xl:leading-[42px] mb-5 lg:text-[#167EE0] font-semibold'
+            className='text-xl md:text-2xl lg:text-[30px] xl:leading-[42px] mb-2  lg:text-[#167EE0] font-semibold'
           >
             Digital Influence{" "}
             <span className='lg:text-black text-[#008fcf]'>
