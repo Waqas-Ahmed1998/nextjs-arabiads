@@ -57,12 +57,12 @@ function Case() {
             <img
               src='/case/rocket.png'
               alt=''
-              className='m-2 small:w-12 iphone6:w-12 mid:w-16  md:w-auto object-contain '
+              className='m-2 small:w-12 iphone6:w-12 mid:w-16 md:w-auto object-contain '
             />
             <img
               src='/case/spotify.png'
               alt=''
-              className=' m-2 small:w-12 iphone6:w-14 mid:w-16  md:w-auto object-contain'
+              className=' m-2 small:w-12 iphone6:w-14 mid:w-16   md:w-auto object-contain'
             />
 
             <img
@@ -77,7 +77,7 @@ function Case() {
             />
           </div>
 
-          <div className='flex justify-center md:space-x-5'>
+          <div className='flex justify-center  md:space-x-5'>
             <img
               src='/case/redbull.png'
               alt=''
