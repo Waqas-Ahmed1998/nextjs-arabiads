@@ -46,44 +46,62 @@ function Case() {
           className='h-screen w-[100vw] '
         />
       </div>
-      <div className='max-w-screen-xl mx-auto '>
-        <div className='flex flex-wrap  lg:space-y-0 lg:flex-row md:justify-around justify-center items-center'>
-          <img
-            src='/case/sony.png'
-            alt=''
-            className=' m-2 small:w-16 md:w-auto object-contain'
-          />
-          <img
-            src='/case/rocket.png'
-            alt=''
-            className='m-2 small:w-16 md:w-auto object-contain'
-          />
-          <img
-            src='/case/spotify.png'
-            alt=''
-            className=' m-2 small:w-16 md:w-auto object-contain'
-          />
-          <img
-            src='/case/redbull.png'
-            alt=''
-            className=' m-2 small:w-16 md:w-auto object-contain'
-          />
-          <img
-            src='/case/kfc.png'
-            alt=''
-            className=' m-2 small:w-16 md:w-auto object-contain'
-          />
-          <img
-            src='/case/blast.png'
-            alt=''
-            className=' m-2 small:w-16 md:w-auto object-contain'
-          />
+      <div className='max-w-screen-xl mx-auto  '>
+        <div className='flex small:flex-col md:flex-col my-10   xl:mb-20  md:flex-nowrap  md:space-y-5  md:justify-around justify-center  '>
+          <div className='flex mid:justify-around'>
+            <img
+              src='/case/sony.png'
+              alt=''
+              className=' m-2 small:w-12  iphone6:w-12    md:w-auto object-contain '
+            />
+            <img
+              src='/case/rocket.png'
+              alt=''
+              className='m-2 small:w-12 iphone6:w-12 mid:w-16  md:w-auto object-contain '
+            />
+            <img
+              src='/case/spotify.png'
+              alt=''
+              className=' m-2 small:w-12 iphone6:w-14 mid:w-16  md:w-auto object-contain'
+            />
 
-          <img
-            src='/case/anghami.png'
-            alt=''
-            className=' m-2 small:w-16 md:w-auto object-contain'
-          />
+            <img
+              src='/case/kfc.png'
+              alt=''
+              className=' m-2 small:w-12 iphone6:w-16 mid:w-16   md:w-auto object-contain '
+            />
+            <img
+              src='/case/blast.png'
+              alt=''
+              className=' m-2 small:w-12 iphone6:w-16 mid:w-16  md:w-auto object-contain'
+            />
+          </div>
+
+          <div className='flex justify-center md:space-x-5'>
+            <img
+              src='/case/redbull.png'
+              alt=''
+              className=' m-2  small:w-20 iphone6:w-20 mid:w-20 md:w-auto object-contain'
+            />
+
+            <img
+              src='/case/anghami.png'
+              alt=''
+              className='m-2 small:w-20 iphone6:w-20 mid:w-20 md:w-auto object-contain'
+            />
+          </div>
+          {
+            // <img
+            //   src='/case/blast.png'
+            //   alt=''
+            //   className=' m-2 small:w-16 md:w-auto object-contain'
+            // />
+            // <img
+            //   src='/case/anghami.png'
+            //   alt=''
+            //   className=' m-2 small:w-16 md:w-auto object-contain'
+            // />
+          }
         </div>
         <div className='2xl:left-[5%] xl:left-[0] hidden xl:inline-grid absolute top-[20%] [z-index:-1]'>
           <motion.img
@@ -111,7 +129,7 @@ function Case() {
             // className='  animate-animate-pulse  '
           />
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:gap-3 mt-10'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:gap-3 md:mt-10'>
           {eventcard.map((data, index) => (
             <EventCard key={data.id} event={data} index={index} />
           ))}

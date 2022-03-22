@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     screens: {
       small: "319px",
-      mid: "380px",
       iphone6: "360px",
+      mid: "380px",
       ...defaultTheme.screens,
     },
     extend: {
