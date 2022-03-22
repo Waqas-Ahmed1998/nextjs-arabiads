@@ -48,7 +48,7 @@ function Case() {
       </div>
       <div className='max-w-screen-xl mx-auto  '>
         <div className='flex small:flex-col md:flex-col my-10   xl:mb-20  md:flex-nowrap  md:space-y-5  md:justify-around justify-center  '>
-          <div className='flex mid:justify-around'>
+          <div className='flex mid:justify-around md:flex-wrap'>
             <img
               src='/case/sony.png'
               alt=''
@@ -75,9 +75,20 @@ function Case() {
               alt=''
               className=' m-2 small:w-12 iphone6:w-16 mid:w-16  md:w-auto object-contain'
             />
+            <img
+              src='/case/redbull.png'
+              alt=''
+              className='mid:hidden md:block m-2  small:w-20 iphone6:w-20 mid:w-20 md:w-auto object-contain'
+            />
+
+            <img
+              src='/case/anghami.png'
+              alt=''
+              className='mid:hidden md:block m-2 small:w-20 iphone6:w-20 mid:w-20 md:w-auto object-contain'
+            />
           </div>
 
-          <div className='flex justify-center  md:space-x-5'>
+          <div className='flex justify-center md:hidden  md:space-x-5'>
             <img
               src='/case/redbull.png'
               alt=''
