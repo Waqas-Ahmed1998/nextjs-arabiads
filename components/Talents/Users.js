@@ -160,23 +160,33 @@ function Users({ user }) {
                       Tournaments:
                     </p>
                     {singleUser.tournaments?.includes(",") ? (
-                      <div className='flex  mid:w-[90%] md:w-full flex-col md:flex-row w-full flex-wrap justify-between gap-2 md:gap-0 xl:text-center font-medium'>
-                        <p className='small:text-[0.5rem] mid:text-[10px] lg:text-[12px] xl:text-sm md:text-sm md:w-[46%] md:mt-[10px]'>
+                      <div
+                        className={` flex   mid:w-[90%] md:w-full flex-col md:flex-row w-full flex-wrap justify-between gap-2 md:gap-0 xl:text-center font-medium`}
+                      >
+                        <p
+                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-sm  md:text-sm md:w-[46%] md:mt-[10px] $`}
+                        >
                           {" "}
                           {singleUser.tournaments.split(",")[0]}
                         </p>
                         <div className='w-[1px] bg-[#97aabd] xl:mt-[10px] h-auto hidden md:inline-grid '></div>
-                        <p className='small:text-[0.5rem] mid:text-[10px]   md:text-sm  md:w-[46%] md:mt-[10px] lg:text-[12px] xl:text-sm'>
+                        <p
+                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-[10px] xl:text-sm md:text-sm md:w-[46%] md:mt-[10px] `}
+                        >
                           {" "}
                           {singleUser.tournaments.split(",")[1]}
                         </p>
-                        <p className=' small:text-[0.5rem] mid:text-[10px]  md:text-sm md:w-[46%] md:mt-[10px] lg:text-[12px] xl:text-sm'>
+                        <p
+                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-[10px] xl:text-sm md:text-sm md:w-[46%] md:mt-[10px] `}
+                        >
                           {" "}
                           {singleUser.tournaments.split(",")[2]}
                         </p>
                         <div className='hidden md:inline-grid w-[1px] bg-[#97aabd] xl:mt-[10px] h-auto'></div>
 
-                        <p className='small:text-[0.5rem] mid:text-[10px]  md:text-sm md:w-[46%] md:mt-[10px] lg:text-[12px] xl:text-sm'>
+                        <p
+                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-[10px] xl:text-sm md:text-sm md:w-[46%] md:mt-[10px] `}
+                        >
                           {" "}
                           {singleUser.tournaments.split(",")[3]}
                         </p>
@@ -191,7 +201,7 @@ function Users({ user }) {
                       </div>
                     )}
 
-                    <div className=' hidden relative top-2 md:flex items-center justify-center space-x-5  md:top-2 lg:-top-0 xl:top-2'>
+                    <div className=' hidden relative top-2  md:flex items-center justify-center space-x-5  md:top-2 lg:-top-0 xl:top-2'>
                       {singleUser.facebookLink && (
                         <a href={singleUser.facebookLink}>
                           {" "}
@@ -202,7 +212,11 @@ function Users({ user }) {
                             //   // className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
                             // />
                           }
-                          <img src='/talents/faecbook.png' alt='' />
+                          <img
+                            src='/talents/faecbook.png'
+                            alt=''
+                            className=' object-contain'
+                          />
                         </a>
                       )}
 
@@ -375,7 +389,7 @@ function Users({ user }) {
                       </div>
                     )}
 
-                    <div className=' hidden relative md:top-2 lg:-top-0 xl:top-2 md:flex items-center justify-center space-x-5'>
+                    <div className=' hidden relative md:top-2 lg:-top-0  md:flex items-center justify-center space-x-5'>
                       {singleUser.facebookLink && (
                         <a href={singleUser.facebookLink}>
                           {" "}
