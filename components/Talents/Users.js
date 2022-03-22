@@ -96,17 +96,24 @@ function Users({ user }) {
           .map((singleUser, index) =>
             index % 2 == 0 ? (
               <motion.div layout key={singleUser.id} className='relative  '>
-                <Image
-                  className=''
+                {
+                  // <Image
+                  //   className=''
+                  //   src='/talents/card.png'
+                  //   alt=''
+                  //   title=''
+                  //   width='100%'
+                  //   height='50%'
+                  //   layout='responsive'
+                  //   priority
+                  //   objectFit='contain'
+                  //   quality={100}
+                  // />
+                }
+                <img
                   src='/talents/card.png'
                   alt=''
-                  title=''
-                  width='100%'
-                  height='50%'
-                  layout='responsive'
-                  priority
-                  objectFit='contain'
-                  quality={100}
+                  className='w-full height-[50%]'
                 />
                 {
                   // trash icon
@@ -135,9 +142,9 @@ function Users({ user }) {
                   <img
                     src={singleUser.image}
                     alt=''
-                    className='ml-[5px] mt-[6px] h-[89.5%] object-cover rounded-l-[15px] md:rounded-l-[35px] small:w-[33.5%] md:w-[34.5%] md:rounded-bl-[35px]'
+                    className='ml-[5px] mt-[5px] h-[90%] object-cover rounded-l-[15px] md:rounded-l-[35px] small:w-[33.5%] md:w-[34.5%] md:rounded-bl-[35px]'
                   />
-                  <div className='ml-1 mr-1 pl-2  bg-[#F2F6FE] h-[89.5%]  mt-[6px]  xl:pt-3    mid:pt-2 mid:space-y-2 w-full  rounded-r-[30px] md:space-y-3 relative xl:px-2 iphone6:pt-2 iphone6:space-y-2 small:pt-3'>
+                  <div className='ml-1 mr-1 pl-2  bg-[#F2F6FE] h-[90%]  mt-[5px]  xl:pt-3    mid:pt-2 mid:space-y-2 w-full  rounded-r-[30px] md:space-y-3 relative xl:px-2 iphone6:pt-2 iphone6:space-y-2 small:pt-3'>
                     <h3
                       className={` ${styles.montserrat}   left-[40%]  rounded-b-md absolute text-[0.5rem]  md:text-sm font-bold inline-block px-2 bg-[#FAA361] top-0 `}
                     >
@@ -275,17 +282,24 @@ function Users({ user }) {
                   //   className='w-full'
                   // />
                 }
-                <Image
-                  className=''
+                {
+                  // <Image
+                  //   className=''
+                  //   src='/talents/card.png'
+                  //   alt=''
+                  //   title=''
+                  //   width='100%'
+                  //   height='50%'
+                  //   layout='responsive'
+                  //   priority
+                  //   objectFit='contain'
+                  //   quality={100}
+                  // />
+                }
+                <img
                   src='/talents/card.png'
                   alt=''
-                  title=''
-                  width='100%'
-                  height='50%'
-                  layout='responsive'
-                  priority
-                  objectFit='contain'
-                  quality={100}
+                  className='w-full height-[50%]'
                 />
                 {admin?.includes(loggedUser) && (
                   <>
@@ -399,7 +413,11 @@ function Users({ user }) {
                             //   // className='w-5 md:w-[1.69rem]  p-[0.3rem] bg-white rounded-full'
                             // />
                           }
-                          <img src='/talents/instagaram.png' alt='' />
+                          <img
+                            src='/talents/instagaram.png'
+                            alt=''
+                            className=''
+                          />
                         </a>
                       )}
                       {singleUser.twitchLink && (
