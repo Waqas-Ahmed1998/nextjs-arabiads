@@ -144,12 +144,19 @@ function Users({ user }) {
                     alt=''
                     className='ml-[5px] mt-[5px] h-[90%] object-cover rounded-l-[15px] md:rounded-l-[35px] small:w-[33.5%] md:w-[34.5%] md:rounded-bl-[35px]'
                   />
-                  <div className='ml-1 mr-1 pl-2  bg-[#F2F6FE] h-[90%]  mt-[5px]  xl:pt-3    mid:pt-2 mid:space-y-2 w-full  rounded-r-[20px] md:rounded-r-[30px] md:space-y-3 relative xl:px-2 iphone6:pt-2 iphone6:space-y-2 small:pt-3'>
-                    <h3
-                      className={` ${styles.montserrat}   left-[40%]  rounded-b-md absolute text-[0.5rem]  md:text-sm font-bold inline-block px-2 bg-[#FAA361] top-0 `}
-                    >
-                      {singleUser.role}
-                    </h3>
+                  <div className='ml-1 mr-1 pl-2  bg-[#F2F6FE] h-[90%]  mt-[5px]  xl:pt-6    mid:pt-2 mid:space-y-2 w-full  rounded-r-[20px] md:rounded-r-[30px] md:space-y-3 relative xl:px-2 iphone6:pt-2 iphone6:space-y-2 small:pt-3'>
+                    {
+                      // <h3
+                      //   className={` ${styles.montserrat}   left-[40%]  rounded-b-md absolute text-[0.5rem]  md:text-sm font-bold inline-block px-2 bg-[#FAA361] top-0 `}
+                      // >
+                    }
+                    <div className='text-center absolute  -top-[2px] w-[96%]'>
+                      <h3
+                        className={` ${styles.montserrat} mx-auto  text-center rounded-b-md text-[0.5rem] relative -top-[7px]   md:text-sm font-bold inline-block px-2 bg-[#FAA361]  md:-top-[1px] `}
+                      >
+                        {singleUser.role}
+                      </h3>
+                    </div>
                     <h3
                       className={`${styles.montserrat} text-xs xl:text-lg font-bold`}
                     >
@@ -164,20 +171,20 @@ function Users({ user }) {
                         className={` flex   mid:w-[90%] md:w-full flex-col md:flex-row w-full flex-wrap justify-between gap-2 md:gap-0 xl:text-center font-medium`}
                       >
                         <p
-                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-sm  md:text-sm md:w-[46%] md:mt-[10px] $`}
+                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-[12px]  md:text-sm md:w-[46%] md:mt-[10px] $`}
                         >
                           {" "}
                           {singleUser.tournaments.split(",")[0]}
                         </p>
                         <div className='w-[1px] bg-[#97aabd] xl:mt-[10px] h-auto hidden md:inline-grid '></div>
                         <p
-                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-[10px] xl:text-sm md:text-sm md:w-[46%] md:mt-[10px] `}
+                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-[12px] xl:text-sm md:text-sm md:w-[46%] md:mt-[10px] `}
                         >
                           {" "}
                           {singleUser.tournaments.split(",")[1]}
                         </p>
                         <p
-                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-[10px] xl:text-sm md:text-sm md:w-[46%] md:mt-[10px] `}
+                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-[12px] xl:text-sm md:text-sm md:w-[46%] md:mt-[10px] `}
                         >
                           {" "}
                           {singleUser.tournaments.split(",")[2]}
@@ -185,7 +192,7 @@ function Users({ user }) {
                         <div className='hidden md:inline-grid w-[1px] bg-[#97aabd] xl:mt-[10px] h-auto'></div>
 
                         <p
-                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-[10px] xl:text-sm md:text-sm md:w-[46%] md:mt-[10px] `}
+                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-[12px] xl:text-sm md:text-sm md:w-[46%] md:mt-[10px] `}
                         >
                           {" "}
                           {singleUser.tournaments.split(",")[3]}
@@ -206,17 +213,12 @@ function Users({ user }) {
                         <a href={singleUser.facebookLink}>
                           {" "}
                           {
-                            // <FontAwesomeIcon
-                            //   icon={faFacebook}
-                            //   className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                            //   // className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
-                            // />
+                            <FontAwesomeIcon
+                              icon={faFacebook}
+                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
+                              // className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
+                            />
                           }
-                          <img
-                            src='/talents/faecbook.png'
-                            alt=''
-                            className=' object-contain'
-                          />
                         </a>
                       )}
 
@@ -224,63 +226,77 @@ function Users({ user }) {
                         <a href={singleUser.twitterLink}>
                           {" "}
                           {
-                            // <FontAwesomeIcon
-                            //   icon={faTwitter}
-                            //   className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                            //   // className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
-                            // />
+                            <FontAwesomeIcon
+                              icon={faTwitter}
+                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
+                              // className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
+                            />
                           }
-                          <img src='/talents/twitter.png' alt='' />
                         </a>
                       )}
                       {singleUser.instagramLink && (
                         <a href={singleUser.instagramLink}>
                           {" "}
                           {
-                            // <FontAwesomeIcon
-                            //   icon={faInstagram}
-                            //   className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                            //   // className='w-5 md:w-[1.69rem]  p-[0.3rem] bg-white rounded-full'
+                            <FontAwesomeIcon
+                              icon={faInstagram}
+                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
+                              // className='w-5 md:w-[1.69rem]  p-[0.3rem] bg-white rounded-full'
+                            />
+                          }
+                          {
+                            // <img
+                            //   src='/talents/instagaram.png'
+                            //   alt=''
+                            //   className=''
                             // />
                           }
-                          <img src='/talents/instagaram.png' alt='' />
                         </a>
                       )}
                       {singleUser.twitchLink && (
                         <a href={singleUser.twitchLink}>
                           {
-                            // <FontAwesomeIcon
-                            //   icon={faTwitch}
-                            //   className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                            //   // className='w-5 md:w-7 object-contain p-[0.3rem] bg-white rounded-full'
-                            // />
+                            <FontAwesomeIcon
+                              icon={faTwitch}
+                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
+                              // className='w-5 md:w-7 object-contain p-[0.3rem] bg-white rounded-full'
+                            />
                           }
-                          <img src='/talents/twitch.png' alt='' />
+                          {
+                            // <img src='/talents/twitch.png' alt='' />
+                          }
                         </a>
                       )}
                       {singleUser.youtubeLink && (
                         <a href={singleUser.youtubeLink}>
                           {" "}
                           {
-                            // <FontAwesomeIcon
-                            //   icon={faYoutube}
-                            //   className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                            //   // className='w-5 md:w-7  p-[0.3rem]  bg-white rounded-full'
-                            // />
+                            <FontAwesomeIcon
+                              icon={faYoutube}
+                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
+                              // className='w-5 md:w-7  p-[0.3rem]  bg-white rounded-full'
+                            />
                           }
-                          <img src='/talents/youtube.png' alt='' />
+                          {
+                            // <img src='/talents/youtube.png' alt='' />
+                          }
                         </a>
                       )}
                       {singleUser.liquipediaLink && (
-                        <a href={singleUser.liquipediaLink} className=' flex  '>
+                        <a
+                          href={singleUser.liquipediaLink}
+                          className=' flex rounded-full '
+                        >
                           {
-                            // <img
-                            //   src='/talents/liquipedia.png'
-                            //   alt=''
-                            //   className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                            // />
+                            <img
+                              src='/talents/liquipedia.png'
+                              alt=''
+                              className='w-[27px] rounded-full object-contain h-[26px] p-[3px] bg-white'
+                            />
                           }
-                          <img src='/talents/liquipeida2.png' alt='' />
+                          {
+                            // <img src='/talents/liquipeida2.png' alt='' />
+                          }
                         </a>
                       )}
                     </div>
@@ -335,19 +351,28 @@ function Users({ user }) {
                     </svg>
                   </>
                 )}
-                <div className='w-full h-full flex flex-row-reverse absolute  top-[1px]'>
+                <div className='w-full h-full  flex flex-row-reverse absolute  top-[1px]'>
                   <img
                     src={singleUser.image}
                     alt=''
                     className='mr-[5px] mt-[6px]  h-[89.5%] object-cover rounded-r-[15px] md:rounded-r-[35px] small:w-[33.5%] md:w-[34.5%] md:rounded-br-[35px] '
                   />
 
-                  <div className='ml-1 mr-1 pl-3 rounded-l-[20px]  md:rounded-l-[30px] h-[89.5%]  mt-[5px] bg-[#F2F6FE]   xl:pt-3  w-full  mid:pt-2 mid:space-y-2  md:space-y-3 relative md:pr-2 iphone6:pt-2 iphone6:space-y-2 small:pt-2'>
-                    <h3
-                      className={` ${styles.montserrat} small:left-[40%] mid:left-[40%] rounded-b-md absolute text-[0.5rem]  md:text-sm font-bold inline-block px-2 bg-[#FAA361] top-0   `}
-                    >
-                      {singleUser.role}
-                    </h3>
+                  <div className='ml-1 mr-1 pl-3  rounded-l-[20px]  md:rounded-l-[30px] h-[89.5%]  mt-[5px] bg-[#F2F6FE]   xl:pt-6  w-full  mid:pt-2 mid:space-y-2  md:space-y-3 relative md:pr-2 iphone6:pt-2 iphone6:space-y-2 small:pt-2 '>
+                    {
+                      // <h3
+                      //   className={` ${styles.montserrat}   small:left-[35%] mid:left-[35%] rounded-b-md absolute text-[0.5rem]  md:text-sm font-bold inline-block px-2 bg-[#FAA361] top-0   `}
+                      // >
+                      //   {singleUser.role}
+                      // </h3>
+                    }
+                    <div className='text-center absolute w-[95%] -top-[2px] '>
+                      <h3
+                        className={` ${styles.montserrat} mx-auto  text-center rounded-b-md text-[0.5rem] relative -top-[7px]   md:text-sm font-bold inline-block px-2 bg-[#FAA361]  md:-top-[1px] `}
+                      >
+                        {singleUser.role}
+                      </h3>
+                    </div>
                     <h3
                       className={`${styles.montserrat} text-xs xl:text-lg font-bold`}
                     >
@@ -358,7 +383,7 @@ function Users({ user }) {
                       Tournaments:
                     </p>
                     {singleUser.tournaments?.includes(",") ? (
-                      <div className='flex flex-col mid:w-[90%]  md:flex-row w-full flex-wrap justify-between gap-2 md:gap-0 xl:text-center font-medium'>
+                      <div className='flex  flex-col mid:w-[100%]  md:flex-row w-full flex-wrap justify-between gap-2 md:gap-0 xl:text-center font-medium'>
                         <p className='small:text-[0.5rem] mid:text-[10px] md:text-sm   md:w-[46%] md:mt-[10px] lg:text-[12px] xl:text-sm'>
                           {" "}
                           {singleUser.tournaments.split(",")[0]}
@@ -394,13 +419,15 @@ function Users({ user }) {
                         <a href={singleUser.facebookLink}>
                           {" "}
                           {
-                            // <FontAwesomeIcon
-                            //   icon={faFacebook}
-                            //   className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                            //   // className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
-                            // />
+                            <FontAwesomeIcon
+                              icon={faFacebook}
+                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
+                              // className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
+                            />
                           }
-                          <img src='/talents/faecbook.png' alt='' />
+                          {
+                            // <img src='/talents/faecbook.png' alt='' />
+                          }
                         </a>
                       )}
 
@@ -408,55 +435,63 @@ function Users({ user }) {
                         <a href={singleUser.twitterLink}>
                           {" "}
                           {
-                            // <FontAwesomeIcon
-                            //   icon={faTwitter}
-                            //   className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                            //   // className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
-                            // />
+                            <FontAwesomeIcon
+                              icon={faTwitter}
+                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
+                              // className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
+                            />
                           }
-                          <img src='/talents/twitter.png' alt='' />
+                          {
+                            // <img src='/talents/twitter.png' alt='' />
+                          }
                         </a>
                       )}
                       {singleUser.instagramLink && (
                         <a href={singleUser.instagramLink}>
                           {" "}
                           {
-                            // <FontAwesomeIcon
-                            //   icon={faInstagram}
-                            //   className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                            //   // className='w-5 md:w-[1.69rem]  p-[0.3rem] bg-white rounded-full'
+                            <FontAwesomeIcon
+                              icon={faInstagram}
+                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
+                              // className='w-5 md:w-[1.69rem]  p-[0.3rem] bg-white rounded-full'
+                            />
+                          }
+                          {
+                            // <img
+                            //   src='/talents/instagaram.png'
+                            //   alt=''
+                            //   className=''
                             // />
                           }
-                          <img
-                            src='/talents/instagaram.png'
-                            alt=''
-                            className=''
-                          />
                         </a>
                       )}
                       {singleUser.twitchLink && (
                         <a href={singleUser.twitchLink}>
                           {
-                            // <FontAwesomeIcon
-                            //   icon={faTwitch}
-                            //   className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                            //   // className='w-5 md:w-7 object-contain p-[0.3rem] bg-white rounded-full'
-                            // />
+                            <FontAwesomeIcon
+                              icon={faTwitch}
+                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
+                              // className='w-5 md:w-7 object-contain p-[0.3rem] bg-white rounded-full'
+                            />
                           }
-                          <img src='/talents/twitch.png' alt='' />
+                          {
+                            // <img src='/talents/twitch.png' alt='' />
+                          }
                         </a>
                       )}
                       {singleUser.youtubeLink && (
                         <a href={singleUser.youtubeLink}>
                           {" "}
                           {
-                            // <FontAwesomeIcon
-                            //   icon={faYoutube}
-                            //   className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                            //   // className='w-5 md:w-7  p-[0.3rem]  bg-white rounded-full'
-                            // />
+                            <FontAwesomeIcon
+                              icon={faYoutube}
+                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
+                              // className='w-5 md:w-7  p-[0.3rem]  bg-white rounded-full'
+                            />
                           }
-                          <img src='/talents/youtube.png' alt='' />
+                          {
+                            // <img src='/talents/youtube.png' alt='' />
+                          }
                         </a>
                       )}
                       {singleUser.liquipediaLink && (
@@ -468,7 +503,11 @@ function Users({ user }) {
                             //   className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
                             // />
                           }
-                          <img src='/talents/liquipeida2.png' alt='' />
+                          <img
+                            src='/talents/liquipedia.png'
+                            alt=''
+                            className='w-[27px] rounded-full object-contain h-[26px] p-[3px] bg-white'
+                          />
                         </a>
                       )}
                     </div>
