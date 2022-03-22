@@ -171,20 +171,20 @@ function Users({ user }) {
                         className={` flex   mid:w-[90%] md:w-full flex-col md:flex-row w-full flex-wrap justify-between gap-2 md:gap-0 xl:text-center font-medium`}
                       >
                         <p
-                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-[12px]  md:text-sm md:w-[46%] md:mt-[10px] $`}
+                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-[12px]  md:text-sm md:w-[46%] md:mt-[10px] `}
                         >
                           {" "}
                           {singleUser.tournaments.split(",")[0]}
                         </p>
                         <div className='w-[1px] bg-[#97aabd] xl:mt-[10px] h-auto hidden md:inline-grid '></div>
                         <p
-                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-[12px] xl:text-sm md:text-sm md:w-[46%] md:mt-[10px] `}
+                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-[12px]  md:text-sm md:w-[46%] md:mt-[10px] `}
                         >
                           {" "}
                           {singleUser.tournaments.split(",")[1]}
                         </p>
                         <p
-                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-[12px] xl:text-sm md:text-sm md:w-[46%] md:mt-[10px] `}
+                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-[12px]  md:text-sm md:w-[46%] md:mt-[10px] `}
                         >
                           {" "}
                           {singleUser.tournaments.split(",")[2]}
@@ -192,7 +192,7 @@ function Users({ user }) {
                         <div className='hidden md:inline-grid w-[1px] bg-[#97aabd] xl:mt-[10px] h-auto'></div>
 
                         <p
-                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-[12px] xl:text-sm md:text-sm md:w-[46%] md:mt-[10px] `}
+                          className={`small:text-[0.5rem] mid:text-[10px] lg:text-[12px]  md:text-sm md:w-[46%] md:mt-[10px] `}
                         >
                           {" "}
                           {singleUser.tournaments.split(",")[3]}
@@ -384,22 +384,22 @@ function Users({ user }) {
                     </p>
                     {singleUser.tournaments?.includes(",") ? (
                       <div className='flex  flex-col mid:w-[100%]  md:flex-row w-full flex-wrap justify-between gap-2 md:gap-0 xl:text-center font-medium'>
-                        <p className='small:text-[0.5rem] mid:text-[10px] md:text-sm   md:w-[46%] md:mt-[10px] lg:text-[12px] xl:text-sm'>
+                        <p className='small:text-[0.5rem] mid:text-[10px] md:text-sm   md:w-[46%] md:mt-[10px] lg:text-[12px] '>
                           {" "}
                           {singleUser.tournaments.split(",")[0]}
                         </p>
                         <div className='w-[1px] bg-[#97aabd] xl:mt-[10px] h-auto hidden md:inline-grid '></div>
-                        <p className='small:text-[0.5rem] mid:text-[10px] md:text-sm  md:w-[46%] md:mt-[10px] lg:text-[12px] xl:text-sm'>
+                        <p className='small:text-[0.5rem] mid:text-[10px] md:text-sm  md:w-[46%] md:mt-[10px] lg:text-[12px] '>
                           {" "}
                           {singleUser.tournaments.split(",")[1]}
                         </p>
-                        <p className='small:text-[0.5rem] mid:text-[10px] md:text-sm  md:w-[46%] md:mt-[10px] lg:text-[12px] xl:text-sm'>
+                        <p className='small:text-[0.5rem] mid:text-[10px] md:text-sm  md:w-[46%] md:mt-[10px] lg:text-[12px] '>
                           {" "}
                           {singleUser.tournaments.split(",")[2]}
                         </p>
                         <div className='hidden md:inline-grid w-[1px] bg-[#97aabd] xl:mt-[10px] h-auto'></div>
 
-                        <p className='small:text-[0.5rem] mid:text-[10px] md:text-sm  md:w-[46%] md:mt-[10px] lg:text-[12px] xl:text-sm'>
+                        <p className='small:text-[0.5rem] mid:text-[10px] md:text-sm  md:w-[46%] md:mt-[10px] lg:text-[12px] '>
                           {" "}
                           {singleUser.tournaments.split(",")[3]}
                         </p>
