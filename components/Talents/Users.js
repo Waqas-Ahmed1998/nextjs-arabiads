@@ -143,7 +143,7 @@ function Users({ user }) {
                   <img
                     src={singleUser.image}
                     alt=''
-                    className='ml-[5px] mt-[5px] h-[90%] object-cover rounded-l-[15px] md:rounded-l-[35px] small:w-[33.5%] md:w-[34.5%] md:rounded-bl-[35px]'
+                    className='ml-[5px] mt-[5px] h-[90%] object-cover rounded-l-[15px] md:rounded-l-[29px] small:w-[33.5%] md:w-[34.5%] md:rounded-bl-[29px]'
                   />
                   <div className='ml-1 mr-1 pl-2  bg-[#F2F6FE] h-[90%]  mt-[5px]  xl:pt-6    mid:pt-2 mid:space-y-2 w-full  rounded-r-[20px] md:rounded-r-[30px] md:space-y-3 relative xl:px-2 iphone6:pt-2 iphone6:space-y-2 small:pt-3'>
                     {
@@ -331,7 +331,7 @@ function Users({ user }) {
                   <img
                     src={singleUser.image}
                     alt=''
-                    className='mr-[5px] mt-[5px]  h-[90%] object-cover rounded-r-[15px] md:rounded-r-[35px] small:w-[33.5%] md:w-[34.5%] md:rounded-br-[35px] '
+                    className='mr-[5px] mt-[5px]  h-[90%] object-cover rounded-r-[15px] md:rounded-r-[29px] small:w-[33.5%] md:w-[34.5%] md:rounded-br-[29px] '
                   />
 
                   <div className='ml-1 mr-1 pl-3  rounded-l-[20px]  md:rounded-l-[30px] h-[90%]  mt-[5px] bg-[#F2F6FE]   xl:pt-6  w-full  mid:pt-2 mid:space-y-2  md:space-y-3 relative md:pr-2 iphone6:pt-2 iphone6:space-y-2 small:pt-2 '>
@@ -391,22 +391,23 @@ function Users({ user }) {
                     )}
 
                     <div className=' hidden relative md:top-2 lg:-top-0  md:flex items-center justify-center space-x-3'>
-                      <a href={singleUser.facebookLink}>
-                        {" "}
-                        {
-                          // <FontAwesomeIcon
-                          //   icon={faFacebook}
-                          //   className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                          //   // className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
-                          // />
-                        }
-                        <img
-                          src='/talents/fac.svg'
-                          alt=''
-                          className='w-[42px] h-[42px]  '
-                        />
-                      </a>
-
+                      {singleUser.twitterLink && (
+                        <a href={singleUser.facebookLink}>
+                          {" "}
+                          {
+                            // <FontAwesomeIcon
+                            //   icon={faFacebook}
+                            //   className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
+                            //   // className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
+                            // />
+                          }
+                          <img
+                            src='/talents/fac.svg'
+                            alt=''
+                            className='w-[42px] h-[42px]  '
+                          />
+                        </a>
+                      )}
                       {singleUser.twitterLink && (
                         <a href={singleUser.twitterLink}>
                           <img
