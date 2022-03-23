@@ -253,16 +253,18 @@ function InfluencersForm() {
                 }
                 required
               ></input>
-              <label>Followers:</label>
-              <input
-                className='p-4  focus:outline-none shadow-sm shadow-slate-800 rounded-md'
-                type='text'
-                name='facebook Link'
-                value={formData.followers}
-                onChange={(e) =>
-                  setFormData({ ...formData, followers: e.target.value })
-                }
-              ></input>
+              {
+                // <label>Followers:</label>
+                // <input
+                //   className='p-4  focus:outline-none shadow-sm shadow-slate-800 rounded-md'
+                //   type='text'
+                //   name='facebook Link'
+                //   value={formData.followers}
+                //   onChange={(e) =>
+                //     setFormData({ ...formData, followers: e.target.value })
+                //   }
+                // ></input>
+              }
               <label>Facebook Link:</label>
               <input
                 className='p-4  focus:outline-none shadow-sm shadow-slate-800 rounded-md'

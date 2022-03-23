@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+
 import Card1 from "../components/Home/Card1";
 import Card2 from "../components/Home/Card2";
 import Card3 from "../components/Home/Card3";
@@ -8,20 +8,10 @@ import Card5 from "../components/Home/Card5";
 import NumbersSpeak from "../components/standard/NumbersSpeak";
 import Plateforms from "../components/standard/Plateforms";
 import Campaign from "../components/standard/Campaign";
-import styles from "../styles/Home.module.css";
+
 import { motion } from "framer-motion";
-import { useEffect } from "react";
-// import { collection, onSnapshot, getDocs } from 'firebase/firestore';
-// import { db } from '../firebase';
-// import { useSetRecoilState } from 'recoil';
-// import { adminUsers } from '../recoil/adminUsers';
-// import { useEffect } from 'react';
 
 export default function Home() {
-  // useEffect(() => {
-  //   effect;
-  //   return () => {};
-  // }, []);
   return (
     <div className='overflow-hidden xl:overflow-visible'>
       <Head>
@@ -36,34 +26,27 @@ export default function Home() {
           className='h-[130rem] w-[100vw] '
         />
       </div>
-      {
-        // <div
-        //   className={` hidden absolute  -left-[0%] w-[2650px] h-[200vh]  ${styles.serviceMid} bg-no-repeat   xl:inline-grid `}
-        // ></div>
-      }
 
-      <div className=' flex justify-center xl:h-screen 2xl:h-[93vh] md:max-w-[95rem] lg:md:max-w-[1440px] mx-auto '>
+      <div className=' flex justify-center xl:h-screen 2xl:h-[93vh] 4xl:h-[75vh] md:max-w-[95rem] 3xl:h-[85vh]  lg:md:max-w-[1440px] mx-auto '>
         <Card1 />
       </div>
-      <div className='flex justify-center   xl:mt-20 2xl:mt-0 xl:h-screen  2xl:h-[93vh]  xl:max-w-[95rem] mx-auto relative'>
+      <div className='flex justify-center   xl:mt-20 2xl:mt-0 xl:h-screen 4xl:h-[75vh]  2xl:h-[93vh] 3xl:h-[85vh]   xl:max-w-[95rem] mx-auto relative'>
         <Card2 />
       </div>
-      <div className='mt-0   xl:mt-20 2xl:mt-0 flex justify-center xl:h-[80vh] 2xl:h-[75vh]  lg:max-w-[95rem] mx-auto relative'>
+      <div className='mt-0   xl:mt-20 2xl:mt-0 flex justify-center xl:h-[80vh] 2xl:h-[75vh]  3xl:h-[65vh]  4xl:h-[60vh]  lg:max-w-[95rem] mx-auto relative'>
         <Card3 />
       </div>
-      <div className=' mt-10 xl:mt-20 2xl:mt-0 grid grid-cols-1 md:max-w-[95rem] mx-auto relative'>
+      <div className=' mt-10 xl:mt-20 2xl:mt-0  grid grid-cols-1 md:max-w-[95rem] mx-auto relative'>
         <Card4 />
         <div className=' xl:-right-[3%] 2xl:-right-[5%] hidden xl:inline-grid absolute top-0 [z-index:-1]'>
           <motion.img
             animate={{
               scale: [0.7, 1.2],
               opacity: [0, 0.8, 0],
-              // rotate: [0, 0, 270, 270, 0],
             }}
             transition={{ duration: 10, repeat: Infinity }}
             src='/standardimages/pulseblue.png'
             alt=''
-            // className='  animate-animate-pulse  '
           />
         </div>
       </div>
