@@ -110,8 +110,9 @@ function Users({ user }) {
                   //   quality={100}
                   // />
                 }
+                {}
                 <img
-                  src='/talents/card.png'
+                  src='/talents/card2.svg'
                   alt=''
                   className='w-full height-[50%]'
                 />
@@ -208,95 +209,70 @@ function Users({ user }) {
                       </div>
                     )}
 
-                    <div className=' hidden relative top-2  md:flex items-center justify-center space-x-5  md:top-2 lg:-top-0 xl:top-2'>
+                    <div className=' hidden relative top-2  md:flex items-center justify-center space-x-3  md:top-2 lg:-top-0 xl:top-2'>
                       {singleUser.facebookLink && (
                         <a href={singleUser.facebookLink}>
                           {" "}
                           {
-                            <FontAwesomeIcon
-                              icon={faFacebook}
-                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                              // className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
-                            />
+                            // <FontAwesomeIcon
+                            //   icon={faFacebook}
+                            //   className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
+                            //   // className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
+                            // />
                           }
+                          <img
+                            src='/talents/fac.svg'
+                            alt=''
+                            className='w-[42px] h-[42px]  '
+                          />
                         </a>
                       )}
 
                       {singleUser.twitterLink && (
                         <a href={singleUser.twitterLink}>
-                          {" "}
-                          {
-                            <FontAwesomeIcon
-                              icon={faTwitter}
-                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                              // className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
-                            />
-                          }
+                          <img
+                            src='/talents/twit.svg  '
+                            alt=''
+                            className='w-[42px] h-[42px] '
+                          />
                         </a>
                       )}
                       {singleUser.instagramLink && (
                         <a href={singleUser.instagramLink}>
                           {" "}
-                          {
-                            <FontAwesomeIcon
-                              icon={faInstagram}
-                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                              // className='w-5 md:w-[1.69rem]  p-[0.3rem] bg-white rounded-full'
-                            />
-                          }
-                          {
-                            // <img
-                            //   src='/talents/instagaram.png'
-                            //   alt=''
-                            //   className=''
-                            // />
-                          }
+                          <img
+                            src='/talents/insta.svg'
+                            alt=''
+                            className='w-[42px] h-[42px] '
+                          />
                         </a>
                       )}
                       {singleUser.twitchLink && (
                         <a href={singleUser.twitchLink}>
-                          {
-                            <FontAwesomeIcon
-                              icon={faTwitch}
-                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                              // className='w-5 md:w-7 object-contain p-[0.3rem] bg-white rounded-full'
-                            />
-                          }
-                          {
-                            // <img src='/talents/twitch.png' alt='' />
-                          }
+                          <img
+                            src='/talents/twi.svg'
+                            alt=''
+                            className='w-[42px] h-[42px]'
+                          />
                         </a>
                       )}
                       {singleUser.youtubeLink && (
                         <a href={singleUser.youtubeLink}>
                           {" "}
-                          {
-                            <FontAwesomeIcon
-                              icon={faYoutube}
-                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                              // className='w-5 md:w-7  p-[0.3rem]  bg-white rounded-full'
-                            />
-                          }
-                          {
-                            // <img src='/talents/youtube.png' alt='' />
-                          }
+                          <img
+                            src='/talents/you.svg'
+                            alt=''
+                            className='w-[42px] h-[42px] '
+                          />
                         </a>
                       )}
                       {singleUser.liquipediaLink && (
-                        <a
-                          href={singleUser.liquipediaLink}
-                          className=' flex rounded-full '
-                        >
-                          {
-                            <img
-                              src='/talents/liquipedia.png'
-                              alt=''
-                              className='w-[27px] rounded-full object-contain h-[26px] p-[3px] bg-white'
-                            />
-                          }
-                          {
-                            // <img src='/talents/liquipeida2.png' alt='' />
-                          }
+                        <a href={singleUser.liquipediaLink} className=' '>
+                          <img
+                            src='/talents/liq.svg'
+                            alt=''
+                            className='w-[42px] h-[42px]'
+                          />
                         </a>
                       )}
                     </div>
@@ -327,7 +303,7 @@ function Users({ user }) {
                   // />
                 }
                 <img
-                  src='/talents/card.png'
+                  src='/talents/card2.svg'
                   alt=''
                   className='w-full height-[50%]'
                 />
@@ -355,10 +331,10 @@ function Users({ user }) {
                   <img
                     src={singleUser.image}
                     alt=''
-                    className='mr-[5px] mt-[6px]  h-[89.5%] object-cover rounded-r-[15px] md:rounded-r-[35px] small:w-[33.5%] md:w-[34.5%] md:rounded-br-[35px] '
+                    className='mr-[5px] mt-[5px]  h-[90%] object-cover rounded-r-[15px] md:rounded-r-[35px] small:w-[33.5%] md:w-[34.5%] md:rounded-br-[35px] '
                   />
 
-                  <div className='ml-1 mr-1 pl-3  rounded-l-[20px]  md:rounded-l-[30px] h-[89.5%]  mt-[5px] bg-[#F2F6FE]   xl:pt-6  w-full  mid:pt-2 mid:space-y-2  md:space-y-3 relative md:pr-2 iphone6:pt-2 iphone6:space-y-2 small:pt-2 '>
+                  <div className='ml-1 mr-1 pl-3  rounded-l-[20px]  md:rounded-l-[30px] h-[90%]  mt-[5px] bg-[#F2F6FE]   xl:pt-6  w-full  mid:pt-2 mid:space-y-2  md:space-y-3 relative md:pr-2 iphone6:pt-2 iphone6:space-y-2 small:pt-2 '>
                     {
                       // <h3
                       //   className={` ${styles.montserrat}   small:left-[35%] mid:left-[35%] rounded-b-md absolute text-[0.5rem]  md:text-sm font-bold inline-block px-2 bg-[#FAA361] top-0   `}
@@ -414,99 +390,67 @@ function Users({ user }) {
                       </div>
                     )}
 
-                    <div className=' hidden relative md:top-2 lg:-top-0  md:flex items-center justify-center space-x-5'>
-                      {singleUser.facebookLink && (
-                        <a href={singleUser.facebookLink}>
-                          {" "}
-                          {
-                            <FontAwesomeIcon
-                              icon={faFacebook}
-                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                              // className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
-                            />
-                          }
-                          {
-                            // <img src='/talents/faecbook.png' alt='' />
-                          }
-                        </a>
-                      )}
+                    <div className=' hidden relative md:top-2 lg:-top-0  md:flex items-center justify-center space-x-3'>
+                      <a href={singleUser.facebookLink}>
+                        {" "}
+                        {
+                          // <FontAwesomeIcon
+                          //   icon={faFacebook}
+                          //   className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
+                          //   // className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
+                          // />
+                        }
+                        <img
+                          src='/talents/fac.svg'
+                          alt=''
+                          className='w-[42px] h-[42px]  '
+                        />
+                      </a>
 
                       {singleUser.twitterLink && (
                         <a href={singleUser.twitterLink}>
-                          {" "}
-                          {
-                            <FontAwesomeIcon
-                              icon={faTwitter}
-                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                              // className='w-5 md:w-7 p-[0.3rem] bg-white rounded-full'
-                            />
-                          }
-                          {
-                            // <img src='/talents/twitter.png' alt='' />
-                          }
+                          <img
+                            src='/talents/twit.svg  '
+                            alt=''
+                            className='w-[42px] h-[42px] '
+                          />
                         </a>
                       )}
                       {singleUser.instagramLink && (
                         <a href={singleUser.instagramLink}>
                           {" "}
-                          {
-                            <FontAwesomeIcon
-                              icon={faInstagram}
-                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                              // className='w-5 md:w-[1.69rem]  p-[0.3rem] bg-white rounded-full'
-                            />
-                          }
-                          {
-                            // <img
-                            //   src='/talents/instagaram.png'
-                            //   alt=''
-                            //   className=''
-                            // />
-                          }
+                          <img
+                            src='/talents/insta.svg'
+                            alt=''
+                            className='w-[42px] h-[42px] '
+                          />
                         </a>
                       )}
                       {singleUser.twitchLink && (
                         <a href={singleUser.twitchLink}>
-                          {
-                            <FontAwesomeIcon
-                              icon={faTwitch}
-                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                              // className='w-5 md:w-7 object-contain p-[0.3rem] bg-white rounded-full'
-                            />
-                          }
-                          {
-                            // <img src='/talents/twitch.png' alt='' />
-                          }
+                          <img
+                            src='/talents/twi.svg'
+                            alt=''
+                            className='w-[42px] h-[42px]'
+                          />
                         </a>
                       )}
                       {singleUser.youtubeLink && (
                         <a href={singleUser.youtubeLink}>
                           {" "}
-                          {
-                            <FontAwesomeIcon
-                              icon={faYoutube}
-                              className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                              // className='w-5 md:w-7  p-[0.3rem]  bg-white rounded-full'
-                            />
-                          }
-                          {
-                            // <img src='/talents/youtube.png' alt='' />
-                          }
+                          <img
+                            src='/talents/you.svg'
+                            alt=''
+                            className='w-[42px] h-[42px] '
+                          />
                         </a>
                       )}
                       {singleUser.liquipediaLink && (
-                        <a href={singleUser.liquipediaLink} className=' flex  '>
-                          {
-                            // <img
-                            //   src='/talents/liquipedia.png'
-                            //   alt=''
-                            //   className='  w-4 h-4 p-[1px] md:w-7 md:h-[1.7rem]  object-contain   md:p-[0.3rem] bg-white rounded-[30px] '
-                            // />
-                          }
+                        <a href={singleUser.liquipediaLink} className=' '>
                           <img
-                            src='/talents/liquipedia.png'
+                            src='/talents/liq.svg'
                             alt=''
-                            className='w-[27px] rounded-full object-contain h-[26px] p-[3px] bg-white'
+                            className='w-[42px] h-[42px]'
                           />
                         </a>
                       )}

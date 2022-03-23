@@ -9,7 +9,7 @@ function Ecard() {
         // <div className=' hidden bg-no-repeat   xl:inline-grid absolute services-top w-full   '></div>
       }
 
-      <div className='relative  w-[97%] mx-auto '>
+      <div className='relative  w-[97%] mx-auto mt-10 xl:mt-16'>
         <div className='hidden xl:inline-grid absolute [z-index:1] -top-10 left-0'>
           <img
             className=' animate-spin-slow '
