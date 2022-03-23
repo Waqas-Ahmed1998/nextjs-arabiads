@@ -23,21 +23,12 @@ function Acard1() {
         </p>
       </div>
       <div className='flex-1'>
-        {
-          // <img
-          //   src='https://influencers.ar-ad.com/wp-content/uploads/2021/08/dubai-agency-image.png'
-          //   alt=''
-          //   className=''
-          // />
-        }
-
         <Image
           src='/about/about1.png'
           alt=''
           title=''
           width='600'
           height='600'
-          // layout='responsive'
           priority
           objectFit='contain'
           quality={100}

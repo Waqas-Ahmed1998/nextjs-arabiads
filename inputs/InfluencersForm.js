@@ -9,11 +9,104 @@ import { useRouter } from "next/router";
 import { useRecoilValue } from "recoil";
 import { adminUsers } from "../recoil/adminUsers";
 import { loggedInUser } from "../recoil/loggedInUser";
+import { async } from "@firebase/util";
 
 function InfluencersForm() {
   const router = useRouter();
   const admins = useRecoilValue(adminUsers);
   const logged = useRecoilValue(loggedInUser);
+
+  // *****************totel followers sum logic
+
+  const formater = new Intl.NumberFormat("en", {
+    style: "decimal",
+    useGrouping: true,
+    maximumFractionDigits: 1,
+    notation: "compact",
+  });
+  const calculateFollowers = async (
+    tiktok,
+    facebook,
+    youtube,
+    youtubeSecond,
+    twitter,
+    instagram
+  ) => {
+    let tiktokFollowers = tiktok && tiktok.toUpperCase();
+    let facebookFollowers = facebook && facebook.toUpperCase();
+    let youtubeFollowers = youtube && youtube.toUpperCase();
+    let youtubeSecondFollowers = youtubeSecond && youtubeSecond.toUpperCase();
+    let twitterFollowers = twitter && twitter.toUpperCase();
+    let instagramFollowers = instagram && instagram.toUpperCase();
+
+    console.log(tiktokFollowers, facebookFollowers);
+    if (tiktok && tiktokFollowers.includes("K")) {
+      tiktokFollowers = tiktokFollowers.replace("K", "");
+
+      tiktokFollowers = Number(tiktokFollowers) * Math.pow(10, 3);
+    } else if (tiktok && tiktokFollowers.includes("M")) {
+      tiktokFollowers = tiktokFollowers.replace("M", "");
+      tiktokFollowers = Number(tiktokFollowers) * Math.pow(10, 6);
+    } else {
+    }
+    //******* */ facebook
+    if (facebook && facebookFollowers.includes("K")) {
+      facebookFollowers =
+        Number(facebookFollowers.replace("K", "")) * Math.pow(10, 3);
+    } else if (facebook && facebookFollowers.includes("M")) {
+      facebookFollowers =
+        Number(facebookFollowers.replace("M", "")) * Math.pow(10, 6);
+    } else {
+    }
+    // **********Youtube
+    if (youtube && youtubeFollowers.includes("K")) {
+      youtubeFollowers =
+        Number(youtubeFollowers.replace("K", "")) * Math.pow(10, 3);
+    } else if (youtube && youtubeFollowers.includes("M")) {
+      youtubeFollowers =
+        Number(youtubeFollowers.replace("M", "")) * Math.pow(10, 6);
+    } else {
+    }
+    // **********Youtube second
+    if (youtubeSecond && youtubeSecondFollowers.includes("K")) {
+      youtubeSecondFollowers =
+        Number(youtubeSecondFollowers.replace("K", "")) * Math.pow(10, 3);
+    } else if (youtubeSecond && youtubeSecondFollowers.includes("M")) {
+      youtubeSecondFollowers =
+        Number(youtubeSecondFollowers.replace("M", "")) * Math.pow(10, 6);
+    } else {
+    }
+    // ****************twitter
+    if (twitter && twitterFollowers.includes("K")) {
+      twitterFollowers =
+        Number(twitterFollowers.replace("K", "")) * Math.pow(10, 3);
+    } else if (twitter && twitterFollowers.includes("M")) {
+      twitterFollowers =
+        Number(twitterFollowers.replace("M", "")) * Math.pow(10, 6);
+    } else {
+    }
+    // ***********instagram
+    if (instagram && instagramFollowers.includes("K")) {
+      instagramFollowers =
+        Number(instagramFollowers.replace("K", "")) * Math.pow(10, 3);
+    } else if (instagram && instagramFollowers.includes("M")) {
+      instagramFollowers =
+        Number(instagramFollowers.replace("M", "")) * Math.pow(10, 6);
+    } else {
+    }
+    let totelFollowers =
+      Number(tiktokFollowers) +
+      Number(facebookFollowers) +
+      Number(youtubeFollowers) +
+      Number(youtubeSecondFollowers) +
+      Number(instagramFollowers) +
+      Number(twitterFollowers);
+
+    totelFollowers = Math.round(totelFollowers);
+    console.log("totel follwers round", totelFollowers);
+
+    return formater.format(totelFollowers);
+  };
   // ***********   Hooks     ****
 
   const [progress, setProgress] = useState(0);
@@ -48,6 +141,17 @@ function InfluencersForm() {
       alert("Please fill the required fields");
       return;
     }
+
+    // calculation for totel followers
+
+    let totelFollowers = await calculateFollowers(
+      formData.tiktok && formData.tiktok,
+      formData.facebook && formData.facebook,
+      formData.youtube && formData.youtube,
+      formData.youtubeSecond && formData.youtubeSecond,
+      formData.twitter && formData.twitter,
+      formData.instagram && formData.instagram
+    );
 
     const storageRef = ref(
       storage,
@@ -94,7 +198,7 @@ function InfluencersForm() {
               image: url,
               facebook: formData.facebook,
               instagram: formData.instagram,
-              followers: formData.followers,
+              followers: totelFollowers,
               twitter: formData.twitter,
               tiktok: formData.tiktok,
               tiktokLink: formData.tiktokLink,
@@ -111,6 +215,7 @@ function InfluencersForm() {
           .then(() => {
             alert("data uploaded successfuly");
             setProgress(0);
+            totelFollowers = "";
             router.push("/influencers");
           })
           .catch((err) => console.log(err));
