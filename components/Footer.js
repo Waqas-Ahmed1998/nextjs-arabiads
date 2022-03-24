@@ -66,7 +66,7 @@ function Footer() {
             <p className='font-bold text-sm md:text-lg text-white mb-10'>
               Useful links
             </p>
-            <div className='flex justify-center lg:flex  gap-10'>
+            <div className='flex justify-center xl:justify-start lg:flex  gap-10'>
               <div className='flex flex-col text-white space-y-5 '>
                 <Link href='/' className='hover:text-orange-400 '>
                   Home
