@@ -68,37 +68,53 @@ function Footer() {
             </p>
             <div className='flex justify-center xl:justify-start lg:flex  gap-10'>
               <div className='flex flex-col text-white space-y-5 '>
-                <Link href='/' className='hover:text-orange-400 '>
-                  Home
+                <Link href='/'>
+                  <a className='hover:text-orange-400 ' href=''>
+                    Home
+                  </a>
                 </Link>
                 <Link
                   className='hover:text-orange-400 '
                   href='/influencer-services'
                 >
-                  influencer services
+                  <a className='hover:text-orange-400 ' href=''>
+                    Influencer services
+                  </a>
                 </Link>
                 <Link className='hover:text-orange-400 ' href='/influencers'>
-                  influencers
+                  <a className='hover:text-orange-400 ' href=''>
+                    Influencers
+                  </a>
                 </Link>
                 <Link className='hover:text-orange-400 ' href='/case-study'>
-                  Case study
+                  <a className='hover:text-orange-400 ' href=''>
+                    Case study
+                  </a>
                 </Link>
               </div>
               <div className='flex flex-col text-white space-y-5'>
                 <Link href='/services' className='hover:text-orange-400 '>
-                  Services
+                  <a className='hover:text-orange-400 ' href=''>
+                    Services
+                  </a>
                 </Link>
                 <Link
                   className='hover:text-orange-400 '
                   href='/esports-services'
                 >
-                  Esports Services
+                  <a className='hover:text-orange-400 ' href=''>
+                    Esports Services
+                  </a>
                 </Link>
                 <Link className='hover:text-orange-400 ' href='/talents'>
-                  Our Comentators
+                  <a className='hover:text-orange-400 ' href=''>
+                    Our Comentators
+                  </a>
                 </Link>
                 <Link className='hover:text-orange-400 ' href='/about'>
-                  About Us
+                  <a className='hover:text-orange-400 ' href=''>
+                    About Us
+                  </a>
                 </Link>
               </div>
             </div>
