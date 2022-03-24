@@ -108,7 +108,7 @@ function Profile({ user }) {
                 href={user.instagramLink}
               >
                 <FontAwesomeIcon
-                  className='w-4 h-5 mx-auto inline-block'
+                  className='w-4 h-4 mx-auto inline-block'
                   icon={faInstagram}
                   size={"lg"}
                 />
@@ -125,7 +125,7 @@ function Profile({ user }) {
                 href={user.youtubeLink}
               >
                 <FontAwesomeIcon
-                  className='w-4  mx-auto inline-block h-5'
+                  className='w-4  mx-auto inline-block h-4'
                   icon={faYoutube}
                   size={"lg"}
                 />
@@ -143,7 +143,7 @@ function Profile({ user }) {
                 href={user.youtubeLink2}
               >
                 <FontAwesomeIcon
-                  className='w-4 h-5 mx-auto inline-block'
+                  className='w-4 h-4 mx-auto inline-block'
                   icon={faYoutube}
                   size={"lg"}
                 />
@@ -170,7 +170,7 @@ function Profile({ user }) {
                 <img
                   src='influencers/face.svg'
                   alt=''
-                  className='w-4 h-5 mx-auto '
+                  className='w-4 h-4 mx-auto '
                 />
               </a>
               <span className='block pt-1 text-[0.7rem] text-center'>
@@ -185,7 +185,7 @@ function Profile({ user }) {
                 href={user.tiktokLink}
               >
                 <FontAwesomeIcon
-                  className='w-4 h-[1.1rem] mx-auto inline-block'
+                  className='w-4 h-4 mx-auto inline-block'
                   icon={faTiktok}
                   size={"lg"}
                 />
