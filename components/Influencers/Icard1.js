@@ -2,15 +2,17 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import styles from "../../styles/Home.module.css";
-import NumbersSpeak from "../standard/NumbersSpeak";
-import Plateforms from "../standard/Plateforms";
-import Campaign2 from "../standard/Campaign2";
 
 function Icard1() {
   return (
     <>
-      <div className='hidden   relative top-5 xl:inline-grid  w-[95%] h-[35rem]'>
+      <div
+        id='trigger'
+        className='hidden   relative top-5 xl:inline-grid  w-[95%] h-[35rem]'
+      >
         <Image
+          data-aos='zoom-in-up'
+          data-aos-anchor='#trigger'
           src='/home/card5.png'
           alt=''
           title=''
@@ -22,6 +24,8 @@ function Icard1() {
       </div>
       <div className='hidden xl:inline-grid absolute  [z-index:-1]  -top-10 -left-20'>
         <img
+          data-aos='zoom-in'
+          data-aos-anchor='#trigger'
           className=' animate-spin-slow '
           src='/spinners/bluespinner.png'
           alt=''
@@ -30,11 +34,17 @@ function Icard1() {
       <div className=' h-[80%]  xl:absolute flex top-[10%]  justify-center  xl:w-full '>
         <div className='xl:w-[100%] xl:ml-3 flex flex-col-reverse xl:flex-row space-y-5 items-center text-center xl:text-left '>
           <div className=' flex-1 xl:py-5 xl:px-5 '>
-            <h2 className=' heading-primary xl:text-white xl:text-[28px] mb-5 font-bold'>
+            <h2
+              data-aos='zoom-out-right'
+              data-aos-anchor='#trigger'
+              className=' heading-primary xl:text-white xl:text-[28px] mb-5 font-bold'
+            >
               Esports Talents{" "}
               <span className='text-black'>and Advertising Services</span>
             </h2>
             <p
+              data-aos='zoom-out-right'
+              data-aos-anchor='#trigger'
               className={`${styles.popins} xl:text-white text-sm xl:text-[18px] xl:leading-[29px] mb-16`}
             >
               Arabia E-Advertising began its career as one of the first talent
@@ -46,13 +56,20 @@ function Icard1() {
               need representation as a talent.
             </p>
             <Link href='/esports-services'>
-              <button className=' text-white text-base  md:inline-grid bg-[linear-gradient(#3786ed,#1eb5e4)]  md:py-4  md:px-6 px-4 py-2 font-semibold  xl:w-60  rounded-full md:text-[20px]'>
+              <button
+                data-aos='zoom-in-right'
+                data-aos-anchor='#trigger'
+                className=' text-white text-base  md:inline-grid bg-[linear-gradient(#3786ed,#1eb5e4)]  md:py-4  md:px-6 px-4 py-2 font-semibold  xl:w-60  rounded-full md:text-[20px]'
+              >
                 LEARN MORE
               </button>
             </Link>
           </div>
           <div className='flex-1  px-10 '>
             <Image
+              data-aos='zoom-in-left'
+              data-aos-anchor='#trigger'
+              data-aos-delay='300'
               src='/home/card5person.png'
               alt=''
               title=''
