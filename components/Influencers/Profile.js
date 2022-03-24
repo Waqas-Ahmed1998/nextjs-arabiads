@@ -91,7 +91,7 @@ function Profile({ user }) {
                 href={user.twitterLink}
               >
                 <FontAwesomeIcon
-                  className='w-4 h-5 mx-auto block'
+                  className='w-4 h-4 mx-auto block'
                   icon={faTwitter}
                   size={"lg"}
                 />
