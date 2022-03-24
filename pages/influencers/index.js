@@ -59,7 +59,13 @@ function Influencers() {
           />
         </div>
       }
-
+      <div className='right-0 hidden xl:inline-grid absolute  top-[62%] [z-index:-1]'>
+        <img
+          src='/standardimages/card5line.png'
+          alt=''
+          className='scale[1.2] w-[100vw] object-cover'
+        />
+      </div>
       <div className='max-w-screen-xl mx-auto  '>
         <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 '>
           {users.length >= 0 &&
@@ -106,12 +112,14 @@ function Influencers() {
             // className='  animate-animate-pulse  '
           />
         </div>
-        <div className='relative card-width mt-20 xl:my-[8rem] '>
-          <img
-            src='/standardimages/card5line.png'
-            alt=''
-            className='hidden xl:inline-grid top-[35%] absolute scale-[1.7] bg-cover '
-          />
+        <div className='card-width mt-20 xl:my-[8rem] '>
+          {
+            // <img
+            //   src='/standardimages/card5line.png'
+            //   alt=''
+            //   className='hidden absolute w-[100vw] scale-[1.7] 4xl:scale-[2.4] xl:inline-grid top-[35%]  bg-cover '
+            // />
+          }
 
           <Icard1 />
         </div>
