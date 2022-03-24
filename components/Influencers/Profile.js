@@ -8,7 +8,7 @@ import {
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 import { deleteDoc, doc } from "firebase/firestore";
-
+import styles from "../../styles/Home.module.css";
 import { useRecoilValue } from "recoil";
 import { loggedInUser } from "../../recoil/loggedInUser";
 import { adminUsers } from "../../recoil/adminUsers";
@@ -81,34 +81,49 @@ function Profile({ user }) {
         )}
       </div>
       <div className=' h-[15%] md:h-[20%] rounded-b-[36px] bg-white flex items-center space-x-5 '>
-        <div className='flex w-full  justify-around items-baseline px-4'>
+        <div
+          className={` ${styles.popins} flex w-full  justify-around items-baseline px-4`}
+        >
           {user.twitter && (
             <div className=' '>
-              <a className='flex' href={user.twitterLink}>
+              <a
+                className='flex bg-[#e4ebef] w-[30px] h-[30px] rounded-full items-center '
+                href={user.twitterLink}
+              >
                 <FontAwesomeIcon
-                  className='w-4 h-5 mx-auto inline-block'
+                  className='w-4 h-5 mx-auto block'
                   icon={faTwitter}
                   size={"lg"}
                 />
               </a>
-              <span className='block pt-2 text-[0.7rem]'>{user.twitter}</span>
+              <span className='block pt-1 text-[0.7rem] text-center'>
+                {user.twitter}
+              </span>
             </div>
           )}
           {user.instagram && (
             <div className='items-center justify-center '>
-              <a className='flex' href={user.instagramLink}>
+              <a
+                className='flex bg-[#e4ebef] w-[30px] h-[30px] rounded-full items-center '
+                href={user.instagramLink}
+              >
                 <FontAwesomeIcon
                   className='w-4 h-5 mx-auto inline-block'
                   icon={faInstagram}
                   size={"lg"}
                 />
               </a>
-              <span className='block pt-2 text-[0.7rem]'>{user.instagram}</span>
+              <span className='block pt-1 text-[0.7rem] text-center'>
+                {user.instagram}
+              </span>
             </div>
           )}
           {user.youtube && (
             <div className=' items-center justify-center '>
-              <a className=' flex' href={user.youtubeLink}>
+              <a
+                className='flex bg-[#e4ebef] w-[30px] h-[30px] rounded-full items-center '
+                href={user.youtubeLink}
+              >
                 <FontAwesomeIcon
                   className='w-4  mx-auto inline-block h-5'
                   icon={faYoutube}
@@ -116,14 +131,17 @@ function Profile({ user }) {
                 />
               </a>
 
-              <span className='block pt-2 text-[0.7rem] text-center'>
+              <span className='block pt-1 text-[0.7rem] text-center'>
                 {user.youtube}
               </span>
             </div>
           )}
           {user.youtubeSecond && (
             <div className=' '>
-              <a className='flex' href={user.youtubeLink2}>
+              <a
+                className='flex bg-[#e4ebef] w-[30px] h-[30px] rounded-full items-center '
+                href={user.youtubeLink2}
+              >
                 <FontAwesomeIcon
                   className='w-4 h-5 mx-auto inline-block'
                   icon={faYoutube}
@@ -131,33 +149,50 @@ function Profile({ user }) {
                 />
               </a>
 
-              <span className='block pt-2 text-[0.7rem] text-center'>
+              <span className='block pt-1 text-[0.7rem] text-center'>
                 {user.youtubeSecond}
               </span>
             </div>
           )}
           {user.facebook && (
             <div className=''>
-              <a className='flex' href={user.facebookLink}>
-                <FontAwesomeIcon
-                  className='w-4 h-5 mx-auto inline-block'
-                  icon={faFacebook}
-                  size={"lg"}
+              <a
+                className='flex bg-[#e4ebef] w-[30px] h-[30px] rounded-full items-center '
+                href={user.facebookLink}
+              >
+                {
+                  // <FontAwesomeIcon
+                  //   className='w-4 h-5 mx-auto inline-block'
+                  //   icon={faFacebook}
+                  //   size={"lg"}
+                  // />
+                }
+                <img
+                  src='influencers/face.svg'
+                  alt=''
+                  className='w-4 h-5 mx-auto '
                 />
               </a>
-              <span className='block pt-2 text-[0.7rem]'>{user.facebook}</span>
+              <span className='block pt-1 text-[0.7rem] text-center'>
+                {user.facebook}
+              </span>
             </div>
           )}
           {user.tiktok && (
             <div className=' '>
-              <a className=' flex ' href={user.tiktokLink}>
+              <a
+                className='flex bg-[#e4ebef] w-[30px] h-[30px] rounded-full items-center '
+                href={user.tiktokLink}
+              >
                 <FontAwesomeIcon
                   className='w-4 h-[1.1rem] mx-auto inline-block'
                   icon={faTiktok}
                   size={"lg"}
                 />
               </a>
-              <span className='block pt-2 text-[0.7rem]'>{user.tiktok}</span>
+              <span className='block pt-1 text-[0.7rem] text-center'>
+                {user.tiktok}
+              </span>
             </div>
           )}
         </div>
