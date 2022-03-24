@@ -10,7 +10,6 @@ import Plateforms from "../components/standard/Plateforms";
 import Campaign from "../components/standard/Campaign";
 
 import { motion } from "framer-motion";
-import Scard2 from "../components/Services/Scard2";
 
 export default function Home() {
   return (
@@ -31,28 +30,7 @@ export default function Home() {
       <div className=' flex justify-center xl:h-screen 2xl:h-[93vh] 4xl:h-[75vh] md:max-w-[95rem] 3xl:h-[85vh]  lg:md:max-w-[1440px] mx-auto '>
         <Card1 />
       </div>
-      {
-        // <div className='flex justify-center   xl:mt-20 2xl:mt-0 xl:h-screen 4xl:h-[75vh]  2xl:h-[93vh] 3xl:h-[85vh]   xl:max-w-[95rem] mx-auto relative'>
-        //   <Card2 />
-        // </div>
-        // <div className='mt-0   xl:mt-20 2xl:mt-0 flex justify-center xl:h-[80vh] 2xl:h-[75vh]  3xl:h-[65vh]  4xl:h-[60vh]  lg:max-w-[95rem] mx-auto relative'>
-        //   <Card3 />
-        // </div>
-        // <div className=' mt-10 xl:mt-20 2xl:mt-0  grid grid-cols-1 md:max-w-[95rem] mx-auto relative'>
-        //   <Card4 />
-        //   <div className=' xl:-right-[3%] 2xl:-right-[5%] hidden xl:inline-grid absolute top-0 [z-index:-1]'>
-        //     <motion.img
-        //       animate={{
-        //         scale: [0.7, 1.2],
-        //         opacity: [0, 0.8, 0],
-        //       }}
-        //       transition={{ duration: 10, repeat: Infinity }}
-        //       src='/standardimages/pulseblue.png'
-        //       alt=''
-        //     />
-        //   </div>
-        // </div>
-      }
+
       <div className=' hidden left-0 xl:top-[53.5%] 2xl:top-[54%]  xl:inline-grid absolute  [z-index:-1]'>
         <img
           src='/standardimages/card5line.png'
