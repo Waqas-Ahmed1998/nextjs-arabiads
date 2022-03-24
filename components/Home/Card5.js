@@ -74,7 +74,7 @@ function Card5() {
       {
         // <img src='/home/mobilebg2.jpg' className='mx-auto w-fit  xl:hidden' />
       }
-      <div className='hidden xl:inline-grid absolute [z-index:-1] -top-14 left-[10%]'>
+      <div className='hidden xl:inline-grid absolute [z-index:-1] -top-14 left-[7%]'>
         <img
           className=' animate-spin-slow '
           src='/spinners/bluespinner.png'

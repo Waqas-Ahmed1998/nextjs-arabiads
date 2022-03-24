@@ -41,7 +41,7 @@ function Services() {
       }
       <div className='max-w-[1400px] mx-auto   '>
         <Card1 />
-        <div className='  card-width mt-10'>
+        <div className='  card-width mt-10 '>
           <Scard2 />
         </div>
         <div className='w-[95%] relative '>

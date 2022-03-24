@@ -6,9 +6,9 @@ import styles from "../../styles/Home.module.css";
 
 function Card3() {
   return (
-    <div className='   md:w-full xl:h-fit  mt-10   xl:mt-0 relative mx-auto bg-contain bg-no-repeat  xl:inline-grid xl:w-[70%]   '>
+    <div className='   md:w-full xl:h-fit  relative mx-auto bg-contain bg-no-repeat  xl:black xl:w-[75%] flex items-center  '>
       <img
-        className='absolute [z-index:-1] hidden xl:inline-grid object-contain  -left-[10%] top-0'
+        className='absolute [z-index:-1] hidden xl:inline-block object-contain scale-[.95]  -left-[10%] -top-4'
         src='/home/pettren.png'
         alt=''
       />
@@ -16,7 +16,7 @@ function Card3() {
       <div
         data-aos='zoom-in'
         data-aos-duration='600'
-        className='hidden   xl:inline-grid absolute top-0  md:w-[100%] h-[38rem]'
+        className='hidden   xl:inline-grid top-0   md:w-[100%] h-[36rem]'
       >
         <Image
           src='/home/card3.png'
@@ -33,7 +33,7 @@ function Card3() {
       {
         // mobile view
         <div
-          className={`${styles.mobileCard3} pb-10 px-2 w-full bg-no-repeat bg-cover xl:hidden flex text-center flex-col items-center `}
+          className={`${styles.mobileCard3} pb-10 w-full bg-no-repeat bg-cover xl:hidden flex text-center flex-col items-center `}
         >
           <Image
             data-aos='zoom-in-right'
@@ -74,15 +74,7 @@ function Card3() {
           </Link>
         </div>
       }
-      {
-        // <img
-        //   data-aos='zoom-in'
-        //   data-aos-duration='600'
-        //   src='/home/card3mobilebg.jpg'
-        //   alt=''
-        //   className='xl:hidden  w-full h-[100%]  '
-        // />
-      }
+
       <div className=' hidden xl:inline-grid absolute -top-20 -right-20'>
         <img
           className='hidden lg:inline-grid animate-spin-slow '
@@ -106,7 +98,7 @@ function Card3() {
             />
           </div>
         </div>
-        <div data-aos='fade-left' className='xl:flex-1 lg:pt-16  px-2 xl:pr-12'>
+        <div data-aos='fade-left' className='xl:flex-1 lg:pt-16  px-2 '>
           <h2 className='text-xl md:text-2xl lg:text-[30px] xl:leading-[42px] mb-5 lg:text-[#167EE0] font-semibold'>
             Digital Influence{" "}
             <span className='lg:text-black text-[#008fcf]'>

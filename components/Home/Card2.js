@@ -4,8 +4,8 @@ import Image from "next/image";
 
 function Card2() {
   return (
-    <div className='md:my-0 lg:-top-0 xl:top-auto xl:mt-0 2xl:my-0 relative bg-contain bg-no-repeat xl:inline-grid xl:w-[75%]  '>
-      <div className='hidden   xl:inline-grid absolute top-0  w-[100%] h-[48rem]'>
+    <div className='md:my-0 lg:-top-0 xl:top-auto xl:mt-0 2xl:my-0 relative bg-contain bg-no-repeat xl:inline-black xl:w-[80%] mx-auto '>
+      <div className='hidden   xl:inline-grid top-0  w-[100%] h-[47rem]'>
         <Image
           src='/home/card2.png'
           alt=''
@@ -32,13 +32,13 @@ function Card2() {
         />
       </div>
 
-      <div className='xl:absolute top-0 xl:top-4 flex flex-col-reverse xl:flex-row xl:pt-[5rem] xl:ml-20 text-center xl:text-left'>
-        <div className='lg:flex-1 relative  md:top-auto  lg:space-y-5 px-2 xl:pl-5 '>
-          <h2 className='text-xl xl:text-[35px]  text-[#167EE0] xl:text-white font-semibold pt-3 mb-2 xl:[line-height:56px]'>
+      <div className='xl:absolute top-0 xl:top-4 flex flex-col-reverse xl:flex-row xl:pt-[5rem] xl:ml-[5.5rem] text-center xl:text-left lg:px-2  '>
+        <div className='lg:basis-[70%]  relative  md:top-auto  lg:space-y-5 xl:space-y-9 px-2 xl:px-5 '>
+          <h2 className='text-xl xl:text-[35px] font-bold   text-[#167EE0] xl:text-white pt-3 mb-3 xl:[line-height:56px] xl:w-[90%]'>
             One of MENA’s Leading Agency for{" "}
             <span className='text-black'>Influencer Marketing</span>
           </h2>
-          <p className='text-base md:text-lg text-gray-600 xl:text-gray-50 mb-5 tracking-wide'>
+          <p className='text-base md:text-lg text-gray-600 xl:text-white mb-5  '>
             We are a KOL Agency MENA that assures you that our group of experts
             - which includes digital marketing specialists, campaign managers,
             and media buying specialists - will walk your firm step by step to
@@ -50,19 +50,19 @@ function Card2() {
           </p>
 
           <Link href='/services'>
-            <button className=' text-white text-base  md:inline-grid bg-[linear-gradient(#fdc66e,#ff805e)]  md:py-4  md:px-6 px-4 py-2 font-semibold  xl:w-60  rounded-full md:text-[20px]'>
+            <button className=' text-white text-base   md:inline-block bg-[linear-gradient(#fdc66e,#ff805e)]  md:py-4  md:px-6 px-4 py-2 font-semibold  xl:w-60  rounded-full md:text-[20px]'>
               WHAT WE DO
             </button>
           </Link>
         </div>
-        <div className='  xl:basis-[44%]  '>
-          <div className='hidden xl:block w-full mx-auto md:w-[50%] xl:w-auto xl:ml-10  '>
+        <div className='  xl:basis-[50%]  '>
+          <div className='hidden xl:block w-full md:scale-[1.15] mx-auto md:w-[50%] relative xl:top-[4%] xl:-right-[15%] xl:w-auto   '>
             <Image
               className='scale-[0.8] md:scale-[1]'
               src='/home/card2image.png'
               alt=''
               title=''
-              width='500'
+              width='520'
               height='645'
               priority
               objectFit='cover'
