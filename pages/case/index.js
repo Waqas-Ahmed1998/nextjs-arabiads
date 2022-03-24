@@ -39,7 +39,7 @@ function Case() {
       <div className='right-0 hidden xl:inline-grid absolute top-0 [z-index:-1]'>
         <img src='/case/caseline.png' alt='' className='h-screen w-[100vw] ' />
       </div>
-      <div className='right-0 hidden xl:inline-grid absolute top-[15%] [z-index:-1]'>
+      <div className='right-0 hidden xl:inline-grid absolute top-[28%] [z-index:-1]'>
         <img
           src='/standardimages/casemiddle.png'
           alt=''
