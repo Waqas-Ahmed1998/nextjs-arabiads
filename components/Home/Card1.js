@@ -12,10 +12,10 @@ function Card1() {
   //   return () => {};
   // }, []);
   return (
-    <div className='  relative  xl:inline-grid xl:w-[78%] overflow-hidden xl:overflow-visible   '>
-      <div className='hidden xl:h-[49rem]   xl:inline-grid absolute -top-0 md:w-[99%] 2xl:h-[49rem]'>
+    <div className='  relative  xl:block xl:w-[80%] mx-auto overflow-hidden xl:overflow-visible   '>
+      <div className='hidden xl:h-[49rem]   xl:inline-grid -top-0 md:w-[99%] 2xl:h-[49rem]'>
         <Image
-          className='hidden bg-contain  xl:inline-grid absolute top-0 '
+          className='hidden bg-contain  xl:inline-grid absolute top-0'
           src={"/home/card1.png"}
           alt=''
           width='100%'

@@ -45,7 +45,7 @@ function NumbersSpeak() {
           <h3
             className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
           >
-            {inView && <CountUp end={200} duration={1} />} +
+            {inView && <CountUp end={200} duration={1} />}+
           </h3>
           <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 
