@@ -46,8 +46,8 @@ function Scard3() {
           alt=''
         />
       </div>
-      <div className='  h-[90%] xl:absolute flex top-[5%] justify-center xl:px-0 xl:w-full '>
-        <div className='xl:w-[100%]  w-[90%] xl:ml-5 flex flex-col xl:flex-row xl:space-y-5 text-center items-center xl:text-left '>
+      <div className='  h-[90%] xl:absolute flex top-[7%] justify-center xl:px-0 xl:w-full '>
+        <div className='xl:w-[100%]  w-[90%] xl:ml-5 flex flex-col xl:flex-row  text-center items-center xl:text-left '>
           <div className=' basis-[46%]  '>
             <Image
               src='/service/Scard3person.png'
@@ -60,14 +60,14 @@ function Scard3() {
               quality={100}
             />
           </div>
-          <div className='flex-1 xl:py-5 space-y-5 xl:pr-5 xl:pl-10  '>
+          <div className='flex-1 xl:py-5  xl:pr-5 xl:pl-10  '>
             <h2
-              className={` ${styles.montserrat} font-bold heading-secondary xl:w-[80%]  `}
+              className={` ${styles.montserrat} font-bold heading-secondary xl:w-[80%] mb-5  `}
             >
               Esports Specialized Consultancy, Talents, Events in MENA
             </h2>
             <p
-              className={` ${styles.popins} text-base xl:text-[18px] xl:leading-[29px] text-[#040e29] `}
+              className={` ${styles.popins} text-base xl:text-[18px] xl:leading-[29px] text-[#040e29] mb-5 `}
             >
               We will walk you through the right steps to establish your esports
               presence simply and quickly, through the efforts of our amazing
@@ -75,7 +75,7 @@ function Scard3() {
               this thriving industry.
             </p>
             <p
-              className={` ${styles.popins} text-base xl:text-[18px] xl:leading-[29px] text-[#040e29] `}
+              className={` ${styles.popins} text-base xl:text-[18px] xl:leading-[29px] text-[#040e29] mb-5 `}
             >
               Whether you&apos;re looking for opportunities or solutions for
               your business, and regardless of your current status, our esports
@@ -95,11 +95,15 @@ function Scard3() {
               related to esports, which is why choosing us is the first step
               towards your goal.
             </p>
-            <Link href='/esports-services'>
-              <button className=' text-white text-base  md:inline-grid bg-[linear-gradient(#3786ed,#1eb5e4)]  md:py-4  md:px-6 px-4 py-2  font-semibold  xl:w-60  rounded-full md:text-[20px]'>
-                DISCOVER TALENTS
-              </button>
-            </Link>
+            <div
+              className={` xl:ml-20  mt-10  ${styles.popins} mx-auto xl:mx-0 relative [z-index:1] after:[z-index:-1] before:[z-index:-1] before:border-5  w-fit lg:btnAnimateBefore lg:before:border-[#91AA76] lg:after:border-[#D3AA35] lg:btnAnimateAfter`}
+            >
+              <Link href='/esports-services'>
+                <button className='text-white text-base px-4 py-2 md:px-12 md:py-[16px]  md:inline-grid bg-[linear-gradient(#3786ed,#1eb5e4)]   font-medium   rounded-full md:text-[20px]'>
+                  DISCOVER TALENTS
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
