@@ -41,7 +41,7 @@ function Scard4() {
               quality={100}
             />
           </div>
-          <div className=' flex-1  xl:py-12 xl:px-10  '>
+          <div className=' flex-1  xl:py-12 xl:px-9 xl:pr-0  '>
             <h2
               className={` ${styles.montserrat} heading-primary text-[#404b68] xl:text-[30px] mb-5`}
             >
@@ -51,17 +51,22 @@ function Scard4() {
               className={` ${styles.popins} text-[#404b68] text-base xl:text-[18px] xl:leading-[29px] xl:pr-5 mb-10`}
             >
               Are you an influencer looking to broaden your reach and
-              collaborate with others? We are here to assist you. Our staff will
-              introduce you to some of the world&apos;s most well-known
-              entertainment and technology firms, raising your profile and
-              carefully coaching you to become more than an influencer, but a
-              brand ambassador with a continuous source of income .
+              collaborate with others? We are here to assist you. <br /> <br />{" "}
+              Our staff will introduce you to some of the world&apos;s most
+              well-known entertainment and technology firms, raising your
+              profile and carefully coaching you to become more than an
+              influencer, but a brand ambassador with a continuous source of
+              income .
             </p>
-            <Link href='/influencer-services'>
-              <button className=' text-white text-base  md:inline-grid bg-[linear-gradient(#fdc66e,#ff805e)] md:py-4  md:px-6 px-5 py-2  font-semibold  xl:w-60  rounded-full md:text-[20px]'>
-                REACH OUT
-              </button>
-            </Link>
+            <div className=' mx-auto xl:mx-0 xl:ml-5 relative [z-index:1] after:[z-index:-1] before:[z-index:-1]   w-fit lg:btnAnimateBefore lg:btnAnimateAfter'>
+              <Link href='/influencer-services'>
+                <button
+                  className={` ${styles.popins} text-white text-base  md:inline-block bg-[linear-gradient(#fdc66e,#ff805e)]   md:py-[18px]  md:px-5 px-4 py-2 font-medium  xl:w-56  rounded-full md:text-[20px]`}
+                >
+                  REACH OUT
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
