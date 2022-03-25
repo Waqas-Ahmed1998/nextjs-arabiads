@@ -35,9 +35,10 @@ function About() {
           <div className={`max-w-screen-xl mx-auto  `}>
             <Acard1 />
             <Acard2 />
+
+            <NumbersSpeak />
+            <Plateforms />
           </div>
-          <NumbersSpeak />
-          <Plateforms />
           <Campaign />
         </div>
       </div>

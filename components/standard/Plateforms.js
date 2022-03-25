@@ -26,9 +26,9 @@ function Plateforms() {
         className=' hidden items-center mt-20 mx-auto justify-center max-w-7xl  space-y-10 lg:space-y-0 lg:flex flex-col lg:flex-row gap-2 md:gap-5'
       >
         <div
-          className={`flex items-center   justify-evenly flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[20px] rounded-[30px] w-48 md:h-40 h-24`}
+          className={`flex items-center   flex-col ${styles.cardShadow} relative bg-white pt-[30px] justify-end  pb-[40px] rounded-[30px] w-48 md:h-40 h-24`}
         >
-          <div className='absolute  -top-8 w-[35%] md:-top-10 md:w-[50%]'>
+          <div className='absolute  -top-8 w-[35%] md:-top-8 md:w-[50%]'>
             <Image
               src={"/plateforms/instagram.png"}
               width='500'
@@ -48,9 +48,9 @@ function Plateforms() {
           <div className='absolute left-[12%] -bottom-4 [z-index:-1]  rounded-[35px] w-[75%] md:w-[75%]  justify-self-center bg-[rgba(255,255,255,0.94)] h-12'></div>
         </div>
         <div
-          className={`flex items-center  justify-evenly flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[20px] rounded-[30px] w-48 md:h-40 h-24`}
+          className={`flex items-center  justify-end flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[40px] rounded-[30px] w-48 md:h-40 h-24`}
         >
-          <div className='absolute -top-8 w-[35%] md:-top-10 md:w-[50%]'>
+          <div className='absolute -top-8 w-[35%] md:-top-8 md:w-[50%]'>
             <Image
               src={"/plateforms/youtube.png"}
               width='500'
@@ -70,9 +70,9 @@ function Plateforms() {
           <div className='absolute left-[12%] -bottom-4 [z-index:-1]  rounded-[35px] w-[75%] md:w-[75%]  justify-self-center bg-[rgba(255,255,255,0.94)] h-12'></div>
         </div>
         <div
-          className={`flex items-center  justify-evenly flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[20px] rounded-[30px] w-48 md:h-40 h-24`}
+          className={`flex items-center  justify-end flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[40px] rounded-[30px] w-48 md:h-40 h-24`}
         >
-          <div className='absolute -top-8 w-[35%] md:-top-10 md:w-[50%]'>
+          <div className='absolute -top-8 w-[35%] md:-top-8  md:w-[50%]'>
             <Image
               src={"/plateforms/tiktok.png"}
               width='500'
@@ -87,14 +87,14 @@ function Plateforms() {
           <p
             className={`${styles.popins} text-[#404040] text-xl md:text-[25px] `}
           >
-            Tik Tok
+            TikTok
           </p>
           <div className='absolute left-[12%] -bottom-4 [z-index:-1]  rounded-[35px] w-[75%] md:w-[75%]  justify-self-center bg-[rgba(255,255,255,0.94)] h-12'></div>
         </div>
         <div
-          className={`flex items-center  justify-evenly flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[20px] rounded-[30px] w-48 md:h-40 h-24`}
+          className={`flex items-center  justify-end flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[40px] rounded-[30px] w-48 md:h-40 h-24`}
         >
-          <div className='absolute -top-8 w-[35%] md:-top-10 md:w-[50%]'>
+          <div className='absolute -top-8 w-[35%] md:-top-8 md:w-[50%]'>
             <Image
               src={"/plateforms/twitter.png"}
               width='500'
@@ -114,9 +114,9 @@ function Plateforms() {
           <div className='absolute left-[12%] -bottom-4 [z-index:-1]  rounded-[35px] w-[75%] md:w-[75%]  justify-self-center bg-[rgba(255,255,255,0.94)] h-12'></div>
         </div>
         <div
-          className={`flex items-center  justify-evenly flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[20px] rounded-[30px] w-48 md:h-40 h-24`}
+          className={`flex items-center  justify-end flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[40px] rounded-[30px] w-48 md:h-40 h-24`}
         >
-          <div className='absolute -top-8 md:-top-10 w-[35%] md:w-[50%]'>
+          <div className='absolute -top-8 md:-top-8 w-[35%] md:w-[50%]'>
             <Image
               src={"/plateforms/facebook.png"}
               width='500'
@@ -136,9 +136,9 @@ function Plateforms() {
           <div className='absolute left-[12%] -bottom-4 [z-index:-1]  rounded-[35px] w-[75%] md:w-[75%]  justify-self-center bg-[rgba(255,255,255,0.94)] h-12'></div>
         </div>
         <div
-          className={`flex items-center  justify-evenly flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[20px] rounded-[30px] w-48 md:h-40 h-24`}
+          className={`flex items-center  justify-end flex-col ${styles.cardShadow} relative bg-white pt-[30px] pb-[40px] rounded-[30px] w-48 md:h-40 h-24`}
         >
-          <div className='absolute -top-8 w-[35%] md:-top-10 md:w-[50%]'>
+          <div className='absolute -top-8 w-[35%] md:-top-8 md:w-[50%]'>
             <Image
               src={"/plateforms/twitch.png"}
               width='500'

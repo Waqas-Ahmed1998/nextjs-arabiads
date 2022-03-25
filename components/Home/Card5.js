@@ -74,16 +74,16 @@ function Card5() {
       {
         // <img src='/home/mobilebg2.jpg' className='mx-auto w-fit  xl:hidden' />
       }
-      <div className='hidden xl:inline-grid absolute [z-index:-1] -top-14 left-[7%]'>
+      <div className='hidden xl:inline-grid absolute [z-index:-1] -top-14 left-[7%] '>
         <img
           className=' animate-spin-slow '
           src='/spinners/bluespinner.png'
           alt=''
         />
       </div>
-      <div className='hidden xl:mt-24 px-5 lg:px-0 items-center lg:w-[70%]  justify-self-center absolute  xl:flex flex-col xl:flex-row  '>
-        <div className=' w-[60%] md:w-[35%] '>
-          <div className=' pl-10'>
+      <div className='hidden  xl:mt-14 px-5 lg:px-0 items-center lg:w-[75%]  justify-self-center absolute  xl:flex flex-col xl:flex-row  '>
+        <div className=' w-[60%] md:w-[40%] '>
+          <div className=' '>
             <Image
               data-aos='zoom-in-right'
               data-aos-anchor='#card5'
@@ -99,7 +99,7 @@ function Card5() {
           </div>
         </div>
 
-        <div className='lg:py-2 flex-1  text-center xl:text-left lg:pr-10 '>
+        <div className='lg:py-2 basis-[65%] xl:relative xl:right-10 text-center xl:text-left '>
           <h2
             data-aos='fade-down'
             data-aos-anchor='#card5'
@@ -119,15 +119,19 @@ function Card5() {
             agencies, representing both established and emerging esports-focused
             broadcasting talent. We assist these specialized talents in
             maximizing the value they ve created by connecting them with
-            hundreds of brand partners who trust us. We can assist you whether
-            you are looking to hire an on-air host for an event or need
-            representation as a talent
+            hundreds of brand partners who trust us.<br></br> <br></br> We can
+            assist you whether you are looking to hire an on-air host for an
+            event or need representation as a talent
           </p>
-          <Link href='/esports-services'>
-            <button className=' text-white text-base px-4 py-2 md:px-6 md:py-4  md:inline-grid bg-[linear-gradient(#3786ed,#1eb5e4)]   font-semibold  xl:w-60  rounded-full md:text-[20px] mt-10 '>
-              FIND OUT MORE
-            </button>
-          </Link>
+          <div
+            className={` xl:ml-5  mt-10  ${styles.popins} mx-auto xl:mx-0 relative [z-index:1] after:[z-index:-1] before:[z-index:-1] before:border-5  w-fit lg:btnAnimateBefore lg:before:border-[#91AA76] lg:after:border-[#D3AA35] lg:btnAnimateAfter`}
+          >
+            <Link href='/esports-services'>
+              <button className='text-white text-base px-4 py-2 md:px-6 md:py-[16px]  md:inline-grid bg-[linear-gradient(#3786ed,#1eb5e4)]   font-medium  xl:w-60  rounded-full md:text-[20px]'>
+                FIND OUT MORE
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

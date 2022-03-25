@@ -23,7 +23,7 @@ function Campaign2() {
       </div>
 
       <div className='mt-10 grid grid-cols-1 mx-auto relative px-2 md:px-5 py-10'>
-        <div className='mx-auto w-[100%] flex flex-col-reverse xl:flex-row lg:p-14 text-center xl:text-left'>
+        <div className='mx-auto w-[100%] flex flex-col-reverse xl:flex-row lg:p-14 lg:pr-16 text-center xl:text-left'>
           <div
             data-aos='fade-right'
             className='md:p-5 md:pr-5 xl:pt-16  flex-1 '
@@ -34,7 +34,7 @@ function Campaign2() {
               Start a campaign with us!
             </h3>
             <p
-              className={` ${styles.popins} text-basetext-[#404b68] md:text-[18px] mb-10 xl:leading-[29px] text-[#404b68]`}
+              className={` ${styles.popins}  text-basetext-[#404b68] md:text-[18px] mb-10 xl:leading-[29px] text-[#404b68]`}
             >
               Simply write us a message to tell us about your upcoming project!
               Our salesperson will contact you as soon as possible and link you
@@ -50,7 +50,7 @@ function Campaign2() {
               </button>
             </div>
           </div>
-          <div data-aos='fade-left' className='flex-1 '>
+          <div data-aos='fade-left' className='basis-[50%] '>
             <Image
               src='/campaign/pic.png'
               alt=''

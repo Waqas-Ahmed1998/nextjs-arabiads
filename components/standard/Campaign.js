@@ -28,28 +28,29 @@ function Campaign() {
           <div
             data-aos='fade-right'
             data-aos-easing='ease-in-out'
-            className='lg:p-5 lg:pr-5  items-center xl:pt-16 xl:pr-9 flex-1 space-y-5'
+            className='lg:p-5 lg:pr-5  items-center xl:pt-16 xl:pr-10 flex-1 '
           >
             <h3
-              className={`${styles.montserrat} xl:leading-[49px] xl:w-[70%] text-[#020c27] text-xl  md:text-[35px] font-semibold`}
+              className={`${styles.montserrat} xl:leading-[49px] xl:w-[70%] text-[#020c27] text-xl  md:text-[35px] font-semibold mb-6`}
             >
               Start a campaign with us!
             </h3>
             <p
-              className={` ${styles.popins} text-base note text-[#404b68] md:text-[18px]`}
+              className={` ${styles.popins}  text-basetext-[#404b68] md:text-[18px] mb-10 xl:leading-[29px] text-[#404b68]`}
             >
               Simply write us a message to tell us about your upcoming project!
               Our salesperson will contact you as soon as possible and link you
               to one of our committed specialists in order to experience what
               influencer marketing can be like when you work with the finest!
             </p>
-
-            <button
-              onClick={() => setIsForm(!isForm)}
-              className=' text-white text-base md:py-4  md:px-6 px-5 py-2 md:inline-grid bg-[linear-gradient(#fdc66e,#ff805e)]   font-semibold  xl:w-60  rounded-full md:text-[20px]'
-            >
-              CONTACT US
-            </button>
+            <div className='mx-auto xl:mt-5 xl:ml-6 relative w-fit lg:btnAnimateBefore lg:btnAnimateAfter'>
+              <button
+                onClick={() => setIsForm(!isForm)}
+                className={` ${styles.popins} text-white text-base md:py-5  md:px-5 px-5 py-2 md:inline-grid bg-[linear-gradient(#fdc66e,#ff805e)]   font-medium  xl:w-60  rounded-full md:text-[24px]`}
+              >
+                Contact Us
+              </button>
+            </div>
           </div>
           <div
             data-aos='fade-left'

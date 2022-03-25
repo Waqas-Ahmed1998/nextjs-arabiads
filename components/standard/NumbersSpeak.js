@@ -40,7 +40,7 @@ function NumbersSpeak() {
           // className=' relative mt-10 space-y-10 lg:space-y-0 flex flex-col lg:flex-row gap-2 md:gap-5 items-center justify-center text-center'
         }
         <div
-          className={`flex  justify-evenly flex-col mb-5 md:mb-0 xl:mb-auto  ${styles.cardShadow} relative bg-white md:pt-[30px] md:pb-[20px] rounded-[30px] md:w-56 md:h-48 h-28`}
+          className={`flex  space-y-1 px-3 md:px-0 pt-4  md:space-y-4   flex-col mb-5 md:mb-0 xl:mb-auto  ${styles.cardShadow} relative bg-white md:pt-[35px] md:pb-[0px] rounded-[30px] md:w-56 md:h-48 h-28`}
         >
           <h3
             className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
@@ -50,7 +50,7 @@ function NumbersSpeak() {
           <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 
           <p
-            className={`${styles.popins} text-[#404040] text-xl md:text-[25px] `}
+            className={`${styles.popins} leading-snug text-[#404040] text-xl md:text-[25px] `}
           >
             Campaigns
           </p>
@@ -58,7 +58,7 @@ function NumbersSpeak() {
         </div>
 
         <div
-          className={`flex justify-evenly mb-5 md:mb-0   flex-col ${styles.cardShadow} relative bg-white md:pt-[30px] md:pb-[20px] rounded-[30px] md:w-56 md:h-48 h-28`}
+          className={`flex space-y-1 px-3 md:px-0 pt-4  md:space-y-4   flex-col mb-5 md:mb-0 xl:mb-auto  ${styles.cardShadow} relative bg-white md:pt-[35px] md:pb-[0px] rounded-[30px] md:w-56 md:h-48 h-28`}
         >
           <h3
             className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
@@ -68,14 +68,14 @@ function NumbersSpeak() {
           <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 
           <p
-            className={`${styles.popins} text-[#404040] text-xl md:text-[25px] `}
+            className={`${styles.popins} leading-snug text-[#404040] text-xl md:text-[25px] `}
           >
             Brands
           </p>
           <div className='absolute left-[12%]  -bottom-4 [z-index:-1]  rounded-[35px] w-[75%] md:w-[75%]  justify-self-center bg-[rgba(255,255,255,0.94)] h-12'></div>
         </div>
         <div
-          className={`flex justify-evenly  mb-5 md:mb-0 flex-col ${styles.cardShadow} relative bg-white md:pt-[30px] md:pb-[20px] rounded-[30px] md:w-56 md:h-48 h-28`}
+          className={`flex space-y-1 px-3 md:px-0 pt-4  md:space-y-4  flex-col mb-5 md:mb-0 xl:mb-auto  ${styles.cardShadow} relative bg-white md:pt-[35px] md:pb-[0px] rounded-[30px] md:w-56 md:h-48 h-28`}
         >
           <h3
             className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
@@ -85,14 +85,14 @@ function NumbersSpeak() {
           <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 
           <p
-            className={`${styles.popins} text-[#404040] text-xl md:text-[25px] `}
+            className={`${styles.popins} leading-snug text-[#404040] text-xl md:text-[25px] `}
           >
             Exclusive Influencers
           </p>
           <div className='absolute left-[12%] -bottom-4 [z-index:-1]  rounded-[35px] w-[75%] md:w-[75%]  justify-self-center bg-[rgba(255,255,255,0.94)] h-12'></div>
         </div>
         <div
-          className={`flex justify-evenly  mb-5 md:mb-0 flex-col ${styles.cardShadow} relative bg-white md:pt-[30px] md:pb-[20px] rounded-[30px] md:w-56 md:h-48 h-28`}
+          className={`flex space-y-1 px-3 md:px-0 pt-4 md:space-y-4  flex-col mb-5 md:mb-0 xl:mb-auto  ${styles.cardShadow} relative bg-white md:pt-[35px]  rounded-[30px] md:w-56 md:h-48 h-28`}
         >
           <h3
             className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
@@ -102,14 +102,14 @@ function NumbersSpeak() {
           <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 
           <p
-            className={`${styles.popins} text-[#404040] text-xl md:text-[25px] `}
+            className={`${styles.popins} leading-snug text-[#404040] text-xl md:text-[25px] `}
           >
             Monthly Impressions
           </p>
           <div className='absolute left-[12%] -bottom-4 [z-index:-1]  rounded-[35px] w-[75%] md:w-[75%]  justify-self-center bg-[rgba(255,255,255,0.94)] h-12'></div>
         </div>
         <div
-          className={`md:flex justify-evenly flex-col ${styles.cardShadow} hidden  relative bg-white pt-[30px] pb-[20px] rounded-[30px] w-56 md:h-48 h-28`}
+          className={`flex small:hidden md:block  md:space-y-4  flex-col mb-5 md:mb-0 xl:mb-auto  ${styles.cardShadow} relative bg-white md:pt-[35px] md:pb-[0px] rounded-[30px] md:w-56 md:h-48 h-28`}
         >
           <h3
             className={`${styles.montserrat} text-[#316AD8]  text-center text-xl md:text-[40px] tracking-wide [font-weight:700]`}
@@ -119,7 +119,7 @@ function NumbersSpeak() {
           <div className='w-[20%] h-[0.1rem] bg-[#FFA408] mx-auto'></div>
 
           <p
-            className={`${styles.popins}  text-[#404040] text-xl md:text-[25px] `}
+            className={`${styles.popins}  leading-snug text-[#404040] text-xl md:text-[25px] `}
           >
             Employees
           </p>
