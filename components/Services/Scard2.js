@@ -32,7 +32,10 @@ function Scard2() {
           alt=''
         />
       </div>
-      <div className=' h-[80%] xl:absolute flex top-[5%]  justify-center  xl:w-full '>
+      <div
+        id='service-card-top'
+        className=' h-[80%] xl:absolute flex top-[5%]  justify-center  xl:w-full '
+      >
         <div className='  xl:w-[100%] xl:ml-20 flex flex-col-reverse xl:flex-row space-y-5 text-center xl:text-left '>
           <div className='  xl:mt-10 flex-1 xl:py-16   xl:ml-12 xl:p-5'>
             <h2

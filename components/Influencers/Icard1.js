@@ -55,15 +55,15 @@ function Icard1() {
               you whether you are looking to hire an on-air host for an event or
               need representation as a talent.
             </p>
-            <Link href='/esports-services'>
-              <button
-                data-aos='zoom-in-right'
-                data-aos-anchor='#trigger'
-                className=' text-white text-base  md:inline-grid bg-[linear-gradient(#3786ed,#1eb5e4)]  md:py-4  md:px-6 px-4 py-2 font-semibold  xl:w-60  rounded-full md:text-[20px]'
-              >
-                LEARN MORE
-              </button>
-            </Link>
+            <div
+              className={` xl:ml-5  mt-10  ${styles.popins} mx-auto xl:mx-0 relative [z-index:1] after:[z-index:-1] before:[z-index:-1] before:border-5  w-fit lg:btnAnimateBefore lg:before:border-[#91AA76] lg:after:border-[#D3AA35] lg:btnAnimateAfter`}
+            >
+              <Link href='/esports-services'>
+                <button className='text-white text-base px-4 py-2 md:px-6 md:py-[16px]  md:inline-grid bg-[linear-gradient(#3786ed,#1eb5e4)]   font-medium  xl:w-60  rounded-full md:text-[20px]'>
+                  LEARN MORE
+                </button>
+              </Link>
+            </div>
           </div>
           <div className='flex-1  px-10 '>
             <Image

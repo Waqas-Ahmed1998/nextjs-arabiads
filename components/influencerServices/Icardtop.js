@@ -42,7 +42,7 @@ function Icardtop() {
             you are looking to hire an on-air host for an event or need
             representation as a talent.
           </p>
-          <a href='' className='mt-10 inline-block  '>
+          <a href='#influencer-services' className='mt-10 inline-block  '>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='h-12 w-[5rem]  animate-bounce text-blue-500 '

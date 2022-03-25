@@ -6,7 +6,10 @@ import { motion } from "framer-motion";
 
 function Emiddle() {
   return (
-    <div className='grid my-12 relative mb-24 grid-cols-1  justify-center lg:grid-cols-2 gap-4 lg:gap-0 px-5 '>
+    <div
+      id='esports-middle'
+      className='  grid  my-12 relative mb-24 grid-cols-1  justify-center lg:grid-cols-2 gap-4 lg:gap-0 px-5 '
+    >
       <div className='lg:-left-[10%] 2xl:-left-[17%] hidden xl:inline-grid absolute top-[53%] [z-index:-1]'>
         <motion.img
           animate={{
@@ -135,12 +138,24 @@ function Emiddle() {
           </div>
         </div>
       </div>
-
-      <Link href='/talents'>
-        <button className='  absolute -bottom-20 justify-self-center text-white text-base md:py-5  md:px-6 px-4 py-2 md:inline-grid bg-[linear-gradient(#fdc66e,#ff805e)]   font-semibold  xl:w-60  rounded-full md:text-[20px]'>
-          CASTERS LIST
-        </button>
-      </Link>
+      {
+        // <Link href='/talents'>
+        //   <button className='  absolute -bottom-20 justify-self-center text-white text-base md:py-5  md:px-6 px-4 py-2 md:inline-grid bg-[linear-gradient(#fdc66e,#ff805e)]   font-semibold  xl:w-60  rounded-full md:text-[20px]'>
+        //     CASTERS LIST
+        //   </button>
+        // </Link>
+      }
+      <div className='absolute -bottom-20 mx-auto flex justify-center w-full '>
+        <div className=' mx-auto xl:mx-0 relative [z-index:1] after:[z-index:-1] before:[z-index:-1]   w-fit lg:btnAnimateBefore  lg:btnAnimateAfter'>
+          <Link href='/talents'>
+            <button
+              className={` ${styles.popins} text-white text-base  md:inline-block bg-[linear-gradient(#fdc66e,#ff805e)]   md:py-5  md:px-12 px-4 py-2 font-medium    rounded-full md:text-[20px]`}
+            >
+              CASTERS LIST
+            </button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
