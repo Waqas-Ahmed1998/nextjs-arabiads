@@ -86,7 +86,7 @@ function Footer() {
                     Influencers
                   </a>
                 </Link>
-                <Link className='hover:text-orange-400 ' href='/case-study'>
+                <Link className='hover:text-orange-400 ' href='/case'>
                   <a className='hover:text-orange-400 ' href=''>
                     Case study
                   </a>

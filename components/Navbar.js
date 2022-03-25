@@ -59,7 +59,7 @@ function Navbar() {
           <div className=''>
             {
               <Link href='/'>
-                <div>
+                <div className='ml-7'>
                   <img
                     className='cursor-pointer w-32 h-40 object-contain'
                     src='/standardimages/logo.png'
@@ -71,7 +71,7 @@ function Navbar() {
           </div>
 
           <div
-            className={`  ${styles.popins} flex xl:space-x-0 px-8  font-medium text-[22px] `}
+            className={`  ${styles.popins} flex xl:mx-4  font-medium text-[22px] `}
           >
             <Link href='/'>
               <a className='hover:text-[#FE8936] self-center py-[15px] px-[18px]  cursor-pointer'>
@@ -105,7 +105,7 @@ function Navbar() {
             </Link>
             <Link href='/to'>
               <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
-                中国人
+                中文 (中国)
               </a>
             </Link>
             {admins && admins.includes(logged) && (
@@ -132,10 +132,10 @@ function Navbar() {
             )}
           </div>
 
-          <div className=' text-center'>
+          <div className='  mx-auto xl:ml-0 relative w-fit lg:btnAnimateBefore lg:btnAnimateAfter text-center flex items-center justify-center'>
             <button
               onClick={(e) => setContact(!onContact)}
-              className={` ${styles.btnContact} ${styles.popins}  bg-[linear-gradient(#fdc66e,#ff805e)]  text-white hidden md:inline-grid btn-contact  py-4 bg-[#FEA366]   w-60  rounded-full  text-2xl`}
+              className={` ${styles.btnContact} ${styles.popins} text-white text-base md:py-[22px]  md:px-5 px-5 py-2 md:inline-grid bg-[linear-gradient(#fdc66e,#ff805e)]   font-medium  xl:w-60  rounded-full md:text-[25px]`}
             >
               Contact Us
             </button>

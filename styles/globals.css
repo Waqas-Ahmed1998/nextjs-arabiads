@@ -35,6 +35,17 @@ textarea {
   }
 }
 @layer components {
+  .btnAnimateBefore {
+    @apply before:absolute  before:w-[100%] before:h-[100%] before:bg-transparent  before:border-[1px] before:rounded-full  before:border-[#F7B7B3] before:[z-index:-1] before:ease-in-out before:duration-300  before:transition-transform  before:box-content before:-left-[4.5%] before:-top-[17%] before:p-[10px] before:scale-0 hover:before:scale-[1];
+  }
+}
+@layer components {
+  .btnAnimateAfter {
+    @apply after:absolute  after:w-[100%] after:h-[100%] after:bg-transparent  after:border-[1px] after:rounded-full  after:border-[#F3DCE0] after:[z-index:-1]  after:transition-transform after:duration-[300ms]  after:ease-in-out after:box-content after:-left-[8.5%] after:-top-[34%] after:p-[20px] after:scale-0 hover:after:scale-[1];
+  }
+}
+
+@layer components {
   .btn-orange {
     @apply text-white  xl:inline-grid px-4 py-2  xl:py-4 bg-[#FEA366] text-xl   xl:w-60  rounded-full xl:text-2xl;
   }
