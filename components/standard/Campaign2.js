@@ -26,7 +26,7 @@ function Campaign2() {
         <div className='mx-auto w-[100%] flex flex-col-reverse xl:flex-row lg:p-14 lg:pr-16 text-center xl:text-left'>
           <div
             data-aos='fade-right'
-            className='md:p-5 md:pr-5 xl:pt-16  flex-1 '
+            className='md:p-5 md:pr-5 xl:pr-10  xl:pt-16  flex-1 '
           >
             <h3
               className={`${styles.montserrat} xl:leading-[49px] xl:w-[65%] text-[#020c27]  md:text-[35px] text-xl   font-semibold mb-6`}
@@ -36,7 +36,8 @@ function Campaign2() {
             <p
               className={` ${styles.popins}  text-basetext-[#404b68] md:text-[18px] mb-10 xl:leading-[29px] text-[#404b68]`}
             >
-              Simply write us a message to tell us about your upcoming project!
+              Simply write us a message to tell us about your upcoming project!{" "}
+              <br /> <br />
               Our salesperson will contact you as soon as possible and link you
               to one of our committed specialists in order to experience what
               influencer marketing can be like when you work with the finest!

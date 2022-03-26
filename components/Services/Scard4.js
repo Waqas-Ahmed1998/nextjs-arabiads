@@ -43,7 +43,7 @@ function Scard4() {
           </div>
           <div className=' flex-1  xl:py-12 xl:px-9 xl:pr-0  '>
             <h2
-              className={` ${styles.montserrat} heading-primary text-[#404b68] xl:text-[30px] mb-5`}
+              className={` ${styles.montserrat} heading-primary text-[#404b68] xl:text-[35px] mb-5`}
             >
               Talent <span className='text-[#008fcf]'>Management</span>
             </h2>

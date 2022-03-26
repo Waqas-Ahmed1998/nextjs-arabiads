@@ -6,7 +6,7 @@ import styles from "../../styles/Home.module.css";
 
 function Card3() {
   return (
-    <div className='   md:w-full xl:h-fit  relative mx-auto bg-contain bg-no-repeat  xl:black xl:w-[75%] flex items-center  '>
+    <div className='   md:w-full xl:h-fit  relative mx-auto bg-contain bg-no-repeat  xl:w-[75%]  flex items-center  '>
       <img
         className='absolute [z-index:-1] hidden xl:inline-block object-contain scale-[.95]  -left-[10%] -top-4'
         src='/home/pettren.png'
@@ -102,17 +102,18 @@ function Card3() {
         </div>
         <div data-aos='fade-left' className='xl:flex-1 items-center  px-2 '>
           <div className='flex flex-col justify-center  h-full'>
-            <h2 className='text-xl md:text-2xl lg:text-[30px] xl:leading-[42px] mb-5 lg:text-[#167EE0] font-semibold'>
+            <h2 className='text-xl md:text-2xl xl:w-[80%] lg:text-[35px] xl:leading-[42px] mb-5 lg:text-[#167EE0] font-semibold'>
               Digital Influence{" "}
               <span className='lg:text-black text-[#008fcf]'>
                 Campaign Strategies and Management
               </span>
             </h2>
             <p
-              className={`${styles.popins} text-[#404b68] text-base md:text-lg mb-10 `}
+              className={`${styles.popins} text-[#404b68] text-base md:text-lg mb-10  `}
             >
               We use top influencers to help brands engage and activate
-              audiences all around the world, with a specialization on the
+              audiences all around the world, with a specialization on the{" "}
+              <br />
               Arabic speaking nations of the Middle East and North Africa.
               <br></br> <br></br> We select and tailor-made contracts for the
               profiles most closely related to your objectives, your target and

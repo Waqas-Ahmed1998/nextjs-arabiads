@@ -129,7 +129,6 @@ function CaseStudies() {
               type='text'
               name='city'
               value={formData.role}
-              required
               onChange={(e) =>
                 setFormData({ ...formData, role: e.target.value })
               }
