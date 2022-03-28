@@ -1,8 +1,9 @@
-import '../styles/globals.css';
-import Footer from '../components/Footer';
-import Layout from '../components/Layout';
-import Navbar from '../components/Navbar';
-import { RecoilRoot } from 'recoil';
+import "../styles/globals.css";
+import { appWithTranslation } from "next-i18next";
+
+import Layout from "../components/Layout";
+
+import { RecoilRoot } from "recoil";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -14,4 +15,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);

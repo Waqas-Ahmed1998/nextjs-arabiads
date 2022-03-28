@@ -103,9 +103,14 @@ function InfluencersForm() {
       Number(twitterFollowers);
 
     totelFollowers = Math.round(totelFollowers);
-    console.log("totel follwers round", totelFollowers);
 
-    return formater.format(totelFollowers);
+    console.log("totel follwers round", totelFollowers);
+    const followerNumbers = {
+      followers: formater.format(totelFollowers),
+      filter: totelFollowers,
+    };
+    return followerNumbers;
+    // return formater.format(totelFollowers);
   };
   // ***********   Hooks     ****
 
@@ -198,7 +203,8 @@ function InfluencersForm() {
               image: url,
               facebook: formData.facebook,
               instagram: formData.instagram,
-              followers: totelFollowers,
+              followers: totelFollowers.followers,
+              filter: totelFollowers.filter,
               twitter: formData.twitter,
               tiktok: formData.tiktok,
               tiktokLink: formData.tiktokLink,

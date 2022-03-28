@@ -5,7 +5,7 @@ import Campaign2 from "../../components/standard/Campaign2";
 import NumbersSpeak from "../../components/standard/NumbersSpeak";
 import Plateforms from "../../components/standard/Plateforms";
 import Head from "next/head";
-import { collection, onSnapshot, getDocs } from "firebase/firestore";
+import { collection, onSnapshot, query, orderBy } from "firebase/firestore";
 import { db } from "../../firebase";
 import { MoonLoader } from "react-spinners";
 import { motion } from "framer-motion";
@@ -15,22 +15,23 @@ function Influencers() {
   // let influencersData = JSON.parse(userdata);
 
   const [users, setUsers] = useState([]);
-
+  console.log(users);
   useEffect(() => {
     // setUsers(user);
     AOS.init({
       // Global settings:
       disable: "mobile", // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
     });
-    try {
-      onSnapshot(collection(db, "influencers"), (snapshot) => {
-        let users = [];
-        snapshot.docs.forEach((doc) => {
-          users.push({ ...doc.data(), id: doc.id });
-        });
-        setUsers(users);
+    const q = query(collection(db, "influencers"), orderBy("filter", "desc"));
+    // try {
+    onSnapshot(q, (snapshot) => {
+      let users = [];
+      snapshot.docs.forEach((doc) => {
+        users.push({ ...doc.data(), id: doc.id });
       });
-    } catch (error) {}
+      setUsers(users);
+    });
+    // } catch (error) {}
     return () => {
       setUsers([]);
     };

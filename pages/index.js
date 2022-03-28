@@ -8,10 +8,21 @@ import Card5 from "../components/Home/Card5";
 import NumbersSpeak from "../components/standard/NumbersSpeak";
 import Plateforms from "../components/standard/Plateforms";
 import Campaign from "../components/standard/Campaign";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
+export async function getServerSideProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["home"])),
+      locale,
+      // Will be passed to the page component as props
+    },
+  };
+}
 import { motion } from "framer-motion";
 
-export default function Home() {
+export default function Home(props) {
+  console.log(props.locale);
   return (
     <div className='overflow-hidden relative xl:overflow-visible'>
       <Head>

@@ -8,16 +8,18 @@ import { useRecoilValue } from "recoil";
 import { adminUsers } from "../recoil/adminUsers";
 import { loggedInUser } from "../recoil/loggedInUser";
 import useInView from "react-cool-inview";
+import { useTranslation } from "next-i18next";
 
 function Navbar() {
+  const { t } = useTranslation("common");
+
+  const router = useRouter();
   const { observe, inView, scrollDirection, unobserve } = useInView({
     threshold: 0.25,
   });
-  const [width, setWidth] = useState("");
 
   const { vertical } = scrollDirection;
 
-  const router = useRouter();
   const [onClick, setClick] = useState(false);
   const [onContact, setContact] = useState(false);
   const admins = useRecoilValue(adminUsers);
@@ -75,39 +77,48 @@ function Navbar() {
           >
             <Link href='/'>
               <a className='hover:text-[#FE8936] self-center py-[15px] px-[18px]  cursor-pointer'>
-                Home
+                {t("common:nav_home")}
               </a>
             </Link>
             <Link href='/services'>
               <a className='hover:text-[#FE8936] self-center py-[15px]  px-[18px] cursor-pointer'>
-                Services
+                {t("common:nav_services")}
               </a>
             </Link>
             <Link href='/influencers'>
               <a className='hover:text-[#FE8936] self-center py-[15px]  px-[18px] cursor-pointer'>
-                Influencers
+                {t("common:nav_influencers")}
               </a>
             </Link>
             <Link href='/talents'>
               <a className='hover:text-[#FE8936] self-center py-[15px]  px-[18px] cursor-pointer'>
-                On-Air Talents
+                {t("common:nav_talents")}
               </a>
             </Link>
             <Link href='/case'>
               <a className='hover:text-[#FE8936] self-center py-[15px]  px-[18px] cursor-pointer'>
-                Case Studies
+                {t("common:nav_studies")}
               </a>
             </Link>
             <Link href='/about'>
               <a className='hover:text-[#FE8936] self-center py-[15px] px-[18px]  cursor-pointer'>
-                About Us
+                {t("common:nav_about")}
               </a>
             </Link>
-            <Link href='/to'>
-              <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
-                中文 (中国)
-              </a>
-            </Link>
+            {router.locale === "en" ? (
+              <Link href={router.asPath} locale={"zh"}>
+                <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
+                  中文(中国)
+                </a>
+              </Link>
+            ) : (
+              <Link href={router.asPath} locale={"en"}>
+                <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
+                  English US
+                </a>
+              </Link>
+            )}
+
             {admins && admins.includes(logged) && (
               <div className=' cursor-default hidden xl:inline-grid relative group items-center text-sm'>
                 Form

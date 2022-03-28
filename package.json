@@ -2,6 +2,11 @@
   "name": "game-web",
   "version": "0.1.0",
   "private": true,
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -19,10 +24,13 @@
     "firebase": "^9.6.8",
     "framer-motion": "^6.2.8",
     "next": "12.1.0",
+    "next-i18next": "^10.5.0",
+    "process": "^0.11.10",
     "react": "17.0.2",
     "react-cool-inview": "^2.0.9",
     "react-countup": "^6.1.1",
     "react-dom": "17.0.2",
+    "react-multi-carousel": "^2.8.0",
     "react-spinners": "^0.11.0",
     "recoil": "^0.6.1"
   },
