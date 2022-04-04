@@ -31,7 +31,9 @@ function Card2() {
           alt=''
         />
       </div>
-
+      {
+        // thsi is comment
+      }
       <div className='xl:absolute top-0 xl:top-4 flex flex-col-reverse xl:flex-row xl:pt-[5rem] xl:ml-[5.5rem] text-center xl:text-left lg:px-2  '>
         <div className='lg:basis-[70%]  relative  md:top-auto  mb-5 px-2 xl:px-2 '>
           <h2 className='text-xl xl:text-[35px] font-bold   text-[#167EE0] xl:text-white pt-3 mb-3 xl:mb-6 xl:[line-height:56px] xl:w-[90%]'>
