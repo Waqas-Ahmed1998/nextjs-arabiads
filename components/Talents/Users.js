@@ -114,7 +114,7 @@ function Users({ user }) {
                 <img
                   src='/talents/card2.svg'
                   alt=''
-                  className='w-full height-[50%]'
+                  className='w-full height-[50%] '
                 />
                 {
                   // trash icon
@@ -139,7 +139,7 @@ function Users({ user }) {
                     </svg>
                   </>
                 )}
-                <div className='w-full h-full flex absolute top-[1px]'>
+                <div className='w-full h-full flex absolute top-[1px] '>
                   <img
                     src={singleUser.image}
                     alt=''
@@ -305,7 +305,7 @@ function Users({ user }) {
                 <img
                   src='/talents/card2.svg'
                   alt=''
-                  className='w-full height-[50%]'
+                  className='w-full height-[50%] '
                 />
                 {admin?.includes(loggedUser) && (
                   <>
@@ -327,7 +327,7 @@ function Users({ user }) {
                     </svg>
                   </>
                 )}
-                <div className='w-full h-full  flex flex-row-reverse absolute  top-[1px]'>
+                <div className='w-full h-full  flex flex-row-reverse absolute  top-[1px] '>
                   <img
                     src={singleUser.image}
                     alt=''

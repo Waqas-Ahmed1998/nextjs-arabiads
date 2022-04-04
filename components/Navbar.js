@@ -11,8 +11,6 @@ import useInView from "react-cool-inview";
 import { useTranslation } from "next-i18next";
 
 function Navbar() {
-  const { t } = useTranslation("common");
-
   const router = useRouter();
   const { observe, inView, scrollDirection, unobserve } = useInView({
     threshold: 0.25,
@@ -35,7 +33,7 @@ function Navbar() {
       <div ref={observe} className=''>
         <div
           id='navbar'
-          className=' hidden  relative xl:flex    xl:justify-center items-center py-0 md:font-semibold md:max-w-7xl lg:max-w-[95rem] mx-auto  '
+          className=' hidden  relative xl:flex  justify-around items-center py-0 md:font-semibold md:max-w-7xl lg:max-w-[95rem] mx-auto  '
         >
           {vertical === "up" && (
             <Link href='#navbar'>
@@ -58,12 +56,13 @@ function Navbar() {
               </a>
             </Link>
           )}
+
           <div className=''>
             {
               <Link href='/'>
                 <div className='ml-7'>
                   <img
-                    className='cursor-pointer w-32 h-40 object-contain'
+                    className='cursor-pointer w-44 h-44 object-cover'
                     src='/standardimages/logo.png'
                     alt=''
                   />
@@ -73,38 +72,86 @@ function Navbar() {
           </div>
 
           <div
-            className={`  ${styles.popins} flex xl:mx-4  font-medium text-[22px] `}
+            className={`  ${styles.popins} flex  w-full justify-center font-medium text-[22px] `}
           >
-            <Link href='/'>
-              <a className='hover:text-[#FE8936] self-center py-[15px] px-[18px]  cursor-pointer'>
-                {t("common:nav_home")}
-              </a>
-            </Link>
-            <Link href='/services'>
-              <a className='hover:text-[#FE8936] self-center py-[15px]  px-[18px] cursor-pointer'>
-                {t("common:nav_services")}
-              </a>
-            </Link>
-            <Link href='/influencers'>
-              <a className='hover:text-[#FE8936] self-center py-[15px]  px-[18px] cursor-pointer'>
-                {t("common:nav_influencers")}
-              </a>
-            </Link>
-            <Link href='/talents'>
-              <a className='hover:text-[#FE8936] self-center py-[15px]  px-[18px] cursor-pointer'>
-                {t("common:nav_talents")}
-              </a>
-            </Link>
-            <Link href='/case'>
-              <a className='hover:text-[#FE8936] self-center py-[15px]  px-[18px] cursor-pointer'>
-                {t("common:nav_studies")}
-              </a>
-            </Link>
-            <Link href='/about'>
-              <a className='hover:text-[#FE8936] self-center py-[15px] px-[18px]  cursor-pointer'>
-                {t("common:nav_about")}
-              </a>
-            </Link>
+            {router.locale === "en" ? (
+              <Link href='/'>
+                <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
+                  Home
+                </a>
+              </Link>
+            ) : (
+              <Link href='/'>
+                <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
+                  主页
+                </a>
+              </Link>
+            )}
+            {router.locale === "en" ? (
+              <Link href='/services'>
+                <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
+                  Services
+                </a>
+              </Link>
+            ) : (
+              <Link href='/services'>
+                <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
+                  服务
+                </a>
+              </Link>
+            )}
+            {router.locale === "en" ? (
+              <Link href='/influencers'>
+                <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
+                  Influencers
+                </a>
+              </Link>
+            ) : (
+              <Link href='/influencers'>
+                <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
+                  影响者
+                </a>
+              </Link>
+            )}
+            {router.locale === "en" ? (
+              <Link href='/talents'>
+                <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
+                  On-Air Talents
+                </a>
+              </Link>
+            ) : (
+              <Link href='/talents'>
+                <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
+                  直播人才
+                </a>
+              </Link>
+            )}
+            {router.locale === "en" ? (
+              <Link href='/studies'>
+                <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
+                  Case Studies
+                </a>
+              </Link>
+            ) : (
+              <Link href='/studies'>
+                <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
+                  实例探究
+                </a>
+              </Link>
+            )}
+            {router.locale === "en" ? (
+              <Link href='/about'>
+                <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
+                  About Us
+                </a>
+              </Link>
+            ) : (
+              <Link href='/about'>
+                <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
+                  关于我们
+                </a>
+              </Link>
+            )}
             {router.locale === "en" ? (
               <Link href={router.asPath} locale={"zh"}>
                 <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
@@ -143,7 +190,7 @@ function Navbar() {
             )}
           </div>
 
-          <div className='  mx-auto xl:ml-0 relative w-fit lg:btnAnimateBefore lg:btnAnimateAfter text-center flex items-center justify-center'>
+          <div className='  mx-auto xl:mr-4 relative w-fit lg:btnAnimateBefore lg:btnAnimateAfter text-center flex items-center justify-center'>
             <button
               onClick={(e) => setContact(!onContact)}
               className={` ${styles.btnContact} ${styles.popins} text-white text-base md:py-[22px]  md:px-5 px-5 py-2 md:inline-grid bg-[linear-gradient(#fdc66e,#ff805e)]   font-medium  xl:w-60  rounded-full md:text-[25px]`}

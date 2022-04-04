@@ -3,6 +3,7 @@ import styles from "../../styles/Home.module.css";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
 import useInView from "react-cool-inview";
+import { useTranslation } from "next-i18next";
 
 function NumbersSpeak() {
   const { observe, inView, scrollDirection, unobserve } = useInView({
@@ -12,6 +13,7 @@ function NumbersSpeak() {
       unobserve();
     },
   });
+  const { t } = useTranslation("common");
 
   return (
     <div
@@ -22,14 +24,20 @@ function NumbersSpeak() {
         <h3
           className={`${styles.montserrat} text-[#404040]  text-center text-lg  md:text-2xl xl:text-[40px]  [font-weight:700]`}
         >
-          LET THE NUMBERS SPEAK
+          {
+            // LET THE NUMBERS SPEAK
+          }
+          {t("common:numbers_speak")}
         </h3>
         <p className='text-base xl:text-[22px] xl:leading-[35px]  text-[#040e29] '>
-          We have worked with over 40 international known brands, delivering an
-          influencer pool of over 70 influencers, and have created a stunning 1
-          billion Impressions to this day, with over 30 campaigns signed. Our
-          community, as well as our partnerships with prominent businesses, is
-          continuously expanding.
+          {
+            // We have worked with over 40 international known brands, delivering an
+            // influencer pool of over 70 influencers, and have created a stunning 1
+            // billion Impressions to this day, with over 30 campaigns signed. Our
+            // community, as well as our partnerships with prominent businesses, is
+            // continuously expanding.
+          }
+          {t("common:numb_para")}
         </p>
       </div>
       <div
@@ -52,7 +60,7 @@ function NumbersSpeak() {
           <p
             className={`${styles.popins} leading-snug text-[#404040] text-xl md:text-[25px] `}
           >
-            Campaigns
+            {t("common:numb_camp")}
           </p>
           <div className='absolute left-[12%] -bottom-4 [z-index:-1]  rounded-[35px] w-[75%] md:w-[75%]  justify-self-center bg-[rgba(255,255,255,0.94)] h-12'></div>
         </div>
@@ -70,7 +78,7 @@ function NumbersSpeak() {
           <p
             className={`${styles.popins} leading-snug text-[#404040] text-xl md:text-[25px] `}
           >
-            Brands
+            {t("common:numb_brands")}
           </p>
           <div className='absolute left-[12%]  -bottom-4 [z-index:-1]  rounded-[35px] w-[75%] md:w-[75%]  justify-self-center bg-[rgba(255,255,255,0.94)] h-12'></div>
         </div>
@@ -87,7 +95,7 @@ function NumbersSpeak() {
           <p
             className={`${styles.popins} leading-snug text-[#404040] text-xl md:text-[25px] `}
           >
-            Exclusive Influencers
+            {t("common:numb_excl")}
           </p>
           <div className='absolute left-[12%] -bottom-4 [z-index:-1]  rounded-[35px] w-[75%] md:w-[75%]  justify-self-center bg-[rgba(255,255,255,0.94)] h-12'></div>
         </div>
@@ -104,7 +112,7 @@ function NumbersSpeak() {
           <p
             className={`${styles.popins} leading-snug text-[#404040] text-xl md:text-[25px] `}
           >
-            Monthly Impressions
+            {t("common:numb_mont")}
           </p>
           <div className='absolute left-[12%] -bottom-4 [z-index:-1]  rounded-[35px] w-[75%] md:w-[75%]  justify-self-center bg-[rgba(255,255,255,0.94)] h-12'></div>
         </div>
@@ -121,7 +129,7 @@ function NumbersSpeak() {
           <p
             className={`${styles.popins}  leading-snug text-[#404040] text-xl md:text-[25px] `}
           >
-            Employees
+            {t("common:numb_empl")}
           </p>
           <div className='absolute left-[12%] -bottom-4 [z-index:-1]  rounded-[35px] w-[75%] md:w-[75%]  justify-self-center bg-[rgba(255,255,255,0.94)] h-12'></div>
         </div>
