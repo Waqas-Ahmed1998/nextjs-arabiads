@@ -127,13 +127,13 @@ function Navbar() {
               </Link>
             )}
             {router.locale === "en" ? (
-              <Link href='/studies'>
+              <Link href='/case'>
                 <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
                   Case Studies
                 </a>
               </Link>
             ) : (
-              <Link href='/studies'>
+              <Link href='/case'>
                 <a className='hover:text-[#FE8936] py-[15px] px-[18px]  cursor-pointer'>
                   实例探究
                 </a>
