@@ -42,6 +42,7 @@ function Card1() {
           <h2
             data-aos='fade-down'
             data-aos-delay='300'
+            data-aos-anchor='#header-card'
             className='text-xl md:text-[44px]  text-white font-semibold pt-3 md:leading-snug'
           >
             {t("home:card1_heading")}
@@ -49,6 +50,7 @@ function Card1() {
           <h3
             data-aos='fade-right'
             data-aos-delay='500'
+            data-aos-anchor='#header-card'
             className='text-base md:text-[30px] text-white '
           >
             #{t("home:card1_smallHeading")}.
@@ -57,6 +59,7 @@ function Card1() {
             <div
               data-aos='zoom-in'
               data-aos-delay='600'
+              data-aos-anchor='#header-card'
               className='space-x-1 md:space-x-2 flex items-center'
             >
               <img src='/home/card1images/user.png' alt='' className='w-8 ' />
@@ -70,6 +73,7 @@ function Card1() {
             <div
               data-aos='zoom-in'
               data-aos-delay='600'
+              data-aos-anchor='#header-card'
               className='space-x-2 flex items-center'
             >
               <img src='/home/card1images/earth.png' alt='' className='w-8' />
@@ -85,6 +89,7 @@ function Card1() {
           <div
             data-aos='fade-right'
             data-aos-duration='2000'
+            data-aos-anchor='#header-card'
             className=' md:space-x-0   md:px-10 md:mr-10 flex flex-wrap justify-center items-center'
           >
             <a href='https://www.pubgmobile.com/ar/home.shtml '>
@@ -150,6 +155,7 @@ function Card1() {
         <h2
           data-aos='fade-down'
           data-aos-delay='300'
+          data-aos-anchor='#header-card'
           className='text-xl md:text-[44px]  text-white font-semibold pt-3 md:leading-snug'
         >
           {
@@ -161,6 +167,7 @@ function Card1() {
         <h3
           data-aos='fade-right'
           data-aos-delay='500'
+          data-aos-anchor='#header-card'
           // animate={{
           //   x: [-100, 0],
           //   opacity: [0, 1],
@@ -177,6 +184,7 @@ function Card1() {
           <div
             data-aos='zoom-in'
             data-aos-delay='600'
+            data-aos-anchor='#header-card'
             className='space-x-1 md:space-x-2 flex items-center'
           >
             <img src='/home/card1images/user.png' alt='' className='w-8 ' />
@@ -190,6 +198,7 @@ function Card1() {
           <div
             data-aos='zoom-in'
             data-aos-delay='600'
+            data-aos-anchor='#header-card'
             className='space-x-2 flex items-center'
           >
             <img src='/home/card1images/earth.png' alt='' className='w-8' />
@@ -205,6 +214,7 @@ function Card1() {
         <div
           data-aos='fade-right'
           data-aos-duration='2000'
+          data-aos-anchor='#header-card'
           className=' md:space-x-0 px-2 md:px-10 md:mr-10 flex '
         >
           <a href='https://www.pubgmobile.com/ar/home.shtml'>
@@ -258,6 +268,7 @@ function Card1() {
       <div
         data-aos='fade-up'
         data-aos-delay='500'
+        data-aos-anchor='#header-card'
         className=' h-fit w-full left-[25px]   object-contain  hidden    xl:inline-grid absolute '
       >
         {
@@ -294,7 +305,7 @@ function Card1() {
               <img
                 src='/home/home1.png'
                 alt=''
-                className={`hidden w-[1031px]   transition-all relative -bottom-6 ease-in-out duration-1000 object-contain  xl:inline-grid `}
+                className={`hidden w-[1031px]  left-[0.8px]    transition-all relative -bottom-6 ease-in-out duration-1000 object-contain  xl:inline-grid `}
               />
             }{" "}
           </div>
