@@ -248,11 +248,17 @@ function Card1() {
           )}
         </div>
       </div>
-
+      {
+        // md:w-[95%]
+        // 2xl:w-[95%]
+        // xl:left-[20px]
+        // -left-[19px]
+        // xl:h-[49rem]
+      }
       <div
         data-aos='fade-up'
         data-aos-delay='500'
-        className='top-1 xl:left-[20px]  xl:h-[49rem] 2xl:left-[20px] hidden  2xl:h-[49rem] 2xl:w-[95%] h-[100%] xl:inline-grid md:w-[95%] absolute '
+        className=' h-fit w-full left-[25px]   object-contain  hidden    xl:inline-grid absolute '
       >
         {
           // <Image
@@ -288,7 +294,7 @@ function Card1() {
               <img
                 src='/home/home1.png'
                 alt=''
-                className={`hidden transition-all ease-in-out duration-1000   xl:inline-grid md:w-[100%] absolute`}
+                className={`hidden w-[1031px]   transition-all relative -bottom-6 ease-in-out duration-1000 object-contain  xl:inline-grid `}
               />
             }{" "}
           </div>
@@ -297,7 +303,7 @@ function Card1() {
           <img
             src='/home/carouselImages/maskgroup.png'
             alt=''
-            className='hidden trasition-all xl:inline-grid md:w-[100%] bottom-7 absolute'
+            className='hidden   w-[1030px] left-[2px] transition-all ease-in-out  xl:inline-grid bottom-0 relative'
           />
         )}
 
