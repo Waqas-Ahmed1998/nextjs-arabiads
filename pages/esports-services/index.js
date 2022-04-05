@@ -5,16 +5,19 @@ import Campaign2 from "../../components/standard/Campaign2";
 import NumbersSpeak from "../../components/standard/NumbersSpeak";
 import Plateforms from "../../components/standard/Plateforms";
 import Head from "next/head";
-import AOS from "aos";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common", "home"])),
+      locale,
+      // Will be passed to the page component as props
+    },
+  };
+}
 
 function Esports() {
-  // useEffect(() => {
-  //   AOS.init({
-  //     // Global settings:
-  //     disable: "mobile", // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  //   });
-  //   return () => {};
-  // }, []);
   return (
     <div className='relative overflow-hidden xl:overflow-visible'>
       <Head>

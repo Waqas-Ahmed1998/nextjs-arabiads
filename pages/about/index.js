@@ -3,18 +3,20 @@ import Acard2 from "../../components/about/Acard2";
 import Campaign from "../../components/standard/Campaign";
 import NumbersSpeak from "../../components/standard/NumbersSpeak";
 import Plateforms from "../../components/standard/Plateforms";
-import styles from "../../styles/Home.module.css";
-import Head from "next/head";
-import AOS from "aos";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
+import Head from "next/head";
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common", "home"])),
+      locale,
+      // Will be passed to the page component as props
+    },
+  };
+}
 function About() {
-  // useEffect(() => {
-  //   AOS.init({
-  //     // Global settings:
-  //     disable: "mobile", // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  //   });
-  //   return () => {};
-  // }, []);
   return (
     <>
       <div className=''>

@@ -8,7 +8,17 @@ import { motion } from "framer-motion";
 import { collection, onSnapshot } from "firebase/firestore";
 import { db } from "../../firebase";
 import { MoonLoader } from "react-spinners";
-import AOS from "aos";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common", "home"])),
+      locale,
+      // Will be passed to the page component as props
+    },
+  };
+}
 
 function Case() {
   let [eventcard, setEventCard] = useState([]);

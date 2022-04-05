@@ -3,11 +3,22 @@ import Card1 from "../../components/Services/Card1";
 import Scard2 from "../../components/Services/Scard2";
 import Scard3 from "../../components/Services/Scard3";
 import Scard4 from "../../components/Services/Scard4";
-import styles from "../../styles/Home.module.css";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import NumbersSpeak from "../../components/standard/NumbersSpeak";
 import Plateforms from "../../components/standard/Plateforms";
 import Campaign2 from "../../components/standard/Campaign2";
 import Head from "next/head";
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common", "home"])),
+      locale,
+      // Will be passed to the page component as props
+    },
+  };
+}
 
 function Services() {
   return (

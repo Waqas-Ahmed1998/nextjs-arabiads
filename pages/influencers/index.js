@@ -10,6 +10,17 @@ import { db } from "../../firebase";
 import { MoonLoader } from "react-spinners";
 import { motion } from "framer-motion";
 import AOS from "aos";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common", "home"])),
+      locale,
+      // Will be passed to the page component as props
+    },
+  };
+}
 
 function Influencers() {
   // let influencersData = JSON.parse(userdata);

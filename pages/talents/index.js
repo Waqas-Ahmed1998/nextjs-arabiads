@@ -8,9 +8,20 @@ import Head from "next/head";
 import { db } from "../../firebase";
 import { motion } from "framer-motion";
 import { MoonLoader } from "react-spinners";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 // firebase import
 import { collection, onSnapshot, getDocs } from "firebase/firestore";
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common", "home"])),
+      locale,
+      // Will be passed to the page component as props
+    },
+  };
+}
 
 function Talents() {
   // let talentsData = JSON.parse(userdata);
