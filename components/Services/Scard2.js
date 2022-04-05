@@ -36,21 +36,21 @@ function Scard2() {
         id='service-card-top'
         className=' h-[80%] xl:absolute flex top-[5%]  justify-center  xl:w-full '
       >
-        <div className='  xl:w-[100%] xl:ml-16 flex flex-col-reverse xl:flex-row space-y-5 text-center xl:text-left '>
-          <div className='  xl:mt-10 basis-[53%] xl:py-16   xl:ml-12 xl:p-5 '>
+        <div className='  xl:w-[100%] xl:ml-20 flex flex-col-reverse xl:flex-row space-y-5 text-center xl:text-left '>
+          <div className='  xl:mt-10 flex-1 xl:py-16   xl:ml-12 xl:p-5'>
             <h2
-              className={` ${styles.montserrat} heading-primary mb-5 xl:text-white md:w-[80%]`}
+              className={` ${styles.montserrat} heading-primary mb-5 xl:text-white `}
             >
               Reach Millions Through Gaming Influencers
             </h2>
             <p className='xl:text-white text-base xl:text-[19px] xl:leading-[30px] mb-10 '>
-              Gaming Influencers can help you reach new audiences. <br /> To
-              maximize your outcomes, we work across the full <br /> pyramid of
-              influence, from the most powerful profiles to micro influencers,
-              including key opinion leaders, each with a specific goal in mind.{" "}
-              <br /> <br /> The multiplicity of content provided by influencers
-              with a power of prescribing driven by proximity to their audience
-              is multiplied tenfold by activating smaller talents.
+              Gaming Influencers can help you reach new audiences. To maximize
+              your outcomes, we work across the full pyramid of influence, from
+              the most powerful profiles to micro influencers, including key
+              opinion leaders, each with a specific goal in mind. The
+              multiplicity of content provided by influencers with a power of
+              prescribing driven by proximity to their audience is multiplied
+              tenfold by activating smaller talents.
             </p>
             <div className=' mx-auto xl:mx-0 relative [z-index:1] after:[z-index:-1] before:[z-index:-1] lg:before:border-[#86A9E9] lg:after:border-[#4983E7] w-fit lg:btnAnimateBefore lg:btnAnimateAfter'>
               <Link href='/influencer-services'>

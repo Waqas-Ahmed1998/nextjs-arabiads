@@ -42,15 +42,10 @@ function EventCard({ event, index }) {
         </>
       )}
       <div className=' right-5 flex justify-center items-center -top-8 rounded-full absolute w-[65px] bg-[#ff8f3f] h-[65px]'>
-        <span
-          className={`${styles.montserrat} text-white text-[22px] font-bold`}
-        >
-          {index < 9 && 0}
-          {index + 1}
-        </span>
+        <span className='text-white text-lg'>{index + 1}</span>
       </div>
       <div className='absolute left-0 -top-3 [z-index:-1] bg-blue-600 w-full rounded-t-full h-5'></div>
-      <div className={`${styles.popins} relative`}>
+      <div className={`${styles.popins}`}>
         <div className='flex space-x-10 items-center'>
           <img
             src={event.image}
@@ -63,34 +58,30 @@ function EventCard({ event, index }) {
           </div>
         </div>
         <p className='md:text-lg text-sm pt-10'>{event.content}</p>
-        <div className=' text-[18px] absolute bottom-0 w-[100%] flex justify-center items-center  '>
-          <div className='px-5 text-center flex flex-col items-center space-y-1'>
-            <div className='w-[68px] h-[68px] rounded-full bg-[#ededf0] flex items-center'>
-              <img
-                src='/case/views.png'
-                alt=''
-                className='w-10 h-10 object-contain mx-auto'
-              />
-            </div>
+        <div className=' text-[18px] absolute bottom-10 w-[80%] flex justify-around items-center  '>
+          <div>
+            <img
+              src='/case/views.png'
+              alt=''
+              className='w-10 h-10 object-contain mx-auto'
+            />
             <p className='text-center text-sm md:text-base text-blue-400 font-bold'>
               {event.audience}
             </p>
-            <p className={`${styles.popins} text-sm md:text-lg`}>
+            <p className={`${styles.popins} text-sm md:text-base`}>
               {event.role}
             </p>
           </div>
-          <div className='text-center px-5 flex flex-col items-center space-y-1'>
-            <div className='w-[60px] h-[60px] md:w-[68px] md:h-[68px] rounded-full bg-[#ededf0] flex items-center'>
-              <img
-                src='/case/eye.png'
-                alt=''
-                className='w-10 h-10  object-contain mx-auto'
-              />
-            </div>
+          <div className='text-center'>
+            <img
+              src='/case/eye.png'
+              alt=''
+              className='w-10 h-10 object-contain mx-auto'
+            />
             <p className='text-center  text-sm md:text-base text-blue-400 font-bold'>
               {event.engagement}
             </p>
-            <p className={`${styles.popins} text-sm md:text-lg`}>
+            <p className={`${styles.popins} text-sm md:text-base `}>
               {event.engagementRole}
             </p>
           </div>

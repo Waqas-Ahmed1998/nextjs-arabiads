@@ -14,26 +14,25 @@ function Card4() {
   return (
     <div id='triger' className='xl:w-[80%] mx-auto   '>
       <div className='flex flex-col-reverse xl:flex-row text-center xl:text-left xl:ml-5 '>
-        <div className='p-5 xl:p-0 basis-[60%]  lg:space-y-7 xl:pt-[4rem]'>
+        <div className='p-5 xl:p-0 basis-[60%]  lg:space-y-7 xl:pt-20'>
           <h2
             data-aos='fade-right'
             data-aos-anchor='#triger'
-            className='text-xl md:text-[41px] md:leading-[2.5rem] text-[#020c27] font-bold mb-2'
+            className='text-xl md:text-4xl text-[#020c27] font-bold mb-2'
           >
             Influencer <span className='text-[#008fcf]'>Management</span>
           </h2>
           <p
             data-aos='zoom-out-right'
             data-aos-anchor='#triger'
-            className={`${styles.popins} text-[#404b68] text-base md:text-lg tracking-wide md:tracking-normal mb-5  `}
+            className={`${styles.popins} text-[#404b68] text-base md:text-lg tracking-wide md:tracking-normal mb-5 `}
           >
-            Are you an influencer looking to broaden your reach,
-            <br /> and collaborate with others? We are here to assist you.
-            <br></br> <br></br> Our staff will introduce you to some of the
-            worlds most well-known entertainment and technology firms, raising
-            your profile and carefully coaching you to become more than an
-            influencer, but a brand ambassador with a continuous source of
-            income.
+            Are you an influencer looking to broaden your reach and collaborate
+            with others? We are here to assist you.<br></br> <br></br> Our staff
+            will introduce you to some of the worlds most well-known
+            entertainment and technology firms, raising your profile and
+            carefully coaching you to become more than an influencer, but a
+            brand ambassador with a continuous source of income.
           </p>
           <div className=' mx-auto xl:mx-0 relative [z-index:1] after:[z-index:-1] before:[z-index:-1]   w-fit lg:btnAnimateBefore  lg:btnAnimateAfter'>
             <Link href='/influencer-services'>
@@ -46,13 +45,14 @@ function Card4() {
           </div>
         </div>
 
-        <div className='basis-[45%] '>
+        <div className='basis-[40%]  '>
           <div
             data-aos='zoom-out-left'
             data-aos-anchor='#triger'
-            className='hidden xl:block w-auto md:w-[50%] h-full mx-auto xl:w-auto overflow-visible xl:ml-0   '
+            className='hidden xl:block w-auto md:w-[50%] h-full mx-auto xl:w-auto overflow-visible   '
           >
             <Image
+              className='xl:scale-[1] '
               src='/home/card3person.png'
               alt=''
               title=''

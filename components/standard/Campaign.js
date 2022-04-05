@@ -38,8 +38,7 @@ function Campaign() {
             <p
               className={` ${styles.popins}  text-basetext-[#404b68] md:text-[18px] mb-10 xl:leading-[29px] text-[#404b68]`}
             >
-              Simply write us a message to tell us about your upcoming project!{" "}
-              <br /> <br />
+              Simply write us a message to tell us about your upcoming project!
               Our salesperson will contact you as soon as possible and link you
               to one of our committed specialists in order to experience what
               influencer marketing can be like when you work with the finest!
